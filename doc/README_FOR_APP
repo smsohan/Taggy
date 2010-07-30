@@ -1,0 +1,3 @@
+Dump database: /usr/local/mysql/bin/mysqldump taggy -uroot -p > db/db_dump.sql
+
+Edit Crontab: crontab -e

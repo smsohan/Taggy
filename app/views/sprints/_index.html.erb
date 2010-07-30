@@ -1,0 +1,13 @@
+<% if sprints.present? %>
+	<ul class="sprints"> 
+	<% sprints.each do |sprint| %> 
+			<li <%= "class=\"current\"" if sprint.current? %>>
+				<%= "[Current]" if sprint.current?%>
+				<%= link_to sprint.name, project_sprint_path(@project, sprint) %>
+				<%= sprint.pretty_duration %>
+			</li>	
+	<% end %>
+	</ul>
+<% else %>
+	<%= render :partial => 'sprints/empty_list'%>
+<% end %>

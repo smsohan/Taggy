@@ -1,0 +1,13 @@
+<% if @projects.present? %>
+	<% title "Select a Project to Start" %>
+
+	<ol>
+	<% for project in @projects %>
+		<li><%= link_to project.name, project %></li>
+	<% end %>
+	</ol>  
+<% else %>
+	<%= render :partial => 'empty_list'%>
+<% end %>
+
+<p><%= link_to "+ New Project", new_project_path %></p>

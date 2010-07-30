@@ -1,0 +1,9 @@
+<script type="text/javascript">
+	document.observe("dom:loaded", function() {
+		$('selected_project_id').observe("change", function(event){
+			document.location.href = '/projects/' + $('selected_project_id').value;
+		})
+	});
+</script>
+
+Select a Project: <%= select_tag :selected_project_id, options_from_collection_for_select(projects.sort_by{|p| p.name}, :id, :name, (params[:project_id] || params[:id]).to_i )%>

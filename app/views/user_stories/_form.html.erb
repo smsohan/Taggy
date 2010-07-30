@@ -1,0 +1,37 @@
+<% form_for @user_story, :html => {:multipart => true} do |f| %>
+  <%= f.error_messages %>
+	<%= f.hidden_field :project_id %>
+  
+	<p>
+    <%= f.label :sprint_id %><br />
+    <%= f.collection_select :sprint_id, @user_story.project.sprints, :id, :name, {:include_blank => 'None'} %>
+  </p>
+  
+	<p>
+    <%= f.label :owner_id %><br />
+    <%= f.collection_select :owner_id, @user_story.project.customers.uniq, :id, :name %>
+  </p>
+
+	<p>
+    <%= f.label :assigned_users %><br />		
+		<% @user_story.project.team.each do |user|%>
+			<%= check_box_tag "user_story[assigned_user_ids][]", user.id, @user_story.assigned_users.include?(user) %> <%= user.name%>
+		<% end%>
+	</p>
+	
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_area :title, :cols=>100, :rows => 3 %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :cols=>100, :rows => 6 %>
+  </p>
+
+	<p>
+		<%= f.label :attachment %>
+		<%= f.file_field :attachment %>
+	</p>
+
+  <p><%= f.submit "Save" %></p>
+<% end %>

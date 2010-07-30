@@ -1,0 +1,4 @@
+one:
+  content: MyText
+  project: one
+  users: [one, two]

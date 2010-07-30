@@ -1,0 +1,8 @@
+<% title "Edit Message" %>
+
+<%= render :partial => 'form' %>
+
+<p>
+  <%= link_to "Show", @message %> |
+  <%= link_to "View All", project_messages_path(@message.project) %>
+</p>

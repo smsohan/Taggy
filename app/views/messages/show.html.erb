@@ -1,0 +1,50 @@
+<% title "Message" %>
+
+<%= link_to 'Post a Reply', new_message_path(:old_message_id => @message.id)  %>
+
+<p>
+  <strong>Sent at:</strong>
+  <%=h @message.created_at %>
+</p>
+
+<p>
+  <strong>From:</strong>
+  <%=h @message.sender.name %>
+</p>
+<p>
+  <strong>To:</strong>
+  <%=h @message.users.collect{|user| user.name}.join(', ') %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%=h @message.subject %>
+</p>
+
+<p> 
+	<strong>Attachment:</strong>
+	<% @message.attached_files.each do |attached_file| %>
+		<%= link_to attached_file.name, attached_file.url %>
+	<% end %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%=formatted @message.body %>
+</p>
+
+<h3>Related User Stories</h3>
+<%= render(:partial => 'user_stories/show', :collection => @message.user_stories, :as => :user_story) ||
+		render(:partial => 'user_story_message_links/empty')
+%>
+
+<h3>Possibly Related User Stories</h3>
+<%= render(:partial => 'user_stories/show', :collection => @message.find_similar_stories[0..3], :as => :user_story) ||
+		render(:partial => 'user_story_message_links/empty')
+%>
+
+<p>
+  <%= link_to "Edit", edit_message_path(@message) %> |
+  <%= link_to "Destroy", @message, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", project_messages_path(@message.project) %>
+</p>

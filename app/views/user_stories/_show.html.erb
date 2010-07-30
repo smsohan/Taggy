@@ -1,0 +1,19 @@
+<% show_meta = defined?(show_meta) ? show_meta : true %>
+<li>
+	<div class="user_story">
+		<div class="title">
+			<%= link_to user_story.title, user_story %>
+		</div>
+		<div class="description">
+			<%= formatted user_story.description_glimpse %>
+		</div>		
+		<div class="attachment">
+			<%= link_to(user_story.attachment.original_filename, user_story.attachment.url) if user_story.attachment? %>
+		</div>				
+		<% if show_meta %>
+			<div class="meta">
+				<%= "Sprint: #{link_to(user_story.sprint, project_sprint_path(user_story.project, user_story.sprint))}" if user_story.sprint %>
+			</div>
+		<% end %>
+	</div>
+</li>

@@ -1,0 +1,12 @@
+<% title = sprint.present? ? "#{sprint.name} Backlog (#{sprint.pretty_duration})" : "Sprint Backlog"%>
+
+<h3>
+	<%= title %> 
+	<%= link_to "Product Backlog", project_user_stories_path(sprint.project) %>
+	<%= link_to "+ New User Story", new_project_sprint_user_story_path(sprint.project, sprint) %>
+</h3>
+
+<ol>
+<%= render(:partial => "user_stories/show", :collection => sprint.user_stories, :as => :user_story, :locals => {:meta => false}) || 
+		render(:partial => 'user_stories/empty', :locals => {:sprint => sprint}) %>
+</ol>

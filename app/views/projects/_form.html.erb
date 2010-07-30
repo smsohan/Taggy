@@ -1,0 +1,47 @@
+<% form_for @project do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :sprint_length %><br />
+    <%= f.text_field :sprint_length %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+
+  <p>
+    <%= f.label :pop3_server %><br />
+    <%= f.text_field :pop3_server %>
+  </p>
+
+  <p>
+    <%= f.label :pop3_port %><br />
+    <%= f.text_field :pop3_port %>
+  </p>
+
+  <p>
+    <%= f.label :pop3_enable_ssl %><br />
+    <%= f.check_box :pop3_enable_ssl %>
+  </p>
+
+  <p>
+    <%= f.label :instant_messenger_name %><br />
+    <%= f.text_field :instant_messenger_name %>
+  </p>
+
+  <p>
+    <%= f.label :instant_messenger_user %><br />
+    <%= f.text_field :instant_messenger_user %>
+  </p>
+
+  
+  <p><%= f.submit %></p>
+<% end %>

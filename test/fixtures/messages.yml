@@ -1,0 +1,9 @@
+one:
+  subject: MyString
+  body: MyText
+  sender: one
+  project: one
+# 
+# two:
+#   subject: MyString
+#   body: MyText

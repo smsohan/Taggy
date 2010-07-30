@@ -1,0 +1,5 @@
+<% title "#{@project.name}: Sprints" %>
+
+<%= render :partial => 'sprints/index', :locals => {:sprints => @sprints}%>
+
+<p><%= link_to "New Sprint", new_project_sprint_path(@project) %></p>

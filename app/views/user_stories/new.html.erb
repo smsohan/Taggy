@@ -1,0 +1,12 @@
+<% title "#{@user_story.project.name}: New User Story" %>
+
+<%= render :partial => 'form' %>
+
+<p>
+	<%= link_to "Back to Product Backlog", project_user_stories_path(@user_story.project) %>
+	<%  if @user_story.sprint %>
+		|
+		<%= link_to("#{@user_story.sprint.name} Backlog", project_sprint_path(@user_story.project, @user_story.sprint)) %>
+	<% end %>
+</p>
+

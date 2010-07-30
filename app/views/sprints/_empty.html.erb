@@ -1,0 +1,9 @@
+<div class="empty_list">
+	This page section will show you the <%= sprint.name%> Backlog. To populate this backlog with user stories, you can:
+
+	<ol>
+		<li><%= link_to "Create a User Story", new_project_sprint_user_story_path(sprint.project, sprint) %> or</li>
+		<li>Bring some items from the <%= link_to "Product Backlog", project_user_stories_path(sprint.project)%>.</li>
+	</ol>
+
+</div>

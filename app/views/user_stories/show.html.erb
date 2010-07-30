@@ -1,0 +1,51 @@
+<% title "User Story: #{@user_story.glimpse}", false %>
+
+<h3><%=h @user_story.title %></h3>
+
+<p>
+  <strong>Sprint:</strong>
+	<% if @user_story.sprint.present? %>
+	  <%=h(@user_story.sprint.name) << ", "  << @user_story.sprint.pretty_duration%>
+	<% else %>
+		 None
+	<% end %>
+</p>
+<p>
+  <strong>Owner:</strong>
+  <%=h @user_story.owner.name %>
+</p>
+
+<p>
+  <strong>Assigned to:</strong>
+  <% if @user_story.assigned_users.exists? %>
+		<%= @user_story.assigned_users.collect {|assigned_user| assigned_user.name}.join(", ")%>
+	<% else %>
+		None
+	<% end %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= formatted @user_story.description %>
+</p>
+
+<p>
+  <strong>Attachment:</strong>
+  <%= link_to(@user_story.attachment.original_filename, @user_story.attachment.url) if @user_story.attachment.file? %>
+</p>
+
+
+<div class="spacer">
+</div>
+
+<h3>
+	Related Messages
+	<%= link_to '+ New Message', new_project_user_story_message_path(@user_story.project, @user_story) %>
+</h3>
+<%= render :partial => "messages/index", :locals => {:messages => @user_story.messages, :project => @user_story.project, :user_story => @user_story} %>
+
+<p>
+  <%= link_to "Edit", edit_user_story_path(@user_story) %> |
+  <%= link_to "Destroy", @user_story, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", user_stories_path %>
+</p>

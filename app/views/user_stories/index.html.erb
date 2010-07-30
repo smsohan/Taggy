@@ -1,0 +1,4 @@
+<% title "#{@project.name}: Product Backlog", false %>
+
+<%= render :partial => "user_stories/backlog", :locals => {:project => @project} %>
+<p><%= link_to "New User Story", new_project_user_story_path(@project) %></p>

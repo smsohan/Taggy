@@ -1,0 +1,24 @@
+<% show_meta = defined?(show_meta) ? show_meta : true %>
+<li>
+	<div class="message">
+		<div class="meta">
+			<%= message.created_at.strftime("%I:%M %p on %B %d, %Y") %> <%= "<strong>#{message.sender.name}</strong>" if message.sender %> wrote:
+		</div>
+		<div class="subject">
+			<%= link_to message.subject, message %>
+		</div>
+		<div class="body">
+			<%= formatted message.glimpse %>
+		</div>		
+		<% if show_meta %>
+			<div class="meta">
+				<%  if message.user_stories.present? %>
+					User Stories:
+					<% message.user_stories.each do |user_story| %>
+						<%= link_to user_story.title, user_story %>
+					<% end %>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+</li>

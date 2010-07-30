@@ -1,0 +1,8 @@
+<% title "#{@sprint.project.name}: Edit Sprint" %>
+
+<%= render :partial => 'form' %>
+
+<p>
+  <%= link_to "Show", @sprint %> |
+  <%= link_to "View All", project_sprints_path(@sprint.project) %>
+</p>

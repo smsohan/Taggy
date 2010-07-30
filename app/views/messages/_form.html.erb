@@ -1,0 +1,61 @@
+<% form_for @message, :html => {:multipart => true} do |f| %>
+  <%= f.error_messages %>
+	<%= f.hidden_field :project_id %>
+	
+	<p>
+    <%= f.label :users, 'To' %><br />
+		<% @message.project.users.uniq.each do |user| %>
+			<%= check_box_tag "message[user_ids][]", user.id, @message.users.include?(user) %> <%= user.name%>
+		<% end %>
+  </p>
+
+	
+	<p>
+    <%= f.label :user_stories %><br />       
+    
+		<% sprints = @sprint.present? ? [@sprint] : @message.project.sprints %>
+
+		<% sprints.each do |sprint| %>
+			<strong><%= sprint.name %></strong><br />
+			
+			<% sprint.user_stories.each do |user_story| %>
+				<%= check_box_tag "message[user_story_ids][]", user_story.id, @message.user_stories.include?(user_story) %> <%= user_story.title %>
+				<br/>
+			<% end %>			
+		<% end %>
+
+  </p>
+
+  <% if Rails.env == 'development' %>
+	<div class="development_content">
+		<i>Only Available in Development Configuration</i>
+	  <p>
+	    <%= f.label :created_at %><br />
+			<%= f.date_select :created_at %>
+	  </p>
+	  <p>
+	    <%= f.label :from_user_id %><br />
+	    <%= f.collection_select :from_user_id, @message.project.users.uniq, :id, :name %>
+	  </p>
+	</div>
+	<%else%>
+    <%= f.hidden_field :from_user_id %>
+	<% end %>
+  <p>
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject, :size => 100 %>
+  </p>
+		
+	<% f.fields_for :attached_files do |af| %>
+    <%= af.hidden_field :project_id %>
+    <%= af.label :file %>
+    <%= af.file_field :file, :size => 20%>
+  <% end %>
+	
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body, :cols=>100, :rows => 6 %> 
+  </p>
+
+  <p><%= f.submit "Post" %></p>
+<% end %>

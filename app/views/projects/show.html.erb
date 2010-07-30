@@ -1,0 +1,47 @@
+<% title @project.name %>
+
+
+<% current_sprint = @project.current_sprint %>
+
+<% if current_sprint.present? %>
+	<%= render(:partial => 'user_stories/backlog', :locals=>{:sprint => current_sprint})%>
+<% else %>
+	<%= render(:partial => 'sprints/no_current_sprint', :locals=>{:project => @project})%>
+<% end %>
+
+<div class="spacer"></div>
+<h3>
+	Nearby Sprints 
+	<%= link_to "All Sprints", project_sprints_path(@project) %>
+	<%= link_to "+ New Sprint", new_project_sprint_path(@project) %>	
+</h3>
+<%= render :partial => 'sprints/index', :locals => {:sprints => @project.sprints.nearby(Date.today)}%>
+
+
+<div class="spacer"></div>
+<h3>
+	Latest Messages
+	<%= link_to "All Messages", project_messages_path(@project) %>
+	<%= link_to "+ New Message", new_project_message_path(@project) %>
+</h3>
+<%= render :partial => 'messages/index', :locals => {:messages => @project.messages.latest, :project => @project}%>
+
+<!-- <div class="spacer"></div>
+<h3>
+	Latest IM Sessions
+	<%#= link_to "All IM Sessions", project_im_sessions_path(@project) %>
+	<%#= link_to "+ New IM Session", new_project_im_session_path(@project) %>
+</h3>
+<%#= render :partial => 'im_sessions/index', :locals => {:im_sessions => @project.im_sessions.latest, :project => @project}%> -->
+
+
+<div class="spacer"></div>
+<h3>Associated People</h3>
+<%= render :partial => 'memberships/index', :locals => {:project => @project}%>
+
+
+<p>
+  <%= link_to "Edit", edit_project_path(@project) %> |
+  <%= link_to "Destroy", @project, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", user_projects_path(UserSession.current_user) %>
+</p>

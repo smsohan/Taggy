@@ -1,0 +1,9 @@
+<% title "#{@project.name} Messages", false %>
+
+<h3>
+	Messages
+	<%= link_to "+ New Message", new_project_message_path(@project) %>
+</h3>
+
+<%= render :partial => 'index', :locals => {:messages => @messages, :project => @project}%>
+

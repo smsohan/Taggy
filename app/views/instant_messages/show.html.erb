@@ -1,0 +1,20 @@
+<% title "Instant Message" %>
+
+<strong>Session Participants:</strong>
+<%= @instant_message.users.collect{|user| user.name }.join(', ') %>
+
+<p>
+  <strong>Content:</strong>
+  <%=formatted @instant_message.content %>
+</p>
+
+<h3>Possibly Related User Stories</h3>
+<%= render(:partial => 'user_stories/show', :collection => @instant_message.find_similar_stories[0..3], :as => :user_story) ||
+		render(:partial => 'user_story_message_links/empty')
+%>
+
+<p>
+  <%= link_to "Edit", edit_instant_message_path(@instant_message) %> |
+  <%= link_to "Destroy", @instant_message, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", project_instant_messages_path(@instant_message.project) %>
+</p>

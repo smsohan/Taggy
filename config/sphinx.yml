@@ -1,0 +1,4 @@
+development:
+  enable_star: true
+  min_infix_len: 4
+  morphology: stem_en  

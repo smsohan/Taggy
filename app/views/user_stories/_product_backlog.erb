@@ -1,0 +1,12 @@
+<h3>
+	Product Backlog
+	<% if project.current_sprint %>
+		<%= link_to "Current Sprint Backlog", project_sprint_path(project, project.current_sprint) %>
+	<% end %>
+	<%= link_to "+ New User Story", new_project_user_story_path(project) %>
+</h3>
+
+<ol>
+<%= render(:partial => "user_stories/show", :collection => project.user_stories, :as => :user_story, :locals => {:show_meta => true}) || 
+		render(:partial => 'user_stories/empty_product_backlog', :locals => {:project => project}) %>
+</ol>

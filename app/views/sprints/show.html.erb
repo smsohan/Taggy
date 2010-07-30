@@ -1,0 +1,27 @@
+<% title "#{@sprint.project.name}: #{@sprint.name}" %>
+
+<%= render :partial => 'user_stories/backlog', :locals => {:sprint => @sprint}%>
+
+<h3>
+	Messages
+	<%= link_to "+ New Message", new_project_message_path(@sprint.project, {:sprint_id => @sprint.id}) %>
+</h3>
+
+<% messages = @sprint.messages %>
+
+<% if messages.present? %>
+	<% messages.each do |message|%>
+		<%= render :partial => 'messages/show', :locals => {:message => message} %>
+	<%end%>
+<% else %>
+	<div class="empty_list">
+		This page section will show you the messages for <strong> <%= @sprint.name %></strong>. <br/>
+		You can <%= link_to "Post a Message", new_project_message_path(@sprint.project, {:sprint_id => @sprint.id}) %> to use this section.
+	</div>
+<% end %>
+
+<p>
+  <%= link_to "Edit", edit_sprint_path(@sprint) %> |
+  <%= link_to "Destroy", @sprint, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", project_sprints_path(@sprint.project) %>
+</p>

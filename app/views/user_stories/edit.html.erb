@@ -1,0 +1,8 @@
+<% title "Edit User Story" %>
+
+<%= render :partial => 'form' %>
+
+<p>
+  <%= link_to "Show", @user_story %> |
+  <%= link_to "Back to Product Backlog", project_user_stories_path(@user_story.project) %>
+</p>

@@ -1,0 +1,5 @@
+<% title "#{@sprint.project.name}: New Sprint" %>
+
+<%= render :partial => 'form' %>
+
+<p><%= link_to "Back to List", project_sprints_path(@sprint.project) %></p>

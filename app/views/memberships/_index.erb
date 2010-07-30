@@ -1,0 +1,11 @@
+<div class="people">
+	<% Role.all.each do |role| %>
+		<h4><%= role.name%> <%= link_to "Select #{role.name}", new_project_role_membership_path(project, role) %></h4>
+		<ul>
+		<% project.memberships.in_role(role).each do |membership| %>
+			<li><%= membership.user.name %></li>
+		<% end %>
+		</ul>
+		
+	<% end %>
+</div>
