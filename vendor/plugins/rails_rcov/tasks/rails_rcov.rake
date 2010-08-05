@@ -73,7 +73,7 @@ if ARGV.grep(/--run-rake-task=/).empty?
             #               when 'lib' : 'lib'  
             #               else
                 # show_type
-            end
+            # end
           end
           reg_exp.map!{ |m| "(#{m})" }
           params << " -x \\\"^(?!#{reg_exp.join('|')})\\\""
