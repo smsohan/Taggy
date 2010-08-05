@@ -62,17 +62,17 @@ if ARGV.grep(/--run-rake-task=/).empty?
         if show_only.any?
           reg_exp = []
           for show_type in show_only
-            reg_exp << case show_type
-              when 'm': 'app\/models'
-              when 'models' : 'app\/models'
-              when 'c' : 'app\/controllers'
-              when 'controllers' : 'app\/controllers'                
-              when 'h' : 'app\/helpers'
-              when 'helpers' : 'app\/helpers'
-              when 'l' : 'lib'
-              when 'lib' : 'lib'  
-              else
-                show_type
+            reg_exp << show_type# case show_type
+            #               when 'm': 'app\/models'
+            #               when 'models' : 'app\/models'
+            #               when 'c' : 'app\/controllers'
+            #               when 'controllers' : 'app\/controllers'                
+            #               when 'h' : 'app\/helpers'
+            #               when 'helpers' : 'app\/helpers'
+            #               when 'l' : 'lib'
+            #               when 'lib' : 'lib'  
+            #               else
+                # show_type
             end
           end
           reg_exp.map!{ |m| "(#{m})" }
