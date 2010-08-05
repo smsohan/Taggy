@@ -63,10 +63,14 @@ if ARGV.grep(/--run-rake-task=/).empty?
           reg_exp = []
           for show_type in show_only
             reg_exp << case show_type
-              when 'm', 'models' : 'app\/models'
-              when 'c', 'controllers' : 'app\/controllers'
-              when 'h', 'helpers' : 'app\/helpers'
-              when 'l', 'lib' : 'lib'
+              when 'm': 'app\/models'
+              when 'models' : 'app\/models'
+              when 'c' : 'app\/controllers'
+              when 'controllers' : 'app\/controllers'                
+              when 'h' : 'app\/helpers'
+              when 'helpers' : 'app\/helpers'
+              when 'l' : 'lib'
+              when 'lib' : 'lib'  
               else
                 show_type
             end
