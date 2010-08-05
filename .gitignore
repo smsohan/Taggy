@@ -5,3 +5,4 @@ public/system/**/*
 db/*.sqlite3
 solr/development/**/*
 results/*.xml
+config/database.yml

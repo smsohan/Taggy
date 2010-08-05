@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="1" assertions="1" errors="0" skipped="0" failures="0" name="RelativeWeightTest" time="0.000736">
-  <testcase assertions="1" name="test_the_truth" time="0.00058">
-  </testcase>
-  <system-out>
-  </system-out>
-  <system-err>
-  </system-err>
-</testsuite>
