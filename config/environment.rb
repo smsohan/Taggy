@@ -22,6 +22,7 @@ Rails::Initializer.run do |config|
   config.gem "authlogic"
   config.gem "crummy"
   config.gem "mocha"
+  config.gem 'ci_reporter'
   # config.gem(
   #   'thinking-sphinx',
   #   :lib     => 'thinking_sphinx',
