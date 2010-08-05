@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="3" errors="1" time="0.031663" failures="0" assertions="2" name="UserSessionsControllerTest" skipped="0">
+  <testcase time="0.015519" assertions="1" name="test_create_invalid">
+  </testcase>
+  <testcase time="0.005315" assertions="0" name="test_destroy">
+    <failure type="NoMethodError" message="You have a nil object when you didn't expect it!...">
+You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.destroy (NoMethodError)
+/Users/smsohan/Taggy/app/controllers/user_sessions_controller.rb:20:in `destroy'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:567:in `process_with_test'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:447:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/test_process.rb:413:in `delete'
+./test/functional/user_sessions_controller_test.rb:25:in `test_destroy'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/testing/setup_and_teardown.rb:62:in `__send__'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
+/opt/local/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+/opt/local/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+/opt/local/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+/opt/local/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+/opt/local/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+/opt/local/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+/opt/local/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+/opt/local/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+/opt/local/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+/opt/local/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+/opt/local/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+/opt/local/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+/opt/local/lib/ruby/1.8/test/unit.rb:278
+/opt/local/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5    </failure>
+  </testcase>
+  <testcase time="0.010536" assertions="1" name="test_new">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

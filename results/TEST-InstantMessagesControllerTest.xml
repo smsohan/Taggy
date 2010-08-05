@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="9" errors="0" time="0.298058" failures="0" assertions="10" name="InstantMessagesControllerTest" skipped="0">
+  <testcase time="0.07566" assertions="1" name="test_create_invalid">
+  </testcase>
+  <testcase time="0.007528" assertions="1" name="test_create_valid">
+  </testcase>
+  <testcase time="0.014767" assertions="2" name="test_destroy">
+  </testcase>
+  <testcase time="0.088249" assertions="1" name="test_edit">
+  </testcase>
+  <testcase time="0.016057" assertions="1" name="test_index">
+  </testcase>
+  <testcase time="0.013883" assertions="1" name="test_new">
+  </testcase>
+  <testcase time="0.054322" assertions="1" name="test_show">
+  </testcase>
+  <testcase time="0.017692" assertions="1" name="test_update_invalid">
+  </testcase>
+  <testcase time="0.008977" assertions="1" name="test_update_valid">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

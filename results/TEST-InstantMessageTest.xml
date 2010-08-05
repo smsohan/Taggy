@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="4" assertions="4" errors="0" skipped="0" failures="0" name="InstantMessageTest" time="0.016322">
+  <testcase assertions="1" name="test: InstantMessage should belong to project. " time="0.000974">
+  </testcase>
+  <testcase assertions="1" name="test: InstantMessage should have and belong to many users. " time="0.00162">
+  </testcase>
+  <testcase assertions="1" name="test: as an existing im should call the similarity engine to find the similar stories. " time="0.00982">
+  </testcase>
+  <testcase assertions="1" name="test: as an existing im should return all users as people. " time="0.003406">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

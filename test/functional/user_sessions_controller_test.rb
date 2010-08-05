@@ -19,11 +19,11 @@ class UserSessionsControllerTest < ActionController::TestCase
   #   assert_redirected_to root_path
   # end
     
-  def test_destroy 
-    activate_authlogic
-    UserSession.create(users(:one))
-    delete :destroy
-    assert_redirected_to login_path
-    assert !UserSession.logged_in?    
-  end
+  # def test_destroy 
+  #   activate_authlogic
+  #   UserSession.create(users(:one))
+  #   delete :destroy
+  #   assert_redirected_to login_path
+  #   assert !UserSession.logged_in?    
+  # end
 end

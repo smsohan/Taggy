@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="7" assertions="7" errors="0" skipped="0" failures="0" name="UserTest" time="0.008219">
+  <testcase assertions="1" name="test: User should have many assigned_user_stories. " time="0.000801">
+  </testcase>
+  <testcase assertions="1" name="test: User should have many assignments. " time="0.000694">
+  </testcase>
+  <testcase assertions="1" name="test: User should have many memberships. " time="0.000779">
+  </testcase>
+  <testcase assertions="1" name="test: User should have many messages. " time="0.000583">
+  </testcase>
+  <testcase assertions="1" name="test: User should have many owned_user_stories. " time="0.000666">
+  </testcase>
+  <testcase assertions="1" name="test: User should have many projects. " time="0.001635">
+  </testcase>
+  <testcase assertions="1" name="test: User should have many recipients. " time="0.001833">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

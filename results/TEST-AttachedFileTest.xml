@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="7" assertions="7" errors="0" skipped="0" failures="0" name="AttachedFileTest" time="0.130427">
+  <testcase assertions="1" name="test: AttachedFile should belong to message. " time="0.002656">
+  </testcase>
+  <testcase assertions="1" name="test: AttachedFile should belong to project. " time="0.000589">
+  </testcase>
+  <testcase assertions="1" name="test: AttachedFile should belong to user_story. " time="0.000617">
+  </testcase>
+  <testcase assertions="1" name="test: fon an uploaded attachment should get the contents from solr. " time="0.106247">
+  </testcase>
+  <testcase assertions="1" name="test: fon an uploaded attachment should return the path. " time="0.006682">
+  </testcase>
+  <testcase assertions="1" name="test: fon an uploaded attachment should return the right file name. " time="0.006407">
+  </testcase>
+  <testcase assertions="1" name="test: fon an uploaded attachment should return the right url. " time="0.006323">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

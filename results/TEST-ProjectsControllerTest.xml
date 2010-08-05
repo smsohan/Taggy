@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="9" errors="0" time="0.493104" failures="0" assertions="10" name="ProjectsControllerTest" skipped="0">
+  <testcase time="0.137048" assertions="1" name="test_create_invalid">
+  </testcase>
+  <testcase time="0.02117" assertions="1" name="test_create_valid">
+  </testcase>
+  <testcase time="0.013032" assertions="2" name="test_destroy">
+  </testcase>
+  <testcase time="0.043499" assertions="1" name="test_edit">
+  </testcase>
+  <testcase time="0.030927" assertions="1" name="test_index">
+  </testcase>
+  <testcase time="0.042266" assertions="1" name="test_new">
+  </testcase>
+  <testcase time="0.14954" assertions="1" name="test_show">
+  </testcase>
+  <testcase time="0.044211" assertions="1" name="test_update_invalid">
+  </testcase>
+  <testcase time="0.010453" assertions="1" name="test_update_valid">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

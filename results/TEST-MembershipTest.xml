@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="3" assertions="3" errors="0" skipped="0" failures="0" name="MembershipTest" time="0.002466">
+  <testcase assertions="1" name="test: Membership should belong to project. " time="0.000933">
+  </testcase>
+  <testcase assertions="1" name="test: Membership should belong to role. " time="0.00054">
+  </testcase>
+  <testcase assertions="1" name="test: Membership should belong to user. " time="0.000588">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="9" errors="0" time="0.146437" failures="0" assertions="10" name="SprintsControllerTest" skipped="0">
+  <testcase time="0.023997" assertions="1" name="test_create_invalid">
+  </testcase>
+  <testcase time="0.007053" assertions="1" name="test_create_valid">
+  </testcase>
+  <testcase time="0.009347" assertions="2" name="test_destroy">
+  </testcase>
+  <testcase time="0.022423" assertions="1" name="test_edit">
+  </testcase>
+  <testcase time="0.013351" assertions="1" name="test_index">
+  </testcase>
+  <testcase time="0.021193" assertions="1" name="test_new">
+  </testcase>
+  <testcase time="0.020979" assertions="1" name="test_show">
+  </testcase>
+  <testcase time="0.021023" assertions="1" name="test_update_invalid">
+  </testcase>
+  <testcase time="0.006227" assertions="1" name="test_update_valid">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="7" assertions="7" errors="0" skipped="0" failures="0" name="ProjectTest" time="0.010048">
+  <testcase assertions="1" name="test: Project should have many instant_messages. " time="0.001094">
+  </testcase>
+  <testcase assertions="1" name="test: Project should have many memberships. " time="0.000637">
+  </testcase>
+  <testcase assertions="1" name="test: Project should have many messages. " time="0.000628">
+  </testcase>
+  <testcase assertions="1" name="test: Project should have many sprints. " time="0.000709">
+  </testcase>
+  <testcase assertions="1" name="test: Project should have many user_stories. " time="0.000735">
+  </testcase>
+  <testcase assertions="1" name="test: Project should have many users. " time="0.00062">
+  </testcase>
+  <testcase assertions="1" name="test: Project should only allow numeric values for sprint_length. " time="0.004846">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="9" assertions="9" errors="0" skipped="0" failures="0" name="MessageTest" time="0.014806">
+  <testcase assertions="1" name="test: Message should belong to project. " time="0.000869">
+  </testcase>
+  <testcase assertions="1" name="test: Message should belong to sender. " time="0.00058">
+  </testcase>
+  <testcase assertions="1" name="test: Message should have many attached_files. " time="0.000825">
+  </testcase>
+  <testcase assertions="1" name="test: Message should have many recipients. " time="0.000719">
+  </testcase>
+  <testcase assertions="1" name="test: Message should have many user_stories. " time="0.000792">
+  </testcase>
+  <testcase assertions="1" name="test: Message should have many user_story_message_links. " time="0.000795">
+  </testcase>
+  <testcase assertions="1" name="test: Message should have many users. " time="0.000563">
+  </testcase>
+  <testcase assertions="1" name="test: Message should require sender to be set. " time="0.00592">
+  </testcase>
+  <testcase assertions="1" name="test: Message should require subject to be set. " time="0.002859">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>
