@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100722204130) do
+ActiveRecord::Schema.define(:version => 20100818165858) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id"
@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(:version => 20100722204130) do
     t.string   "from"
     t.string   "to"
     t.string   "cc"
+    t.string   "jazz_id"
   end
 
   create_table "projects", :force => true do |t|
@@ -113,6 +114,7 @@ ActiveRecord::Schema.define(:version => 20100722204130) do
     t.datetime "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "jazz_id"
   end
 
   create_table "user_stories", :force => true do |t|
@@ -127,6 +129,7 @@ ActiveRecord::Schema.define(:version => 20100722204130) do
     t.string   "attachment_content_type"
     t.integer  "attachment_file_size"
     t.datetime "attachment_updated_at"
+    t.string   "jazz_id"
   end
 
   add_index "user_stories", ["description"], :name => "description"

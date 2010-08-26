@@ -1,9 +1,9 @@
 class Project < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :pop3_server, :pop3_port, :pop3_enable_ssl, :instant_messenger_name, :instant_messenger_user
+  attr_accessible :name, :email, :password, :pop3_server, :pop3_port, :pop3_enable_ssl, :instant_messenger_name, :instant_messenger_user, :sprint_length
   has_many :memberships, :dependent => :destroy
   has_many :users, :through => :memberships
   has_many :sprints
-  has_many :user_stories
+  has_many :user_stories, :dependent => :destroy
   has_many :messages, :dependent => :destroy
   has_many :instant_messages
   

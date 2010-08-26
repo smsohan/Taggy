@@ -32,6 +32,7 @@ Rails::Initializer.run do |config|
   config.gem 'paperclip', :source => 'http://rubygems.org'
   
   config.gem "mail"
+  config.gem "curb"
   
   config.gem 'chronic'
   config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'

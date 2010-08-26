@@ -1,5 +1,6 @@
 class Message < ActiveRecord::Base
   include ActionView::Helpers::TextHelper
+  DEFAULT_LEARNING_SET_SIZE=30
 
   attr_accessible :subject, :body, :from_user_id, :project_id, :user_story_id, :created_at, :user_ids, :user_story_ids, :attached_files_attributes
   belongs_to :project
@@ -17,8 +18,8 @@ class Message < ActiveRecord::Base
   default_scope :order => 'created_at DESC'
   
   validates_presence_of :user_ids, :if => Proc.new{|message| message.to.blank?}, :message => "Please select one/more recipient(s) (To)"
-  validates_presence_of :subject
-  validates_presence_of :sender, :if => Proc.new{|message| message.from.blank?}
+  validates_presence_of :subject, :message => 'Subject is required'
+  validates_presence_of :sender, :if => Proc.new{|message| message.from.blank?},  :message => 'Sender is required'
   
   accepts_nested_attributes_for :attached_files
     
@@ -50,57 +51,60 @@ class Message < ActiveRecord::Base
     SimilarityEngine::Learners::ReinforcementLearner.new(false).learn_relative_weights data
   end
   
-  def self.evaluate_using messages_for_evaluating
-    
-    raise 'No Evaluation data found for the given arguments' if messages_for_evaluating.blank?
-    
-    correct = 0
-    guess = 0
-    
-    messages_for_evaluating.each do |message|
-      stories = message.find_similar_stories()
-      guess +=1 if stories.present?
-      
-      if stories.blank? & message.user_stories.blank? || (stories & message.user_stories).present?
-        correct += 1
-        print "."
-      else
-        print "(#{message.id})"
-      end
-    end
-    
-    actually_linked_messages_count = messages_for_evaluating.select{|m| m.user_stories.present? }.length
-    
-    puts "Evalution Results:"
-    puts "Total Messages = " << messages_for_evaluating.length.to_s
-    puts "Actually Linked = " << actually_linked_messages_count.to_s
-    puts "Total Guessed = "  << guess.to_s
-    puts "Correct = " << correct.to_s
-    puts "Accuracy = " << (correct*100/messages_for_evaluating.length).to_s << " %"
+  def self.auto_tag per_project_limit_percent_for_learning=DEFAULT_LEARNING_SET_SIZE    
+    projects = Project.find [2, 3, 4]
+    learn_tagging projects
+    evaluate_tagging projects    
   end
   
-  def self.auto_tag per_project_limit_percent_for_learning = 30
-    
-    projects = Project.find [2, 3, 4]
-    # Learn
+  def self.learn_tagging projects, per_project_limit_percent_for_learning=DEFAULT_LEARNING_SET_SIZE
     messages_for_learning = []
     projects.each do |project|
       limit = project.messages.count * per_project_limit_percent_for_learning / 100
       puts "Project=#{project.id} limit=#{limit}"
       messages_for_learning += project.messages.find(:all, :limit => limit)
     end
-    self.learn_using messages_for_learning
-    
-    
-    # Evaluate
+    self.learn_using messages_for_learning    
+  end
+         
+  def self.evaluate_tagging projects, per_project_limit_percent_for_learning=DEFAULT_LEARNING_SET_SIZE
     messages_for_evaluating = []
     evaluating_offset_percent = per_project_limit_percent_for_learning
     projects.each do |project|
       offset = evaluating_offset_percent * project.messages.count / 100
       limit = (100 - evaluating_offset_percent) * project.messages.count / 100
-      messages_for_evaluating += project.messages.find(:all, :offset => offset, :limit => limit)
-    end    
-    self.evaluate_using messages_for_evaluating    
+      
+      guess = 0
+      actually_linked = 0
+      message_count = 0
+      correct = 0
+      project.messages.find(:all, :offset => offset, :limit => limit).each do |message|
+        message_count += 1
+        
+        stories = message.find_similar_stories()
+        
+        guess +=1 if stories.present?
+        is_linked = message.user_stories.present?
+        
+        actually_linked += 1 if is_linked
+
+        if (stories & message.user_stories).present? || (stories.blank? & !is_linked)
+          correct += 1
+          print "."
+        else
+          print "(#{message.id})"
+        end
+        STDOUT.flush
+      end
+      puts "======"
+      puts "Project: #{project.name} Accuracy: #{correct * 100 / message_count} %"
+      puts "Evaluation Messages: #{message_count}"
+      puts "Correct Tagging: #{correct}"
+      
+      puts "Actually Linked Messages: #{actually_linked}"
+      puts "Auto-Tagged Messages: #{guess}"
+
+    end
   end
   
   def people

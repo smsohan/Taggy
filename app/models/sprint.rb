@@ -1,5 +1,5 @@
 class Sprint < ActiveRecord::Base
-  attr_accessible :name, :project_id, :start_date, :end_date
+  attr_accessible :name, :project_id, :start_date, :end_date, :jazz_id
   validates_presence_of :start_date
   validates_presence_of :end_date
   belongs_to :project
