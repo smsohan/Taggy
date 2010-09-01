@@ -78,7 +78,7 @@ class Message < ActiveRecord::Base
       actually_linked = 0
       message_count = 0
       correct = 0
-      project.messages.find(:all, :offset => offset, :limit => limit).each do |message|
+      project.messages.find(:all, :offset => offset, :limit => limit, :include => :user_stories).each do |message|
         message_count += 1
         
         stories = message.find_similar_stories()
@@ -119,7 +119,7 @@ class Message < ActiveRecord::Base
   end
   
   def body_with_attachment_content
-    body + attached_files.collect{|af| af.content}.join(' ')
+    (body || '') + attached_files.collect{|af| af.content}.join(' ')
   end
   
   def self.create_from_email!(project, should_save=true)

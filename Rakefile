@@ -23,7 +23,15 @@ namespace :taggy do
     puts "Evaluating Taggy for projects: #{project_ids}"
     projects = Project.find(project_ids)
     offset = ENV['o'] || ENV['offset'] || 0
-    Message.evaluate_tagging projects, offset
+    offset = offset.to_i
+    begin
+      Message.evaluate_tagging projects, offset
+    rescue Exception => error
+      Rails.logger.error "Exception in evaluating"
+      Rails.logger.error error.backtrace.join(" ")
+      puts error.message
+    end
+    
     Rails.logger.level = 0
   end  
 end
@@ -34,7 +42,7 @@ namespace :jazz do
     id =  ENV["id"] || ENV["sprint"]
     sprint = Sprint.find(id)
     puts "Importing sprint work items from Jazz for #{sprint.project.name}: #{sprint.name}"
-    Jazz::Importer.new.import_iteration_work_items sprint.jazz_id
+    Jazz::Importer.new.import_iteration_work_items sprint.project_id, sprint.jazz_id
     puts "Completed importing #{sprint.user_stories.count} user stories"
     Rails.logger.level = 0
   end

@@ -6,17 +6,17 @@ module Jazz
     PASSWORD='ADMIN'
     HOST="https://localhost:9443/jazz"      
     PROJECT_ID="_1w8aQEmJEduIY7C8B09Hyw"
-    TAGGY_PROJECT_ID=10
+    
     
     # 8 - APT
     # 9 - Build
     # 10 - CC connector
     
-    def import_iteration_work_items iteration_id
+    def import_iteration_work_items taggy_project_id, iteration_id
       Rails.logger.level = 3
       connect
       login
-      fetch_iteration_work_items iteration_id
+      fetch_iteration_work_items taggy_project_id, iteration_id
       # CC M2 _HYdHMBVkEdyq7rav1hbatA
       # CC M1 _iRG6gOeXEdulCayttQeANg
       # 0.6 m1 APT 	_83nnkOEfEduUIrOBRKwTTQ
@@ -25,11 +25,7 @@ module Jazz
       #Build M9 All '_uEg0cGTwEdu4dKFiuNZX2w' # Agile M9 All => "_JnQq4GKYEduf2b5WGb3T1Q"
       Rails.logger.level = 0
     end
-    
-    def self.do iteration_id
-      self.new.import_iteration_work_items iteration_id
-    end
-    
+        
     def curl
       return @curl if @curl
       @curl = Curl::Easy.new
@@ -55,19 +51,19 @@ module Jazz
       curl.body_str
     end
     
-    def fetch_iteration_work_items iteration_id
+    def fetch_iteration_work_items taggy_project_id, iteration_id
       #https://localhost:9443/jazz/service/com.ibm.team.apt.internal.service.rest.IPlanRestService/plannedWorkItems?planId=_JnQq4GKYEduf2b5WGb3T1Q&projectAreaId=_1w8aQEmJEduIY7C8B09Hyw"
       curl.url = "#{HOST}/service/com.ibm.team.apt.internal.service.rest.IPlanRestService/plannedWorkItems?planId=#{iteration_id}&projectAreaId=#{PROJECT_ID}"
       curl.http_get
       doc = Document.new curl.body_str
       work_item_ids = doc.elements.collect("//workItems/workItemId") { |work_item_id| work_item_id.text }
       
-      sprint_id = Project.find(TAGGY_PROJECT_ID).sprints.find_by_jazz_id(iteration_id).id
+      sprint_id = Project.find(taggy_project_id).sprints.find_by_jazz_id(iteration_id).id
       
       
       work_item_ids.each do |work_item_id| 
         story = UserStory.new
-        story.project_id = TAGGY_PROJECT_ID
+        story.project_id = taggy_project_id
         story.sprint_id = sprint_id        
         populate_user_story(story, work_item_id)
         story.save!
