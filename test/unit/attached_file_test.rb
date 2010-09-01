@@ -39,7 +39,7 @@ class AttachedFileTest < ActiveSupport::TestCase
     end
     
     teardown do
-      Mocha::Mockery.instance.stubba.unstub_all
+      # Mocha::Mockery.instance.stubba.unstub_all
     end
     
   end
