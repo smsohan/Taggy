@@ -22,7 +22,6 @@ module SimilarityEngine
         filtered_user_stories = message.project.user_stories.worked_in(sprint_ids) + message.project.user_stories.sprintless
         Rails.logger.debug "user stories = #{filtered_user_stories}"
         
-        
         subject_scores = subject_similarity_scores(filtered_user_stories, message)
         body_scores = body_similarity_scores(filtered_user_stories, message)
         date_scores = date_similarity_scores(filtered_user_stories, message)
@@ -45,14 +44,6 @@ module SimilarityEngine
         end        
                 
         above_threshold_scores.sort_by{|score| -score.total_score(relative_weight)}                
-      end
-      
-      def similarity_score_between user_story, message
-        people_score  = (self.relative_weight.people_weight == 0) ? 0 : people_similarity_score(user_story, message)
-        date_score    = (self.relative_weight.date_weight == 0) ? 0 : date_similarity_score(user_story, message)
-        subject_score = (self.relative_weight.subject_weight == 0) ? 0 : subject_similarity_score(user_story, message)
-        body_score    = (self.relative_weight.body_weight == 0) ? 0 : body_similarity_score(user_story, message)
-        SimilarityEngine::SimilarityScore.new(user_story, people_score, date_score, subject_score, body_score)
       end
       
       def people_similarity_scores user_stories, message

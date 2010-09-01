@@ -10,17 +10,13 @@ module SimilarityEngine
         self.relative_weight = InstantMessageRelativeWeight.instance
         @verbose = verbose
       end
-            
-      def similarity_score_between user_story, instant_message
-        people_score  = people_similarity_score(user_story, instant_message)
-        date_score    = date_similarity_score(user_story, instant_message)
-        subject_score = 0
-        body_score    = body_similarity_score(user_story, instant_message)
-        SimilarityEngine::SimilarityScore.new(user_story, people_score, date_score, subject_score, body_score)
-      end
       
-      def body_similarity_score user_story, instant_message
-        text_similarity_for_query user_story, instant_message.content, 0.3
+      def subject_similarity_scores(filtered_user_stories, instant_message)
+        score_hash(filtered_user_stories)
+      end
+
+      def body_similarity_scores user_stories, instant_message
+        text_similarity_for_query user_stories, instant_message.content, 0.3
       end
       
     end
