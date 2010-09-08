@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :attached_files
   map.resources :instant_messages
 
   map.resources :messages

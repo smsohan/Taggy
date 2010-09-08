@@ -34,7 +34,7 @@ class Project < ActiveRecord::Base
   end
   
   def self.grab_all_emails!
-    Project.all.each do |project|
+    Project.find(:all, :conditions => 'email IS NOT NULL').each do |project|
       begin
         project.grab_emails!
         logger.debug "Grabbed emails for project #{project.name}"

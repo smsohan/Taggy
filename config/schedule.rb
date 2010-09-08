@@ -1,4 +1,4 @@
-set :path, '/Users/smsohan/thesis/emailable' 
+set :path, '/Users/smsohan/Taggy' 
 set :environment, :development
 
 every 1.minute do

@@ -5,7 +5,7 @@ class AttachedFile < ActiveRecord::Base
   belongs_to :user_story  
   
   has_attached_file :file, 
-              :url => "attached_files/:id", 
+              :url => "/attached_files/:id", 
               :path => ":rails_root/public/system/attached_files/:id/:basename.:extension"
               
   validates_presence_of :name, :message => 'of Attached file cannot be blank'
