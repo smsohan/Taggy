@@ -33,7 +33,7 @@ end
 namespace :solr do
   desc "stop and start solr server."
   task :restart, :roles => :app do
-    run "cd #{release_path} && sudo rake solr:stop && sudo rake solr:start"
+    run "cd #{release_path} && sudo rake solr:stop RAILS_ENV=#{rails_env} && sudo rake solr:start RAILS_ENV=#{rails_env}"
   end
 end
 
