@@ -22,12 +22,6 @@ Rails::Initializer.run do |config|
   config.gem "authlogic"
   config.gem "crummy"
   config.gem "mocha"
-  # config.gem 'ci_reporter'
-  # config.gem(
-  #   'thinking-sphinx',
-  #   :lib     => 'thinking_sphinx',
-  #   :version => '1.3.16'
-  # )
   
   config.gem 'paperclip', :source => 'http://rubygems.org'
   
