@@ -57,7 +57,7 @@ namespace :deploy do
   
   desc "Symlink shared files and directories."
   task :symlink_shared_files_and_dirs do
-    run "ln -s #{shared_path}/config/database_.yml #{release_path}/config/database.yml"
+    run "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
 
 end
