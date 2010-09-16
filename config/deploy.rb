@@ -51,7 +51,6 @@ namespace :deploy do
   before "deploy", "deploy:cleanup"
   %w(start restart).each { |name| task name do passenger.restart end }
   after "deploy:update_code", "deploy:symlink_shared_files_and_dirs"
-  # after "deploy:symlink_shared_files_and_dirs", "gems:install"
   after "deploy:symlink_shared_files_and_dirs", "solr:restart"
   after "solr:restart", "crontab:update"
   
