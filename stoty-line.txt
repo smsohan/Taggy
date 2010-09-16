@@ -1,0 +1,4 @@
+If you are following scrum, xp or a similar agile process, you break down your project development into small iterations of a few weeks.
+
+To start an iteration, you agree on the iteration backlog, a list of user stories to complete within the decided time.
+

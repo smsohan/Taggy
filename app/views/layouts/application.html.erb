@@ -16,7 +16,7 @@
 				</div>
 				<div class="avatar">					
 					<% if UserSession.logged_in? %>
-						<%= link_to gravatar_for(UserSession.current_user, :alt => UserSession.current_user.name), edit_user_path(UserSession.current_user) %><br/>			
+						<%= link_to 'Edit profile', edit_user_path(UserSession.current_user) %><br/>									
 						<%= link_to "Logout", logout_path %>                          
 					<% end %>
 				</div>            

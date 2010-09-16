@@ -1,0 +1,21 @@
+Target size: 100 respondents, min 15 companies, min 2 countries
+5 pt. likert scale
+
+Taggy will help:
+New team members working on projects
+Fixing bugs
+Testing user stories
+Providing answers to customer questions
+Managing knowledge for reuse
+
+Taggy will be generally useful for agile projects.
+
+
+Name
+City
+Your company
+Your role
+# of years experience
+Agile?
+Rank the tools that you use for customer collaboration about user stories
+	1,2,3,4,5 -- Email, IM, Wiki, Message Threads/Forums, Twitter, Blog

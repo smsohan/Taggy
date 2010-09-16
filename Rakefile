@@ -33,7 +33,32 @@ namespace :taggy do
     end
     
     Rails.logger.level = 0
-  end  
+  end
+
+  task :stats => [:environment] do
+    Rails.logger.level = 3
+    
+    puts "Total projects: #{Project.count}"
+    puts "Total user stories: #{UserStory.count}"
+    puts "Total messages: #{Message.count}"
+    puts "Total users: #{User.count}"
+    puts "Total sprints: #{Sprint.count}"
+    
+    puts "Relative weights: #{RelativeWeight.first.to_s}"    
+    
+    
+    Project.all.each do |project|
+      puts "---"
+      puts "Project: #{project.name}"
+      puts "User Stories: #{project.user_stories.count}"
+      puts "Messages: #{project.messages.count}"
+      puts "Sprints: #{project.sprints.count}"
+      puts "Sprints: #{project.users.count}"
+    end
+                    
+    Rails.logger.level = 0
+  end
+  
 end
 
 namespace :jazz do
@@ -47,3 +72,5 @@ namespace :jazz do
     Rails.logger.level = 0
   end
 end
+
+
