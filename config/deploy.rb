@@ -33,14 +33,14 @@ end
 namespace :solr do
   desc "stop and start solr server."
   task :restart, :roles => :app do
-    run "sudo rake solr:stop && sudo rake solr:start"
+    run "cd #{release_path} && sudo rake solr:stop && sudo rake solr:start"
   end
 end
 
 namespace :gems do
   desc "install gems."
   task :install, :roles => :app do
-    run "sudo rake gems:install"
+    run "cd #{release_path} && sudo rake gems:install"
   end
 end
 
