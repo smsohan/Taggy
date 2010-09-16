@@ -59,6 +59,11 @@ namespace :taggy do
     Rails.logger.level = 0
   end
   
+  def :test => [:environment]  do
+    message = Message.find(ENV["id"])
+    puts message.find_similar_stories(true).inspect
+  end
+  
 end
 
 namespace :jazz do
