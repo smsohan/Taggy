@@ -15,7 +15,7 @@ namespace :solr do
     rescue Net::HTTPServerException #responding
       puts "Port #{SOLR_PORT} in use" and return
 
-    rescue Errno::ECONNREFUSED #not responding
+    rescue Errno::ECONNREFUSED, NoMethodError #not responding
       Dir.chdir(SOLR_PATH) do
         pid = fork do
           #STDERR.close
@@ -25,8 +25,6 @@ namespace :solr do
         File.open("#{SOLR_PIDS_PATH}/#{ENV['RAILS_ENV']}_pid", "w"){ |f| f << pid}
         puts "#{ENV['RAILS_ENV']} Solr started successfully on #{SOLR_PORT}, pid: #{pid}."
       end
-    rescue NoMethodError #not responding
-      puts '.'
     end    
   end
   
