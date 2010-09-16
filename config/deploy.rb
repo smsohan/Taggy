@@ -4,7 +4,7 @@ task :production do
   set :deploy_to,   "/taggy"
   set :use_sudo,    true
   set :scm_verbose, true
-  set :user,        "ubuntu"
+  set :user,        "www-data"
   set :domain,      "ec2-204-236-140-199.us-west-1.compute.amazonaws.com"
   set :scm,         :git
   set :branch,      "master"
