@@ -52,7 +52,7 @@ namespace :deploy do
   %w(start restart).each { |name| task name do passenger.restart end }
   after "deploy:update_code", "deploy:symlink_shared_files_and_dirs"
   # after "deploy:symlink_shared_files_and_dirs", "gems:install"
-  after "gems:install", "solr:restart"
+  after "deploy:symlink_shared_files_and_dirs", "solr:restart"
   after "solr:restart", "crontab:update"
   
   desc "Symlink shared files and directories."
