@@ -4,12 +4,13 @@ task :production do
   set :deploy_to,   "/taggy"
   set :use_sudo,    false
   set :scm_verbose, true
-  set :user,        "www-data"
+  set :user,        "ubuntu"
   set :domain,      "ec2-204-236-140-199.us-west-1.compute.amazonaws.com"
   set :scm,         :git
   set :branch,      "master"
   set :repository,  "git@github.com:smsohan/Taggy.git"
   set :deploy_via,  :remote_cache  
+  ssh_options[:keys] = %w(~/.ssh/id_amazon)
   
   server             domain, :app, :web
   role               :db, domain, :primary => true
