@@ -2,7 +2,7 @@ task :production do
   set :rails_env,   "production"
   set :application, "taggy"
   set :deploy_to,   "/taggy"
-  set :use_sudo,    true
+  set :use_sudo,    false
   set :scm_verbose, true
   set :user,        "www-data"
   set :domain,      "ec2-204-236-140-199.us-west-1.compute.amazonaws.com"
