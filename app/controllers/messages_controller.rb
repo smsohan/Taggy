@@ -44,6 +44,8 @@ class MessagesController < ApplicationController
     params[:message][:user_ids] ||= []
     params[:message][:user_story_ids] ||= []
     @message = Message.new(params[:message])
+    
+    @message.attached_files.each{|file| @message.attached_files.delete(file) unless file.valid?}
     unless Rails.env == 'development'
       @message.created_at = Time.now
       @message.sender = UserSession.current_user 
