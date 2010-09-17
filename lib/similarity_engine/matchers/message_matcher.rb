@@ -60,7 +60,7 @@ module SimilarityEngine
         common_people = message_people & user_story_people
         
         score = nil        
-        score = 1 if common_people.length == user_story_people.length
+        score = 1 if common_people.uniq.length == user_story_people.uniq.length
         
         score = (common_people.length * 1.0 / user_story_people.length) if common_people.present? && common_people.length < user_story_people.length
         
