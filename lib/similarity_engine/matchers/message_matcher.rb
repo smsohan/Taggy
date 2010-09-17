@@ -55,7 +55,7 @@ module SimilarityEngine
       end
       
       def people_similarity_score user_story, message        
-        user_story_people = user_story.people
+        user_story_people = user_story.people.uniq
         message_people = message.people.uniq
         common_people = message_people & user_story_people
         common_people = common_people.uniq
