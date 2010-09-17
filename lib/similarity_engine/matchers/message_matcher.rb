@@ -18,9 +18,11 @@ module SimilarityEngine
       def scores_for_matched_user_stories message
         sprint_ids = message.project.sprints.nearby(message.created_at.to_date).find(:all, :select => 'id')
         Rails.logger.debug "Sprint ids = #{sprint_ids.inspect}"
+        puts("Sprint ids = #{sprint_ids.inspect}") if @verbose
         
         filtered_user_stories = message.project.user_stories.worked_in(sprint_ids) + message.project.user_stories.sprintless
         Rails.logger.debug "user stories = #{filtered_user_stories}"
+        puts ("user stories = #{filtered_user_stories}") if @verbose
         
         subject_scores = subject_similarity_scores(filtered_user_stories, message)
         body_scores = body_similarity_scores(filtered_user_stories, message)
@@ -36,7 +38,7 @@ module SimilarityEngine
                                                         date_scores[user_story.id], 
                                                         subject_scores[user_story.id], 
                                                         body_scores[user_story.id])
-          
+          puts score if @verbose
           if(score.total_score(relative_weight) > THRESHOLD)
             above_threshold_scores << score 
             puts score if @verbose
