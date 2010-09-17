@@ -56,11 +56,12 @@ module SimilarityEngine
       
       def people_similarity_score user_story, message        
         user_story_people = user_story.people
-        message_people = message.people
+        message_people = message.people.uniq
         common_people = message_people & user_story_people
+        common_people = common_people.uniq
         
         score = nil        
-        score = 1 if common_people.uniq.length == user_story_people.uniq.length
+        score = 1 if common_people.length == user_story_people.length
         
         score = (common_people.length * 1.0 / user_story_people.length) if common_people.present? && common_people.length < user_story_people.length
         
