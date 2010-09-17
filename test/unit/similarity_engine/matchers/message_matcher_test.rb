@@ -56,9 +56,10 @@ module SimilarityEngine
       end 
                          
       def test_people_similarity_is_half_when_one_of_two_are_people
-        one = User.new
-        two = User.new
-        test_people_score one, [two], [one, User.new], 0.5
+        one = users(:one)
+        two = users(:two)
+        another = User.new
+        test_people_score one, [two], [one, another], 0.5
       end
       
       private

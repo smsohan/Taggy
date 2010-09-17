@@ -91,6 +91,8 @@ div.banner{
 	border-bottom: 1px solid  #4B7399;
 	padding: 5px;
 	vertical-align: top;
+	-moz-border-radius: 0; 
+	-webkit-border-radius: 0;
 }               
 
 div.banner div.name div.tagline{

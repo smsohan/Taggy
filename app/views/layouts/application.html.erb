@@ -35,9 +35,11 @@
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <%- end -%>
 			
-			<div class="crumbs">
-	      <%= render_crumbs %>
-			</div>
+			<%if UserSession.logged_in? %>
+				<div class="crumbs">
+		      <%= render_crumbs %>
+				</div>
+			<%end%>
 
       <%- if show_title? -%>
         <h2><%=h yield(:title) %></h2>
