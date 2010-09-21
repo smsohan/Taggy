@@ -263,3 +263,7 @@ div.instant_message{
 	padding: 5px;
 	margin: 5px 0;
 }
+div.message_meta, div.user_story_meta{
+  font-size: 0.8em;
+  color: #555555;
+}

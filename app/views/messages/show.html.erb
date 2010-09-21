@@ -2,23 +2,21 @@
 
 <%= link_to 'Post a Reply', new_message_path(:old_message_id => @message.id)  %>
 
-<p>
-  <strong>Sent at:</strong>
-  <%=h @message.created_at %>
-</p>
+<div class="message_meta">
+	<p>
+	<%= @message.created_at.strftime("%I:%M %p on %B %d, %Y") %> <%=h @message.sender.name %> wrote to <%=h @message.users.collect{|user| user.name}.join(', ') %>
+	</p>
+</div>
 
-<p>
-  <strong>From:</strong>
-  <%=h @message.sender.name %>
-</p>
-<p>
-  <strong>To:</strong>
-  <%=h @message.users.collect{|user| user.name}.join(', ') %>
-</p>
 
 <p>
   <strong>Subject:</strong>
   <%=h @message.subject %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%=formatted @message.body %>
 </p>
 
 <p> 
@@ -28,10 +26,6 @@
 	<% end %>
 </p>
 
-<p>
-  <strong>Body:</strong>
-  <%=formatted @message.body %>
-</p>
 
 <h3>Related User Stories</h3>
 <%= render(:partial => 'user_stories/show', :collection => @message.user_stories, :as => :user_story) ||
