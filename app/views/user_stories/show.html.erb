@@ -15,7 +15,7 @@
 <div class="user_story_meta">
 	<strong>Sprint:</strong>
 	<% if @user_story.sprint.present? %>
-	  <%=link_to (h(@user_story.sprint.name) << ", "  << @user_story.sprint.pretty_duration, sprint_path(@user_story.sprint))%>
+	  <%=link_to(h(@user_story.sprint.name) << ", "  << @user_story.sprint.pretty_duration, sprint_path(@user_story.sprint))%>
 	<% else %>
 		 None
 	<% end %>
