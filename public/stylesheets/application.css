@@ -1,7 +1,12 @@
 body {
   background-color: #222222;
-  font-family: Verdana, Helvetica, Arial;
-  font-size: 14px;
+  font-family: Georgia, Verdana, Helvetica, Arial;
+  font-size: 16px;
+}
+
+h2, h3{
+  font-family: Helvetica, sans-serif;
+  color: #3671A1;
 }
 
 a img {
@@ -115,6 +120,8 @@ div.project_selector{
 	border-bottom: 1px solid  #4B7399;
 	padding: 5px;
 	font-size: 1.2em;
+	-moz-border-radius: 0; 
+	-webkit-border-radius: 0;	
 }
 
 div.project_selector select{
@@ -134,6 +141,10 @@ div.people{
 	padding-left: 10px;
 }          
 
+div.people ul li{
+  display: inline;
+}          
+
 div.spacer{
 /*	border-bottom: 1px solid  #4B7399;*/
 	width: 100%;
@@ -141,13 +152,22 @@ div.spacer{
 	margin-bottom: 10px;
 }
 
+h2{
+  padding: 3px;
+	-moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;
+  font-size: 1em;
+}
+
 h3{
-	background-color: #BBBBBB;
+	background-color: #EEEEEE;
 	padding: 3px;
 	-moz-border-radius: 5px; 
-  	-webkit-border-radius: 5px;
-	border: 1px solid #BBBBBB;  
+  -webkit-border-radius: 5px;
+	border: 1px solid #EEEEEE;  
+  font-size: 0.9em;
 }
+
 
 div{
 	-moz-border-radius: 5px; 
@@ -163,11 +183,11 @@ h3 a, h4 a{
 }
 
 .people h4{
-	background-color: #DDDDDD;
+	background-color: #EEEEEE;
 	padding: 3px;
 	-moz-border-radius: 5px; 
   	-webkit-border-radius: 5px;	
-	border: 1px solid #DDDDDD;
+	border: 1px solid #EEEEEE;
 }
 
 div.user_story, div.message{
@@ -184,9 +204,10 @@ div.user_story div.description, div.message div.body{
 }
 
 div.user_story div.meta, div.message div.meta{
-	font-size: 0.8em;
+	font-size: 0.7em;
 	font-style: italic;
-	background-color: #E8E8E8;
+	color: #555555;
+/*  background-color: #E8E8E8;*/
 }
 
 div.empty_list{
@@ -228,6 +249,8 @@ div.banner div.name a{
 
 div.crumbs{
 	padding: 5px;
+	font-size: 0.8em;
+	color: #555;
 }
 
 div.development_content{
