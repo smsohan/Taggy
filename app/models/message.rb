@@ -145,7 +145,10 @@ class Message < ActiveRecord::Base
       populate_message_from_email(message, mail)
       new_messages << message
             
-      message.save! if should_save
+      if should_save
+        message.save!
+        message.auto_tag!
+      end
       
     end
     new_messages
