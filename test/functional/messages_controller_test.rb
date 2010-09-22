@@ -7,7 +7,7 @@ class MessagesControllerTest < ActionController::TestCase
   end
   
   def test_show
-    get :show, :id => Message.first
+    get :show, :id => Message.first.id
     assert_template 'show'
   end
   
@@ -29,25 +29,25 @@ class MessagesControllerTest < ActionController::TestCase
   end
   
   def test_edit
-    get :edit, :id => Message.first
+    get :edit, :id => Message.first.id
     assert_template 'edit'
   end
   
   def test_update_invalid
     Message.any_instance.stubs(:valid?).returns(false)
-    put :update, :id => Message.first, :message => {:project_id => projects(:one).id}
+    put :update, :id => Message.first.id, :message => {:project_id => projects(:one).id}
     assert_template 'edit'
   end
   
   def test_update_valid
     Message.any_instance.stubs(:valid?).returns(true)
-    put :update, :id => Message.first, :message => {:project_id => projects(:one).id}
+    put :update, :id => Message.first.id, :message => {:project_id => projects(:one).id}
     assert_redirected_to message_url(assigns(:message))
   end
   
   def test_destroy
     message = Message.first
-    delete :destroy, :id => message
+    delete :destroy, :id => message.id
     assert_redirected_to project_messages_url(message.project)
     assert !Message.exists?(message.id)
   end        

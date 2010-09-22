@@ -1,5 +1,5 @@
 class UserSessionsController < ApplicationController
-
+  skip_before_filter :login_required, :only => [:new, :create]
   def new
     redirect_to(projects_path) if UserSession.logged_in?
     @user_session = UserSession.new    

@@ -7,7 +7,15 @@ class ApplicationController < ActionController::Base
   
   filter_parameter_logging :password
   
-  before_filter 
+  before_filter :login_required
   
   add_crumb 'Home', '/'
+  
+  protected
+  def login_required
+    unless UserSession.logged_in?
+      flash.now[:error] = 'Please login to proceed.'
+      redirect_to login_path
+    end
+  end
 end

@@ -100,15 +100,16 @@ div.banner{
 	-webkit-border-radius: 0;
 }               
 
-div.banner div.name div.tagline{
-	color: red;
-	font-style: italic;
-	padding-bottom: 10px;
+div.banner div.name{
+  width: 85%;
+  float: left;
 }
 
 div.avatar{
 	float: right;
-	width: 10%;
+	width: 15%;
+	float: left;
+	font-size: 0.9em;
 }
 
 div.clear{
@@ -230,21 +231,8 @@ shadow{
   -webkit-box-shadow: 5px 5px 5px #ccc;
 }
 
-div.banner div.name{
-	font-family: Courier, Verdana;
-	font-size: 2em;
-	width: 90%;
-	float: left;	
-}                  
-
-div.banner div.name h1{
-	clear: left;
-	line-height: 0.5em;
-}   
-
 div.banner div.name a{
 	text-decoration: none;
-	color: #111111;
 }
 
 div.crumbs{

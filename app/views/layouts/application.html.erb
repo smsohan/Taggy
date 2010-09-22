@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
+    <title>Taggy - <%= h(yield(:title) || "Untitled") %></title>
     <%= stylesheet_link_tag 'application' %>
 		<%= javascript_include_tag :defaults %>
     <%= yield(:head) %>
@@ -11,8 +11,7 @@
     <div id="container">
 			<div class="banner">
 				<div class="name">
-					<h1><%= link_to 'Taggy', root_path %></h1>
-					<div class="tagline">Tag'em!</div>
+					<%= link_to image_tag('banner.png', :alt => 'Taggy'), root_path %>
 				</div>
 				<div class="avatar">					
 					<% if UserSession.logged_in? %>

@@ -44,3 +44,12 @@ class ActsAsSolr::Post
     true
   end
 end
+
+class ActionController::TestCase
+  setup :activate_authlogic, :login
+  
+  def login
+    UserSession.create(users(:one))
+  end
+    
+end

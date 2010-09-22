@@ -7,7 +7,7 @@ class SprintsControllerTest < ActionController::TestCase
   end
   
   def test_show
-    get :show, :id => Sprint.first
+    get :show, :id => Sprint.first.id
     assert_template 'show'
   end
   
@@ -29,25 +29,25 @@ class SprintsControllerTest < ActionController::TestCase
   end
   
   def test_edit
-    get :edit, :id => Sprint.first
+    get :edit, :id => Sprint.first.id
     assert_template 'edit'
   end
   
   def test_update_invalid
     Sprint.any_instance.stubs(:valid?).returns(false)
-    put :update, :id => Sprint.first
+    put :update, :id => Sprint.first.id
     assert_template 'edit'
   end
   
   def test_update_valid
     Sprint.any_instance.stubs(:valid?).returns(true)
-    put :update, :id => Sprint.first
+    put :update, :id => Sprint.first.id
     assert_redirected_to sprint_url(assigns(:sprint))
   end
   
   def test_destroy
     sprint = Sprint.first
-    delete :destroy, :id => sprint
+    delete :destroy, :id => sprint.id
     assert_redirected_to project_sprints_url(sprint.project)
     assert !Sprint.exists?(sprint.id)
   end
