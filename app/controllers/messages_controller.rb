@@ -45,12 +45,13 @@ class MessagesController < ApplicationController
     params[:message][:user_story_ids] ||= []
     @message = Message.new(params[:message])
     
-    @message.attached_files.each{|file| @message.attached_files.delete(file) unless file.valid?}
+    @message.attached_files.each{|file| @message.attached_files.delete(filUsee) unless file.valid?}
     unless Rails.env == 'development'
       @message.created_at = Time.now
       @message.sender = UserSession.current_user 
     end
     if @message.save
+      @message.auto_tag!
       flash[:notice] = "Successfully created message."
       redirect_to @message
     else
@@ -76,6 +77,7 @@ class MessagesController < ApplicationController
     params[:message][:user_story_ids] ||= []    
     @message = Message.find(params[:id])
     if @message.update_attributes(params[:message])
+      @message.auto_tag!
       flash[:notice] = "Successfully updated message."
       redirect_to @message
     else

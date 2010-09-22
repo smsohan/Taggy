@@ -9,6 +9,10 @@ class Message < ActiveRecord::Base
   
   has_many :user_story_message_links, :dependent => :destroy
   has_many :user_stories, :through => :user_story_message_links              
+
+  has_many :user_story_message_auto_links, :dependent => :destroy
+  has_many :auto_linked_user_stories, :through => :user_story_message_auto_links, :source => :user_story
+
   
   has_many :attached_files, :dependent => :destroy
   
@@ -31,6 +35,15 @@ class Message < ActiveRecord::Base
   
   def find_similar_stories(verbose=false)
     SimilarityEngine::Matchers::MessageMatcher.new(nil, verbose).matched_user_stories self
+  end
+  
+  def auto_tag!(verbose=false)
+    similar_stories = find_similar_stories(verbose) 
+    return [] if similar_stories.blank?
+    self.auto_linked_user_stories.clear
+    self.auto_linked_user_stories << similar_stories
+    self.save!
+    similar_stories
   end
   
   def build_reply_to
@@ -81,7 +94,7 @@ class Message < ActiveRecord::Base
       project.messages.find(:all, :offset => offset, :limit => limit, :include => :user_stories).each do |message|
         message_count += 1
         
-        stories = message.find_similar_stories()
+        stories = message.auto_tag!
         
         guess +=1 if stories.present?
         is_linked = message.user_stories.present?

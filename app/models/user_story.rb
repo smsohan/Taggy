@@ -12,6 +12,10 @@ class UserStory < ActiveRecord::Base
   has_many :user_story_message_links, :dependent => :destroy
   has_many :messages, :through => :user_story_message_links
   
+  has_many :user_story_message_auto_links, :dependent => :destroy
+  has_many :auto_linked_messages, :through => :user_story_message_auto_links, :source => :message
+  
+  
   has_attached_file :attachment
   
   named_scope :worked_in, lambda {|sprint_ids| {:conditions => {:sprint_id => sprint_ids}} }
