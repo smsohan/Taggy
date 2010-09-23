@@ -32,6 +32,11 @@ class Sprint < ActiveRecord::Base
   def messages
     self.project.messages.find(:all, :conditions => ['messages.created_at BETWEEN ? AND ?', self.start_date, self.end_date])
   end
+  
+  def instant_messages
+    self.project.instant_messages.find(:all, :conditions => ['instant_messages.created_at BETWEEN ? AND ?', self.start_date, self.end_date])
+  end
+  
 
   protected  
   

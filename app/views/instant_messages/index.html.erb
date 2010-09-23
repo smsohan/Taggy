@@ -1,13 +1,5 @@
 <% title "Instant Messages" %>
 
-<% for instant_message in @instant_messages %>
-	<div class="instant_message">
-		<%=formatted truncate(instant_message.content, :length => 200) %>
-		<%= link_to "Show", instant_message %> | 
-	  <%= link_to "Edit", edit_instant_message_path(instant_message) %> |
-	  <%= link_to "Destroy", instant_message, :confirm => 'Are you sure?', :method => :delete %>
-	</div>
-<% end %>
-
+<%= render :partial => 'show', :collection => @instant_messages, :as => :instant_message%>
 
 <p><%= link_to "New Instant Message", new_project_instant_message_path(@project) %></p>

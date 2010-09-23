@@ -1,0 +1,24 @@
+<% show_meta = defined?(show_meta) ? show_meta : true %>
+<li>
+	<div class="message">
+		<div class="meta">
+			<%= instant_message.created_at.strftime("%I:%M %p on %B %d, %Y") %> Participants: <%= instant_message.people.collect{|user| user.name}.join(", ")%>
+		</div>
+		<div class="subject">
+			<%= link_to 'Show', instant_message_path(instant_message) %>
+		</div>
+		<div class="body">
+			<%= formatted instant_message.glimpse %>
+		</div>		
+		<% if show_meta %>
+			<div class="meta">
+				<%  if instant_message.user_stories.present? %>
+					User Stories:
+					<% instant_message.user_stories.each do |user_story| %>
+						<%= link_to user_story.title, user_story %>
+					<% end %>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+</li>

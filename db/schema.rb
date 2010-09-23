@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100922150231) do
+ActiveRecord::Schema.define(:version => 20100923183229) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id"
@@ -135,6 +135,20 @@ ActiveRecord::Schema.define(:version => 20100922150231) do
   add_index "user_stories", ["description"], :name => "description"
   add_index "user_stories", ["title", "description"], :name => "title_2"
   add_index "user_stories", ["title"], :name => "title"
+
+  create_table "user_story_im_auto_links", :force => true do |t|
+    t.integer  "user_story_id"
+    t.integer  "instant_message_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_story_im_links", :force => true do |t|
+    t.integer  "user_story_id"
+    t.integer  "instant_message_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "user_story_message_auto_links", :force => true do |t|
     t.integer  "user_story_id"

@@ -14,6 +14,13 @@ class UserStory < ActiveRecord::Base
   
   has_many :user_story_message_auto_links, :dependent => :destroy
   has_many :auto_linked_messages, :through => :user_story_message_auto_links, :source => :message
+
+
+  has_many :user_story_im_links, :dependent => :destroy
+  has_many :instant_messages, :through => :user_story_im_links
+  
+  has_many :user_story_im_auto_links, :dependent => :destroy
+  has_many :auto_linked_instant_messages, :through => :user_story_im_auto_links, :source => :instant_message
   
   
   has_attached_file :attachment

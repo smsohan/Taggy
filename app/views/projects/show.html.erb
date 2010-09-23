@@ -26,6 +26,16 @@
 </h3>
 <%= render :partial => 'messages/index', :locals => {:messages => @project.messages.latest, :project => @project}%>
 
+
+<div class="spacer"></div>
+<h3>
+	Latest Instant Messages
+	<%= link_to "All Instant Messages", project_instant_messages_path(@project) %>
+	<%= link_to "+ New Instant Message", new_project_instant_message_path(@project) %>
+</h3>
+<%= render :partial => 'instant_messages/index', :locals => {:instant_messages => @project.instant_messages.latest, :project => @project}%>
+
+
 <!-- <div class="spacer"></div>
 <h3>
 	Latest IM Sessions
@@ -36,7 +46,7 @@
 
 
 <div class="spacer"></div>
-<h3>People</h3>
+<h3>People in this Project</h3>
 <%= render :partial => 'memberships/index', :locals => {:project => @project}%>
 
 

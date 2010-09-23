@@ -44,9 +44,21 @@
 
 
 <h3>
-	Possibly Related Messages
+	Auto-tagged Messages
 </h3>
 <%= render :partial => "messages/index", :locals => {:messages => @user_story.auto_linked_messages, :project => @user_story.project, :user_story => @user_story} %>
+
+<h3>
+	Instant Messages
+	<%= link_to '+ New Instant Message', new_project_user_story_instant_message_path(@user_story.project, @user_story) %>
+</h3>
+<%= render :partial => "instant_messages/index", :locals => {:instant_messages => @user_story.instant_messages, :project => @user_story.project, :user_story => @user_story} %>
+
+<h3>
+	Auto-Tagged Instant Messages
+</h3>
+<%= render :partial => "instant_messages/index", :locals => {:instant_messages => @user_story.auto_linked_instant_messages, :project => @user_story.project, :user_story => @user_story} %>
+
 
 
 <p>

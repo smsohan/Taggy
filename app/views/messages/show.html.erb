@@ -32,7 +32,7 @@
 		render(:partial => 'user_story_message_links/empty')
 %>
 
-<h3>Possibly Related User Stories</h3>
+<h3>Auto-tagged User Stories</h3>
 <%= render(:partial => 'user_stories/show', :collection => @message.auto_linked_user_stories, :as => :user_story) ||
 		render(:partial => 'user_story_message_links/empty')
 %>

@@ -20,6 +20,25 @@
 	</div>
 <% end %>
 
+
+<h3>
+	Instant Messages
+	<%= link_to "+ New Instant Message", new_project_instant_message_path(@sprint.project, {:sprint_id => @sprint.id}) %>
+</h3>
+
+<% instant_messages = @sprint.instant_messages %>
+<% if instant_messages.present? %>
+	<% instant_messages.each do |message|%>
+		<%= render :partial => 'instant_messages/show', :locals => {:instant_message => instant_message} %>
+	<%end%>
+<% else %>
+	<div class="empty_list">
+		This page section will show you the instant messages for <strong> <%= @sprint.name %></strong>. <br/>
+		You can <%= link_to "Post an Instant Message", new_project_instant_message_path(@sprint.project, {:sprint_id => @sprint.id}) %> to use this section.
+	</div>
+<% end %>
+
+
 <p>
   <%= link_to "Edit", edit_sprint_path(@sprint) %> |
   <%= link_to "Destroy", @sprint, :confirm => 'Are you sure?', :method => :delete %> |

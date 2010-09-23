@@ -18,8 +18,8 @@ class Message < ActiveRecord::Base
   
   belongs_to :sender, :class_name => 'User', :foreign_key => 'from_user_id'
   
-  named_scope :latest, :order => 'created_at DESC', :limit => 5   
-  default_scope :order => 'created_at DESC'
+  named_scope :latest, :order => 'messages.created_at DESC', :limit => 5   
+  default_scope :order => 'messages.created_at DESC'
   
   validates_presence_of :user_ids, :if => Proc.new{|message| message.to.blank?}, :message => "Please select one/more recipient(s) (To)"
   validates_presence_of :subject, :message => 'Subject is required'

@@ -1,0 +1,6 @@
+<ol>
+<%= 
+	render(:partial=>'instant_messages/show', :collection => instant_messages, :as => :instant_message, :locals =>{:show_meta => true}) ||
+	render(:partial => "instant_messages/empty_list", :locals => {:project => project, :user_story => defined?(user_story) && user_story })
+ %>
+</ol>

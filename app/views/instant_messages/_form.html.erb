@@ -8,6 +8,23 @@
 			<%= check_box_tag "instant_message[user_ids][]", user.id, @instant_message.users.include?(user) %> <%= user.name%>
 		<% end %>		
 	</p>
+	
+	<p>
+    <%= f.label :user_stories %><br />       
+    
+		<% sprints = @sprint.present? ? [@sprint] : @instant_message.project.sprints %>
+
+		<% sprints.each do |sprint| %>
+			<strong><%= sprint.name %></strong><br />
+			
+			<% sprint.user_stories.each do |user_story| %>
+				<%= check_box_tag "instant_message[user_story_ids][]", user_story.id, @instant_message.user_stories.include?(user_story) %> <%= user_story.title %>
+				<br/>
+			<% end %>			
+		<% end %>
+
+  </p>
+	
 
   <p>
     <%= f.label :content %><br />

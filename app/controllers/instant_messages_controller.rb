@@ -17,10 +17,21 @@ class InstantMessagesController < ApplicationController
   
   def new
     @instant_message = Project.find(params[:project_id]).instant_messages.build
+        
+    if params[:sprint_id]
+      @sprint = Sprint.find(params[:sprint_id])
+      @instant_message.created_at = @sprint.start_date
+    end
+    
+    if params[:user_story_id].present?
+      @instant_message.user_stories << UserStory.find(params[:user_story_id])
+    end                           
   end
   
   def create
     params[:instant_message][:user_ids] ||= []
+    params[:instant_message][:user_story_ids] ||= []
+    
     @instant_message = InstantMessage.new(params[:instant_message])
     if @instant_message.save
       flash[:notice] = "Successfully created instant message."

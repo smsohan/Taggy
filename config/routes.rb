@@ -23,6 +23,7 @@ ActionController::Routing::Routes.draw do |map|
     end
     project.resources :user_stories do |user_story|
       user_story.resources :messages
+      user_story.resources :instant_messages
     end
     
     project.resources :messages
