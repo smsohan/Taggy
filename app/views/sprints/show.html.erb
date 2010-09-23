@@ -28,7 +28,7 @@
 
 <% instant_messages = @sprint.instant_messages %>
 <% if instant_messages.present? %>
-	<% instant_messages.each do |message|%>
+	<% instant_messages.each do |instant_message|%>
 		<%= render :partial => 'instant_messages/show', :locals => {:instant_message => instant_message} %>
 	<%end%>
 <% else %>

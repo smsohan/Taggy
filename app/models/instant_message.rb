@@ -23,4 +23,14 @@ class InstantMessage < ActiveRecord::Base
     truncate(content, :length => 200)
   end
   
+  def auto_tag!(verbose=false)
+    similar_stories = find_similar_stories
+    return [] if similar_stories.blank?
+    self.auto_linked_user_stories.clear
+    self.auto_linked_user_stories << similar_stories
+    self.save!
+    similar_stories
+  end
+  
+  
 end

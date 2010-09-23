@@ -34,6 +34,7 @@ class InstantMessagesController < ApplicationController
     
     @instant_message = InstantMessage.new(params[:instant_message])
     if @instant_message.save
+      @instant_message.auto_tag!
       flash[:notice] = "Successfully created instant message."
       redirect_to @instant_message
     else
@@ -47,8 +48,11 @@ class InstantMessagesController < ApplicationController
   
   def update
     params[:instant_message][:user_ids] ||= []
+    params[:instant_message][:user_story_ids] ||= []
     @instant_message = InstantMessage.find(params[:id])
+
     if @instant_message.update_attributes(params[:instant_message])
+      @instant_message.auto_tag!
       flash[:notice] = "Successfully updated instant message."
       redirect_to @instant_message
     else
