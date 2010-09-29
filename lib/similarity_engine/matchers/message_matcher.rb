@@ -1,7 +1,8 @@
 module SimilarityEngine
   module Matchers
     class MessageMatcher < AbstractMatcher
-      THRESHOLD=0.58
+      #0.58
+      THRESHOLD=0.5
       DATE_SIMILARITY_BUFFER = 5      
       
       attr_accessor :relative_weight
