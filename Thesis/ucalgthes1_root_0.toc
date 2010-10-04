@@ -10,4 +10,9 @@
 \contentsline {section}{\numberline {1.4}Research Problem}{8}{section.1.4}
 \contentsline {section}{\numberline {1.5}Research Goals}{10}{section.1.5}
 \contentsline {section}{\numberline {1.6}Key Contributions}{10}{section.1.6}
-\contentsline {chapter}{\numberline {A}First Appendix}{12}{appendix.A}
+\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{12}{chapter.2}
+\contentsline {section}{\numberline {2.1}Communication in Distributed Teams}{12}{section.2.1}
+\contentsline {section}{\numberline {2.2}Capturing Knowledge from Emails}{14}{section.2.2}
+\contentsline {section}{\numberline {2.3}Wiki Based Knowledge Sharing}{17}{section.2.3}
+\contentsline {section}{\numberline {2.4}Context Based Knowledge Management}{19}{section.2.4}
+\contentsline {section}{\numberline {2.5}Review of Existing Tool Support for Knowledge Sharing}{21}{section.2.5}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  29 SEP 2010 11:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  3 OCT 2010 09:42
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -173,7 +173,7 @@ Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 \Fld@listcount=\count97
 )
-(./ucalgthes1_root_0.aux (./chapter1.aux) (./appendix1.aux))
+(./ucalgthes1_root_0.aux (./introduction.aux) (./literature_review.aux))
 \openout1 = `ucalgthes1_root_0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -299,9 +299,9 @@ Acknowledgements
  [6
 
 ]
-\openout2 = `chapter1.aux'.
+\openout2 = `introduction.aux'.
 
- (./chapter1.tex
+ (./introduction.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
@@ -398,40 +398,201 @@ LaTeX Warning: Citation `required' on page 10 undefined on input line 114.
 LaTeX Warning: Citation `required' on page 10 undefined on input line 114.
 
 [10]) [11]
-\openout2 = `appendix1.aux'.
+\openout2 = `literature_review.aux'.
 
- (./appendix1.tex
+ (./literature_review.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
-Appendix A.
-) [12
+Chapter 2.
+
+LaTeX Warning: Citation `agile_manifesto' on page 12 undefined on input line 15
+.
+
+
+LaTeX Warning: Citation `communication_tools' on page 12 undefined on input lin
+e 17.
+
+
+LaTeX Warning: Citation `communication_in_distributed' on page 12 undefined on 
+input line 17.
+
+[12
 
 
 
-] (./ucalgthes1_root_0.aux (./chapter1.aux) (./appendix1.aux))
+]
+
+LaTeX Warning: Citation `a_case_study_of' on page 13 undefined on input line 19
+.
+
+
+LaTeX Warning: Citation `korkala' on page 13 undefined on input line 22.
+
+
+LaTeX Warning: Citation `agile_methods' on page 13 undefined on input line 25.
+
+[13]
+
+LaTeX Warning: Citation `on_coordination' on page 14 undefined on input line 27
+.
+
+
+LaTeX Warning: Citation `essential_communication' on page 14 undefined on input
+ line 27.
+
+
+LaTeX Warning: Citation `where_did_you' on page 14 undefined on input line 34.
+
+[14]
+
+LaTeX Warning: Citation `hipikat' on page 15 undefined on input line 36.
+
+[15]
+
+LaTeX Warning: Citation `using_hybrid' on page 16 undefined on input line 38.
+
+
+LaTeX Warning: Citation `requirment_traceability' on page 16 undefined on input
+ line 40.
+
+
+LaTeX Warning: Citation `wikipedia' on page 16 undefined on input line 43.
+
+
+LaTeX Warning: Citation `wiki_based' on page 16 undefined on input line 43.
+
+[16]
+
+LaTeX Warning: Citation `self_organized' on page 17 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation `collaborative_knowledge' on page 17 undefined on input
+ line 47.
+
+[17]
+
+LaTeX Warning: Citation `ontowiki' on page 18 undefined on input line 49.
+
+
+LaTeX Warning: Citation `a_case_study_of_wiki' on page 18 undefined on input li
+ne 51.
+
+
+LaTeX Warning: Citation `fitnesse' on page 18 undefined on input line 53.
+
+
+LaTeX Warning: Citation `how_did_we' on page 18 undefined on input line 53.
+
+[18]
+
+LaTeX Warning: Citation `a_case_study_of_wiki' on page 19 undefined on input li
+ne 55.
+
+
+LaTeX Warning: Citation `a_lightweight' on page 19 undefined on input line 58.
+
+[19]
+
+LaTeX Warning: Citation `supporting_program' on page 20 undefined on input line
+ 62.
+
+[20]
+
+LaTeX Warning: Citation `feat' on page 21 undefined on input line 64.
+
+
+LaTeX Warning: Citation `mylyn' on page 21 undefined on input line 64.
+
+
+LaTeX Warning: Citation `essential_communication' on page 21 undefined on input
+ line 69.
+
+
+LaTeX Warning: Citation `version_one' on page 21 undefined on input line 71.
+
+
+LaTeX Warning: Citation `mingle' on page 21 undefined on input line 71.
+
+
+LaTeX Warning: Citation `scrum_pad' on page 21 undefined on input line 71.
+
+
+LaTeX Warning: Citation `scrum_works' on page 21 undefined on input line 71.
+
+
+LaTeX Warning: Citation `ibm_rtc' on page 21 undefined on input line 71.
+
+
+LaTeX Warning: Citation `xplanner' on page 21 undefined on input line 71.
+
+
+LaTeX Warning: Citation `trac' on page 21 undefined on input line 71.
+
+[21]
+
+LaTeX Warning: Citation `jira' on page 22 undefined on input line 73.
+
+
+LaTeX Warning: Citation `bugzilla' on page 22 undefined on input line 73.
+
+
+LaTeX Warning: Citation `fog_bugz' on page 22 undefined on input line 73.
+
+
+LaTeX Warning: Citation `issue_tracking' on page 22 undefined on input line 73.
+
+
+
+LaTeX Warning: Citation `basecamp' on page 22 undefined on input line 75.
+
+
+LaTeX Warning: Citation `team_box' on page 22 undefined on input line 75.
+
+
+LaTeX Warning: Citation `share_point' on page 22 undefined on input line 77.
+
+[22]
+
+LaTeX Warning: Citation `github' on page 23 undefined on input line 79.
+
+
+LaTeX Warning: Citation `codeplex' on page 23 undefined on input line 79.
+
+
+LaTeX Warning: Citation `Hudson' on page 23 undefined on input line 81.
+
+
+LaTeX Warning: Citation `cruise_control' on page 23 undefined on input line 81.
+
+
+
+LaTeX Warning: Citation `team_server' on page 23 undefined on input line 81.
+
+) [23] (./ucalgthes1_root_0.aux (./introduction.aux) (./literature_review.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4087 strings out of 493848
- 60543 string characters out of 3149207
- 129204 words of memory out of 3000000
- 7271 multiletter control sequences out of 15000+200000
+ 4156 strings out of 493848
+ 61446 string characters out of 3149207
+ 130204 words of memory out of 3000000
+ 7319 multiletter control sequences out of 15000+200000
  8293 words of font info for 29 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,11n,43p,968b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,43p,1745b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></
 usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ucalgthes1_root_0.pdf (19 pages, 126028 bytes).
+Output written on ucalgthes1_root_0.pdf (30 pages, 158243 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 274 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
