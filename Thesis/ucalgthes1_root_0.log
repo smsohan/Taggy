@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  3 OCT 2010 09:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  5 OCT 2010 20:46
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -173,7 +173,9 @@ Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 \Fld@listcount=\count97
 )
-(./ucalgthes1_root_0.aux (./introduction.aux) (./literature_review.aux))
+(./ucalgthes1_root_0.aux (./introduction.aux) (./literature_review.aux)
+(./taggy.aux) (./empirical_evaluation.aux) (./qualitative_evaluation.aux)
+(./discussion.aux) (./conclusion.aux))
 \openout1 = `ucalgthes1_root_0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -279,29 +281,36 @@ Abstract
 Acknowledgements
 [3
 
-] (./ucalgthes1_root_0.toc)
+] (./ucalgthes1_root_0.toc
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4
+
+])
 \tf@toc=\write4
 \openout4 = `ucalgthes1_root_0.toc'.
 
- [4
-
-] (./ucalgthes1_root_0.lot)
+ [5] (./ucalgthes1_root_0.lot)
 \tf@lot=\write5
 \openout5 = `ucalgthes1_root_0.lot'.
 
- [5
+ [6
 
-]
-(./ucalgthes1_root_0.lof)
+] (./ucalgthes1_root_0.lof)
 \tf@lof=\write6
 \openout6 = `ucalgthes1_root_0.lof'.
 
- [6
+ [7
 
 ]
 \openout2 = `introduction.aux'.
 
- (./introduction.tex
+
+(./introduction.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
@@ -323,12 +332,6 @@ LaTeX Warning: Citation `scrum' on page 1 undefined on input line 7.
 
 
 LaTeX Warning: Citation `xp_up' on page 1 undefined on input line 7.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -571,28 +574,95 @@ LaTeX Warning: Citation `cruise_control' on page 23 undefined on input line 81.
 
 LaTeX Warning: Citation `team_server' on page 23 undefined on input line 81.
 
-) [23] (./ucalgthes1_root_0.aux (./introduction.aux) (./literature_review.aux))
+) [23]
+\openout2 = `taggy.aux'.
+
+ (./taggy.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 1.
+
+Chapter 3.
+[24
+
+
+
+] [25]) [26] [27]
+\openout2 = `empirical_evaluation.aux'.
+
+ (./empirical_evaluation.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 1.
+
+Chapter 4.
+) [28
+
+
+
+]
+\openout2 = `qualitative_evaluation.aux'.
+
+ (./qualitative_evaluation.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 1.
+
+Chapter 5.
+) [29
+
+
+
+]
+\openout2 = `discussion.aux'.
+
+ (./discussion.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 1.
+
+Chapter 6.
+) [30
+
+
+
+]
+\openout2 = `conclusion.aux'.
+
+ (./conclusion.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 1.
+
+Chapter 7.
+) [31
+
+
+
+] (./ucalgthes1_root_0.aux (./introduction.aux) (./literature_review.aux)
+(./taggy.aux) (./empirical_evaluation.aux) (./qualitative_evaluation.aux)
+(./discussion.aux) (./conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4156 strings out of 493848
- 61446 string characters out of 3149207
- 130204 words of memory out of 3000000
- 7319 multiletter control sequences out of 15000+200000
+ 4282 strings out of 493848
+ 63170 string characters out of 3149207
+ 138928 words of memory out of 3000000
+ 7360 multiletter control sequences out of 15000+200000
  8293 words of font info for 29 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,11n,43p,1745b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,43p,1745b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></
 usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ucalgthes1_root_0.pdf (30 pages, 158243 bytes).
+Output written on ucalgthes1_root_0.pdf (39 pages, 192348 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 509 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 433 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,38 @@
+\fancyhead[RO,LE]{\thepage}
+\fancyfoot{} 
+\chapter{TAGGY}
+These chapter is dedicated to the implementation details of Taggy. First the underlying assumptions behind Taggy are discussed. Then, a definition of the adapted agile project context is given. With this background information, a high level architecture of Taggy is explained. Next, the workflow of auto-tagging is discussed. The mathematical and algorithmic details are provided in the similarity computation section. This chapter also includes the details about the software frameworks used to implement Taggy. Finally, an illustrative example is given to explain Taggy in action.
+
+\section{Assumptions}
+Taggy is designed based on the following assumptions to auto-tag the emails with user stories:
+
+\begin{enumerate}
+	\item An email is potentially relevant to a user story when:
+		\begin{itemize}
+			\item It is sent during the iteration time frame of the user story. Since agile projects are developed in small iterations and the core concentration during an iteration is to deliver the user stories from the iteration backlog, it is highly likely that the email conversation will be about the user stories from current iteration backlog. However, it is also possible to see some conversations about near past or near future iteration backlogs. Such conversation are mainly used to provide post-delivery feedback and collaborate about upcoming work. Taggy uses this assumption to shorten its search space for relevant user stories by filtering out the ones from far past.
+			
+			\item The developers and/or customers of a user story participate in the email. For an example, if Alex (a developer) is working on a user story for Jane (the customer), and Alex writes an email to Jane, they are more likely to discuss about the user story than Peri (another developer) and Jane. However, Peri can always participate in a discussion about Alex's work in an agile team, where open communication is encouraged. But, it is highly unlikely that two people who are neither assigned developers or customers of a user story will write emails about that. This assumption about people's participation in email provides an important context in Taggy's similarity computation.
+			
+			\item There is a minimum degree of text similarity between an email and a user story. An email has text in terms of its subject, body and attachments. Although not explicit, it is likely that such text in the emails will show some relevance to the user stories. This may not be true in all cases, especially if there is a lot of face-to-face communication. However, this is not the case for in distributed projects with huge time zone difference. Taggy computes a text similarity between the email and user story and discards the ones that show very poor match.
+		\end{itemize}
+	 \item A web-based project management tool is used to manage the distributed agile project. To automatically link up emails with user stories, Taggy looks into this tool for information about user stories. This assumption is required because if teams only use volatile physical artifacts, such as sticky notes for user stories on a whiteboard, it is not possible to automatically find the user stories. As discussed in literature review, distributed agile teams use a number of different types of such tools.
+	
+	\item The project management tool captures user stories with its planning information including a) assigned developers, b) customer and c) iteration timeframe. The presence of this planning information is essential as it serves the meta data that is necessary to auto-tag emails. While it is generally expected that this data be available, it is not required that each and every user story contains all the required planning information. Since Taggy uses context alongside text similarity, having the context helps in making a more informed decision in auto-tagging.
+	
+	\item Each project has its own email address so that when people are sending emails about a project to someone, they can keep the project's email in the copy. This serves as the input to Taggy for auto-tagging. Also, giving every project a unique email address ensures Taggy can correctly determine the target project for an email. Since most people who use email are already familiar with the CC: feature, this adds little learning curve or communication overhead. It is assumed that indicating the project in CC: serves a convenient input mechanism compared to manually copy-pasting the email contents into a system for every useful email.		
+	
+	\item The subject of an email carries an important clue about its relationship with a user story. Although, subject is just a text similar to body or attachment contents of an email, due to professional etiquette and for the sake of grabbing attention, people write revealing subject while writing emails about projects. Taggy distinguishes the text relevance of the subject from the rest of the email contents based on this assumption.
+\end{enumerate}
+
+
+
+\section{The Agile Project Context}
+\section{Architecture}
+\section{High Level Workflow}
+\section{Similarity Computation}
+	\subsection{Similarity Function}
+	\subsection{Learning Relative Weights}	
+	\subsection{Email Matching}
+	\subsection{Instant Message Matching}
+\section{Implementation Details}
+\section{An Illustrative Example}	
