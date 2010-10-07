@@ -22,10 +22,11 @@
 \BOOKMARK [1][-]{section.3.3}{High Level Workflow}{chapter.3}
 \BOOKMARK [1][-]{section.3.4}{Architecture}{chapter.3}
 \BOOKMARK [1][-]{section.3.5}{Similarity Computation}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.5.1}{Similarity Function}{section.3.5}
-\BOOKMARK [2][-]{subsection.3.5.2}{Learning Relative Weights}{section.3.5}
-\BOOKMARK [2][-]{subsection.3.5.3}{Email Matching}{section.3.5}
-\BOOKMARK [2][-]{subsection.3.5.4}{Instant Message Matching}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.1}{Local-Global Principle}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.2}{Similarity Function}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.3}{Learning Relative Weights}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.4}{Email Matching}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.5}{Instant Message Matching}{section.3.5}
 \BOOKMARK [1][-]{section.3.6}{Implementation Details}{chapter.3}
 \BOOKMARK [1][-]{section.3.7}{An Illustrative Example}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{EMPIRICAL EVALUATION}{}

@@ -120,14 +120,160 @@ Taggy is composed of a number of different components to support the workflow as
 	\item \textbf{Taggy Web Application.} The web application provides interfaces for manipulating everything in Taggy. For example, one can browse a user story and see all related emails and instant messages or vice versa. Also, one can search through all the contents, including the attachments. In a nutshell, this is a light-weight agile project management tool with the additional feature that it auto-tags emails and instant messages.
 \end{enumerate}
 
-
-
-
-
-
 \section{Similarity Computation}
-	\subsection{Similarity Function}
-	\subsection{Learning Relative Weights}	
+Taggy uses a machine learning technique called Case Based Reasoning to find out relevant user stories against an email or instant message. A CBR 
+system uses a library of existing cases to match against a new case. For example, Taggy has a library of existing user stories, these are treated as cases in the CBR system. Each case, or user story, as described above is defined by several attributes, such as, its title, description, assigned developers, customers, iteration start date and end date. Also, the data types of the attributes are different that include numeric date time values, symbols for emails and free text values. This library of cases is not exactly similar to a new case, an email, since the attributes are different. However, it has been discussed that it is possible to match some of the email attributes against the user story attributes. This action is performed inside the CBR system of Taggy to compute the similarity. Figure~\ref{fig:CBR} shows a high level view of the CBR system:
+
+\begin{figure*}[bt]
+	\centering
+	\includegraphics[width=0.8\textwidth]{CBR.png}
+    \caption{CBR System Input and Output}
+	\label{fig:CBR}
+\end{figure*}
+
+\subsection{Local-Global Principle}
+
+The actual computation inside the CBR system is done following the local-global principle\cite{local_global} where it takes a two step approach, \textbf{i)local similarity computation and ii) global similarity computation.} Local similarity computation is confined to the similarity between only one attribute of two entities. For example, here a local similarity may be the similarity between the date of an email and the iteration start date of the user story. These local similarities are calculated in isolation from the rest of the attributes. So, the local similarity of email date and user story start date is not impacted by their local similarity for people, subject or description.
+
+\begin{table}[at]
+  \centering
+  \caption{Mapping Between Email and User Story Attributes}
+    \begin{tabular}{|p{2.5cm}|p{4cm}|p{5cm}|p{2cm}|}
+      \hline
+      \textbf{Local Similarity} & \textbf{Email} & \textbf{User Story} & \textbf{Type} \\
+      \hline
+      People & Sender, Recipients & Developer or Customer & Symbol Array\\      
+      \hline
+      Temporal & Email Date & Iteration start and end date & Numeric Date \\
+      \hline
+      Subject & Email subject & Title, Description and Attachments & Free text\\
+      \hline
+      Body & Email Body, attachments & Title, Description and Attachments & Free text\\
+      \hline
+      \multicolumn{4}{l}{Source: \emph{primary}}
+    \end{tabular}
+	\label{tab:mapping}
+\end{table}
+
+Table~\ref{tab:mapping} shows the adapted mapping of email attributes to user story attributes. According to this mapping, the people in email are matched against the people in user stories, so no distinction is made between the sender or recipient of an email. Similarly developers and customers of a user story are not distinguished for similarity computation. The temporal similarity again is a result of comparing the email date against a range defined by the start and end date of the iteration. And as it was stated in the assumptions, subject similarity is distinguished from the body similarity to look for important clues in the email subjects. However, in both cases the comparison is done against all the text found in a user story by looking into its title, description and attachments. This is done because, the subject or body of the mail can contain similar text to any part of the user story.
+
+For instant messages, this table remains same for all but the Subject similarity row, since a subject is absent in such cases. So, instant message matching requires one less local similarity measure.
+
+On the other hand, global similarity combines the local similarities and produces a single similarity value between two entities. In this case, the global similarity combines the local similarities for people, temporal, subject and body of an email against the appropriate attributes of the user story. The combination is performed using a weighted sum of the local similarities, where the relative weight for each component is learned during the training phase.
+
+\subsection{Similarity Function}
+Using the aforementioned local-global principle, we adapted different equations to compute the local and global similarities as follows:
+
+\begin{equation}
+\label{eq:temporal}
+S_{Temporal} =
+\begin{cases}
+1 & \mbox{iteration start} \le \mbox{email date} \le \mbox{iteration end}\\
+0 & \mbox{if email date is within the buffer of the story's iteration} \\
+-1 & \mbox{else}
+\end{cases}
+\end{equation}
+
+S\textsubscript{Temporal} in Equation~\ref{eq:temporal} denotes the Temporal local similarity between an email and a user story. This equation can be interpreted as follows: if the email is sent while the user story is in development, during its iteration, then they show highest temporal similarity. However, it is also likely that an email is sent in the near past or near future of an iteration, this nearness is designated by the buffer. This buffer is set to one iteration length. So, if an email is sent in the immediate past or future iteration of a user story, the temporal similarity is supposed to be 0. Finally, a -1 value for the rest ensures emails from far past and far future are treated as highly distant in terms of temporal context. This interpretation is in alignment with the provided assumptions.
+
+\begin{equation}
+\label{eq:people}
+S_{People} =
+\begin{cases}
+1 & \mbox{email people equals user story people}\\
+\# of \; common \; people/\# of \;user \;story \;people & \mbox{Email and user story has some common people} \\
+-1 & \mbox{else}
+\end{cases}
+\end{equation}
+
+S\textsubscript{People} in Equation~\ref{eq:people} denotes the People local similarity between an email and a user story. This function can be interpreted as follows: in an email includes all of the people in the user story, it is highly similar in people context. Otherwise if only a few people are common, the similarity is pro-rated accordingly. However, when an email does not include any of the people in the user story, then it is marked as highly distant from the user story in terms of people context. In other words, this equation produces a numeric value of user story people's participation in the emails.
+
+\begin{equation}
+\label{eq:subject}
+S_{Subject} = [0, 1]\mbox{, Free text similarity score (See below)}\\
+\end{equation}
+
+\begin{equation}
+\label{eq:body}
+S_{Body} = [0, 1]\mbox{, Free text similarity score (See below)}\\
+\end{equation}
+
+S\textsubscript{Subject} and S\textsubscript{Body} represents the free text similarity score for the two attributes. The values can be anything between 0 and 1 as shown in Equation~\ref{eq:subject} and Equation~\ref{eq:body}. Computing the textual similarity between two free format texts is in itself a research topic and beyond the scope of this thesis. However, Taggy used an industry standard open-source full text search engine to produce this score. The search engine uses Vector Space Model \cite{a_vector_space} to compute the similarity between two free text documents. This model first defines the index of a free text document in terms of a vector that captures the frequency and relative weight of each term in the document. Next, an inner product of two such vectors is used to produce their similarity. Also, to compare the similarity of a document against a library of documents, the similarity results are normalized for the length of the documents. This approach is highly scalable since the similarity computation of two different documents is turned into simple vector computation. Also, the generation of the vectors can benefit from using synonyms, stop words and other language specific stems. Very high traffic applications have used this approach to facilitate full text search. For example, Twitter, serves 12000 searches/second, adapted this at the time of writing this thesis \cite{twitter_lucene}.
+
+%http://engineering.twitter.com/2010/10/twitters-new-search-architecture.html                                                       
+The choice of the above equations are based on the experience from looking into the data. However, since the software is trained to learn the relative weights of these equations, the impact of these equations are likely to be weight adjusted so that the global similarity computation minimizes the possibility of a wrong decision.
+
+Next, the global similarity function combines the local similarities from the above equations using the following formula:
+
+\begin{equation}
+	\label{eq:global}
+S_{Global} = (W_{Temporal} * S_{Temporal} + W_{People} * S_{People} + W_{Subject} * S_{Subject} + W_{Body} * S_{Body}) / (W_{Temporal} + W_{People} + W_{Subject} + W_{Body})\\
+\end{equation}
+
+where,
+\begin{equation}
+	\label{eq:w_temporal}	
+W_{Temporal} = \mbox{relative weight of temporal similarity}
+\end{equation}      
+
+\begin{equation}   
+		\label{eq:w_people}
+W_{People} = \mbox{relative weight of people similarity}
+\end{equation}
+
+\begin{equation}     
+		\label{eq:w_subject}
+W_{Subject} = \mbox{relative weight of subject similarity}
+\end{equation}
+
+\begin{equation}     
+		\label{eq:w_body}
+W_{Body} = \mbox{relative weight of body similarity}
+\end{equation}
+
+As Equation~\ref{eq:global} shows, the global similarity is a weighed sum of the local similarity values. But the relative weights are not known a priori. Instead, Taggy learns the relative weights for the different components so that it can potentially reflect the relative importance of each of the component based on a training data set. Using weighted sum provides transparency about the decision making logic inside Taggy.
+	
+\subsection{Learning Relative Weights}	
+Taggy uses a Reinforcement Learning approach to learn the relative weights of the different components to compute the global similarity \cite{reinforcement_learning}. The learning algorithm is designed to adapt the relative weights of the local similarity measures based on the feedback from its decision being correct or wrong.
+
+Since the local similarity measures participate in the process of global similarity computation, in case of a correct decision, the matching local similarity measures get rewarded by getting more weight while the contradicting ones are punished by lowering their relative weight. For example, if a decision is correct and the people similarity score is positive, then the relative weight of people similarity score, as seen on Equation~\ref{eq:w_people} is increased. On the other hand, if the decision is correct but the people similarity score is negative, then it is punished by lowering the weight. So, depending on the decision of an individual component and the final outcome, the relative weights are adjusted accordingly. This process continues unless all training data are exhausted or the adaptation converges.
+
+However, it is important to initialize the relative weights of the local similarity measures based on a meaningful foundation so that the entry point is not absolutely random. This is done by running the training data for each local similarity while keeping the other in isolation. For example, trying to auto-tag emails with user stories solely based on their people similarity and doing the same for other local similarity components. Once this is done, the number of correct decisions made by each component provides a rough estimate of its relative importance over another component. This number of correct decisions are normalized to produce the initial relative weights of the four components, namely, people, temporal, subject and body similarity measures.
+
+Once the initial weights are found, the following algorithm is used to implement the reward-punishment scheme of the reinforcement learning approach:
+
+\begin{verbatim}
+date_weight     = initial_date_weigth
+people_weight   = initial_people_weight
+subject_weight  = initial_subject_weight
+body_weight     = initial_body_weight
+
+for all_training_emails do |email|
+   result = find_most_similar_user_stories(email)
+   is_correct = result.guessed_stories == email.actual_stories
+
+	 #Adjust temporal similarity weight
+   is_date_similar = result.date_weight > date_threshold
+
+   if (is_correct and is_date_similar) or 
+      (!is_correct and !is_date_similar) then
+    date_weight = reward(date_weight)
+   else
+    date_weight = punish(date_weight)
+   end
+
+   #do the same for people, subject and body similarity
+		.
+		.
+		.
+		
+   end
+end
+\end{verbatim}
+This algorithm shows the reward-punishment in action for the temporal similarity weight. This essentially rewards the local similarity weight of a component that contributes in making a correct decision while punishes the one that influences a wrong decision. This reward-punishment continues unless all training emails are seen. Also, it is possible to stop if this converges to a point when adding new emails do not alter the relative weights. However, as with most machine learning techniques, the usefulness of this learning is related to the quality and quantity of the training data. As shown before, the Taggy Learners component implements this algorithm. Once the learning is done, relative weights are tuned to auto-tag emails with user stories. This same algorithm can be used to learn relative weights for instant messages, where the subject is missing.
+
+The choice of this reward-punishment scheme makes it transparent, as one can easily follow the changes in the relative weights based on the logic. Other machine learning approaches such as different variations of back propagation algorithm could also be utilized instead of this one. However, this approach was chosen in Taggy because of it's expressiveness and lucidity.
+
 	\subsection{Email Matching}
 	\subsection{Instant Message Matching}
 \section{Implementation Details}

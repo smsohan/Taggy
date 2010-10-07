@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  6 OCT 2010 17:51
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  7 OCT 2010 16:46
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -194,25 +194,87 @@ File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gin@req@height=\dimen110
 \Gin@req@width=\dimen111
 )
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen112
+))
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen113
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen114
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
+\dotsspace@=\muskip11
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks18
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks19
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
+\@envbody=\toks20
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
 (./ucalgthes1_root_0.aux (./introduction.aux) (./literature_review.aux)
 (./taggy.aux) (./empirical_evaluation.aux) (./qualitative_evaluation.aux)
 (./discussion.aux) (./conclusion.aux))
 \openout1 = `ucalgthes1_root_0.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -255,56 +317,50 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 39.
 (/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count99
+\c@section@level=\count111
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
 
 (./ucalgthes1_root_0.out) (./ucalgthes1_root_0.out)
 \@outlinefile=\write3
 \openout3 = `ucalgthes1_root_0.out'.
 
-\AtBeginShipoutBox=\box26
+\AtBeginShipoutBox=\box28
 
 (/usr/local/texlive/2009/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen112
-\scratchbox=\box27
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen113
-\MPnumerator=\count104
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count112
+\scratchdimen=\dimen121
+\scratchbox=\box29
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen122
+\MPnumerator=\count116
+\everyMPtoPDFconversion=\toks23
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
  (/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
  [1
 
 {/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 43--48
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 69.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 69.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 69.
 [1
 
 ]
@@ -642,20 +698,77 @@ LaTeX Warning: Citation `where_did_you' on page 28 undefined on input line 53.
 
 LaTeX Warning: Citation `skype' on page 30 undefined on input line 75.
 
-[30] <Architecture.png, id=479, 625.33624pt x 370.38374pt>
+[30] <Architecture.png, id=488, 625.33624pt x 370.38374pt>
 File: Architecture.png Graphic file (type png)
 
-<use Architecture.png> [31 <./Architecture.png (PNG copy)>] [32] [33]) [34]
+<use Architecture.png> [31 <./Architecture.png (PNG copy)>] [32] [33]
+<CBR.png, id=510, 593.21625pt x 361.35pt>
+File: CBR.png Graphic file (type png)
+ <use CBR.png>
+
+LaTeX Warning: Citation `local_global' on page 34 undefined on input line 136.
+
+
+Overfull \hbox (11.88284pt too wide) in paragraph at lines 136--137
+\OT1/cmr/m/n/12 The ac-tual com-pu-ta-tion in-side the CBR sys-tem is done fol-
+low-ing the local-global principle[[]]
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+[]\OT1/cmr/m/n/12 Symbol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+[]\OT1/cmr/m/n/12 Numeric
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 151--151
+[]\OT1/cmr/m/n/12 Email Body, at-tach-
+ []
+
+[35 <./CBR.png (PNG copy)>] [36]
+Overfull \hbox (89.06677pt too wide) detected at line 187
+\OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 = []
+ []
+
+[37]
+
+LaTeX Warning: Citation `a_vector_space' on page 38 undefined on input line 201
+.
+
+
+LaTeX Warning: Citation `twitter_lucene' on page 38 undefined on input line 201
+.
+
+[38]
+Overfull \hbox (156.2696pt too wide) detected at line 211
+\OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 W[] \OMS/cmsy/m/n/12 ^
+^C \OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 W[] \OMS/cmsy/m/n/12
+ ^^C \OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 W[] \OMS/cmsy/m/n/
+12 ^^C \OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 W[] \OMS/cmsy/m/
+n/12 ^^C \OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =\OT1/cmr/m/n/12
+ (\OML/cmm/m/it/12 W[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 W[] \OT1/cmr/m/n/12 +
+ \OML/cmm/m/it/12 W[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 W[]\OT1/cmr/m/n/12 )[]
+ 
+ []
+
+
+LaTeX Warning: Citation `reinforcement_learning' on page 39 undefined on input 
+line 237.
+
+[39] [40] [41]) [42]
 \openout2 = `empirical_evaluation.aux'.
 
-
-(./empirical_evaluation.tex
+ (./empirical_evaluation.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
 Chapter 4.
-) [35
+) [43
 
 
 
@@ -668,7 +781,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
 Chapter 5.
-) [36
+) [44
 
 
 
@@ -681,7 +794,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
 Chapter 6.
-) [37
+) [45
 
 
 
@@ -694,7 +807,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
 Chapter 7.
-) [38
+) [46
 
 
 
@@ -706,22 +819,27 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4965 strings out of 493848
- 72028 string characters out of 3149207
- 150607 words of memory out of 3000000
- 7989 multiletter control sequences out of 15000+200000
- 8293 words of font info for 29 fonts, out of 3000000 for 9000
+ 5614 strings out of 493848
+ 79501 string characters out of 3149207
+ 160155 words of memory out of 3000000
+ 8595 multiletter control sequences out of 15000+200000
+ 9136 words of font info for 33 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,11n,43p,1745b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,43p,1745b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
-b></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></
-usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ucalgthes1_root_0.pdf (46 pages, 246758 bytes).
+b></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local
+/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on ucalgthes1_root_0.pdf (54 pages, 386733 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
- 446 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 165 named destinations out of 1000 (max. 500000)
+ 459 words of extra memory for PDF output out of 10000 (max. 10000000)
 
