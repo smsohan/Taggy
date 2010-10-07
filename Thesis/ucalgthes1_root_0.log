@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  5 OCT 2010 20:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  6 OCT 2010 17:51
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -173,25 +173,46 @@ Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 \Fld@listcount=\count97
 )
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count98
+))
+\Gin@req@height=\dimen110
+\Gin@req@width=\dimen111
+)
 (./ucalgthes1_root_0.aux (./introduction.aux) (./literature_review.aux)
 (./taggy.aux) (./empirical_evaluation.aux) (./qualitative_evaluation.aux)
 (./discussion.aux) (./conclusion.aux))
 \openout1 = `ucalgthes1_root_0.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -234,43 +255,56 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 37.
 (/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count98
+\c@section@level=\count99
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
 
 (./ucalgthes1_root_0.out) (./ucalgthes1_root_0.out)
 \@outlinefile=\write3
 \openout3 = `ucalgthes1_root_0.out'.
 
 \AtBeginShipoutBox=\box26
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/local/texlive/2009/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count100
+\scratchdimen=\dimen112
+\scratchbox=\box27
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen113
+\MPnumerator=\count104
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
+ (/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
  [1
 
 {/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 41--46
+Underfull \hbox (badness 10000) in paragraph at lines 43--48
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 67.
+(Font)              <12> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 67.
+(Font)              <8> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 67.
+(Font)              <6> on input line 69.
 [1
 
 ]
@@ -580,23 +614,48 @@ LaTeX Warning: Citation `team_server' on page 23 undefined on input line 81.
  (./taggy.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 1.
+less on input line 2.
 
 Chapter 3.
 [24
 
 
 
-] [25]) [26] [27]
+] [25] [26]
+
+LaTeX Warning: Reference `fig:' on page 27 undefined on input line 42.
+
+[27]
+
+LaTeX Warning: Reference `fig:' on page 28 undefined on input line 45.
+
+
+LaTeX Warning: Reference `fig:' on page 28 undefined on input line 47.
+
+
+LaTeX Warning: Reference `fig:' on page 28 undefined on input line 50.
+
+
+LaTeX Warning: Citation `where_did_you' on page 28 undefined on input line 53.
+
+[28] [29]
+
+LaTeX Warning: Citation `skype' on page 30 undefined on input line 75.
+
+[30] <Architecture.png, id=479, 625.33624pt x 370.38374pt>
+File: Architecture.png Graphic file (type png)
+
+<use Architecture.png> [31 <./Architecture.png (PNG copy)>] [32] [33]) [34]
 \openout2 = `empirical_evaluation.aux'.
 
- (./empirical_evaluation.tex
+
+(./empirical_evaluation.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
 Chapter 4.
-) [28
+) [35
 
 
 
@@ -609,7 +668,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
 Chapter 5.
-) [29
+) [36
 
 
 
@@ -622,7 +681,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
 Chapter 6.
-) [30
+) [37
 
 
 
@@ -635,7 +694,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 1.
 
 Chapter 7.
-) [31
+) [38
 
 
 
@@ -647,10 +706,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4282 strings out of 493848
- 63170 string characters out of 3149207
- 138928 words of memory out of 3000000
- 7360 multiletter control sequences out of 15000+200000
+ 4965 strings out of 493848
+ 72028 string characters out of 3149207
+ 150607 words of memory out of 3000000
+ 7989 multiletter control sequences out of 15000+200000
  8293 words of font info for 29 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,11n,43p,1745b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -660,9 +719,9 @@ b></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></
 usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ucalgthes1_root_0.pdf (39 pages, 192348 bytes).
+Output written on ucalgthes1_root_0.pdf (46 pages, 246758 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 433 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 577 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 

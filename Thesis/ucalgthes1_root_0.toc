@@ -18,37 +18,38 @@
 \contentsline {section}{\numberline {2.5}Review of Existing Tool Support for Knowledge Sharing}{21}{section.2.5}
 \contentsline {chapter}{\numberline {3}TAGGY}{24}{chapter.3}
 \contentsline {section}{\numberline {3.1}Assumptions}{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}The Agile Project Context}{27}{section.3.2}
-\contentsline {section}{\numberline {3.3}Architecture}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}High Level Workflow}{27}{section.3.4}
-\contentsline {section}{\numberline {3.5}Similarity Computation}{27}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Similarity Function}{27}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Learning Relative Weights}{27}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Email Matching}{27}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Instant Message Matching}{27}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Implementation Details}{27}{section.3.6}
-\contentsline {section}{\numberline {3.7}An Illustrative Example}{27}{section.3.7}
-\contentsline {chapter}{\numberline {4}EMPIRICAL EVALUATION}{28}{chapter.4}
-\contentsline {section}{\numberline {4.1}Evaluation Approach}{28}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Accuracy}{28}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Statistical Relevance}{28}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Evaluation Results}{28}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Data set\# 1: ScrumPad}{28}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Data set\# 2: IBM Jazz Rational Team Concert}{28}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Limitations}{28}{section.4.3}
-\contentsline {chapter}{\numberline {5}PRELIMINARY QUALITATIVE EVALUATION}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Goals}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Methodology}{29}{section.5.2}
-\contentsline {section}{\numberline {5.3}Study Setup}{29}{section.5.3}
-\contentsline {section}{\numberline {5.4}Findings}{29}{section.5.4}
-\contentsline {section}{\numberline {5.5}Limitations}{29}{section.5.5}
-\contentsline {chapter}{\numberline {6}DISCUSSION}{30}{chapter.6}
-\contentsline {section}{\numberline {6.1}Handling Attachments}{30}{section.6.1}
-\contentsline {section}{\numberline {6.2}Selecting Threshold Similarity Score}{30}{section.6.2}
-\contentsline {section}{\numberline {6.3}The Impact of Incorrect Tagging}{30}{section.6.3}
-\contentsline {section}{\numberline {6.4}Dealing with Absence of Necessary Context}{30}{section.6.4}
-\contentsline {section}{\numberline {6.5}Project Specific vs. Project Agnostic Learning}{30}{section.6.5}
-\contentsline {section}{\numberline {6.6}Limitations of Taggy}{30}{section.6.6}
-\contentsline {chapter}{\numberline {7}CONCLUSION}{31}{chapter.7}
-\contentsline {section}{\numberline {7.1}Research Goals Addressed}{31}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{31}{section.7.2}
+\contentsline {section}{\numberline {3.2}The Agile Project Context}{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}High Level Workflow}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}Architecture}{31}{section.3.4}
+\contentsline {section}{\numberline {3.5}Similarity Computation}{34}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Similarity Function}{34}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Learning Relative Weights}{34}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Email Matching}{34}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Instant Message Matching}{34}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Implementation Details}{34}{section.3.6}
+\contentsline {section}{\numberline {3.7}An Illustrative Example}{34}{section.3.7}
+\contentsline {chapter}{\numberline {4}EMPIRICAL EVALUATION}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Evaluation Approach}{35}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Accuracy}{35}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Statistical Relevance}{35}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Evaluation Results}{35}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data set\# 1: ScrumPad}{35}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data set\# 2: IBM Jazz Rational Team Concert}{35}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Limitations}{35}{section.4.3}
+\contentsline {chapter}{\numberline {5}PRELIMINARY QUALITATIVE EVALUATION}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}Goals}{36}{section.5.1}
+\contentsline {section}{\numberline {5.2}Methodology}{36}{section.5.2}
+\contentsline {section}{\numberline {5.3}Study Setup}{36}{section.5.3}
+\contentsline {section}{\numberline {5.4}Findings}{36}{section.5.4}
+\contentsline {section}{\numberline {5.5}Limitations}{36}{section.5.5}
+\contentsline {chapter}{\numberline {6}DISCUSSION}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Handling Attachments}{37}{section.6.1}
+\contentsline {section}{\numberline {6.2}Selecting Threshold Similarity Score}{37}{section.6.2}
+\contentsline {section}{\numberline {6.3}The Impact of Incorrect Tagging}{37}{section.6.3}
+\contentsline {section}{\numberline {6.4}Dealing with Absence of Necessary Context}{37}{section.6.4}
+\contentsline {section}{\numberline {6.5}Project Specific vs. Project Agnostic Learning}{37}{section.6.5}
+\contentsline {section}{\numberline {6.6}Dealing with Undesired Input}{37}{section.6.6}
+\contentsline {section}{\numberline {6.7}Limitations of Taggy}{37}{section.6.7}
+\contentsline {chapter}{\numberline {7}CONCLUSION}{38}{chapter.7}
+\contentsline {section}{\numberline {7.1}Research Goals Addressed}{38}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{38}{section.7.2}
