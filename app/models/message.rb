@@ -175,7 +175,8 @@ class Message < ActiveRecord::Base
     end
     
     message.subject     = mail.subject || ''
-    message.body        = mail.text_part.body.decoded
+     
+    message.body        = mail.body.to_s
     message.created_at  = mail.date    
     message.attached_files = extract_attachments_from_email(mail)
   end  
