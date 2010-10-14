@@ -4,7 +4,7 @@
 
 <div class="message_meta">
 	<p>
-	<%= @message.created_at.strftime("%I:%M %p on %B %d, %Y") %> <%=h @message.sender.name %> wrote to <%=h @message.users.collect{|user| user.name}.join(', ') %>
+	<%= @message.created_at.strftime("%I:%M %p on %B %d, %Y") %> <%=h @message.sender.name if @message.sender%> wrote to <%=h @message.users.collect{|user| user.name}.join(', ') %>
 	</p>
 </div>
 
