@@ -36,8 +36,12 @@ class Project < ActiveRecord::Base
   def self.grab_all_emails!
     Project.find(:all, :conditions => 'email IS NOT NULL').each do |project|
       begin
-        project.grab_emails!
-        logger.debug "Grabbed emails for project #{project.name}"
+        if project.email.present?        
+          project.grab_emails!
+          logger.info "Grabbed emails for project #{project.name}"
+        else
+          logger.info "Did not grab emails for for project #{project.name}: no email given"          
+        end
       rescue Exception => error
         logger.error "Exception in grabbing emails for project #{project.name}: #{error} at #{error.backtrace.join(',')}"
       end
