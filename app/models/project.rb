@@ -37,8 +37,8 @@ class Project < ActiveRecord::Base
     Project.find(:all, :conditions => 'email IS NOT NULL').each do |project|
       begin
         if project.email.present?        
-          project.grab_emails!
-          logger.info "Grabbed emails for project #{project.name}"
+          messages = project.grab_emails!
+          logger.info "Grabbed #{messages.length} emails for project #{project.name}"
         else
           logger.info "Did not grab emails for for project #{project.name}: no email given"          
         end
