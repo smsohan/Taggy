@@ -9,6 +9,8 @@ module SimilarityEngine
         # relative_weight = RelativeWeight.instance
         # relative_weight.attributes = {:date_weight => 25, :people_weight => 15, :subject_weight => 35, :body_weight => 25}
         puts "Initial Relative Weight = #{relative_weight}"
+        
+        
         matcher = SimilarityEngine::Matchers::MessageMatcher.new(relative_weight)
         total_correct = 0
         learning_data.messages.each do |message|

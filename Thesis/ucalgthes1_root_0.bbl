@@ -1,0 +1,394 @@
+\begin{thebibliography}{10}
+
+\bibitem{modified_agile}
+Dinesh Batra.
+\newblock Modified agile practices for outsourced software projects.
+\newblock {\em Commun. {ACM}}, 52(9):143--148, 2009.
+
+\bibitem{essential_communication}
+Lucas Layman, Laurie Williams, Daniela Damian, and Hynek Bures.
+\newblock Essential communication practices for extreme programming in a global
+  software development team.
+\newblock {\em Information and Software Technology}, 48(9):781--794, September
+  2006.
+
+\bibitem{wiki_based}
+Bj~Decker, Eric Ras, J~Rech, Pascal Jaubert, and Marco Rieth.
+\newblock {Wiki-Based} stakeholder participation in requirements engineering.
+\newblock {\em {IEEE} Software}, 24(2):28--35, 2007.
+
+\bibitem{mylyn}
+Eclipse mylyn open source project.
+\newblock http://www.eclipse.org/mylyn/.
+
+\bibitem{scrum_pad}
+An agile / scrum project management tool {\textbar} {ScrumPad}.
+\newblock http://www.scrumpad.com/.
+
+\bibitem{am}
+Manifesto for agile software development.
+\newblock http://agilemanifesto.org/.
+
+\bibitem{xp}
+Kent Beck.
+\newblock {\em Extreme programming {eXplained} : embrace change}.
+\newblock {Addison-Wesley}, Reading {MA}, 2000.
+
+\bibitem{scrum}
+Ken Schwaber.
+\newblock {\em Agile software development with Scrum}.
+\newblock Prentice Hall, Upper Saddle River {NJ}, 2002.
+
+\bibitem{xp_up}
+Scott Ambler.
+\newblock {\em Agile modeling : effective practices for {eXtreme} programming
+  and the unified process}.
+\newblock J. Wiley, New York, 2002.
+
+\bibitem{user_stories_applied}
+Mike Cohn.
+\newblock {\em User stories applied : for agile software development}.
+\newblock {Addison-Wesley}, Boston, 2004.
+
+\bibitem{ron_jeffries}
+Ron Jeffries.
+\newblock {\em Extreme programming installed}.
+\newblock {Addison-Wesley}, Boston, 2001.
+
+\bibitem{rachel_davies}
+Rachel Davies.
+\newblock {\em Agile coaching}.
+\newblock Pragmatic Bookshelf, Raleigh {N.C.}, 2009.
+
+\bibitem{bill_wake}
+William Wake.
+\newblock {\em Extreme programming explored}.
+\newblock Addison Wesley, Boston, 2002.
+
+\bibitem{xp_expanded}
+Hubert Baumeister, Michele Marchesi, Mike Holcombe, Keith Braithwaite, and Tim
+  Joyce.
+\newblock {XP} expanded: Distributed extreme programming.
+\newblock In {\em Extreme Programming and Agile Processes in Software
+  Engineering}, volume 3556 of {\em Lecture Notes in Computer Science}, pages
+  180--188. Springer Berlin / Heidelberg, 2005.
+
+\bibitem{practical_considerations}
+Jane~M. Robarts.
+\newblock Practical considerations for distributed agile projects.
+\newblock In {\em {AGILE} Conference}, volume~0, pages 327--332, Los Alamitos,
+  {CA,} {USA}, 2008. {IEEE} Computer Society.
+
+\bibitem{fully_distributed}
+J.~Sutherland, G.~Schoonheim, E.~Rustenburg, and M.~Rijk.
+\newblock Fully distributed scrum: The secret sauce for hyperproductive
+  offshored development teams.
+\newblock In {\em Agile, 2008. {AGILE} '08. Conference}, pages 339--344, 2008.
+
+\bibitem{yahoo}
+Brian~Scott Drummond and John Francis~{"JF"} Unson.
+\newblock Yahoo! distributed agile: Notes from the world over.
+\newblock In {\em {AGILE} Conference}, volume~0, pages 315--321, Los Alamitos,
+  {CA,} {USA}, 2008. {IEEE} Computer Society.
+
+\bibitem{version_one}
+Agile project management tool - {VersionOne}.
+\newblock
+  {http://pm.versionone.com/Trial\_AgileProjects.html?c-aws=p\&gr-versionone\&%
+v-004\&gclid=CIbC9bjhy6QCFQwDbAodgnTfEQ}.
+
+\bibitem{xplanner}
+{XPlanner} home.
+\newblock http://www.xplanner.org/.
+
+\bibitem{trac}
+The trac project.
+\newblock http://trac.edgewall.org/.
+
+\bibitem{collaboration_in}
+Andrea~De Lucia, Filomena Ferrucci, and Filippo Lanubile.
+\newblock Collaboration in distributed software development.
+\newblock In {\em Software Engineering}, volume 5413 of {\em Lecture Notes in
+  Computer Science}, pages 174--193. Springer Berlin / Heidelberg, 2009.
+
+\bibitem{on_coord}
+Marcelo Cataldo, Matthew Bass, James~D. Herbsleb, and Len Bass.
+\newblock On coordination mechanisms in global software development.
+\newblock In {\em Global Software Engineering, International Conference on},
+  volume~0, pages 71--80, Los Alamitos, {CA,} {USA}, 2007. {IEEE} Computer
+  Society.
+
+\bibitem{implementing_an_experience}
+B.~Chatters.
+\newblock Implementing an experience factory: maintenance and evolution of the
+  software and systems development process.
+\newblock In {\em Software Maintenance, 1999. {(ICSM} '99) Proceedings. {IEEE}
+  International Conference on}, pages 146--151, 1999.
+
+\bibitem{auto_tagging}
+S.~M. Sohan, Michael~M. Richter, and Frank Maurer.
+\newblock Auto-tagging emails with user stories using project context.
+\newblock In {\em Agile Processes in Software Engineering and Extreme
+  Programming}, volume~48 of {\em Lecture Notes in Business Information
+  Processing}, pages 103--116. Springer Berlin Heidelberg, 2010.
+
+\bibitem{using_hybrid}
+Yevgeniy~{"Eugene"} Medynskiy, Nicolas Ducheneaut, and Ayman Farahat.
+\newblock Using hybrid networks for the analysis of online software development
+  communities.
+\newblock In {\em Proceedings of the {SIGCHI} conference on Human Factors in
+  computing systems}, pages 513--516, Montréal, Québec, Canada, 2006. {ACM}.
+
+\bibitem{hipikat}
+Davor Čubranić and Gail~C. Murphy.
+\newblock Hipikat: recommending pertinent software development artifacts.
+\newblock In {\em Proceedings of the 25th International Conference on Software
+  Engineering}, pages 408--418, Portland, Oregon, 2003. {IEEE} Computer
+  Society.
+
+\bibitem{hipikat_2}
+Davor Cubranic, Gail~C. Murphy, Janice Singer, and Kellogg~S. Booth.
+\newblock Hipikat: A project memory for software development.
+\newblock {\em {IEEE} Transactions on Software Engineering}, 31(6):446--465,
+  2005.
+
+\bibitem{communication_tools}
+M.~Rita Thissen, Jean~M. Page, Madhavi~C. Bharathi, and Toyia~L. Austin.
+\newblock Communication tools for distributed software development teams.
+\newblock In {\em Proceedings of the 2007 {ACM} {SIGMIS} {CPR} conference on
+  Computer personnel research: The global information technology workforce},
+  pages 28--35, St. Louis, Missouri, {USA}, 2007. {ACM}.
+
+\bibitem{communication_in_distributed}
+M.~Korkala and P.~Abrahamsson.
+\newblock Communication in distributed agile development: A case study.
+\newblock In {\em Software Engineering and Advanced Applications, 2007. 33rd
+  {EUROMICRO} Conference on}, pages 203--210, 2007.
+
+\bibitem{a_case_study_of}
+Rory~V. {O’Connor}, Nathan Baddoo, Kari Smolander, Richard Messnarz, Steinar
+  Hole, and Nils~Brede Moe.
+\newblock A case study of coordination in distributed agile software
+  development.
+\newblock In {\em Software Process Improvement}, volume~16 of {\em
+  Communications in Computer and Information Science}, pages 189--200. Springer
+  Berlin Heidelberg, 2008.
+
+\bibitem{agile_methods}
+T.~Hildenbrand, M.~Geisser, T.~Kude, D.~Bruch, and T.~Acker.
+\newblock Agile methodologies for distributed collaborative development of
+  enterprise applications.
+\newblock In {\em Complex, Intelligent and Software Intensive Systems, 2008.
+  {CISIS} 2008. International Conference on}, pages 540--545, 2008.
+
+\bibitem{where_did_you}
+Lucy~M. Berlin, Robin Jeffries, Vicki~L. {O'Day}, Andreas Paepcke, and Cathleen
+  Wharton.
+\newblock Where did you put it? issues in the design and use of a group memory.
+\newblock In {\em Proceedings of the {INTERACT} '93 and {CHI} '93 conference on
+  Human factors in computing systems}, pages 23--30, Amsterdam, The
+  Netherlands, 1993. {ACM}.
+
+\bibitem{automating_requirements}
+A.~Egyed and P.~Grunbacher.
+\newblock Automating requirements traceability: Beyond the record \& replay
+  paradigm.
+\newblock In {\em Automated Software Engineering, 2002. Proceedings. {ASE}
+  2002. 17th {IEEE} International Conference on}, pages 163--171, 2002.
+
+\bibitem{wikipedia}
+Wikipedia.
+\newblock http://www.wikipedia.org/.
+
+\bibitem{self_organized}
+W.~Lohstroh, R.~J. Westerwaal, B.~Noheda, S.~Enache, I.~A. M.~E. Giebels,
+  B.~Dam, and R.~Griessen.
+\newblock {Self-Organized} layered hydrogenation in black {Mg\_{2}NiH\_{x}}
+  switchable mirrors.
+\newblock {\em Physical Review Letters}, 93(19):197404, November 2004.
+
+\bibitem{collaborative_knowledge}
+M.~Tosic, V.~Milicevic, and M.~Stankovic.
+\newblock Collaborative knowledge acquisition for agile project management.
+\newblock In {\em Computer as a Tool, 2005. {EUROCON} {2005.The} International
+  Conference on}, volume~2, pages 1081--1084, 2005.
+
+\bibitem{ontowiki}
+Isabel Cruz, Stefan Decker, Dean Allemang, Chris Preist, Daniel Schwabe, Peter
+  Mika, Mike Uschold, Lora Aroyo, Sören Auer, Sebastian Dietzold, and Thomas
+  Riechert.
+\newblock {OntoWiki} – a tool for social, semantic collaboration.
+\newblock In {\em The Semantic Web - {ISWC} 2006}, volume 4273 of {\em Lecture
+  Notes in Computer Science}, pages 736--749. Springer Berlin / Heidelberg,
+  2006.
+
+\bibitem{a_case_study_of_wiki}
+Thomas Chau and Frank Maurer.
+\newblock A case study of wiki-based experience repository at a medium-sized
+  software company.
+\newblock In {\em Proceedings of the 3rd international conference on Knowledge
+  capture}, pages 185--186, Banff, Alberta, Canada, 2005. {ACM}.
+
+\bibitem{fitnesse}
+{Fitnesse Acceptance Testing Tool}.
+\newblock http://fitnesse.org/.
+
+\bibitem{how_did_we}
+Cynick Young and Hiroki Terashima.
+\newblock How did we adapt agile processes to our distributed development?
+\newblock In {\em {AGILE} Conference}, volume~0, pages 304--309, Los Alamitos,
+  {CA,} {USA}, 2008. {IEEE} Computer Society.
+
+\bibitem{a_lightweight}
+Takahira Yamaguchi, Walid Maalej, and {Hans-Jörg} Happel.
+\newblock A lightweight approach for knowledge sharing in distributed software
+  teams.
+\newblock In {\em Practical Aspects of Knowledge Management}, volume 5345 of
+  {\em Lecture Notes in Computer Science}, pages 14--25. Springer Berlin /
+  Heidelberg, 2008.
+
+\bibitem{supporting_program}
+Jonathan~I. Maletic and Andrian Marcus.
+\newblock Supporting program comprehension using semantic and structural
+  information.
+\newblock In {\em Proceedings of the 23rd International Conference on Software
+  Engineering}, pages 103--112, Toronto, Ontario, Canada, 2001. {IEEE} Computer
+  Society.
+
+\bibitem{feat}
+Martin~P. Robillard and Gail~C. Murphy.
+\newblock {FEAT:} a tool for locating, describing, and analyzing concerns in
+  source code.
+\newblock In {\em Proceedings of the 25th International Conference on Software
+  Engineering}, pages 822--823, Portland, Oregon, 2003. {IEEE} Computer
+  Society.
+
+\bibitem{mingle}
+Agile project management tool - mingle - for agile software development
+  {\textbar} agile {ALM} {\textbar} {ThoughtWorks} studios.
+\newblock http://www.thoughtworks-studios.com/mingle-agile-project-management.
+
+\bibitem{scrum_works}
+{ScrumWorks} - {CollabNet,} inc.
+\newblock http://danube.com/scrumworks/pro.
+
+\bibitem{ibm_rtc}
+{IBM} software - rational team concert.
+\newblock http://www-01.ibm.com/software/awdtools/rtc/.
+
+\bibitem{jira}
+Bug, issue and project tracking for software development - {JIRA}.
+\newblock http://www.atlassian.com/software/jira/.
+
+\bibitem{bugzilla}
+Bugzilla :: bugzilla.org.
+\newblock http://www.bugzilla.org/.
+
+\bibitem{fog_bugz}
+Fog~Creek Software and Happy Cog~Studios http://www. happycog.com.
+\newblock {FogBugz} - bug \& issue tracking, project management, help desk
+  software.
+\newblock http://www.fogcreek.com/fogbugz/.
+
+\bibitem{issue_tracking}
+Dane Bertram, Amy Voida, Saul Greenberg, and Robert Walker.
+\newblock Communication, collaboration, and bugs: the social nature of issue
+  tracking in small, collocated teams.
+\newblock In {\em Proceedings of the 2010 {ACM} conference on Computer
+  supported cooperative work}, pages 291--300, Savannah, Georgia, {USA}, 2010.
+  {ACM}.
+
+\bibitem{basecamp}
+Project management software, online collaboration: Basecamp.
+\newblock http://basecamphq.com/.
+
+\bibitem{team_box}
+Teambox - collaboration software.
+\newblock http://teambox.com/.
+
+\bibitem{share_point}
+Business collaboration platform for the enterprise and the internet -
+  {SharePoint} 2010.
+\newblock {http://sharepoint.microsoft.com/en-us/Pages/default.aspx}.
+
+\bibitem{github}
+Secure source code hosting and collaborative development - {GitHub}.
+\newblock http://github.com/.
+
+\bibitem{codeplex}
+{CodePlex} - open source project hosting.
+\newblock http://www.codeplex.com/.
+
+\bibitem{Hudson}
+Hudson {CI}.
+\newblock http://hudson-ci.org/.
+
+\bibitem{cruise_control}
+{CruiseControl} home.
+\newblock http://cruisecontrol.sourceforge.net/.
+
+\bibitem{team_server}
+Team foundation server 2010.
+\newblock http://msdn.microsoft.com/en-us/vstudio/ff637362.aspx.
+
+\bibitem{skype}
+Skype.
+\newblock http://www.skype.com/intl/en-us/home.
+
+\bibitem{local_global}
+M.~M. Richter.
+\newblock {\em Knowledge Containers}.
+\newblock Morgan Kaufmann Publishers, 2003.
+
+\bibitem{a_vector_space}
+G.~Salton, A.~Wong, and C.~S. Yang.
+\newblock A vector space model for automatic indexing.
+\newblock {\em Commun. {ACM}}, 18(11):613--620, 1975.
+
+\bibitem{twitter_lucene}
+The twitter engineering blog: Twitter's new search architecture.
+\newblock
+  http://engineering.twitter.com/2010/10/twitters-new-search-architecture.html.
+
+\bibitem{reinforcement_learning}
+Richard Sutton.
+\newblock {\em Reinforcement learning : an introduction}.
+\newblock {MIT} Press, Cambridge Mass., 1998.
+
+\bibitem{ruby}
+Ruby programming language.
+\newblock http://www.ruby-lang.org/en/.
+
+\bibitem{ruby_on_rails}
+Ruby on rails.
+\newblock http://rubyonrails.org/.
+
+\bibitem{lucene}
+Apache lucene - overview.
+\newblock http://lucene.apache.org/java/docs/index.html.
+
+\bibitem{sql_server}
+Microsoft sql server.
+\newblock http://www.microsoft.com/sqlserver.
+
+\bibitem{solr}
+Apache solr.
+\newblock http://lucene.apache.org/solr/.
+
+\bibitem{skype4py}
+{Skype4Py}.
+\newblock http://skype4py.sourceforge.net/doc/html/.
+
+\bibitem{cron}
+crontab.org - {CRONTAB}.
+\newblock http://crontab.org/.
+
+\bibitem{scheduled_tasks}
+Windows scheduled tasks.
+\newblock http://support.microsoft.com/kb/308569.
+
+\bibitem{active_record}
+Active record -- object-relation mapping put on rails.
+\newblock http://ar.rubyonrails.org/.
+
+\end{thebibliography}

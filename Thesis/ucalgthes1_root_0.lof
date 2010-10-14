@@ -1,10 +1,26 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A Scrum Wall. Source: http://www.xqa.com.ar}}{5}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A Virtual Scrum Wall. Source: http://www.scrumpad.com}}{6}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces An Example Agile Outsourcing Model. Source: \cite {modified_agile}}}{7}{figure.1.3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Jigsaw Puzzle Visualizing the Auto-Tagging Problem}}{14}{figure.1.4}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Use of Emails for Different Purposes. Source: \cite {essential_communication}}}{19}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A Wiki Based Document Structure for Requirements Engineering. Source: \cite {wiki_based}}}{22}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Mylyn Eclipse Plugin - Bugzilla Integration. Source: \cite {mylyn}}}{30}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Mylyn Eclipse Plugin - Setting source code context of a bug. Source: \cite {mylyn}}}{31}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Dashboard in ScrumPad, a Commercial Agile Project Management Tool. Source: \cite {scrum_pad}}}{32}{figure.2.5}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Taggy Components}}{31}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces CBR System Input and Output}}{35}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Taggy Components}}{40}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces CBR System Input and Output}}{44}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Taggy Screenshot - Showing User Story and Related Emails}}{52}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Taggy Screenshot - Showing Email and Related User Stories}}{53}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Taggy Implementation Details by Component}}{56}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces An Example Email}}{59}{figure.3.6}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Taggy Empirical Evaluation Steps}}{63}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Impact of Training on Relative Weights}}{68}{figure.4.2}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

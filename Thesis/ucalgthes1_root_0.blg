@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99c (TeX Live 2009)
+The top-level auxiliary file: ucalgthes1_root_0.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: literature_review.aux
+A level-1 auxiliary file: taggy.aux
+A level-1 auxiliary file: empirical_evaluation.aux
+A level-1 auxiliary file: qualitative_evaluation.aux
+A level-1 auxiliary file: discussion.aux
+A level-1 auxiliary file: conclusion.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+You've used 72 entries,
+            1791 wiz_defined-function locations,
+            783 strings with 13689 characters,
+and the built_in function-call counts, 15572 in all, are:
+= -- 1479
+> -- 448
+< -- 35
++ -- 188
+- -- 116
+* -- 751
+:= -- 1995
+add.period$ -- 202
+call.type$ -- 72
+change.case$ -- 63
+chr.to.int$ -- 0
+cite$ -- 72
+duplicate$ -- 819
+empty$ -- 1792
+format.name$ -- 116
+if$ -- 3846
+int.to.chr$ -- 0
+int.to.str$ -- 72
+missing$ -- 48
+newline$ -- 331
+num.names$ -- 40
+pop$ -- 379
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 585
+stack$ -- 0
+substring$ -- 881
+swap$ -- 305
+text.length$ -- 35
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 123
+width$ -- 74
+write$ -- 704

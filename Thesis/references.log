@@ -1,0 +1,4959 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  11 OCT 2010 15:53
+entering extended mode
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**references.bib
+(./references.bib
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, ku
+rmanji, latin, latvian, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, po
+lish, portuguese, romanian, russian, sanskrit, serbian, slovak, slovenian, span
+ish, swedish, turkish, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+
+./references.bib:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 Ô
+     ªø
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:2: Missing $ inserted.
+<inserted text> 
+                $
+l.2 @misc{_
+           manifesto_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+./references.bib:6: Extra }, or forgotten $.
+l.6 }
+     ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:7: Missing $ inserted.
+<inserted text> 
+                $
+l.7 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--7
+[]
+ []
+
+
+Overfull \hbox (98.04552pt too wide) in paragraph at lines 1--7
+[]\OML/cmm/m/it/10 anifesto[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/c
+mr/m/n/10 =
+ []
+
+
+Overfull \hbox (219.99623pt too wide) in paragraph at lines 1--7
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (202.89574pt too wide) in paragraph at lines 1--7
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (130.65314pt too wide) in paragraph at lines 1--7
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:8: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 @
+     book{beck_extreme_2000,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+./references.bib:8: Missing $ inserted.
+<inserted text> 
+                $
+l.8 @book{beck_
+               extreme_2000,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:15: Extra }, or forgotten $.
+l.15 }
+      ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:16: Missing $ inserted.
+<inserted text> 
+                $
+l.16 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (125.50488pt too wide) in paragraph at lines 8--16
+[]$[]\OML/cmm/m/it/10 xtreme[]\OT1/cmr/m/n/10 000\OML/cmm/m/it/10 ; address \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (89.1889pt too wide) in paragraph at lines 8--16
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (258.41554pt too wide) in paragraph at lines 8--16
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (121.56802pt too wide) in paragraph at lines 8--16
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (127.40932pt too wide) in paragraph at lines 8--16
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (81.06258pt too wide) in paragraph at lines 8--16
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 8--16
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:17: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 @
+      book{schwaber_agile_2002,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+./references.bib:17: Missing $ inserted.
+<inserted text> 
+                $
+l.17 @book{schwaber_
+                    agile_2002,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:24: Extra }, or forgotten $.
+l.24 }
+      ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:25: Missing $ inserted.
+<inserted text> 
+                $
+l.25 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (110.25043pt too wide) in paragraph at lines 17--25
+[]$[]\OML/cmm/m/it/10 gile[]\OT1/cmr/m/n/10 002\OML/cmm/m/it/10 ; address \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (132.56989pt too wide) in paragraph at lines 17--25
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (205.02324pt too wide) in paragraph at lines 17--25
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (121.56802pt too wide) in paragraph at lines 17--25
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (105.08878pt too wide) in paragraph at lines 17--25
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (98.10887pt too wide) in paragraph at lines 17--25
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 17--25
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:26: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 @
+      book{ambler_agile_2002,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+./references.bib:26: Missing $ inserted.
+<inserted text> 
+                $
+l.26 @book{ambler_
+                  agile_2002,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:33: Extra }, or forgotten $.
+l.33 }
+      ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:34: Missing $ inserted.
+<inserted text> 
+                $
+l.34 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (110.25043pt too wide) in paragraph at lines 26--34
+[]$[]\OML/cmm/m/it/10 gile[]\OT1/cmr/m/n/10 002\OML/cmm/m/it/10 ; address \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.89883pt too wide) in paragraph at lines 26--34
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (405.41478pt too wide) in paragraph at lines 26--34
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (121.56802pt too wide) in paragraph at lines 26--34
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (80.57019pt too wide) in paragraph at lines 26--34
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (91.29639pt too wide) in paragraph at lines 26--34
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 26--34
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:35: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 @
+      book{cohn_user_2004,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+./references.bib:35: Missing $ inserted.
+<inserted text> 
+                $
+l.35 @book{cohn_
+                user_2004,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:42: Extra }, or forgotten $.
+l.42 }
+      ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:43: Missing $ inserted.
+<inserted text> 
+                $
+l.43 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (108.08575pt too wide) in paragraph at lines 35--43
+[]$[]\OML/cmm/m/it/10 ser[]\OT1/cmr/m/n/10 004\OML/cmm/m/it/10 ; address \OT1/c
+mr/m/n/10 =
+ []
+
+
+Overfull \hbox (65.58635pt too wide) in paragraph at lines 35--43
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (260.78563pt too wide) in paragraph at lines 35--43
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (121.56802pt too wide) in paragraph at lines 35--43
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (127.40932pt too wide) in paragraph at lines 35--43
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (83.88058pt too wide) in paragraph at lines 35--43
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 35--43
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:44: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 @
+      incollection{baumeister_xp_2005,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+./references.bib:44: Missing $ inserted.
+<inserted text> 
+                $
+l.44 @incollection{baumeister_
+                              xp_2005,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:54: Extra }, or forgotten $.
+l.54 }
+      ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:55: Missing $ inserted.
+<inserted text> 
+                $
+l.55 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (91.4741pt too wide) in paragraph at lines 44--55
+[]$[]\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 005\OML/cmm/m/it/10 ; series \OT1/cmr/
+m/n/10 =
+ []
+
+
+Overfull \hbox (183.87527pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (274.64142pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (48.6945pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (226.36154pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (357.03252pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (169.86452pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (463.06642pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 44--55
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:56: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 @
+      incollection{sillitti_auto-tagging_2010,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+./references.bib:56: Missing $ inserted.
+<inserted text> 
+                $
+l.56 @incollection{sillitti_
+                            auto-tagging_2010,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:68: Extra }, or forgotten $.
+l.68 }
+      ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:69: Missing $ inserted.
+<inserted text> 
+                $
+l.69 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.79837pt too wide) in paragraph at lines 56--69
+[]$[]\OML/cmm/m/it/10 uto \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (94.77922pt too wide) in paragraph at lines 56--69
+\OML/cmm/m/it/10 tagging[]\OT1/cmr/m/n/10 010\OML/cmm/m/it/10 ; series \OT1/cmr
+/m/n/10 =
+ []
+
+
+Overfull \hbox (255.57103pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (321.62773pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.42659pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (142.58319pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (295.25015pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (357.03252pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (164.8645pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (628.88914pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (119.21516pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 56--69
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:70: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 @
+      inproceedings{thissen_communication_2007,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+./references.bib:70: Missing $ inserted.
+<inserted text> 
+                $
+l.70 @inproceedings{thissen_
+                            communication_2007,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:83: Extra }, or forgotten $.
+l.83 }
+      ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:84: Missing $ inserted.
+<inserted text> 
+                $
+l.84 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (158.17493pt too wide) in paragraph at lines 70--84
+[]$[]\OML/cmm/m/it/10 ommunication[]\OT1/cmr/m/n/10 007\OML/cmm/m/it/10 ; addre
+ss \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (145.54462pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (315.97307pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (142.58319pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (253.44391pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (161.4459pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (2970.65617pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (641.82309pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.17384pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (372.03612pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (353.72165pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (42.77779pt too wide) in paragraph at lines 70--84
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:85: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 @
+      incollection{oconnor_case_2008,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+./references.bib:85: Missing $ inserted.
+<inserted text> 
+                $
+l.85 @incollection{oconnor_
+                           case_2008,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:97: Extra }, or forgotten $.
+l.97 }
+      ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:98: Missing $ inserted.
+<inserted text> 
+                $
+l.98 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Overfull \hbox (100.11153pt too wide) in paragraph at lines 85--98
+[]$[]\OML/cmm/m/it/10 ase[]\OT1/cmr/m/n/10 008\OML/cmm/m/it/10 ; series \OT1/cm
+r/m/n/10 =
+ []
+
+
+Overfull \hbox (275.28299pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (362.77188pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.42659pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (142.58319pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (300.25017pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (197.21164pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (164.8645pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (539.09224pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (119.21516pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 85--98
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:99: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 @
+      inproceedings{korkala_communication_2007,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+./references.bib:99: Missing $ inserted.
+<inserted text> 
+                $
+l.99 @inproceedings{korkala_
+                            communication_2007,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:111: Extra }, or forgotten $.
+l.111 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:112: Missing $ inserted.
+<inserted text> 
+                $
+l.112 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (142.16287pt too wide) in paragraph at lines 99--112
+[]$[]\OML/cmm/m/it/10 ommunication[]\OT1/cmr/m/n/10 007\OML/cmm/m/it/10 ; title
+ \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (315.7897pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (109.42317pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; shorttitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (246.22176pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (172.69313pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (195.086pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5082.86252pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (444.50966pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (174.01295pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (587.23189pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 99--112
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:113: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 @
+       inproceedings{hildenbrand_agile_2008,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+./references.bib:113: Missing $ inserted.
+<inserted text> 
+                $
+l.113 @inproceedings{hildenbrand_
+                                 agile_2008,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:123: Extra }, or forgotten $.
+l.123 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:124: Missing $ inserted.
+<inserted text> 
+                $
+l.124 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (94.23837pt too wide) in paragraph at lines 113--124
+[]$[]\OML/cmm/m/it/10 gile[]\OT1/cmr/m/n/10 008\OML/cmm/m/it/10 ; title \OT1/cm
+r/m/n/10 =
+ []
+
+
+Overfull \hbox (422.41772pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (137.91536pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (160.30823pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (2973.84454pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (487.98624pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (325.92949pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (975.53702pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 113--124
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:125: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 @
+       inproceedings{cataldo_coordination_2007,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+./references.bib:125: Missing $ inserted.
+<inserted text> 
+                $
+l.125 @inproceedings{cataldo_
+                             coordination_2007,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:138: Extra }, or forgotten $.
+l.138 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:139: Missing $ inserted.
+<inserted text> 
+                $
+l.139 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (145.40398pt too wide) in paragraph at lines 125--139
+[]$[]\OML/cmm/m/it/10 oordination[]\OT1/cmr/m/n/10 007\OML/cmm/m/it/10 ; addres
+s \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (135.89307pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (320.49753pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (38.42657pt too wide) in paragraph at lines 125--139
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.16371pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (324.9797pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (2620.35585pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (316.69592pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (152.2348pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (342.66411pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (85.40512pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ; annote \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (657.69402pt too wide) in paragraph at lines 125--139
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:139: LaTeX Error: The font size command \normalsize is not def
+ined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+./references.bib:140: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 @
+       article{layman_essential_2006,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+./references.bib:140: Missing $ inserted.
+<inserted text> 
+                $
+l.140 @article{layman_
+                      essential_2006,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:154: Extra }, or forgotten $.
+l.154 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:155: Missing $ inserted.
+<inserted text> 
+                $
+l.155 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (112.64395pt too wide) in paragraph at lines 140--155
+[]$[]\OML/cmm/m/it/10 ssential[]\OT1/cmr/m/n/10 006\OML/cmm/m/it/10 ; title \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (481.14989pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.82243pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; issn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (80.9167pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (529.79935pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (179.2853pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (2997.34479pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; number \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (54.52042pt too wide) in paragraph at lines 140--155
+\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (214.82057pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (363.55917pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; month \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (49.36806pt too wide) in paragraph at lines 140--155
+\OML/cmm/m/it/10 sep; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (317.55696pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 140--155
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:156: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 @
+       inproceedings{berlin_where_1993,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+./references.bib:156: Missing $ inserted.
+<inserted text> 
+                $
+l.156 @inproceedings{berlin_
+                            where_1993,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:170: Extra }, or forgotten $.
+l.170 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:171: Missing $ inserted.
+<inserted text> 
+                $
+l.171 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no î in font cmr10!
+
+Overfull \hbox (115.33923pt too wide) in paragraph at lines 156--171
+[]$[]\OML/cmm/m/it/10 here[]\OT1/cmr/m/n/10 993\OML/cmm/m/it/10 ; address \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (165.85506pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (312.4844pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (143.86748pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; shorttitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.22495pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (248.4439pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (151.44588pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (3747.47266pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (483.24716pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.17384pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (454.95552pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (513.6766pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (42.77779pt too wide) in paragraph at lines 156--171
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:172: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 @
+       inproceedings{ubrani_hipikat:_2003,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+./references.bib:172: Missing $ inserted.
+<inserted text> 
+                $
+l.172 @inproceedings{ubrani_
+                            hipikat:_2003,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:184: Extra }, or forgotten $.
+l.184 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:185: Missing $ inserted.
+<inserted text> 
+                $
+l.185 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no å in font cmr10!
+Missing character: There is no ƒ in font cmr10!
+Missing character: There is no á in font cmr10!
+
+Overfull \hbox (61.56273pt too wide) in paragraph at lines 172--185
+[]$[]\OML/cmm/m/it/10 ipikat \OT1/cmr/m/n/10 :[]
+ []
+
+
+Overfull \hbox (64.51622pt too wide) in paragraph at lines 172--185
+\OT1/cmr/m/n/10 003\OML/cmm/m/it/10 ; address \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (112.00818pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (323.77544pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (147.93689pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; shorttitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.15877pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (270.83676pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (4250.85602pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (383.37831pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (152.2348pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (176.92938pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 172--185
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:186: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 @
+       article{cubranic_hipikat:project_2005,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:186: Missing $ inserted.
+<inserted text> 
+                $
+l.186 @article{cubranic_
+                        hipikat:project_2005,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:200: Extra }, or forgotten $.
+l.200 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:201: Missing $ inserted.
+<inserted text> 
+                $
+l.201 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (57.0766pt too wide) in paragraph at lines 186--201
+[]$[]\OML/cmm/m/it/10 ipikat \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (84.94357pt too wide) in paragraph at lines 186--201
+\OML/cmm/m/it/10 project[]\OT1/cmr/m/n/10 005\OML/cmm/m/it/10 ; title \OT1/cmr/
+m/n/10 =
+ []
+
+
+Overfull \hbox (290.64153pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.82243pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; issn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (109.42317pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; shorttitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (63.96147pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (311.30684pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5876.29942pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; number \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (54.52042pt too wide) in paragraph at lines 186--201
+\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (245.64241pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (354.47406pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (544.65652pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.40515pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ; annote \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (657.69402pt too wide) in paragraph at lines 186--201
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:202: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 @
+       inproceedings{medynskiy_using_2006,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no y in font nullfont!
+./references.bib:202: Missing $ inserted.
+<inserted text> 
+                $
+l.202 @inproceedings{medynskiy_
+                               using_2006,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:215: Extra }, or forgotten $.
+l.215 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:216: Missing $ inserted.
+<inserted text> 
+                $
+l.216 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+
+Overfull \hbox (113.13507pt too wide) in paragraph at lines 202--216
+[]$[]\OML/cmm/m/it/10 sing[]\OT1/cmr/m/n/10 006\OML/cmm/m/it/10 ; address \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (142.7341pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (392.7501pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.36101pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (291.2218pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (161.4459pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (2667.08846pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (402.97964pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.17384pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (365.19633pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (388.01202pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 202--216
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:217: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217 @
+       inproceedings{chatters_implementingexperience_1999,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+./references.bib:217: Missing $ inserted.
+<inserted text> 
+                $
+l.217 @inproceedings{chatters_
+                              implementingexperience_1999,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:242: Extra }, or forgotten $.
+l.242 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:243: Missing $ inserted.
+<inserted text> 
+                $
+l.243 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (183.5296pt too wide) in paragraph at lines 217--243
+[]$[]\OML/cmm/m/it/10 mplementingexperience[]\OT1/cmr/m/n/10 999\OML/cmm/m/it/1
+0 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (547.22685pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; shorttitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (186.46826pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (151.8182pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (174.21107pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (4260.75972pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (440.64328pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (86.12296pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (1935.53517pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 217--243
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:244: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 @
+       inproceedings{egyed_automating_2002,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+./references.bib:244: Missing $ inserted.
+<inserted text> 
+                $
+l.244 @inproceedings{egyed_
+                           automating_2002,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:256: Extra }, or forgotten $.
+l.256 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:257: Missing $ inserted.
+<inserted text> 
+                $
+l.257 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (123.90517pt too wide) in paragraph at lines 244--257
+[]$[]\OML/cmm/m/it/10 utomating[]\OT1/cmr/m/n/10 002\OML/cmm/m/it/10 ; title \O
+T1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (363.14478pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (109.42317pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; shorttitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (194.443pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (148.44186pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (170.83473pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (3165.59634pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (500.20294pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (152.94025pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (1129.82832pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 244--257
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:258: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 @
+       misc{_wikipedia_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:258: Missing $ inserted.
+<inserted text> 
+                $
+l.258 @misc{_
+             wikipedia_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:262: Extra }, or forgotten $.
+l.262 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:263: Missing $ inserted.
+<inserted text> 
+                $
+l.263 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (114.44957pt too wide) in paragraph at lines 258--263
+[]$[]\OML/cmm/m/it/10 ikipedia[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (75.56229pt too wide) in paragraph at lines 258--263
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (202.43684pt too wide) in paragraph at lines 258--263
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (130.19424pt too wide) in paragraph at lines 258--263
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:264: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 @
+       article{decker_wiki-based_2007,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+./references.bib:264: Missing $ inserted.
+<inserted text> 
+                $
+l.264 @article{decker_
+                      wiki-based_2007,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:276: Extra }, or forgotten $.
+l.276 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:277: Missing $ inserted.
+<inserted text> 
+                $
+l.277 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.66231pt too wide) in paragraph at lines 264--277
+[]$[]\OML/cmm/m/it/10 iki \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (77.11647pt too wide) in paragraph at lines 264--277
+\OML/cmm/m/it/10 based[]\OT1/cmr/m/n/10 007\OML/cmm/m/it/10 ; title \OT1/cmr/m/
+n/10 =
+ []
+
+
+Overfull \hbox (356.10507pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.82243pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; issn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (103.11227pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (3452.16743pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; number \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (54.52042pt too wide) in paragraph at lines 264--277
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (117.37386pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (343.40907pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (183.2942pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (85.40512pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ; annote \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (657.69402pt too wide) in paragraph at lines 264--277
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:278: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 @
+       article{lohstroh_self-organized_2004,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no h in font nullfont!
+./references.bib:278: Missing $ inserted.
+<inserted text> 
+                $
+l.278 @article{lohstroh_
+                        self-organized_2004,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:290: Extra }, or forgotten $.
+l.290 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:291: Missing $ inserted.
+<inserted text> 
+                $
+l.291 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (45.86122pt too wide) in paragraph at lines 278--291
+[]$[]\OML/cmm/m/it/10 elf \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (97.44016pt too wide) in paragraph at lines 278--291
+\OML/cmm/m/it/10 organized[]\OT1/cmr/m/n/10 004\OML/cmm/m/it/10 ; title \OT1/cm
+r/m/n/10 =
+ []
+
+
+Overfull \hbox (403.52466pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (38.69447pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (284.88666pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (193.95981pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (2181.17586pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; number \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.52043pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (150.65782pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (517.20883pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; month \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (51.04863pt too wide) in paragraph at lines 278--291
+\OML/cmm/m/it/10 nov; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (32.77788pt too wide) in paragraph at lines 278--291
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:292: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 @
+       inproceedings{tosic_collaborative_2005,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:292: Missing $ inserted.
+<inserted text> 
+                $
+l.292 @inproceedings{tosic_
+                           collaborative_2005,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:303: Extra }, or forgotten $.
+l.303 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:304: Missing $ inserted.
+<inserted text> 
+                $
+l.304 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (129.69096pt too wide) in paragraph at lines 292--304
+[]$[]\OML/cmm/m/it/10 ollaborative[]\OT1/cmr/m/n/10 005\OML/cmm/m/it/10 ; title
+ \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (344.5061pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (33.69446pt too wide) in paragraph at lines 292--304
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (174.71472pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (197.10759pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (2674.10977pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (376.20686pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (215.49321pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (1346.38101pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (62.77785pt too wide) in paragraph at lines 292--304
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:305: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305 @
+       incollection{cruz_ontowiki_2006,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no z in font nullfont!
+./references.bib:305: Missing $ inserted.
+<inserted text> 
+                $
+l.305 @incollection{cruz_
+                         ontowiki_2006,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:315: Extra }, or forgotten $.
+l.315 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:316: Missing $ inserted.
+<inserted text> 
+                $
+l.316 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+
+Overfull \hbox (120.1554pt too wide) in paragraph at lines 305--316
+[]$[]\OML/cmm/m/it/10 ntowiki[]\OT1/cmr/m/n/10 006\OML/cmm/m/it/10 ; series \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (183.87527pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (272.75453pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (48.6945pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (226.36154pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (199.62323pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (169.86452pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (871.5493pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 305--316
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:317: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 @
+       inproceedings{chau_case_2005,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+./references.bib:317: Missing $ inserted.
+<inserted text> 
+                $
+l.317 @inproceedings{chau_
+                          case_2005,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:330: Extra }, or forgotten $.
+l.330 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:331: Missing $ inserted.
+<inserted text> 
+                $
+l.331 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (107.70575pt too wide) in paragraph at lines 317--331
+[]$[]\OML/cmm/m/it/10 ase[]\OT1/cmr/m/n/10 005\OML/cmm/m/it/10 ; address \OT1/c
+mr/m/n/10 =
+ []
+
+
+Overfull \hbox (141.3992pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (412.17673pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.36101pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (291.2218pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (161.4459pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (3648.97746pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (356.95497pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.17384pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (178.1707pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (214.74034pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 317--331
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:332: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.332 @
+       misc{_frontpage_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:332: Missing $ inserted.
+<inserted text> 
+                $
+l.332 @misc{_
+             frontpage_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:336: Extra }, or forgotten $.
+l.336 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:337: Missing $ inserted.
+<inserted text> 
+                $
+l.337 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (116.47768pt too wide) in paragraph at lines 332--337
+[]$[]\OML/cmm/m/it/10 rontpage[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (78.64362pt too wide) in paragraph at lines 332--337
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (171.62993pt too wide) in paragraph at lines 332--337
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (99.38733pt too wide) in paragraph at lines 332--337
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:338: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.338 @
+       incollection{yamaguchi_lightweight_2008,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+./references.bib:338: Missing $ inserted.
+<inserted text> 
+                $
+l.338 @incollection{yamaguchi_
+                              lightweight_2008,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:348: Extra }, or forgotten $.
+l.348 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:349: Missing $ inserted.
+<inserted text> 
+                $
+l.349 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+
+Overfull \hbox (132.45468pt too wide) in paragraph at lines 338--349
+[]$[]\OML/cmm/m/it/10 ightweight[]\OT1/cmr/m/n/10 008\OML/cmm/m/it/10 ; series 
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (183.87527pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (390.70636pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (48.6945pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (295.25015pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (254.46361pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (169.86452pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (310.25188pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (42.77779pt too wide) in paragraph at lines 338--349
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:350: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.350 @
+       misc{_eclipse_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:350: Missing $ inserted.
+<inserted text> 
+                $
+l.350 @misc{_
+             eclipse_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:354: Extra }, or forgotten $.
+l.354 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:355: Missing $ inserted.
+<inserted text> 
+                $
+l.355 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (101.56406pt too wide) in paragraph at lines 350--355
+[]$[]\OML/cmm/m/it/10 clipse[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (181.8586pt too wide) in paragraph at lines 350--355
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (222.4449pt too wide) in paragraph at lines 350--355
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (150.2023pt too wide) in paragraph at lines 350--355
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:356: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.356 @
+       inproceedings{maletic_supporting_2001,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:356: Missing $ inserted.
+<inserted text> 
+                $
+l.356 @inproceedings{maletic_
+                             supporting_2001,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:367: Extra }, or forgotten $.
+l.367 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:368: Missing $ inserted.
+<inserted text> 
+                $
+l.368 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (136.52863pt too wide) in paragraph at lines 356--368
+[]$[]\OML/cmm/m/it/10 upporting[]\OT1/cmr/m/n/10 001\OML/cmm/m/it/10 ; address 
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (149.38411pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (375.26842pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.36101pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (303.61464pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (4807.25804pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (383.99985pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (152.2348pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (211.88252pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 356--368
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:369: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 @
+       inproceedings{robillard_feat:tool_2003,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+./references.bib:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369 @inproceedings{robillard_
+                               feat:tool_2003,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:381: Extra }, or forgotten $.
+l.381 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:382: Missing $ inserted.
+<inserted text> 
+                $
+l.382 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (44.29285pt too wide) in paragraph at lines 369--382
+[]$[]\OML/cmm/m/it/10 eat \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (85.29172pt too wide) in paragraph at lines 369--382
+\OML/cmm/m/it/10 tool[]\OT1/cmr/m/n/10 003\OML/cmm/m/it/10 ; address \OT1/cmr/m
+/n/10 =
+ []
+
+
+Overfull \hbox (112.00818pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (355.90053pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (147.93689pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; shorttitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.20488pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (303.61464pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (802.46103pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (383.37831pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (152.2348pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (204.0016pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 369--382
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:383: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 @
+       misc{_agile_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:383: Missing $ inserted.
+<inserted text> 
+                $
+l.383 @misc{_
+             agile_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 384.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 384.
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 384.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 384.
+
+./references.bib:387: Extra }, or forgotten $.
+l.387 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:388: Missing $ inserted.
+<inserted text> 
+                $
+l.388 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (93.18974pt too wide) in paragraph at lines 383--388
+[]$[]\OML/cmm/m/it/10 gile[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/cm
+r/m/n/10 =
+ []
+
+
+Overfull \hbox (269.79659pt too wide) in paragraph at lines 383--388
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (205.9951pt too wide) in paragraph at lines 383--388
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (133.7525pt too wide) in paragraph at lines 383--388
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:389: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.389 @
+       misc{_agile_????-1,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:389: Missing $ inserted.
+<inserted text> 
+                $
+l.389 @misc{_
+             agile_????-1,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 390.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 390.
+
+./references.bib:391: Misplaced alignment tab character &.
+l.391 ...one.com/Trial_AgileProjects.html?c-aws=p&
+                                                  gr-versionone&v-004&gclid=...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./references.bib:391: Misplaced alignment tab character &.
+l.391 ...AgileProjects.html?c-aws=p&gr-versionone&
+                                                  v-004&gclid=CIbC9bjhy6QCFQ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./references.bib:391: Misplaced alignment tab character &.
+l.391 ...rojects.html?c-aws=p&gr-versionone&v-004&
+                                                  gclid=CIbC9bjhy6QCFQwDbAod...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./references.bib:393: Extra }, or forgotten $.
+l.393 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:394: Missing $ inserted.
+<inserted text> 
+                $
+l.394 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (67.46342pt too wide) in paragraph at lines 389--394
+[]$[]\OML/cmm/m/it/10 gile[]\OT1/cmr/m/n/10 ??? \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (38.50414pt too wide) in paragraph at lines 389--394
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (285.45917pt too wide) in paragraph at lines 389--394
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (673.11104pt too wide) in paragraph at lines 389--394
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (625.38472pt too wide) in paragraph at lines 389--394
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:395: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.395 @
+       misc{_agile_????-2,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:395: Missing $ inserted.
+<inserted text> 
+                $
+l.395 @misc{_
+             agile_????-2,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 396.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 396.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 396.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 396.
+
+./references.bib:399: Extra }, or forgotten $.
+l.399 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:400: Missing $ inserted.
+<inserted text> 
+                $
+l.400 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (67.46342pt too wide) in paragraph at lines 395--400
+[]$[]\OML/cmm/m/it/10 gile[]\OT1/cmr/m/n/10 ??? \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (38.50414pt too wide) in paragraph at lines 395--400
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (530.5052pt too wide) in paragraph at lines 395--400
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (448.01065pt too wide) in paragraph at lines 395--400
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (375.76805pt too wide) in paragraph at lines 395--400
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:401: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.401 @
+       misc{_scrumworks_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:401: Missing $ inserted.
+<inserted text> 
+                $
+l.401 @misc{_
+             scrumworks_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 402.
+
+
+LaTeX Warning: Command \textbar invalid in math mode on input line 402.
+
+./references.bib:405: Extra }, or forgotten $.
+l.405 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:406: Missing $ inserted.
+<inserted text> 
+                $
+l.406 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (127.11082pt too wide) in paragraph at lines 401--406
+[]$[]\OML/cmm/m/it/10 crumworks[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \O
+T1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (220.17603pt too wide) in paragraph at lines 401--406
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (243.51721pt too wide) in paragraph at lines 401--406
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (171.27461pt too wide) in paragraph at lines 401--406
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:407: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.407 @
+       misc{_ibm_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:407: Missing $ inserted.
+<inserted text> 
+                $
+l.407 @misc{_
+             ibm_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:411: Extra }, or forgotten $.
+l.411 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:412: Missing $ inserted.
+<inserted text> 
+                $
+l.412 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (88.34274pt too wide) in paragraph at lines 407--412
+[]$[]\OML/cmm/m/it/10 bm[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/cmr/
+m/n/10 =
+ []
+
+
+Overfull \hbox (209.65392pt too wide) in paragraph at lines 407--412
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (309.00166pt too wide) in paragraph at lines 407--412
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (236.75906pt too wide) in paragraph at lines 407--412
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:413: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.413 @
+       misc{_xplanner_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:413: Missing $ inserted.
+<inserted text> 
+                $
+l.413 @misc{_
+             xplanner_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:417: Extra }, or forgotten $.
+l.417 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:418: Missing $ inserted.
+<inserted text> 
+                $
+l.418 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (111.64665pt too wide) in paragraph at lines 413--418
+[]$[]\OML/cmm/m/it/10 planner[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1
+/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (102.8983pt too wide) in paragraph at lines 413--418
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (199.08185pt too wide) in paragraph at lines 413--418
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (126.83925pt too wide) in paragraph at lines 413--418
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:419: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.419 @
+       misc{_trac_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:419: Missing $ inserted.
+<inserted text> 
+                $
+l.419 @misc{_
+             trac_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:423: Extra }, or forgotten $.
+l.423 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:424: Missing $ inserted.
+<inserted text> 
+                $
+l.424 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (89.86533pt too wide) in paragraph at lines 419--424
+[]$[]\OML/cmm/m/it/10 rac[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/cmr
+/m/n/10 =
+ []
+
+
+Overfull \hbox (102.71147pt too wide) in paragraph at lines 419--424
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (193.42441pt too wide) in paragraph at lines 419--424
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (121.18181pt too wide) in paragraph at lines 419--424
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:425: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.425 @
+       misc{_bug_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:425: Missing $ inserted.
+<inserted text> 
+                $
+l.425 @misc{_
+             bug_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:429: Extra }, or forgotten $.
+l.429 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:430: Missing $ inserted.
+<inserted text> 
+                $
+l.430 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (86.45259pt too wide) in paragraph at lines 425--430
+[]$[]\OML/cmm/m/it/10 ug[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/cmr/
+m/n/10 =
+ []
+
+
+Overfull \hbox (327.14325pt too wide) in paragraph at lines 425--430
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (273.12457pt too wide) in paragraph at lines 425--430
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (200.88197pt too wide) in paragraph at lines 425--430
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:431: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.431 @
+       misc{_home_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:431: Missing $ inserted.
+<inserted text> 
+                $
+l.431 @misc{_
+             home_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:435: Extra }, or forgotten $.
+l.435 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:436: Missing $ inserted.
+<inserted text> 
+                $
+l.436 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (95.40704pt too wide) in paragraph at lines 431--436
+[]$[]\OML/cmm/m/it/10 ome[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/cmr
+/m/n/10 =
+ []
+
+
+Overfull \hbox (170.31735pt too wide) in paragraph at lines 431--436
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (194.30125pt too wide) in paragraph at lines 431--436
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (122.05865pt too wide) in paragraph at lines 431--436
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:437: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437 @
+       misc{fog_creek_software_fogbugz_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+./references.bib:437: Missing $ inserted.
+<inserted text> 
+                $
+l.437 @misc{fog_
+                creek_software_fogbugz_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:442: Extra }, or forgotten $.
+l.442 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:443: Missing $ inserted.
+<inserted text> 
+                $
+l.443 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (171.14302pt too wide) in paragraph at lines 437--443
+[]$[]\OML/cmm/m/it/10 reek[]oftware[]ogbugz[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/1
+0 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (368.66174pt too wide) in paragraph at lines 437--443
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (213.24448pt too wide) in paragraph at lines 437--443
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (396.93494pt too wide) in paragraph at lines 437--443
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (171.00258pt too wide) in paragraph at lines 437--443
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:444: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.444 @
+       misc{_project_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:444: Missing $ inserted.
+<inserted text> 
+                $
+l.444 @misc{_
+             project_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:448: Extra }, or forgotten $.
+l.448 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:449: Missing $ inserted.
+<inserted text> 
+                $
+l.449 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (103.48604pt too wide) in paragraph at lines 444--449
+[]$[]\OML/cmm/m/it/10 roject[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (307.88684pt too wide) in paragraph at lines 444--449
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (190.03204pt too wide) in paragraph at lines 444--449
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (117.78944pt too wide) in paragraph at lines 444--449
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:450: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.450 @
+       misc{_teambox_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:450: Missing $ inserted.
+<inserted text> 
+                $
+l.450 @misc{_
+             teambox_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:454: Extra }, or forgotten $.
+l.454 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:455: Missing $ inserted.
+<inserted text> 
+                $
+l.455 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (109.03896pt too wide) in paragraph at lines 450--455
+[]$[]\OML/cmm/m/it/10 eambox[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (186.50108pt too wide) in paragraph at lines 450--455
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (174.28897pt too wide) in paragraph at lines 450--455
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (102.04637pt too wide) in paragraph at lines 450--455
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:456: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.456 @
+       misc{_business_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:456: Missing $ inserted.
+<inserted text> 
+                $
+l.456 @misc{_
+             business_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:460: Extra }, or forgotten $.
+l.460 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:461: Missing $ inserted.
+<inserted text> 
+                $
+l.461 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (109.84915pt too wide) in paragraph at lines 456--461
+[]$[]\OML/cmm/m/it/10 usiness[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1
+/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (409.85904pt too wide) in paragraph at lines 456--461
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (361.29765pt too wide) in paragraph at lines 456--461
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (289.05505pt too wide) in paragraph at lines 456--461
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:462: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.462 @
+       misc{_secure_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:462: Missing $ inserted.
+<inserted text> 
+                $
+l.462 @misc{_
+             secure_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:466: Extra }, or forgotten $.
+l.466 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:467: Missing $ inserted.
+<inserted text> 
+                $
+l.467 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (100.37003pt too wide) in paragraph at lines 462--467
+[]$[]\OML/cmm/m/it/10 ecure[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/c
+mr/m/n/10 =
+ []
+
+
+Overfull \hbox (316.67056pt too wide) in paragraph at lines 462--467
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (165.06393pt too wide) in paragraph at lines 462--467
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.82133pt too wide) in paragraph at lines 462--467
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:468: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.468 @
+       misc{_codeplex_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:468: Missing $ inserted.
+<inserted text> 
+                $
+l.468 @misc{_
+             codeplex_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:472: Extra }, or forgotten $.
+l.472 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:473: Missing $ inserted.
+<inserted text> 
+                $
+l.473 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (109.30713pt too wide) in paragraph at lines 468--473
+[]$[]\OML/cmm/m/it/10 odeplex[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1
+/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (211.07512pt too wide) in paragraph at lines 468--473
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (199.78323pt too wide) in paragraph at lines 468--473
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (127.54063pt too wide) in paragraph at lines 468--473
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:474: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.474 @
+       misc{_hudson_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:474: Missing $ inserted.
+<inserted text> 
+                $
+l.474 @misc{_
+             hudson_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:478: Extra }, or forgotten $.
+l.478 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:479: Missing $ inserted.
+<inserted text> 
+                $
+l.479 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (103.58994pt too wide) in paragraph at lines 474--479
+[]$[]\OML/cmm/m/it/10 udson[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1/c
+mr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.32896pt too wide) in paragraph at lines 474--479
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (186.13448pt too wide) in paragraph at lines 474--479
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (113.89188pt too wide) in paragraph at lines 474--479
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:480: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.480 @
+       misc{_cruisecontrol_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:480: Missing $ inserted.
+<inserted text> 
+                $
+l.480 @misc{_
+             cruisecontrol_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:484: Extra }, or forgotten $.
+l.484 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:485: Missing $ inserted.
+<inserted text> 
+                $
+l.485 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (130.7269pt too wide) in paragraph at lines 480--485
+[]$[]\OML/cmm/m/it/10 ruisecontrol[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title
+ \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (122.40872pt too wide) in paragraph at lines 480--485
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (249.85591pt too wide) in paragraph at lines 480--485
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (177.61331pt too wide) in paragraph at lines 480--485
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:486: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.486 @
+       misc{_makemost_????,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+./references.bib:486: Missing $ inserted.
+<inserted text> 
+                $
+l.486 @misc{_
+             makemost_????,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:490: Extra }, or forgotten $.
+l.490 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:491: Missing $ inserted.
+<inserted text> 
+                $
+l.491 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (116.92676pt too wide) in paragraph at lines 486--491
+[]$[]\OML/cmm/m/it/10 akemost[]\OT1/cmr/m/n/10 ???\OML/cmm/m/it/10 ; title \OT1
+/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (303.31375pt too wide) in paragraph at lines 486--491
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (270.89865pt too wide) in paragraph at lines 486--491
+[]\OML/cmm/m/it/10 ; howpublished \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (198.65605pt too wide) in paragraph at lines 486--491
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:492: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.492 @
+       article{batra_modified_2009,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+./references.bib:492: Missing $ inserted.
+<inserted text> 
+                $
+l.492 @article{batra_
+                     modified_2009,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:495: Misplaced alignment tab character &.
+l.495 ...portal.acm.org/ft_gateway.cfm?id=1562200&
+                                                  type=html&coll=GUIDE&dl=GU...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./references.bib:495: Misplaced alignment tab character &.
+l.495 ....org/ft_gateway.cfm?id=1562200&type=html&
+                                                  coll=GUIDE&dl=GUIDE&CFID=1...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./references.bib:495: Misplaced alignment tab character &.
+l.495 ...eway.cfm?id=1562200&type=html&coll=GUIDE&
+                                                  dl=GUIDE&CFID=105344370&CF...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./references.bib:495: Misplaced alignment tab character &.
+l.495 ...id=1562200&type=html&coll=GUIDE&dl=GUIDE&
+                                                  CFID=105344370&CFTOKEN=104...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./references.bib:495: Misplaced alignment tab character &.
+l.495 ...=html&coll=GUIDE&dl=GUIDE&CFID=105344370&
+                                                  CFTOKEN=10438663},
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./references.bib:503: Extra }, or forgotten $.
+l.503 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:504: Missing $ inserted.
+<inserted text> 
+                $
+l.504 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (113.36215pt too wide) in paragraph at lines 492--504
+[]$[]\OML/cmm/m/it/10 odified[]\OT1/cmr/m/n/10 009\OML/cmm/m/it/10 ; title \OT1
+/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (294.76787pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (38.69447pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (641.59842pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (161.4459pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (3630.70988pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ; number \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (54.52042pt too wide) in paragraph at lines 492--504
+\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.94855pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.16188pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.78935pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 492--504
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:505: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.505 @
+       inproceedings{robarts_practical_2008,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+./references.bib:505: Missing $ inserted.
+<inserted text> 
+                $
+l.505 @inproceedings{robarts_
+                             practical_2008,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:519: Extra }, or forgotten $.
+l.519 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:520: Missing $ inserted.
+<inserted text> 
+                $
+l.520 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (127.681pt too wide) in paragraph at lines 505--520
+[]$[]\OML/cmm/m/it/10 ractical[]\OT1/cmr/m/n/10 008\OML/cmm/m/it/10 ; address \
+OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (135.89307pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (289.79277pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (38.42657pt too wide) in paragraph at lines 505--520
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; isbn \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (142.3859pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (312.76245pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (1760.6495pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (145.64716pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (152.2348pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (105.64128pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (210.91502pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.40515pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ; annote \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (657.69402pt too wide) in paragraph at lines 505--520
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:521: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.521 @
+       inproceedings{sutherland_fully_2008,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+./references.bib:521: Missing $ inserted.
+<inserted text> 
+                $
+l.521 @inproceedings{sutherland_
+                                fully_2008,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:532: Extra }, or forgotten $.
+l.532 }
+       ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./references.bib:533: Missing $ inserted.
+<inserted text> 
+                $
+l.533 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (95.16292pt too wide) in paragraph at lines 521--533
+[]$[]\OML/cmm/m/it/10 ully[]\OT1/cmr/m/n/10 008\OML/cmm/m/it/10 ; title \OT1/cm
+r/m/n/10 =
+ []
+
+
+Overfull \hbox (477.0959pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; shorttitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (136.21484pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (125.1856pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (147.57846pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (3973.03741pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; booktitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (200.8151pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (306.71112pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.3959pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; keywords \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (845.90115pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.77782pt too wide) in paragraph at lines 521--533
+[]\OML/cmm/m/it/10 ;$ 
+ []
+
+
+./references.bib:534: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.534 @
+       inproceedings{drummond_yahoo!_2008,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+./references.bib:534: Missing $ inserted.
+<inserted text> 
+                $
+l.534 @inproceedings{drummond_
+                              yahoo!_2008,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./references.bib:549: Extra }, or forgotten $.
+l.549 }
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+)
+! Emergency stop.
+<*> references.bib
+                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 29 strings out of 493848
+ 509 string characters out of 3149207
+ 112962 words of memory out of 3000000
+ 3399 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 18i,6n,15p,1431b,158s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

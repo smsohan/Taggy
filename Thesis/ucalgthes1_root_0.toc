@@ -6,51 +6,52 @@
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}User Stories - An Overview}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Distributed Agile Projects}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Research Motivation}{5}{section.1.3}
-\contentsline {section}{\numberline {1.4}Research Problem}{8}{section.1.4}
-\contentsline {section}{\numberline {1.5}Research Goals}{10}{section.1.5}
-\contentsline {section}{\numberline {1.6}Key Contributions}{10}{section.1.6}
-\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Communication in Distributed Teams}{12}{section.2.1}
-\contentsline {section}{\numberline {2.2}Capturing Knowledge from Emails}{14}{section.2.2}
-\contentsline {section}{\numberline {2.3}Wiki Based Knowledge Sharing}{17}{section.2.3}
-\contentsline {section}{\numberline {2.4}Context Based Knowledge Management}{19}{section.2.4}
-\contentsline {section}{\numberline {2.5}Review of Existing Tool Support for Knowledge Sharing}{21}{section.2.5}
-\contentsline {chapter}{\numberline {3}TAGGY}{24}{chapter.3}
-\contentsline {section}{\numberline {3.1}Assumptions}{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}The Agile Project Context}{26}{section.3.2}
-\contentsline {section}{\numberline {3.3}High Level Workflow}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}Architecture}{31}{section.3.4}
-\contentsline {section}{\numberline {3.5}Similarity Computation}{34}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Local-Global Principle}{35}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Similarity Function}{37}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Learning Relative Weights}{39}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Email Matching}{42}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Instant Message Matching}{42}{subsection.3.5.5}
-\contentsline {section}{\numberline {3.6}Implementation Details}{42}{section.3.6}
-\contentsline {section}{\numberline {3.7}An Illustrative Example}{42}{section.3.7}
-\contentsline {chapter}{\numberline {4}EMPIRICAL EVALUATION}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Evaluation Approach}{43}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Accuracy}{43}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Statistical Relevance}{43}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Evaluation Results}{43}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Data set\# 1: ScrumPad}{43}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Data set\# 2: IBM Jazz Rational Team Concert}{43}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Limitations}{43}{section.4.3}
-\contentsline {chapter}{\numberline {5}PRELIMINARY QUALITATIVE EVALUATION}{44}{chapter.5}
-\contentsline {section}{\numberline {5.1}Goals}{44}{section.5.1}
-\contentsline {section}{\numberline {5.2}Methodology}{44}{section.5.2}
-\contentsline {section}{\numberline {5.3}Study Setup}{44}{section.5.3}
-\contentsline {section}{\numberline {5.4}Findings}{44}{section.5.4}
-\contentsline {section}{\numberline {5.5}Limitations}{44}{section.5.5}
-\contentsline {chapter}{\numberline {6}DISCUSSION}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Handling Attachments}{45}{section.6.1}
-\contentsline {section}{\numberline {6.2}Selecting Threshold Similarity Score}{45}{section.6.2}
-\contentsline {section}{\numberline {6.3}The Impact of Incorrect Tagging}{45}{section.6.3}
-\contentsline {section}{\numberline {6.4}Dealing with Absence of Necessary Context}{45}{section.6.4}
-\contentsline {section}{\numberline {6.5}Project Specific vs. Project Agnostic Learning}{45}{section.6.5}
-\contentsline {section}{\numberline {6.6}Dealing with Undesired Input}{45}{section.6.6}
-\contentsline {section}{\numberline {6.7}Limitations of Taggy}{45}{section.6.7}
-\contentsline {chapter}{\numberline {7}CONCLUSION}{46}{chapter.7}
-\contentsline {section}{\numberline {7.1}Research Goals Addressed}{46}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{46}{section.7.2}
+\contentsline {section}{\numberline {1.3}Research Motivation}{7}{section.1.3}
+\contentsline {section}{\numberline {1.4}Research Problem}{11}{section.1.4}
+\contentsline {section}{\numberline {1.5}Research Goals}{13}{section.1.5}
+\contentsline {section}{\numberline {1.6}Key Contributions}{13}{section.1.6}
+\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{16}{chapter.2}
+\contentsline {section}{\numberline {2.1}Communication in Distributed Teams}{16}{section.2.1}
+\contentsline {section}{\numberline {2.2}Capturing Knowledge from Emails}{18}{section.2.2}
+\contentsline {section}{\numberline {2.3}Wiki Based Knowledge Sharing}{21}{section.2.3}
+\contentsline {section}{\numberline {2.4}Context Based Knowledge Management}{25}{section.2.4}
+\contentsline {section}{\numberline {2.5}Review of Existing Tool Support for Knowledge Sharing}{27}{section.2.5}
+\contentsline {chapter}{\numberline {3}TAGGY}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Assumptions}{33}{section.3.1}
+\contentsline {section}{\numberline {3.2}The Agile Project Context}{35}{section.3.2}
+\contentsline {section}{\numberline {3.3}High Level Workflow}{36}{section.3.3}
+\contentsline {section}{\numberline {3.4}Architecture}{40}{section.3.4}
+\contentsline {section}{\numberline {3.5}Similarity Computation}{43}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Local-Global Principle}{44}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Similarity Function}{46}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Learning Relative Weights}{48}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Email Matching}{51}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Instant Message Matching}{55}{subsection.3.5.5}
+\contentsline {section}{\numberline {3.6}Implementation Details}{55}{section.3.6}
+\contentsline {section}{\numberline {3.7}An Illustrative Example}{57}{section.3.7}
+\contentsline {chapter}{\numberline {4}EMPIRICAL EVALUATION}{62}{chapter.4}
+\contentsline {section}{\numberline {4.1}Evaluation Approach}{62}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Accuracy}{64}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Statistical Relevance}{64}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Evaluation Results}{65}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data set\# 1: ScrumPad}{65}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data set\# 2: IBM Jazz Rational Team Concert}{68}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Limitations}{68}{section.4.3}
+\contentsline {chapter}{\numberline {5}PRELIMINARY QUALITATIVE EVALUATION}{69}{chapter.5}
+\contentsline {section}{\numberline {5.1}Goals}{69}{section.5.1}
+\contentsline {section}{\numberline {5.2}Methodology}{69}{section.5.2}
+\contentsline {section}{\numberline {5.3}Study Setup}{69}{section.5.3}
+\contentsline {section}{\numberline {5.4}Findings}{69}{section.5.4}
+\contentsline {section}{\numberline {5.5}Limitations}{69}{section.5.5}
+\contentsline {chapter}{\numberline {6}DISCUSSION}{70}{chapter.6}
+\contentsline {section}{\numberline {6.1}Handling Attachments}{70}{section.6.1}
+\contentsline {section}{\numberline {6.2}Selecting Threshold Similarity Score}{70}{section.6.2}
+\contentsline {section}{\numberline {6.3}The Impact of Incorrect Tagging}{70}{section.6.3}
+\contentsline {section}{\numberline {6.4}Dealing with Absence of Necessary Context}{70}{section.6.4}
+\contentsline {section}{\numberline {6.5}Project Specific vs. Project Agnostic Learning}{70}{section.6.5}
+\contentsline {section}{\numberline {6.6}Dealing with Undesired Input}{70}{section.6.6}
+\contentsline {section}{\numberline {6.7}Limitations of Taggy}{70}{section.6.7}
+\contentsline {chapter}{\numberline {7}CONCLUSION}{71}{chapter.7}
+\contentsline {section}{\numberline {7.1}Research Goals Addressed}{71}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{71}{section.7.2}
+\contentsline {chapter}{Bibliography}{72}{section.7.2}

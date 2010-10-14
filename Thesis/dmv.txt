@@ -1,0 +1,1 @@
+Required fields for vm users are name, address, phone, email, work hours, work days.
