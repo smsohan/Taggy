@@ -94,6 +94,7 @@ class InstantMessagesController < ApplicationController
     end
     
     instant_message.save!
+    instant_message.auto_tag!
     render :text => 'Success'
   end
   
