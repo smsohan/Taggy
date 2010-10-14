@@ -10,10 +10,10 @@ def user_status(Status):
 
 def message_status(Message, Status):  
     print "Status = ", Status
-    if(Status == 'RECEIVED'):
+    if(Status == 'SENDING' or Status == 'RECEIVED'):
         json = TaggyChat(Message).to_json()
         print "JSON = ", json
-        fh = urllib.urlopen('http://localhost:3000/instant_messages/from_im', str(json))
+        fh = urllib.urlopen('http://campzero.com/instant_messages/from_im', str(json))
         print fh.readline()
 
 def print_users(user_collection):

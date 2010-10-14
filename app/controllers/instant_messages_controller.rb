@@ -1,5 +1,6 @@
 class InstantMessagesController < ApplicationController
   protect_from_forgery :except => :from_im 
+  skip_before_filter :login_required, :only=> :from_im
   
   def index
     @project = Project.find(params[:project_id])
