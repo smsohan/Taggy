@@ -1,8 +1,9 @@
 \BOOKMARK [0][-]{section*.2}{Abstract}{}
-\BOOKMARK [0][-]{section*.3}{Acknowledgements}{}
-\BOOKMARK [0][-]{section*.4}{Table of Contents}{}
-\BOOKMARK [0][-]{section*.6}{List of Tables}{}
-\BOOKMARK [0][-]{section*.8}{List of Figures}{}
+\BOOKMARK [0][-]{section*.3}{Publication}{}
+\BOOKMARK [0][-]{section*.4}{Acknowledgements}{}
+\BOOKMARK [0][-]{section*.5}{Table of Contents}{}
+\BOOKMARK [0][-]{section*.7}{List of Tables}{}
+\BOOKMARK [0][-]{section*.9}{List of Figures}{}
 \BOOKMARK [0][-]{chapter.1}{INTRODUCTION}{}
 \BOOKMARK [1][-]{section.1.1}{User Stories - An Overview}{chapter.1}
 \BOOKMARK [1][-]{section.1.2}{Distributed Agile Projects}{chapter.1}
@@ -13,8 +14,8 @@
 \BOOKMARK [0][-]{chapter.2}{LITERATURE REVIEW}{}
 \BOOKMARK [1][-]{section.2.1}{Communication in Distributed Teams}{chapter.2}
 \BOOKMARK [1][-]{section.2.2}{Capturing Knowledge from Emails}{chapter.2}
-\BOOKMARK [1][-]{section.2.3}{Wiki Based Knowledge Sharing}{chapter.2}
-\BOOKMARK [1][-]{section.2.4}{Context Based Knowledge Management}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Wiki-Based Knowledge Sharing}{chapter.2}
+\BOOKMARK [1][-]{section.2.4}{Context-Based Knowledge Management}{chapter.2}
 \BOOKMARK [1][-]{section.2.5}{Review of Existing Tool Support for Knowledge Sharing}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{TAGGY}{}
 \BOOKMARK [1][-]{section.3.1}{Assumptions}{chapter.3}
@@ -29,7 +30,7 @@
 \BOOKMARK [2][-]{subsection.3.5.5}{Instant Message Matching}{section.3.5}
 \BOOKMARK [1][-]{section.3.6}{Implementation Details}{chapter.3}
 \BOOKMARK [1][-]{section.3.7}{An Illustrative Example}{chapter.3}
-\BOOKMARK [0][-]{chapter.4}{EMPIRICAL EVALUATION}{}
+\BOOKMARK [0][-]{chapter.4}{QUANTITATIVE EVALUATION}{}
 \BOOKMARK [1][-]{section.4.1}{Evaluation Approach}{chapter.4}
 \BOOKMARK [2][-]{subsection.4.1.1}{Accuracy}{section.4.1}
 \BOOKMARK [2][-]{subsection.4.1.2}{Statistical Relevance}{section.4.1}
@@ -38,20 +39,21 @@
 \BOOKMARK [2][-]{subsection.4.2.2}{Data set\043 2: IBM Jazz Rational Team Concert}{section.4.2}
 \BOOKMARK [1][-]{section.4.3}{Limitations}{chapter.4}
 \BOOKMARK [0][-]{chapter.5}{PRELIMINARY QUALITATIVE EVALUATION}{}
-\BOOKMARK [1][-]{section.5.1}{Goals}{chapter.5}
-\BOOKMARK [1][-]{section.5.2}{Methodology}{chapter.5}
-\BOOKMARK [1][-]{section.5.3}{Study Setup}{chapter.5}
-\BOOKMARK [1][-]{section.5.4}{Findings}{chapter.5}
-\BOOKMARK [1][-]{section.5.5}{Limitations}{chapter.5}
+\BOOKMARK [1][-]{section.5.1}{Participants}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Data Collection \046 Analysis}{chapter.5}
+\BOOKMARK [1][-]{section.5.3}{Findings}{chapter.5}
+\BOOKMARK [1][-]{section.5.4}{Limitations}{chapter.5}
 \BOOKMARK [0][-]{chapter.6}{DISCUSSION}{}
-\BOOKMARK [1][-]{section.6.1}{Handling Attachments}{chapter.6}
-\BOOKMARK [1][-]{section.6.2}{Selecting Threshold Similarity Score}{chapter.6}
-\BOOKMARK [1][-]{section.6.3}{The Impact of Incorrect Tagging}{chapter.6}
-\BOOKMARK [1][-]{section.6.4}{Dealing with Absence of Necessary Context}{chapter.6}
-\BOOKMARK [1][-]{section.6.5}{Project Specific vs. Project Agnostic Learning}{chapter.6}
-\BOOKMARK [1][-]{section.6.6}{Dealing with Undesired Input}{chapter.6}
-\BOOKMARK [1][-]{section.6.7}{Limitations of Taggy}{chapter.6}
+\BOOKMARK [1][-]{section.6.1}{Dealing with absence of necessary context.}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{The Impact of Incorrect Tagging.}{chapter.6}
+\BOOKMARK [1][-]{section.6.3}{Selecting a Threshold Similarity Score.}{chapter.6}
+\BOOKMARK [1][-]{section.6.4}{Handling Attachments and Full-Text Search.}{chapter.6}
+\BOOKMARK [1][-]{section.6.5}{Project Specific vs. Project Agnostic Learning.}{chapter.6}
+\BOOKMARK [1][-]{section.6.6}{Limitations of Taggy.}{chapter.6}
 \BOOKMARK [0][-]{chapter.7}{CONCLUSION}{}
 \BOOKMARK [1][-]{section.7.1}{Research Goals Addressed}{chapter.7}
 \BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}
-\BOOKMARK [0][-]{section.7.2}{Bibliography}{}
+\BOOKMARK [2][-]{subsection.7.2.1}{Extensions with New Features}{section.7.2}
+\BOOKMARK [2][-]{subsection.7.2.2}{Improvements through Evaluation}{section.7.2}
+\BOOKMARK [0][-]{chapter.8}{Ethics Approval}{}
+\BOOKMARK [0][-]{figure.8.1}{Bibliography}{}

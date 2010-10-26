@@ -1,5 +1,73 @@
+%!TEX root = /Users/smsohan/Taggy/Thesis/ucalgthes1_root_0.tex
 \fancyhead[RO,LE]{\thepage}
 \fancyfoot{} 
-\chapter{CONCLUSION}
+\chapter{CONCLUSION} 
+In this chapter I draw a conclusion about the thesis. This provides information about the research goals and challenges that are addressed. Also, I discuss about the potential future research on this topic.
+
 \section{Research Goals Addressed}
+I have investigated the existing literature and tool support for communication and collaboration among stakeholders in distributed agile projects. I have found two distinct level of knowledge sharing practices, i) knowledge sharing about high level artifacts such as user stories, bugs etc. and ii) knowledge sharing about low level artifacts such as source code, design, build etc. The concentration of this thesis was on the high level artifacts. Looking into this category, I found the following key points:
+\begin{itemize}
+	\item Distributed agile teams commonly use text based knowledge sharing.
+	\item Email is the first preference for the customers.
+	\item Whenever possible, instant message is the dominant synchronous communication tool.	
+	\item The knowledge in emails and instant messages are rarely centralized for future reference.
+\end{itemize}
+
+Based on these findings, I identified that if it is possible to capture the fragmented knowledge across the emails and instant messages without much human efforts, it might work as a knowledge center for future reference. To solve this problem, I have researched existing tool support and combined some of the existing techniques with machine learning to automatically tag the emails and instant messages with the user stories. The technique in short employs the following:
+\begin{itemize}
+	\item Learns the similarity function parameters based on training sample.
+	\item Automatically grabs project related emails and instant messages.
+	\item Attempts to tag the emails and instant messages with the user stories based on context and text relevance.
+\end{itemize}
+
+To find the technical feasibility of this technique, I have also implemented a proof of concept tool called Taggy. The implementation demonstrates an end-to-end auto-tagging solution. This prototype implementation helped me to fine tune the auto-tagging technique. In the end I identified the following attributes to be significant in deciding the auto-tagging relevance:
+\begin{itemize}
+	\item Associated people in the artifacts.
+	\item The temporal relevance.
+	\item The subject or heading.
+	\item The text content.	
+\end{itemize}
+
+Taggy was trained and evaluated using real life software project data. The data were collected from two different sources. In total the evaluation data consists of data for HH people in XX teams,  YY iterations, ZZ user stories and KK messages.  This helped to identify the accuracy and statistical significance of the auto-tagging performance. Using this data, Taggy has shown an average accuracy of 76\% and a chi-square test shows this result is statistically significant.
+
+In addition to the quantitative evaluation, I have also conducted a preliminary user study of Taggy. A total of 8 participants from the industry and academia evaluated the tool after trying its features themselves. They provided encouraging feedbacks and suggestions about Taggy. Some of their suggestions can lead to future work on this topic.
+
+This thesis also unveiled some of the technical challenges and design trade-offs associated with auto-tagging. In a nutshell, the auto-tagging process needs to deal with the standard challenges of information retrieval and the limitations of machine learning. I have discussed a few approaches that can be leveraged to support rich attachments, decide a threshold similarity score and using auto-tagging for projects without historical data. I have also provided the list of limitations, some of which can form a future research on this topic.
+
+Essentially, the concept of email auto-tagging with user stories can be extended to other domains with similar characteristics. In this thesis I have discussed about the architectural and some of the key algorithmic structure of Taggy. This information can be used to reproduce the same solution or adapt the solution to a problem in a different domain based on the same core concepts.
+
+
 \section{Future Work}
+While working on Taggy and conducting the evaluations, I have explored several opportunities that might be addressed in a future research. The two core directions that I have identified are, i) extensions with new features and ii) improvements through evaluation and fine tuning. A few potential future works on the two directions are discussed next.
+
+\subsection{Extensions with New Features}
+A future research taking my work as a foundation can lead to a number of extensions. Here I provided a short list of such potential extensions:
+
+\begin{itemize}
+	\item \textbf{Auto-tag other artifacts.} While email and instant messages are the two most utilized knowledge sharing mediums, they are mostly about the high level artifacts. An extension might look into auto-tagging of the low level artifacts, such as source code, automated build and test results etc. Engineers and technical people will be the potential consumers of this knowledge. Some of the core concepts presented in Taggy, such as combining context with text relevance, can also be applied to the low level artifacts.
+	
+	\item \textbf{User interface.} The user interface of Taggy is similar to the ones used in most online collaboration tools, where a list of messages appears underneath the user story. However, when emails and instant messages are used, there is a potential of producing a huge volume of content. To ensure a seamless user experience, a suitable user interface needs to be explored. Otherwise, it might be the cause of information overload.
+	
+	\item \textbf{Multiple intake methods.} Presently the only email intake process is via a project email inbox. Similarly, the only intake process for instant messages is a Skype plugin. A future work may explore other viable intake methods and possibly use a combination of multiple channels to ease the process of knowledge feeding. It is apparent that, a fluid intake process will encourage the end users to utilize the tool.
+	
+	\item \textbf{Pluggable solution.} Presently Taggy is a standalone system. However, the people in distributed agile teams use different tools from different vendors. To reach the potential users, Taggy needs to offer a pluggable solution so that, if desired, teams can easily plug-in Taggy to their existing project management tools. In a sense, the auto-tagging solution needs to seamlessly fit in with the existing project management and collaboration tools to allow people to use it without abandoning their favorite tools.
+\end{itemize}		
+	
+\subsection{Improvements through Evaluation}
+A greater level of evaluation is needed to discover the concerns and potential improvements of the Taggy features. Here I provide a list of potential evaluation scenarios:
+
+\begin{itemize}
+	\item \textbf{Real life use.} The tool needs to be used in real life projects for a period of time. While using the tool on a day to day basis, it is possible to find out the usability of the approach as well as social impact of the tool. Once a team uses it for a while, it is possible to collect data about why, who, when and how they use the archived emails and instant messages. Based on the findings, the approach can be adapted to better suit the usage pattern.
+	
+	\item \textbf{Quantitative evaluation:} With a wider variety of data sources, the auto-tagging process can be adjusted to support different communication patterns that may not be observed with the existing data sets. Also, my current work did not evaluate the accuracy of instant message auto-tagging. Also, a future work may focus on improving the accuracy of the auto-tagging process using a diverse data.	
+\end{itemize}	
+
+To conclude, this thesis presents a technique with an implementation of a lightweight organic knowledge center for distributed agile teams. This can be used as a foundation for future work in this research area.
+
+
+
+
+
+
+
+

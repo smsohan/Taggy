@@ -1,0 +1,118 @@
+Is this one email per project?
+Yes, every project has its own email.
+
+what if customers forget?
+
+- you add it to the CC
+- add to mailing list: but this defeats the purpose since I don't want to send to everyone.
+
+This is not a full proof solution, but one solution to capture your emails. You can also add attachments, say a doc file. and it will look into its contents.
+
+- could send a screenshot
+
+Does it use documents inside attachments?
+yes, it does. it looks into attachment contents.
+
+
+Attachment content can be any type of file?
+Pdf, text, doc, excel etc.
+
+Can you parse scanned files?
+It cannot.
+
+Does it list files somewhere separately?
+It doesn't at this stage, but it can. Since the file is there, I can always produce the list.
+
+P4: If the sender doesn't remember to do it? 
+P3: You need to forward
+
+p1: I think you can setup a middle man like email account, so that the customer's email go to Taggy first and then Taggy forwards it to the people.
+
+
+p4: what about project progress tracking?
+it is only about knowledge management. can be added as a layer to any project management tool.
+
+what do you have for skype?
+it is a plugin.
+
+Do you support only skype?
+what if different people use different IM clients such as MSN, Yahoo etc? Can be developed.
+
+it will be really useful if its accurate in tagging. otherwise if I have to do it manually, I can simply use email filters and folders.
+
+for example, if two stories are very similar in their content and context, then it might run into issues.
+if two stories are so same, then the email will be auto-tagged against both.
+
+probably, you should be looking into the current or recent stories for an email.
+
+it shows 76-80% accuracy.
+It is pretty good accuracy, I will consider this to be useful with that.
+
+I have one more question, when you look at keywords, do you just look into words?
+It looks into synonyms, language specific stems and other full text search techniques.
+
+Does it have any association between words that looks beyond the scope of a single word?
+No, it is a statistical approach called vector space model that is used across enterprise solutions.
+
+what is your general feedback?
+p1: for me it would be really cool if it has a great automatization. However, I can see some troubles with clients remembering the email to put CC or me doing it later when I reply. it may be too much things to think about. one thing you can do is, use email filters and forwarding, so that emails are automatically forwarded to Taggy if they are from certain people. For example, I can setup a group for my clients. Because my clients might be forgetting.
+
+p2: it is pretty straight forward and its fine. P1s points are right, it adds little bit of thought while sending the email as one might forget to do the copy. But its fine.
+
+p1: if it does a really good job in matching the email content, contacts and time then the automatic match should be good. But if it has bad rate of match, it might be too much of work and make it usseless.
+
+p3: since its too much information, the matching has to be good. If it matches with the right user stories most of the time, it will be really nice.
+
+p1: I think it will be really important to have pretty good integration with different instant messengers. because its what makes it really powerful. because email is kind of simple to retain. when someone uses skype, msn - you really want to capture that. for example, sometimes we exchange a quick link or a direction - its a pain to capture that later. you have to save that in an email. sometimes I forget to do that. sometimes, you leave it open and then just close the computer and its gone. it will be very useful.
+
+where would you use Taggy?
+probably a little bit everywhere. I can see that, some time there might not be any story behind a discussion. where it will be tagged?
+
+it will not be auto-tagged
+but when can I use that
+
+p1: I also think it is important to be able to create user stories very easily. So I would like to forward an email and mark it with a specific subject or to a specific email address that makes it a new user story. so, basically trying to make it more automatic. If its instant messaging, the plug-in should also support the same feature.
+
+p2: Otherwise, this is probably helpful for development and support.
+
+p3: it should be really good to read and use, the interface needs to be good since you are collecting a huge amount of data. for example, i would like to see a story from last spring. Can I easily find it? I don't remember the sprint or exact date of the user story. It definitely needs to allow a very good search feature.
+
+Yes, you can use the search tool.
+
+What are you doing now to retain this information?
+p4: when you are working on a task, we have a project management tool that has message threads under each task. We have all the messages under the tasks.
+
+Are your customers using it?
+p4: Technically they can, but they don't. I think most of the time we do it over email.
+
+p1: for customers, its probably easier to email or phone. it makes more sense for customers. Since they don't need to remember what tool so and so are using. Email is a simple solution for them. if we are not only the service provider, they need to remember all the tools for these service providers.
+
+p1: It should do good auto-tagging.
+p1: should provide good access to right data. Its enormous amount of data, its like google. If you have lot of data, you have to find a way to provide good access.
+p1: It should allow transparent to use.
+
+p4: can you make the decision based on the customers email without using the CC?                                                                                   
+yes, but we still need to read the email.
+
+p4: developers will setup the forwards.
+
+p1: customers will do nothing. They should just send an email without any change.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

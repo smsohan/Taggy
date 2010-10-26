@@ -1,12 +1,59 @@
+%!TEX root = /Users/smsohan/Taggy/Thesis/ucalgthes1_root_0.tex
 \fancyhead[RO,LE]{\thepage}
 \fancyfoot{} 
 \chapter{DISCUSSION}
-\section{Handling Attachments}
-\section{Selecting Threshold Similarity Score}
-\section{The Impact of Incorrect Tagging}
-\section{Dealing with Absence of Necessary Context}
-\section{Project Specific vs. Project Agnostic Learning}
-\section{Dealing with Undesired Input}
-\section{Limitations of Taggy}
+In this chapter, I discuss about some of the findings related to Taggy that led to trade-offs and technical challenges. These findings may be relevant for the next level of work on this topic as well as understanding some of the design choices that I made with Taggy. In particular the following topics are discussed:
+
+\begin{enumerate}
+	\item Dealing with absence of necessary context.
+	\item The impact of incorrect tagging.
+	\item Selecting a threshold similarity score.	
+	\item Handling attachments and full text search.	
+	\item Project specific vs. project agnostic learning.
+	\item Limitations of Taggy.
+\end{enumerate}
+
+\section{Dealing with absence of necessary context.}
+Taggy produces the auto-tagging based on the context and text relevance of emails with user stories. Email will always contain the context since the sender, recipients and time stamp always come with an email. However, for user stories, some or all of the context may be missing. For example, when a user story is just created, it might not be assigned to any developer or planned for an iteration immediately. So, if someone sends an email about this new user story, it is likely to do bad in the relevancy contest against other user stories with the context. Taggy could still pick up such  a user story for auto-tagging if the email text shows strong text similarity. Otherwise, Taggy is likely to produce an incorrect auto-tag. This is the principal reason for the incorrect auto-tagging as seen at the quantitative evaluation results.
+
+However, in an agile environment, the developers and customers mostly share knowledge about the work in current or recent iterations. In the evaluation data sets, I have found 70\% of the user story related discussions went on during the iteration of the user stories. And 95\% of the discussions took place starting a month before to the following month of the iteration. If a team follows this approach, there will be relatively a few number of emails about the contextless user stories compared to the ones with context.
+
+
+\section{The Impact of Incorrect Tagging.}
+Even when the necessary context and text are present, Taggy has a possibility to produce an incorrect auto-tagging. As with most other machine learning techniques, this may be either a result of insufficient training or the mismatch in the actual data and underlying assumptions of Taggy. In case of an incorrect auto-tagging, a human decision can prevail to correct the tagging with the right user stories. However, if Taggy makes a lot of wrong decisions, it might be infeasible to do this manually since a huge number of emails and instant messages are produced. The aforementioned quantitative evaluation provides information about Taggy's accuracy for the evaluation data sets.
+
+In case a wrong tagging is not corrected and left as is, it might still be useful since the email is captured in a shared archive and one can search the archive without looking into other's email inbox.
+
+\section{Selecting a Threshold Similarity Score.}
+Since Taggy produces a numerical similarity score between an email and a user story, it needs to use a threshold similarity score to discard the ones that do not show ``good enough'' relevance. Setting this threshold value presents a trade-off since a high value may result in false negative while a low value may yield false positives in auto-tagging.
+
+This trade-off was solved by looking into the data. For example, the similarity scores between the emails and their related a user stories in the training data were observed. It was found that Taggy put a similarity score above or equal 0.58 (out of 1.00) for 90\% of the actual email and user story relations in the training data. A value less than 0.58 would produce a large number of false positives and similarly a value above 0.58 would result a large number of false negatives.
+
+This threshold score may be adjusted for a different data set depending on the same principle. However, like other machine learning algorithms, this parameter will not be available without the necessary training data.
+
+\section{Handling Attachments and Full-Text Search.}
+Matching the email contents against a user story contents is essentially a full-text search problem. Moreover, these high level artifacts often contain attachments of rich files such as Word documents, PDF Files, Spreadsheets etc. Taggy looks into the attachment contents of a number of rich file types using the third party full-text search engine called Lucene. The full-text search of Lucene also considers language stems, synonyms and other desired advanced features.
+
+Instead of building the full-text search engine, the third party component was used since it is beyond the scope of this thesis. However, it might be possible to configure the search engine to recognize the important bits about a text. For example, a project may have a list of words that could provide useful hints about an email's relation with a user story. Such words can be treated specially. This avenue is not explored in Taggy and may be considered for a future extension.
+
+\section {Project Specific vs. Project Agnostic Learning.}
+Since Taggy learns the parameters based on training data, the learning can be done either by project or as a global learning. Per project learning has the potential to provide a tuned parameter set for the project. But this means, a new project cannot get benefit of the auto-tagging since it doesn't have any historical data for training. Learning it globally means, once learned, it can be used for other projects. Again, this might fail to address any uncommon pattern in a project.
+
+The design of Taggy allows both approaches. In case there is historical data for a project, the training can be specific to that project. Otherwise, a new project can use the learned parameters from several projects. For the quantitative evaluation, the training was done globally. So, there was a single set of parameters for all the projects. The training data set yielded similar parameters on a per project training. In this case, combining training data from different projects actually helped since more training data were used to potentially cover more patterns.
+
+\section{Limitations of Taggy.}
+A number of limitations were observed from the evaluations of Taggy as discussed below:
+
+\begin{enumerate}
+	\item \textbf{Real world use.} Taggy was not used in a real world distributed agile project. Despite the quantitative and qualitative evaluations, it remains unknown how it would impact a real world usage.
+	\item \textbf{Email intake.} The CC: based email intake process requires a customer or developer of a project to do this while initiating an email discussion. Although most email senders are aware of adding multiple recipients, the usability of this extra step is not researched.
+	\item \textbf{User interface.} Auto-tagging emails and instant messages means a lot of archived content. To reduce information overload and present the desired content, a proper user interface needs to be in place. Taggy has a web interface that presents the user stories and the related discussions underneath them and vice versa. In case there are many such emails, this interface needs to be designed to meet the desired user experience. This thesis didn't explore around the appropriate user interface.
+	\item \textbf{Accuracy.} Taggy has shown ~76\% accuracy based on the evaluation data. The higher the accuracy the better it is to completely reduce human efforts in knowledge management. The accuracy of Taggy somewhat limits its usage as a completely automated knowledge acquisition process.
+\end{enumerate}
+
+
+
+
+
 
 
