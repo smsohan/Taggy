@@ -163,6 +163,7 @@ For instant messages, this table remains same for all but the Subject similarity
 On the other hand, global similarity combines the local similarities and produces a single similarity value between two entities. In this case, the global similarity combines the local similarities for people, temporal, subject and body of an email against the appropriate attributes of the user story. The combination is performed using a weighted sum of the local similarities, where the relative weight for each component is learned during the training phase.
 
 \subsection{Similarity Function}
+\label{sec:equations}
 Using the aforementioned local-global principle, we adapted different equations to compute the local and global similarities as follows:
 
 \begin{equation}

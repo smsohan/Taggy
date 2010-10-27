@@ -48,4 +48,20 @@ class Project < ActiveRecord::Base
     end
   end
   
+  def people
+    assigned_ids = user_ids
+    
+    assignables = messages + user_stories
+    
+    assignables.each do |assignable|
+      if assignable && assignable.people
+        assigned_ids += assignable.people.compact.collect{|u| u.id.to_i }.uniq      
+      end
+    end
+    
+    assigned_ids.uniq!
+                     
+    assigned_ids
+  end
+  
 end

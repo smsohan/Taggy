@@ -53,7 +53,7 @@ namespace :taggy do
       puts "User Stories: #{project.user_stories.count}"
       puts "Messages: #{project.messages.count}"
       puts "Sprints: #{project.sprints.count}"
-      puts "Sprints: #{project.users.count}"
+      puts "Users: #{project.people.length}"
     end
                     
     Rails.logger.level = 0

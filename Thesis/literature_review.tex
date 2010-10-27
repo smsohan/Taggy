@@ -126,3 +126,15 @@ Some agile projects are now using source code hosting platforms for project mana
 Agile teams also use continuous integration tools such as Hudson \cite{Hudson}, CruiseControl\cite{cruise_control} and Microsoft Team Server\cite{team_server}. so that the status of the current build is automatically communicated. These tools provide a dashboard and detail view of a project's health that includes build stats, test results and commit history. Distributed agile teams often use a separate tool to capture knowledge about the high level artifacts that are not found in the continuous integration tools.
 
 The aforementioned tools help distributed agile teams to collaborate and share project-related knowledge. Almost all of them send out notification emails when a change takes place, for example, when a user story is assigned or a build succeeds. Such email notification is helpful since it reaches the inbox of people instead of waiting for them to visit the tools. Some of the tools, such as Basecamp and FogBugz, also accept incoming emails from people. But none of the the tools interlinks the incoming emails to the user stories unless a user does it manually. As a result, the benefits of a message thread attached to a user story is not readily available. To ensure the message threads are kept attached to the user stories, the users are forced to use the tools. But, similar to email notification, this could be convenient if a developer or a customer could just send an email to the tool and the tool would automatically attach the email to the relevant user story. Taggy attempts to solve this problem by utilizing the planning information from the project management tools to infer the relevance of an user story against an email.
+
+\section{Summary}
+To summarize, the auto-tagging technique offers the following unique features:
+\begin{enumerate}
+	\item Automatically captures and tags the emails and instant messages with relevant user stories on an ongoing basis instead of classifying archived data.
+	\item Auto-tags emails with user stories based on their context and text relevance.
+	\item Uses a machine learning technique to auto-tag instead of asking the users to provide the rules or manual tagging.
+	\item Does not require the developers or customers to remember any identifiable token for each of the user stories.
+	\item Does not require any syntax learning.
+	\item Captures knowledge by linking two high-level artifacts that are most used by distributed agile teams for customer collaboration.
+\end{enumerate}
+
