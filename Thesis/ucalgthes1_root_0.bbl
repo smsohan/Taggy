@@ -391,4 +391,19 @@ Windows scheduled tasks.
 Active record -- object-relation mapping put on rails.
 \newblock http://ar.rubyonrails.org/.
 
+\bibitem{chi_square}
+Herman Chernoff and E.~L. Lehmann.
+\newblock The use of maximum likelihood estimates in χ2 tests for goodness of
+  fit.
+\newblock {\em The Annals of Mathematical Statistics}, 25(3):579--586,
+  September 1954.
+\newblock {ArticleType:} research-article / Full publication date: Sep., 1954 /
+  Copyright © 1954 Institute of Mathematical Statistics.
+
+\bibitem{grounded_theory}
+Anselm Strauss.
+\newblock {\em Basics of qualitative research : techniques and procedures for
+  developing grounded theory}.
+\newblock Sage Publications, Thousand Oaks {CA}, 2nd ed. edition, 1998.
+
 \end{thebibliography}

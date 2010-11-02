@@ -1,20 +1,20 @@
 %!TEX root = /Users/smsohan/Taggy/Thesis/ucalgthes1_root_0.tex
 \fancyhead[RO,LE]{\thepage}
 \fancyfoot{} 
-\chapter{QUANTITATIVE EVALUATION}
+\chapter{Quantitative Evaluation}
 \label{ch:evaluation}
-As mentioned in the research goals, an evaluation is required to measure the accuracy of Taggy in auto-tagging emails with user stories. In this thesis, the evaluation is based on two different real world data sets, collected from two different sources. In total the data represents A agile teams' work across X iterations comprising a total Y days. The evaluation shows that for different projects Taggy can correctly auto-tag between 76 to 80\% emails with user stories after sufficient training.
+As previously mentioned in the research goals, an evaluation is required to measure the accuracy of Taggy in auto-tagging emails with user stories. In this thesis, the evaluation is based on two different real world data sets, collected from two different sources. In total the data represents 4,745 messages created by 9 agile teams. The evaluation shows that for different projects Taggy can correctly auto-tag between 76\% emails with user stories after sufficient training.
 
 This chapter is organized as follows: Firstly, the evaluation approach is discussed. As a part of it, the adapted definition of accuracy is given. Next, a null hypothesis is stated which is used in deducing the statistical relevance of the evaluation results. Then, the two data sets are described and the evaluation results for each are provided in detail. Finally, the limitations of this evaluation are discussed.
 
 \section{Evaluation Approach}
 The evaluation steps, as depicted in Figure~\ref{fig:evaluation}, are described below.
 
-\begin{figure*}[tb]
+\begin{figure*}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{Evaluation.png}
-    \caption{Taggy Empirical Evaluation Steps}
 	\label{fig:evaluation}
+  \caption{Taggy Empirical Evaluation Steps}
 \end{figure*}
 
 
@@ -38,7 +38,7 @@ Accuracy = \frac{Number \;  of  \; correct  \; auto tagging} {Number \;  of \;  
 As Equation~\ref{eq:accuracy} suggests, it is necessary to be able to justify whether an auto-tagging is correct or incorrect. So, the evaluation data needs to provide information about correct relationship of an email with user stories so that the auto-tagged results can be compared against  known values.
 
 \subsection{Statistical Relevance}
-The statistical relevance is found by starting with a null hypothesis and then refuting it based on chi-square test. In this case the null hypothesis is:
+The statistical relevance is found by starting with a null hypothesis and then observing the goodness-of-fit of the evaluation data based on chi-square test \cite{chi_square}. In this case the null hypothesis is:
 
 \begin{quote}
 	The auto-tagging accuracy of Taggy is no better than a random decision making.
@@ -46,7 +46,7 @@ The statistical relevance is found by starting with a null hypothesis and then r
 
 The outcome of an auto-tagging process is either a correct or a wrong tagging of an email against the user stories in a project. Similarly, a random system will produce one of the two outcomes. The target of this statistical relevance determination is to see if the accuracy found from Taggy's evaluation is likely to be achievable by a random system.
 
-In this case, we have a single degree of freedom, since there are two possible outcomes, correct and wrong. And the expected value of correct and wrong is same for a random system. Based on this information, the chi-square computation is done using Equation~\ref{eq:chi}:
+In this case, we have a single degree of freedom, since there are two possible outcomes, correct and incorrect. And the expected value of correct and incorrect decisions is same for a random system. Based on this information, the chi-square computation is done using Equation~\ref{eq:chi}:
 
 \begin{equation}
 \label{eq:chi}
@@ -57,33 +57,33 @@ In this case, we have a single degree of freedom, since there are two possible o
 \end{split}	
 \end{equation}                                       
 
-This computed value is compared against the upper critical chi-square value for probability 0.05 with 1 degree of freedom, that is $\chi^{2}_{0.05}$=3.841. The probability value of 0.05 is conventionally used in significance finding. A value beyond this threshold indicates disagreement between the observation and the null hypothesis. We also present the corresponding p-values against the computed chi-square values. The lower the p-value, the less likely is the observation given the null hypothesis is true.
+This computed $\chi^{2}$ value is compared against the upper critical chi-square value for probability 0.05 with 1 degree of freedom, that is $\chi^{2}_{0.05}$=3.841. The probability value of 0.05 is conventionally used in significance finding. A value beyond this threshold indicates disagreement between the observation and the null hypothesis. We also present the corresponding p-values against the computed chi-square values. The lower the p-value, the less likely it is that the observation given the null hypothesis is true.
 
 \section{Evaluation Results}
 The evaluation results are discussed in two sections for two different data sets.
 
 \subsection{Data set\# 1: ScrumPad}	
-This data set was obtained from an online agile project management tool called ScrumPad.	ScrumPad allows users to manage product backlog, perform iteration planning and track progress. Also, it lets users discuss the project's user stories using message threads. Each message thread can contain an explicit link to a user story. While sending a message using ScrumPad, one can link it with a user story. The messages are stored in ScrumPad database and also sent to people via emails. People can directly reply to the notification emails, which goes to ScrumPad and gets saved as a message of an existing thread.
+This data set was obtained from an online agile project management tool called ScrumPad.	ScrumPad allows users to manage product backlog, perform iteration planning and track progress. Also, it lets users discuss the project's user stories using message threads. Each message thread can contain an explicit link to a user story. While sending a message using ScrumPad, one can link it with a user story. The messages are stored in ScrumPad database and also sent to people via emails. People can directly reply to the notification emails, which goes to ScrumPad and gets saved as a message either in a new or under an existing thread.
 
 The user stories in ScrumPad contain information about its title, description, attachments, customer, developers and iteration. Taggy used these user stories to train and evaluate its auto-tagging performance.
 
-\begin{figure*}[tb]
+\begin{figure*}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{scrumpad_message.png}
-    \caption{A ScrumPad Message Linked to a User Story}
+   \caption{A ScrumPad Message Linked to a User Story}
 	\label{fig:scrumpad_message}
 \end{figure*}
 
-Figure~\ref{fig:scrumpad_message} shows the screenshot of a message at ScrumPad. As this figure shows, the message has a link to the user story. The messages in the ScrumPad message threads are derived as emails for the evaluation of Taggy. Messages contain subject, body, sender, recipients and attachments. These fields are mapped against the standard fields of emails. Also, if a message thread in ScrumPad is linked against a user story, all derived emails from the messages of that thread are also treated to be linked against the user story. So, these are essentially the correct tags for the emails since they were all manually provided by the contributors to the message threads. This information helps the training of Taggy using reward-punishment approach with the necessary feedback. Also, the accuracy computation relies on this information to find if an auto-tagging is correct or not.
+Figure~\ref{fig:scrumpad_message} shows the screenshot of a message at ScrumPad. As this figure shows, the message has a link to the user story. The messages from ScrumPad message threads are derived as emails for the evaluation of Taggy. Messages contain subject, body, sender, recipients and attachments. These fields are mapped against the standard fields of emails. Also, if a message thread in ScrumPad is linked against a user story, all derived emails from the messages of that thread are also treated to be linked against the user story. So, these are essentially the correct tags for the emails since they were all manually provided by the contributors to the message threads. This information helps the training of Taggy using reward-punishment approach with the necessary feedback. Also, the accuracy computation relies on this information to find if an auto-tagging is correct or not.
 
-The ScrumPad data set contains data from five distributed agile projects. Four of the five projects, MethodMarketing, BI for Car Dealers, ManyWheels and VarsityDays were developed by Code71, Inc. (www.Code71.com). Code71 is also the creator of ScrumPad. These four projects employed developers from Dhaka, Bangladesh and Virginia, USA. These projects were developed for four different clients from the USA.
+ScrumPad data set contains data from five distributed agile projects. Four of the five projects, MethodMarketing, BI for Car Dealers, ManyWheels and VarsityDays were developed by Code71, Inc. (www.Code71.com). Code71 is also the creator of ScrumPad. These four projects employed developers from Dhaka, Bangladesh and Virginia, USA. These projects were developed for four different clients from USA.
 
 The fifth project, MindAndMarket, was distributed among one developer from Bangladesh, and two developers and a client from Belgium. The Belgian development team and the client worked at the same city.
 
-\begin{table}
-	\label{tab:scrumpad}
+\begin{table}[h!]
   \centering
   \caption{Scrumpad Data Set}
+	\label{tab:scrumpad_data_set}
     \begin{tabular}{|p{2cm}|p{4cm}|r|p{1cm}|p{1.2cm}|p{1.2cm}|r|}
       \hline
       \textbf{Project Name} & \textbf{Description} & \textbf{Users} & \textbf{Itera- tions} & \textbf{It. Len. (days)}  & \textbf{User Stories} & \textbf{Emails}\\
@@ -100,11 +100,12 @@ The fifth project, MindAndMarket, was distributed among one developer from Bangl
       \hline
       \textbf{Total} &  &  &  &  & \textbf{369} & \textbf{640}\\
       \hline
-      \multicolumn{7}{l}{Source: \emph{www.ScrumPad.com}}
     \end{tabular}
 \end{table}
 
-Table~\ref{tab:scrumpad} shows the composition of this data set. In total, this data set contained 640 emails and 369 user stories from 5 distributed agile projects. It is worth mentioning that 640 messages were exchanged using ScrumPad. However, the actual number of project related emails may not be limited to this volume.
+Table~\ref{tab:scrumpad_data_set} shows the composition of this data set. In total, this data set contained 640 emails and 369 user stories from 5 distributed agile projects. It is worth mentioning that 640 messages were exchanged using ScrumPad. However, the actual number of project related emails may not be limited to this volume.
+
+Given this data, the aforementioned evaluation approach was followed to train and auto-tag the emails. The iterative approach resulted in an optimum  training data partition size of 20\%. This size was selected because, a random partition containing 20\% of all emails for training produced better auto-tagging accuracy than a smaller sized partition (e.g. 10\%) and was as good as a larger sized partition (e.g. 30\%). 
 
 \begin{figure*}[htb]
 	\centering
@@ -113,7 +114,7 @@ Table~\ref{tab:scrumpad} shows the composition of this data set. In total, this 
 	\label{fig:training}
 \end{figure*}
 
-Given this data, the aforementioned evaluation approach was followed to train and auto-tag the emails. The iterative approach in finding an optimum size of the training data set partition yielded 20\% of the total data. So, with a random partition containing 20\% of all emails for training produced better auto-tagging accuracy than a smaller sized partition (e.g. 10\%) and was as good as a larger sized partition (e.g. 30\%). Chart~\ref{fig:training} shows the impact of training on the relative weights of different similarity measures. The chart shows that the initial relative weights for the similarity measures of the text components are reduced while the context components are increased as a result of the training.
+Chart~\ref{fig:training} shows the impact of training on the relative weights of different similarity measures. The chart shows that the initial relative weights for the similarity measures of the text components (subject and body) are reduced while the context components (temporal and people) are increased as a result of the training.
 
 Instead of training Taggy on a per project basis, I used 20\% data from all the projects. As a result, Taggy could benefit from a large number of training emails. However, it is possible to use a per project learning as well. I have discussed the trade-off regarding learning for specific project vs. a collection of projects at Chapter~\ref{ch:discussion}.
 
@@ -122,31 +123,30 @@ The maximum similarity score for a local similarity measure can be 1.0 as shown 
 	\item The email has strong text similarity (maximum 0.34 + 0.17 ~= 0.51) and some context similarity with the user story.
 	\item The email has context similarity (maximum 0.29 + 0.20 ~= 0.49) and some text similarity with the user story.
 \end{enumerate}
-So, setting such a threshold score forces auto-tagging decisions to be based on both context and text relevance. This threshold was found from observing the data as in 90\% cases when an email is actually related to a user story, their global similarity score was computed greater than or equal to 0.58. The trade-off between selecting this threshold and auto-tagging is discussed later in Chapter~\ref{ch:discussion}.  
+So, setting such a threshold score forces auto-tagging decisions to be based on both context and text relevance. This threshold was found from observing the data. In the training data, the global similarity function produced a score of 0.58 or higher for 90\% of the actual email and user story relations. This cut-off point helped to eliminate some false positives and false negatives. The trade-off between selecting this threshold and auto-tagging is discussed later in Chapter~\ref{ch:discussion}.  
 
 Using this threshold and the trained relative weights, the evaluation yielded the results as shown in Table~\ref{tab:sp_evaluation}.
 
-\begin{table}
-	\label{tab:sp_evaluation}
+\begin{table}[h!]
   \centering
   \caption{Evaluation Using Scrumpad Data Set}
-    \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+	\label{tab:sp_evaluation}
+    \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{1.5cm}|p{1.5cm}|}
       \hline
-      \textbf{Project Name} & \textbf{Total Emails} & \textbf{Training Emails (20\%) of Total} & \textbf{Evaluation Emails (80\%)  of Total} & \textbf{Correct Auto-Tagging} & \textbf{Accuracy} & $\chi^{2}$\\
+      \textbf{Project Name} & \textbf{Total Emails} & \textbf{Training Emails (20\%) of Total} & \textbf{Evaluation Emails (80\%)  of Total} & \textbf{Correct Auto-Tagging} & \textbf{Accuracy} & $\chi^{2}$ & p-value\\
       \hline
-      Method Marketing & 183 		& 37	& 146	&	111 & \textbf{76\%}	& 39.6\\
+      Method Marketing & 183 		& 37	& 146	&	111 & \textbf{76\%}	& 39.6	& 0.000000\\
       \hline
-      BI for Car Dealers & 213 	& 43	& 170	&	133	& \textbf{78\%}	& 54.2\\
+      BI for Car Dealers & 213 	& 43	& 170	&	133	& \textbf{78\%}	& 54.2	& 0.000000\\
       \hline
-      Many Wheels & 158 				& 32	& 126	& 93	& \textbf{74\%}	& 28.6\\
+      Many Wheels & 158 				& 32	& 126	& 93	& \textbf{74\%}	& 28.6 	& 0.000000\\
       \hline
-      Varsity Days & 46 				& 9		&	37	& 29	& \textbf{79\%}	& 12\\
+      Varsity Days & 46 				& 9		&	37	& 29	& \textbf{79\%}	& 12		& 0.000532\\
       \hline
-      Mind And Market & 40 			& 8		& 32	&	24	& \textbf{74\%}	& 8\\
+      Mind And Market & 40 			& 8		& 32	&	24	& \textbf{74\%}	& 8			& 0.004678\\
       \hline
-      \textbf{Total} & 640 			& 129	& 511	&	390	& \textbf{76\%}	& 141.6\\
+      \textbf{Total} & 640 			& 129	& 511	&	390	& \textbf{76\%}	& 141.6 & 0.000000\\
       \hline
-      \multicolumn{5}{l}{Source: \emph{primary}}
     \end{tabular}
 \end{table}
 
@@ -161,21 +161,21 @@ The evaluation shows that the accuracy varies between 74\% to 79\% for different
 	\end{enumerate}
 \end{quote}
 
-Both the stories were developed at Iteration\#1 in February 2008. However, two different developers were assigned to implement the stories. In such cases, the text of an email is highly likely to show similar relevance with the text of the two user stories. However, when looked into the people context, the additional information can distinguish the actual relevance of the email with the user stories. As shown in this example, adding context information can help to find the relevant user stories for an email as well as eliminate some of the incorrect auto-tagging that would result if only text relevance was used. It should be noted that the presence of the free text component leads to a fuzzy match and a 100\% accuracy may not be achieved as a result of this.
+Both the stories were developed at Iteration\#1 in February 2008. However, two different developers were assigned to implement the stories. In such cases, the text of an email is highly likely to show similar relevance with the text of both the user stories. However, when looked into the people context, the additional information can distinguish the actual relevance of the email with the user stories. As shown in this example, adding context information can help to find the relevant user stories for an email as well as eliminate some of the incorrect auto-tagging that would result if only text relevance was used. It should be noted that the presence of the free text component leads to a fuzzy match and a 100\% accuracy may not be achieved as a result of this.
 
 \subsection{Data set\# 2: IBM Jazz}
-Jazz was a large project at IBM where they built a web-based project management and collaboration tool called Rational Team Concert (RTC). RTC used itself for project management. The RTC had multiple team areas working on different areas of the application. In evaluation data set\# 2, I have used data from 4 key team areas of the project.
+Jazz was a large project at IBM where they built a web-based project management and collaboration tool called Rational Team Concert (RTC). RTC used itself for project management. The RTC project had multiple team areas working on different areas of the application. In evaluation data set\# 2, I have used data from 4 key team areas of the project.
 
 For this evaluation, I have used the work items from RTC as user stories. RTC stores the work items with it's title, description, owner, assigned developers, and planned iteration name. Under every work item, there is a message thread, where the team members can discuss about the work item. I have derived emails from the messages in the message threads with an important change: the email subject was formed by adding an ``RE:'' prefix to the work item title since the messaging system didn't allow the users to provide a subject line. However, the other fields of messages such as sender, recipients, time stamp, and the body were mapped to the standard email fields.
 
-Taggy was not trained based on data set\# 2, rather the trained relative wights from data set\# 1 was used to auto-tag the emails. It is clear that training based on data set\# 2 would put a very high relative weight to subject similarity as the subjects are identical to the user story titles. Using the training based on data set\# 1 reduces this bias.
+Taggy was not trained based on data set\# 2, rather the trained relative wights from data set\# 1 were used to auto-tag the emails. It is clear that training based on data set\# 2 would put a very high relative weight to subject similarity since the subjects are identical to the user story titles. Using the training based on data set\# 1 reduces this bias.
 
 
-\begin{table}
+\begin{table}[h!]
 	\label{tab:jazz}
   \centering
   \caption{IBM Jazz Data Set}
-    \begin{tabular}{|p{2cm}|p{2cm}|r|p{1cm}|p{1.2cm}|p{1.2cm}|r|}
+    \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{1.2cm}|r|}
       \hline
       \textbf{Team Area Name} & \textbf{Users} & \textbf{Avg. Active Users} & \textbf{Itera- tions} & \textbf{It. Len. (days)}  & \textbf{User Stories} & \textbf{Emails}\\
       \hline                
@@ -192,11 +192,11 @@ Taggy was not trained based on data set\# 2, rather the trained relative wights 
     \end{tabular}
 \end{table}
 
-Table~\ref{tab:jazz} shows the composition of this data set. As Table~\ref{tab:jazz} shows, the total number of users in the teams were different from average active users per iteration. This is because the team areas in the Jazz project were formed as sub-projects and people were allocated based on the iteration targets. So, in this case, a total of 71 users contributed to the Work Item team area in 3 iterations (completed in 5 months). However, only 30 users were active members since they were either owners or assigned developers of the user stories. The rest 41 users were from the other team areas and contributed with their feedback as end users of the product. The team areas had varying iteration lengths, for example the Agile Planning team spent 50 days for the first iteration but 30 days for the fifth. A large number of discussion went on about the work items since the team members were using the product firsthand while it was being developed.
+Table~\ref{tab:jazz} shows the composition of this data set. This data set comprises of 4105 emails and 1708 user stories from 4 team areas or sub-projects. As Table~\ref{tab:jazz} shows, the total number of users in the teams were different from average active users per iteration. This is because the team areas in the Jazz project were formed as sub-projects and people were allocated based on the iteration targets. So, in this case, a total of 71 users contributed to the Work Item team area in 3 iterations (completed in 5 months). However, only 30 users were active members since they were either owners or assigned developers of the user stories. The rest 41 users were from the other team areas and contributed with their feedback as end users of the product. The team areas had varying iteration lengths, for example the Agile Planning team spent 50 days for the first iteration but 30 days for the fifth. A large number of discussion went on about the work items since the team members were using the product firsthand while it was being developed.
 
 Based on the training from data set\# 1, Taggy produced the evaluation results for data set\# 2 as shown in Table~\ref{tab:jazz_evaluation}:
 
-\begin{table}
+\begin{table}[h!]
 	\label{tab:jazz_evaluation}
   \centering
   \caption{Evaluation Using IBM Jazz Data Set}
@@ -218,15 +218,15 @@ Based on the training from data set\# 1, Taggy produced the evaluation results f
     \end{tabular}
 \end{table}
 
-The evaluation based on data set\# 2 shows a 78\% accuracy in auto-tagging. Although the training is based on data set\#2, this data still carries a bias that the email subjects are identical to their relevant user story titles. So, in the global similarity computation, a score of 0.34 (subject similarity weight is 0.34) is ensured for the emails. To reach the threshold of 0.58 it needs to produce the rest 0.24 of the required score from the body and context similarity. So, the 22\% incorrectly tagged emails had poor context and body similarities with the relevant user stories.
+The evaluation based on data set\# 2 shows a 78\% accuracy in auto-tagging. Although the training is based on data set\#1, this data still carries a bias that the email subjects are identical to their relevant user story titles. So, in the global similarity computation, a score of 0.34 (subject similarity weight is 0.34) is ensured for the emails. To reach the threshold of 0.58 it needs to produce the rest 0.24 of the required score from the body and context similarity. So, the 22\% incorrectly tagged emails had poor context and body similarities with the relevant user stories.
 
 \section{Limitations}
 The quantitative evaluation has the following key limitations:
 
 \begin{enumerate}
-	\item For the evaluation, message threads were treated as emails instead of using actual emails. This approach helped in the training and evaluation since the message threads were already linked with the user stories. However, in case of data set\# 2, using user story titles were used as email subjects since this information was absent. This may not be the case for an actual email. Similarly, despite having a common structure and intent, message threads and emails may be different in some aspects. An evaluation using actual emails may produce new findings that are not seen when message threads are used.
+	\item For the evaluation, message threads were treated as emails instead of using actual emails. This approach helped in the training and evaluation since the message threads were already linked with the user stories. However, in case of data set\# 2, using user story titles were used as email subjects since this information was absent. This may not be the case for an actual email. Similarly, despite having a common structure and intent, message threads and emails may be different in some aspects. An evaluation using actual emails may surface new findings that are not seen when message threads are used.
 
-	\item The evaluation data were taken from two sources involving 9 projects. The projects developed by two companies. This limits the generalizability of the evaluation findings.
+	\item The evaluation data were taken from two sources involving 9 teams. The projects were developed by two companies. This limits the generalizability of the evaluation findings.
 	
 	\item The evaluation was done based on historical data as opposed to a live system. Since the auto-tagging process needs to work on a live system, evaluating the accuracy on an ongoing basis could unveil new findings that are not found in a historical data. 
 	

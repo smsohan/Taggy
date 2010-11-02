@@ -1,26 +1,26 @@
 %!TEX root = /Users/smsohan/Taggy/Thesis/ucalgthes1_root_0.tex
 \fancyhead[RO,LE]{\thepage}
 \fancyfoot{} 
-\chapter{INTRODUCTION}
-In this thesis I have presented a machine learning based technique for building an organic knowledge center for distributed agile teams. The knowledge is captured from emails and instant messages and automatically tagged to the relevant project requirements or user stories. I have discussed about a prototype implementation of the technique named Taggy. Taggy has correctly found the relevant user story for X of Y or Z\% emails from K real life projects. I have conducted a user study and found encouraging feedbacks about the technique and its implementation. In a nutshell, this thesis documents the details of my auto-tagging technique, its novelty compared to some of the existing solutions, a prototype implementation and the evaluation results based on real-world data as well as it's qualitative feedbacks.
+\chapter{Introduction}
+In this thesis I have presented a machine learning based technique to build an organic knowledge center for distributed agile teams. The knowledge is captured from emails and instant messages and automatically tagged to the relevant project requirements or user stories. I have discussed about a prototype implementation of the technique named Taggy. Taggy has correctly found the relevant user story for ~76\% of 4,745 emails from 9 agile project teams. I have also conducted a user study and found encouraging feedback about the technique and its implementation. In a nutshell, this thesis documents the details of my auto-tagging technique, its novelty compared to some of the existing solutions, a prototype implementation and the evaluation results based on real-world data as well as it's qualitative feedbacks.
 
-The process of agile software engineering is a collaborative approach which incrementally delivers software in small iterations of two to four weeks. Agile teams commonly use ``user stories'', a small description of a desired feature in everyday language, to capture the software's requirements. An example user story is as follows:\\
+The process of agile software engineering is a collaborative approach which incrementally delivers software in small iterations, preferably of two to four weeks. Agile teams commonly use ``user stories'', a small description of a desired feature in everyday language, to capture the software's requirements. An example user story is as follows:\\
 \begin{quote}
-\emph{As a shopper, I want to pay online to checkout my shopping cart using MasterCard, Visa or Amex credit card from a secured web page only.}\\
+As a shopper, I want to pay online to checkout my shopping cart using MasterCard, Visa or Amex credit card from a secured web page only.
 \end{quote}
-The details of such user stories are discussed on an ongoing basis among the people involved in a project. For example, as the engineering team starts working on the stories, they often consult with customers and other teammates to further clarify such user stories. Whenever possible, face-to-face communication is preferred as the principal communication medium between customers and developers in agile processes \cite{am} \cite{xp} \cite{scrum} \cite{xp_up}. In collocated setups, where the team members work in close proximity, such informal communication relays the tacit knowledge among the people. 
+The details of such user stories are discussed on an ongoing basis among the people involved in a project. For example, as the engineering team starts working on the stories, they often consult with customers and other teammates to further clarify such user stories. Whenever possible, face-to-face communication is preferred as the principal communication medium between customers and developers in agile processes \cite{am, xp, scrum, xp_up}. In collocated setups, where the team members work in close proximity, such informal communication relays the tacit knowledge among the people. 
 
-However, for distributed projects, especially when there is a huge time zone difference among people, face-to-face communication becomes infeasible. To mitigate this difficulties in communication, people use alternatives such as phone calls, emails, instant messaging, wiki, web forums and so on. So, in such setups communication is often text based instead of oral and direct knowledge sharing. In this sense, distribution makes it easy to capture the knowledge about the user stories since much of it is textual and electronic. For an example, considering the aforementioned user story, the developer may send the following email to the customer to further clarify expectations.\\
+However, for distributed projects, especially when there is a huge time zone difference among people, face-to-face communication becomes infeasible. To mitigate this difficulties in communication, people use alternatives such as phone calls, emails, instant messaging, wikis, web forums and so on. So, in such setups communication is often text based instead of oral and direct knowledge sharing. In this sense, distribution makes it easy to capture the knowledge about the user stories since much of it is textual and electronic. For an example, considering the aforementioned user story, the developer may send the following email to the customer to further clarify expectations.\\
 
 \begin{quote}
-\emph{\textbf{Subject:} Clarification required on online credit card payment\\
+\textbf{Subject:} Clarification required on online credit card payment\\
 \textbf{Hi Bob:}\\
-Please clarify if the shoppers need to provide the security code of the credit card while doing checkout.}
+Please clarify if the shoppers need to provide the security code of the credit card while doing checkout.
 \end{quote}
 
-Since email is a persistent tool in the sense that they remain in the inbox unless deleted, one can use this knowledge in future. But, email is also a personal tool and it is hard to transfer a selection of project related emails from the email inbox in a reusable format. The same is true for instant messages as well. So, when someone leaves the team, it becomes hard to access that knowledge when needed later down the road. To retain this useful information, this thesis explored a machine learning based technique. As a proof of concept, the technique is also implemented and evaluated through a prototypical tool called \textbf{``Taggy''} that automatically grabs and tags the emails and instant messages with relevant user stories.
+Since email is a persistent tool in the sense that they remain in the inbox unless deleted, one can use this knowledge in future. But, email is also a personal tool and it is hard to transfer a selection of project related emails from the email inbox in a reusable format. The same is true for instant messages as well. So, when someone leaves the team, it becomes hard to access that knowledge if needed later down the road. To retain this useful information, this thesis explored a machine learning based technique. As a proof of concept, the technique is also implemented and evaluated through a prototypical tool called \textbf{``Taggy''} that automatically grabs and tags the emails and instant messages with relevant user stories.
 
-The relationship between a user story and email or instant message is not explicit. To establish the implicit relation, Taggy uses  Case Based Reasoning (CBR). CBR is a machine learning technique that is designed to look at the text, people, and temporal similarity between emails and user stories. The evaluation results show that a well trained software such as Taggy can auto-tag emails with user stories. Also, we found that combining contextual information with text similarity helps to find the related user stories with higher accuracy than using just text match alone.
+The relationship between a user story and email or instant message is not explicit. To establish the implicit relation, Taggy uses  Case Based Reasoning (CBR). For auto-tagging, a CBR system is designed to look at the text, people, and temporal similarity between emails and user stories. The evaluation results show that a well trained software such as Taggy can auto-tag emails with user stories. Also, we found that combining contextual information with text similarity helps to find the related user stories with higher accuracy than using just text match alone.
 
 In the existing literature, attempts have been made to capture software project related knowledge following several alternative approaches. For example, commercial tools exist that link software code commit messages with a requirement or ticket given the ticket number is present inside the commit log. Also, another approach is to use wiki or online message threads, where the contents are manually linked with the user stories. However, to use such approaches, one needs to remember identifiable tokens or learn markup syntax (e.g. wiki), which is often burdensome for business users. To reduce this learning curve and effort required of human users, Taggy builds a knowledge base by automatically tagging emails and instant messages with user stories. 
 
@@ -28,7 +28,7 @@ The remaining part of this chapter is organized as follows: First, I discuss the
 
 %Start the body text
 \section{User Stories - An Overview}
-In agile projects, user stories are used to capture requirements. In short, user stories represent the need for a feature from the view point of a potential user of an application. Mike Cohn \cite{user_stories_applied} defines user stories as follows:\\
+In agile projects, user stories are used to capture requirements. In short, user stories represent the need for a feature from the view point of a potential user of an application. Cohn \cite{user_stories_applied} defines user stories as follows:\\
 
 \begin{quote}
 	A user story describes functionality that will be valuable to either a user or purchaser of a system or software. User stories are composed of three aspects:
@@ -39,7 +39,7 @@ In agile projects, user stories are used to capture requirements. In short, user
 	\end{itemize}
 \end{quote}
 
-As outlined in the above definition, conversation plays a central role in fleshing out the details of user stories. Ron Jeffries \cite{ron_jeffries} and Rachel Davies\cite{rachel_davies} also emphasize the role of conversation as a key component of user stories.
+As outlined in the above definition, conversation plays a central role in fleshing out the details of user stories. Jeffries \cite{ron_jeffries} and Davies\cite{rachel_davies} also emphasize the role of conversation as a key component of user stories.
 
 Wake, author of \cite{bill_wake}, suggested another popular acronym, INVEST, that defines good stories being Independent, Negotiable, Valuable to users, Estimable, Small and Testable. However, to hold all these characteristics while remaining Small essentially points to conversation as means of detailing the user stories.
 
@@ -75,7 +75,7 @@ The members of a distributed agile project work from different geographical loca
 \end{enumerate}
 \end{quote}
 
-Again, the geographical distribution can be as near as office across the road or as far as the opposite side of the world. For example, a team may work for a customer within the same city or a country separated by ten hours of time zone difference. Distributed agile teams often use different electronic communication channels such as emails, instant messaging, wikis, forums and online project management tools to uncover important details about the user stories. Scrum and XP are two popular agile specifications.
+Again, the geographical distribution can be as near as office across the road or as far as the opposite side of the world. For example, a team may work for a customer within the same city or a country separated by ten hours of time zone difference. Distributed agile teams often use different electronic communication channels such as emails, instant messaging, wikis, forums and online project management tools to uncover important details about the user stories. Scrum and XP are two popular agile specifications \cite{scrum, xp}.
 
 \begin{figure*}[bt]
 	\centering
@@ -91,7 +91,7 @@ Cost savings has been identified as one of the principal deciding factors for di
 To ensure a shared view of the ``Product Backlog'' and ``Iteration Backlog'', distributed teams often use web-based project management tools. There are a number of such tools available commercially such as ScrumPad, VersionOne etc. as well as open-source \cite{scrum_pad, version_one} such as XPLanner, Trac etc.\cite{xplanner, trac} Such tools help people working remotely to have a single backlog around which to collaborate. 
 
 \section{Research Motivation}
-The existing literature about collaboration in distributed agile software projects suggests the use of various electronic mediums to compensate for missing face-to-face communication. Because of time zone differences, such teams often use asynchronous communication tools such as email and wikis in addition to synchronous ones such as telephone calls, instant messaging, etc. For example, Robarts \cite{practical_considerations} found that teams would follow up with a written email after they had a telephone meeting to ensure the discussion was clearly understood. Moreover, of all the available written communication tools, email has been regarded as the most-widely used by several former studies \cite{collaboration_in} \cite{on_coord}. Additionally, even in collocated settings, people often use emails to communicate as it doesn't require an immediate response from the recipient or the overheads of scheduled meeting.
+The existing literature about collaboration in distributed agile software projects suggests the use of various electronic mediums to compensate for missing face-to-face communication. Because of time zone differences, such teams often use asynchronous communication tools such as email and wikis in addition to synchronous ones such as telephone calls, instant messaging, etc. For example, Robarts \cite{practical_considerations} found that teams would follow up with a written email after they had a telephone meeting to ensure the discussion was clearly understood. Moreover, of all the available written communication tools, email has been regarded as the most-widely used by several former studies \cite{collaboration_in, on_coord}. Additionally, even in collocated settings, people often use emails to communicate as it doesn't require an immediate response from the recipient or the overheads of scheduled meeting.
 
 Although having multiple communication channels adds flexibility to collaboration, it also means that knowledge gets fragmented across different channels. This fragmented knowledge may be spread over the project management tool, wiki, emails, instant messages and other places. Basili et al. provided the following list of experiences related to the lack of access to available information \cite{implementing_an_experience}:
 
@@ -109,7 +109,7 @@ Although having multiple communication channels adds flexibility to collaboratio
 \end{quote}
 
 
-For agile teams, this situation can be improved with a useful knowledge management solution. To retain the important details about the user stories, one needs to combine these fragmented pieces into a centralized repository. But looking into email inboxes of colleagues to do this may violate their privacy, if it is even in the first place. Even worse, when a teammate leaves, her emails are lost as well. So, the fragmented pieces of knowledge is either lost or very hard to combine together. Even if one has access to the emails, manually copy-pasting all the emails and tagging them with the relevant user stories would be a time consuming task. The following user story and email collaboration shows an example of knowledge fragmentation:
+For agile teams, this situation can be improved with a useful knowledge management solution. To retain the important details about the user stories, one needs to combine these fragmented pieces into a centralized repository. But looking into email inboxes of colleagues to do this may violate their privacy, if it is even available in the first place. Even worse, when a teammate leaves, her emails are lost as well. So, the fragmented pieces of knowledge is either lost or very hard to combine together. Even if one has access to the emails, manually copy-pasting all the emails and tagging them with the relevant user stories would be a time consuming task. The following user story and email collaboration shows an example of knowledge fragmentation:
 
 \begin{quote}
 	\textbf{Available in Project Management Tool}\\
@@ -142,7 +142,7 @@ To answer this question, the customer replies with the following email.
 
 Please note that the email from the customer included a conversion table for ``region codes''. 
 
-Given this example, if the some of the team members only looks at the user story, they will find partial information about it. So, the whole conversion of ``region code''  may be confusing to them. However, when they can see the emails along with the user story, they may have a better understanding about this user story.
+Given this example, if the some of the team members only look at the user story, they will find partial information about it. So, the whole conversion of ``region code''  may be confusing to them. However, when they can see the emails along with the user story, they may have a better understanding about this user story.
 
 This information may be required since a distributed agile team have to cope up with changes in team composition as new people will join and some people may leave. So, if it is possible to combine the fragmented knowledge from different places such as emails, instant messages and project management tools, one can find the important details of the user stories. Such details may not be obvious when only the user story is available. Similarly, the knowledge can help in testing of the features since it is expected to contain customer feedbacks and clarifications on user stories.
 
@@ -155,7 +155,7 @@ From a team member's point of view, manually finding and relating the emails wit
 
 The core technical challenge in devising such a software system is understanding the emails and relating them to specific user stories. The relation between an email and a user story is not explicit. Alternative approaches to make it explicit, such as using identifiable tokens in email subjects, also makes the communication process obtrusive as it adds an extra step to lookup the proper token or memorizing it before writing an email. To alleviate this extra step, one can modify email clients to do the lookup. But doing so for the multitude of emails clients including the ones on mobile phones is cumbersome. Also, it imposes a behavioral change or a learning curve for the people at the business end.
 
-To find out the implicit relation between a free-format email and a use story, an application needs to handle similarity between two texts, which is a standard problem. Emails may not show very high text similarity with the related user stories. This text component makes the relevance between a user story and an email an approximation or fuzzy match. Also, pure text retrieval limits how accurate the assignment of email and user stories can be. This is because people use different vocabulary and often a tacit communication exists underneath a written communication. Using context information has the potential to increase this accuracy of user story-email matching. So, a software system needs to be able to combine both the text and context similarity to auto-tag emails with user stories.
+To find out the implicit relation between a free-format email and a use story, an application needs to handle similarity between two texts, which is a standard problem. Moreover, emails may not show very high text similarity with the related user stories. This text component makes the relevance between a user story and an email an approximation or fuzzy match. Also, pure text retrieval limits how accurate the assignment of email and user stories can be. This is because people use different vocabulary and often a tacit communication exists underneath a written communication. Using context information has the potential to increase this accuracy of user story-email matching. So, a software system needs to be able to combine both the text and context similarity to auto-tag emails with user stories.
 
 To account for the context, one needs to use the associated meta information that is available. The context of an email and a user story are not the same. For example, the context of an email has a time-stamp, sender, recipients and past conversations. On the other hand, user stories have a different context, such as their development time or iteration timeframe, developers and customers. An auto-tagging solution needs to use these contextual details meaningfully so that each component gets an appropriate weighting in the relevance computation. So, it is important to have a formula that produces a similarity ranking which considers both the fuzzy text similarity and the associated context relevance.
 
@@ -165,14 +165,15 @@ Another technical challenge is to design an adaptive auto-tagging system so that
 
 
 \section{Research Goals}
-\begin{figure*}[bt]
+The principal goal of this research is to develop a technique to automatically read and relate emails and instant messages with user stories based on agile project context. A proof of concept tool implementation is required to test the technique. The tool needs to minimize human efforts in doing so. Another complementary goal is to evaluate the tool using real world data. The technique and its prototypical implementation are discussed in Chapters ~\ref{ch:taggy}. The evaluation of the tool is presented in Chapter~\ref{ch:evaluation}.
+
+\begin{figure*}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{Jigsaw.png}
     \caption{Jigsaw Puzzle Visualizing the Auto-Tagging Problem}
 	\label{fig:jigsaw}
 \end{figure*}
 
-The principal goal of this research is to develop a technique to automatically read and relate emails with user stories based on agile project context. A proof of concept tool implementation is required to test the technique. The tool needs to minimize human efforts in doing so. Another complementary goal is to evaluate the tool using real world data. The technique and its prototypical implementation are discussed in Chapters ~\ref{ch:taggy} and ~\ref{ch:evaluation}.
 
 Figure~\ref{fig:jigsaw} visualizes the research goal as it shows the fragmented knowledge from project management tools and email inboxes to be combined in a jigsaw puzzle. The target is to solve this puzzle so that each user story gets connected to relevant project related emails.
 
@@ -181,6 +182,6 @@ This research also aimed to investigate the difficulties involved in solving the
 \section{Key Contributions}
 Results from this research have been published and presented at XP 2010 \cite{auto_tagging}. 
 
-The key contribution of this research is that it demonstrates a novel approach to building a knowledge-base for distributed agile teams from emails and user stories. This approach has a similar motivation to that found in some previous work, such as clustering email archives\cite{using_hybrid}, tagging forum messages with source code change set\cite{hipikat, hipikat_2} and using wikis to share knowledge. However, this research shows a machine learning approach to conglomerate fragmented knowledge from emails, instant messages and project management tools which minimizes human efforts.
+The key contribution of this research is that it demonstrates a novel approach to building a knowledge-base for distributed agile teams from emails, instant messages and user stories. This approach has a similar motivation to that found in some previous work, such as clustering email archives\cite{using_hybrid}, tagging forum messages with source code change set\cite{hipikat, hipikat_2} and using wikis to share knowledge. However, this research shows a machine learning approach to conglomerate fragmented knowledge from emails, instant messages and project management tools which minimizes human efforts.
                                   
-Another key contribution is that it shows that text and context similarity can be used to find relevance between two different types of entities such as emails and user stories, where the degree of text similarity may be inadequate. I have used Case Based Reasoning (CBR) for auto-tagging. As this research findings suggest, other CBR systems concerning different entities may utilize this technique.
+Another key contribution is that it shows that text and context similarity can be used to find relevance between two different types of entities such as emails and user stories, where the degree of text similarity may be inadequate. I have used Case Based Reasoning (CBR) for auto-tagging. Similar to this auto-tagging solution, other CBR systems concerning different entities may also utilize this technique.

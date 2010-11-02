@@ -3,50 +3,51 @@ The top-level auxiliary file: ucalgthes1_root_0.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: literature_review.aux
 A level-1 auxiliary file: taggy.aux
-A level-1 auxiliary file: empirical_evaluation.aux
+A level-1 auxiliary file: quantitative_evaluation.aux
 A level-1 auxiliary file: qualitative_evaluation.aux
 A level-1 auxiliary file: discussion.aux
 A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: appendix1.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-You've used 72 entries,
+You've used 74 entries,
             1791 wiz_defined-function locations,
-            783 strings with 13689 characters,
-and the built_in function-call counts, 15572 in all, are:
-= -- 1479
-> -- 448
+            798 strings with 14155 characters,
+and the built_in function-call counts, 15981 in all, are:
+= -- 1520
+> -- 460
 < -- 35
-+ -- 188
-- -- 116
-* -- 751
-:= -- 1995
-add.period$ -- 202
-call.type$ -- 72
-change.case$ -- 63
++ -- 193
+- -- 119
+* -- 778
+:= -- 2059
+add.period$ -- 209
+call.type$ -- 74
+change.case$ -- 65
 chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 819
-empty$ -- 1792
-format.name$ -- 116
-if$ -- 3846
+cite$ -- 74
+duplicate$ -- 838
+empty$ -- 1835
+format.name$ -- 119
+if$ -- 3938
 int.to.chr$ -- 0
-int.to.str$ -- 72
-missing$ -- 48
-newline$ -- 331
-num.names$ -- 40
-pop$ -- 379
+int.to.str$ -- 74
+missing$ -- 51
+newline$ -- 342
+num.names$ -- 42
+pop$ -- 384
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 585
+skip$ -- 591
 stack$ -- 0
-substring$ -- 881
-swap$ -- 305
+substring$ -- 906
+swap$ -- 307
 text.length$ -- 35
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 123
-width$ -- 74
-write$ -- 704
+while$ -- 127
+width$ -- 76
+write$ -- 729

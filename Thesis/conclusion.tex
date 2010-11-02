@@ -1,11 +1,11 @@
 %!TEX root = /Users/smsohan/Taggy/Thesis/ucalgthes1_root_0.tex
 \fancyhead[RO,LE]{\thepage}
 \fancyfoot{} 
-\chapter{CONCLUSION} 
+\chapter{Conclusion} 
 In this chapter I draw a conclusion about the thesis. This provides information about the research goals and challenges that are addressed. Also, I discuss about the potential future research on this topic.
 
 \section{Research Goals Addressed}
-I have investigated the existing literature and tool support for communication and collaboration among stakeholders in distributed agile projects. I have found two distinct level of knowledge sharing practices, i) knowledge sharing about high level artifacts such as user stories, bugs etc. and ii) knowledge sharing about low level artifacts such as source code, design, build etc. The concentration of this thesis was on the high level artifacts. Looking into this category, I found the following key points:
+I have investigated the existing literature and tool support for communication and collaboration among stakeholders in distributed agile projects. I have found knowledge sharing takes place in one of the two distinct levels, i) knowledge sharing about high level artifacts such as user stories, bugs etc. and ii) knowledge sharing about low level artifacts such as source code, design, build etc. The concentration of this thesis was on the high level artifacts where both customers and developers are involved. Looking into this category, I found the following key points:
 \begin{itemize}
 	\item Distributed agile teams commonly use text based knowledge sharing.
 	\item Email is the first preference for the customers.
@@ -13,9 +13,9 @@ I have investigated the existing literature and tool support for communication a
 	\item The knowledge in emails and instant messages are rarely centralized for future reference.
 \end{itemize}
 
-Based on these findings, I identified that if it is possible to capture the fragmented knowledge across the emails and instant messages without much human efforts, it might work as a knowledge center for future reference. To solve this problem, I have researched existing tool support and combined some of the existing techniques with machine learning to automatically tag the emails and instant messages with the user stories. The technique in short employs the following:
+Based on these findings, I identified that if it is possible to capture the fragmented knowledge across the emails and instant messages without much human effort, it might work as a knowledge center for future reference. To solve this problem, I have researched existing tool support and combined some of the existing techniques and designed a machine learning based solution to automatically tag the emails and instant messages with the user stories. The technique in short employs the following:
 \begin{itemize}
-	\item Learns the similarity function parameters based on training sample.
+	\item Learns the parameters of a similarity function based on training sample.
 	\item Automatically grabs project related emails and instant messages.
 	\item Attempts to tag the emails and instant messages with the user stories based on context and text relevance.
 \end{itemize}
@@ -28,7 +28,7 @@ To find the technical feasibility of this technique, I have also implemented a p
 	\item The text content.	
 \end{itemize}
 
-Taggy was trained and evaluated using real life software project data. The data were collected from two different sources. In total the evaluation data consists of data for HH people in XX teams,  YY iterations, ZZ user stories and KK messages.  This helped to identify the accuracy and statistical significance of the auto-tagging performance. Using this data, Taggy has shown an average accuracy of 76\% and a chi-square test shows this result is statistically significant.
+Taggy was trained and evaluated using real life software project data. The data were collected from two different sources. In total the evaluation data consists of 4,745 emails from 9 real life agile project teams.  This helped me to identify the accuracy and statistical significance of the auto-tagging performance. Using this data, Taggy has shown an average accuracy of 76\% and a chi-square test shows this result is statistically significant.
 
 In addition to the quantitative evaluation, I have also conducted a preliminary user study of Taggy. A total of 8 participants from the industry and academia evaluated the tool after trying its features themselves. They provided encouraging feedbacks and suggestions about Taggy. Some of their suggestions can lead to future work on this topic.
 
@@ -38,7 +38,7 @@ Essentially, the concept of email auto-tagging with user stories can be extended
 
 
 \section{Future Work}
-While working on Taggy and conducting the evaluations, I have explored several opportunities that might be addressed in a future research. The two core directions that I have identified are, i) extensions with new features and ii) improvements through evaluation and fine tuning. A few potential future works on the two directions are discussed next.
+While working on Taggy and conducting the evaluations, I have explored several opportunities that might be addressed in a future research. The two core directions that I have identified are, i) extensions with new features and ii) improvements through evaluation and fine tuning. A few potential future work on the two directions are discussed next.
 
 \subsection{Extensions with New Features}
 A future research taking my work as a foundation can lead to a number of extensions. Here I provided a short list of such potential extensions:
