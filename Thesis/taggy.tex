@@ -17,7 +17,7 @@ Taggy is designed to auto-tag the emails with user stories based on the followin
 			
 			\item There is a minimum degree of text similarity between an email and a user story. An email has text in terms of its subject, body and attachments. Although not explicit, it is likely that such text in the emails will show some relevance to the user stories. This may not be true in all cases, especially if there is a lot of face-to-face communication. However, this is not the case for distributed projects with huge time zone difference. Taggy computes a text similarity between the email and user story and discards the ones that show very poor match.
 		\end{itemize}
-	 \item A web-based project management tool is used to manage the distributed agile project. To automatically link up emails with user stories, Taggy looks into this tool for information about user stories. This assumption is required because if teams only use volatile physical artifacts, such as sticky notes for user stories on a whiteboard, it is not possible to automatically find the user stories. As discussed in Chapter~\ref{literature_review}, distributed agile teams use a number of different types of such tools.
+	 \item A web-based project management tool is used to manage the distributed agile project. To automatically link up emails with user stories, Taggy looks into this tool for information about user stories. This assumption is required because if teams only use volatile physical artifacts, such as sticky notes for user stories on a whiteboard, it is not possible to automatically find the user stories. As discussed in Chapter~\ref{ch:related_work}, distributed agile teams use a number of different types of such tools.
 	
 	\item The project management tool captures user stories with its planning information including a) assigned developers, b) customer and c) iteration timeframe. The presence of this planning information is essential as it serves as the meta data that is necessary to auto-tag emails. While it is generally expected that this data be available, it is not required that each and every user story contains all the required planning information. Since Taggy uses context alongside text similarity, having the context helps in making a more informed decision in auto-tagging.
 	
@@ -40,18 +40,28 @@ Taggy uses two kinds of context information that are available for agile user st
 Since Taggy combines context similarity with text similarity, the above contexts provide more information for auto-tagging. However, when some or all of the context information are missing for a user story, Taggy still applies whatever information is available to auto-tag emails with user stories.
 
 \section{High Level Workflow}
-Now that the assumptions and definitions of important terms are discussed, Figure~\ref{fig:} shows the two main steps involved in the process of auto-tagging an email with user stories. As with most other machine learning techniques, Taggy needs to learn its parameters concerning relative weights of similarity measures before making decisions. Once learning is done, Taggy uses the learned parameters to auto-tag emails.
+Now that the assumptions and definitions of important terms are discussed, Figure~\ref{fig:learn_evaluate} shows the two high level steps involved in the process of auto-tagging an email with user stories. 
 
-%TODO: figure with description
-As seen on Figure~\ref{fig:}, the learning process involves several iterations. Since the similarity computation uses multiple components, the learning process needs to address the importance of each component relative to others. To achieve this, first it produces an initial weight for the components and then learns the relative weights based on the training data. The details about learning is discussed later in Section~\ref{sec:learning}.
+\begin{figure*}[!h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{learn_evaluate.png}
+	\caption{Taggy High Level Workflow}
+	\label{fig:learn_evaluate}
+\end{figure*}
 
-Once learned, Taggy can be used to auto-tag emails with user stories. This process is designed to be used in a live system as illustrated in Figure~\ref{fig:workflow}
-%TODO: figure with description
 
-The details of the auto-tagging workflow as shown in Figure~\ref{fig:workflow} is discussed next:
+As with most other machine learning techniques, Taggy needs to learn its parameters concerning relative weights of similarity measure before making decisions. The details of finding the initial relative weights and learning is discussed later in Section~\ref{sec:learning}. Once the weights are learned, the system needs to be evaluated to see its accuracy. Based on the findings of evaluation, the learning is reiterated to find a set of relative weights that produces optimum auto-tagging accuracy. This process is discussed in greater detail at Chapter~\ref{ch:evaluation}.
+
+After learning and evaluation, Taggy can be used to auto-tag emails with user stories. This auto-tagging process is designed to be used in a live system as illustrated in Figure~\ref{fig:workflow}. The following list explains each step of the workflow: 
+\begin{figure*}[!h]
+	\centering
+	\includegraphics[width=\textwidth]{workflow.png}
+	\caption{Email Auto-tagging Workflow}
+	\label{fig:workflow}
+\end{figure*}
 
 \begin{enumerate}
-	\item \textbf{Copy emails to project mail address.} This is the input step for Taggy. As discussed in the assumptions, Taggy identifies each project by its own email address. So, whenever someone sends an email about a project, they put the ``project email'' in the CC:. This is the only change in the business process that needs to be implemented by the distributed team. This intake process was successfully adapted in previous work \cite{where_did_you}. In case someone forgets to do this while sending the email, it is possible to simply forward the email to the ``project email'' later.
+	\item \textbf{Copy emails to project email address.} This is the input step for Taggy. As discussed in the assumptions, Taggy identifies each project by its own email address. So, whenever someone sends an email about a project, they put the ``project email'' in the CC:. This is the only change in the business process that needs to be implemented by the distributed team. This intake process was successfully adapted in previous work \cite{where_did_you}. In case someone forgets to do this while sending the email, it is possible to simply forward the email to the ``project email'' later.
 	
 	\item \textbf{Grab email.} Once the project related emails reach the inbox of ``project email'', Taggy picks up the email. It is common for email servers to allow access via POP or IMAP protocol. Taggy uses POP3 to read all incoming emails, including the attachments, if any. This grabbing runs on a background process, which can be scheduled to check for new emails in desired intervals. However, this email-grabbing step can make use of any other email transfer protocol.
 
@@ -70,7 +80,15 @@ The details of the auto-tagging workflow as shown in Figure~\ref{fig:workflow} i
 	\item \textbf{Auto-tag.}	Finally, Taggy auto-tags the email with the picked user stories from the last step. This step adds database level links between the email and the user stories to be auto-tagged.
 \end{enumerate}
 
-However, to auto-tag instant messages, the first three of the aforementioned steps differ significantly. The following three steps are used for the intake process of instant messages:
+However, to auto-tag instant messages, steps 1-3 of the aforementioned steps differ significantly. Figure~\ref{fig:im_intake} shows these three steps. These new steps are explained next:
+
+\begin{figure*}[!h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{im_intake.png}
+	\caption{Taggy Instant Message Intake Process}
+	\label{fig:im_intake}
+\end{figure*}
+
 
 \begin{enumerate}
 	\item \textbf{Activate instant message plugin.} Instant message clients often allow the use of plugins. For example, Skype \cite{skype} has a plugin framework and Taggy has a plugin for Skype. To input the instant messages, one needs to activate the Taggy plugin and select the project under discussion. Then, as the chat messages are exchanged, the plugin sends out the messages to Taggy over a web-based service. Typically the instant message clients provide meta data such as unique identification of a chat session, its individual messages, people involved and also the time stamp.
@@ -85,11 +103,11 @@ Since instant messages don't capture any subject, Taggy cannot produce a subject
 On a live system, as like any other machine learning solution, Taggy cannot discard the possibility of a wrong auto-tagging decision. When someone spots such a faulty auto-tagging in Taggy, she/he can manually correct it.
 
 \section{Architecture}
-Taggy is composed of a number of different components to support the workflow as outlined in the previous section. The architecture of Taggy is depicted at Figure~\ref{fig:architecture}. Next, the details about each component from the figure is discussed following a bottom-up approach.
+Taggy is composed of a number of different components to support the workflow as outlined in the previous section. The key components of Taggy is depicted at Figure~\ref{fig:architecture}. Next, the details about each component from the figure is discussed following a bottom-up approach.
 
 \begin{figure*}[bt]
 	\centering
-	\includegraphics[width=\textwidth]{Architecture.png}
+	\includegraphics[width=0.8\textwidth]{architecture.png}
     \caption{Taggy Components}
 	\label{fig:architecture}
 \end{figure*}
@@ -124,14 +142,14 @@ Taggy is composed of a number of different components to support the workflow as
 \section{Similarity Computation}
 As I have discussed, the Learner and Matchers are the core component of Taggy. A similarity computation technique forms the heart of these components. In case of Taggy, this is a machine learning technique called Case Based Reasoning (CBR). CBR is used to find out relevant user stories for an email or instant message. 
 
-\begin{figure*}[bt]
+\begin{figure*}[!h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{CBR.png}
+	\includegraphics[width=0.6\textwidth]{CBR.png}
     \caption{CBR System Input and Output}
 	\label{fig:CBR}
 \end{figure*}
 
-Figure~\ref{fig:CBR} shows a high level view of the CBR system. A CBR system uses a library of existing cases to match against a new case. For example, Taggy has a library of existing user stories which are treated as existing cases in the CBR system. Each case is a user story, as described above, is defined by several attributes, such as, its title, description, assigned developers, customers, iteration start date and end date. Also, the data types of the attributes are different in that they include numeric date time values, symbols for emails and free text values. This library of cases is not exactly similar to a new case, an email, since the attributes are different. However, it has been discussed that it is possible to match some of the email attributes against the user story attributes. This action is performed inside the CBR system of Taggy to compute the similarity.
+Figure~\ref{fig:CBR}  shows a high level view of the CBR system. A CBR system uses a library of existing cases to match against a new case. For example, Taggy has a library of existing user stories which are treated as existing cases in the CBR system. Each case is a user story, as described above, is defined by several attributes, such as, its title, description, assigned developers, customers, iteration start date and end date. Also, the data types of the attributes are different in that they include numeric date time values, symbols for emails and free text values. This library of cases is not exactly similar to a new case, an email, since the attributes are different. However, it has been discussed that it is possible to match some of the email attributes against the user story attributes. This action is performed inside the CBR system of Taggy to compute the similarity.
 
 
 \subsection{Local-Global Principle}
@@ -283,18 +301,18 @@ Once the relative weights are learned, Taggy can match emails against user stori
 \begin{figure*}[tb]
 	\centering
 	\includegraphics[width=\textwidth]{taggy_user_story.png}
+	\floatstyle{boxed} 
     \caption{Taggy Screenshot - Showing User Story and Related Emails}
 	\label{fig:taggy_user_story}
 \end{figure*}
 
+	
 \begin{figure*}[tb]
 	\centering
 	\includegraphics[width=\textwidth]{taggy_email.png}
     \caption{Taggy Screenshot - Showing Email and Related User Stories}
 	\label{fig:taggy_email}
 \end{figure*}
-
-
 
 To an end user of Taggy, the outcome of auto-tagging is as shown in Figure~\ref{fig:taggy_user_story} and Figure~\ref{fig:taggy_email}. So, while browsing user stories, one can see the related emails or vice versa. This same outcome is found for instant messages as well. So, this email matching is responsible for ``matchmaking'' among the emails and user stories based on their context and text similarity.
 
@@ -339,28 +357,28 @@ The instant message matcher is implemented using the same approach, since we can
 Figure~\ref{fig:implementation} shows the implementation frameworks for the different architectural components.
 
 
-\begin{figure*}[bt]
+\begin{figure*}[!h]
 	\centering
-	\includegraphics[width=\textwidth]{Implementation.png}
+	\includegraphics[width=0.8\textwidth]{Implementation.png}
     \caption{Taggy Implementation Details by Component}
 	\label{fig:implementation}
 \end{figure*}
 
 
 
-As with any software solution, the implementation of Taggy was based on available programming languages and platforms. The core Taggy components, the Learner and Matcher, are developed using the Ruby programming language\cite{ruby}. The web application is also developed using the open-source Ruby on Rails web framework \cite{ruby_on_rails}. The choice of this framework was based on my prior experience as well as its support for producing quick data-backed web application development.
+As with any software solution, the implementation of Taggy was based on available programming languages and platforms. The core Taggy components, the Learner and Matcher, are developed using the Ruby programming language \cite{ruby}. The web application is also developed using the open-source Ruby on Rails web framework \cite{ruby_on_rails}. The choice of this framework was based on my prior experience as well as its support for producing quick data-backed web application development.
 
-The full text search is served by Apache Lucene \cite{lucene}. This open-source search engine is widely used across the web to facilitate full-text search. A previous implementation of Taggy used Microsoft SQL Server Full-Text Search Engine\cite{auto_tagging}\cite{sql_server}. But Lucene was chosen because of its ability to index rich text files such as Word Documents, and PDF files. Also, Lucene can be configured to support synonyms, language stems and comes with out-of-the-box support for full-text search using several languages. However, the architecture of Taggy allows the replacement of this engine by another one without impacting the rest of the system.
+The full text search is served by Apache Lucene \cite{lucene}. This open-source search engine is widely used across the web to facilitate full-text search. A previous implementation of Taggy used Microsoft SQL Server Full-Text Search Engine \cite{auto_tagging, sql_server}. But Lucene was chosen because of its ability to index rich text files such as Word Documents, and PDF files. Also, Lucene can be configured to support synonyms, language stems and comes with out-of-the-box support for full-text search using several languages. However, the architecture of Taggy allows the replacement of this engine by another one without impacting the rest of the system.
 
-To communicate with Lucene, a web service wrapper called Solr is used\cite{solr}. Solr's RESTful web API provides easy access to Solr indexing and querying from other languages, such as Ruby. To handle attachments, a Solr query can include a file and then produce its index similar to other documents based on its content.
+To communicate with Lucene, a web service wrapper called Solr is used \cite{solr}. Solr's RESTful web API provides easy access to Solr indexing and querying from other languages, such as Ruby. To handle attachments, a Solr query can include a file and then produce its index similar to other documents based on its content.
 
 Since most project management tools support full-text search anyway, this indexing is not likely an additional burden applied by Taggy. However, Taggy may need to deal with additional contents that originate from emails and instant messages.
 
-For capturing instant messages, a Skype plugin is developed using the Skype4Py library\cite{skype4py}. The plugin can be turned on/off by the click of a button. When activated, it copies the chat messages with meta information and sends this data to the web service. Skype was picked because its use as a popular instant messenger service in software knowledge sharing\cite{how_did_we}. Also, it offers a suite of features that are used by distributed agile teams such as group chat, group video conferencing, and screen sharing. A similar plugin can be developed for other instant message services if supported by the platform.
+For capturing instant messages, a Skype plugin is developed using the Skype4Py library \cite{skype4py}. The plugin can be turned on/off by the click of a button. When activated, it copies the chat messages with meta information and sends this data to the web service. Skype was picked because its use as a popular instant messenger service in software knowledge sharing \cite{how_did_we}. Also, it offers a suite of features that are used by distributed agile teams such as group chat, group video conferencing, and screen sharing. A similar plugin can be developed for other instant message services if supported by the platform.
 
-The background process for the email grabber can be run using Cron jobs on Unix based platforms or scheduled tasks on Windows based platforms \cite{cron} \cite{scheduled_tasks}. These scheduling tools can be configured to look for new incoming emails in preferred intervals starting from once every second to any realistic period.
+The background process for the email grabber can be run using Cron jobs on Unix based platforms or scheduled tasks on Windows based platforms \cite{cron, scheduled_tasks}. These scheduling tools can be configured to look for new incoming emails in preferred intervals starting from once every second to any realistic period.
 
-Taggy used a MySQL relational database server to store the data. This can be replaced by any relational database supported by ActiveRecord, which including MySQL, Oracle, Microsoft SQL Server, SQLite, Derby etc\cite{active_record}. Also, it is possible to use any data storage without using ActiveRecord at all as long as Taggy gets similar data.
+Taggy used a MySQL relational database server to store the data. This can be replaced by any relational database supported by ActiveRecord, which including MySQL, Oracle, Microsoft SQL Server, SQLite, Derby etc \cite{active_record}. Also, it is possible to use any data storage without using ActiveRecord at all as long as Taggy gets similar data.
 
 As of hardware platform, Taggy does not impose any special requirements compared to other agile project management tools.
 
@@ -396,12 +414,12 @@ This backlog has 4 user stories. The stories are assigned to two developers, D1 
 Now, developer D1 needs to get a clarification from the customer C1 while working on a user story at the start of iteration\#1. This is asked using the email as shown below:
 
 \begin{quote}
-	\emph{\textbf{To:} C1}\\
-	\emph{\textbf{From:} D1}\\
-	\emph{\textbf{CC:} project@Taggy}\\
-	\emph{\textbf{Date:} Dec 14, 2008}\\
-	\emph{\textbf{Subject:} Initial Questions on \textbf{Dealer setup}}\\
-	\emph{\textbf{Body:}\\
+	\textbf{To:} C1\\
+	\textbf{From:} D1\\
+	\textbf{CC:} project@Taggy\\
+	\textbf{Date:} Dec 14, 2008\\
+	\textbf{Subject:} Initial Questions on \textbf{Dealer setup}\\
+	\textbf{Body:}\\
 	Please clarify the following questions regarding dealer setup data-\\
 	1. Is it ok to assume that the billing, GM and Owner contacts of a dealer will also contain username/passwords. Note that, the main and secondary contacts as well as the Used car manager contact contain user name/passwords.\\
 	2. What data should we collect for Physical Address and Mailing Address of a dealer? Is it free text? Or collected as fields street1, street2, city, state, zip, country?\\
@@ -411,7 +429,7 @@ Now, developer D1 needs to get a clarification from the customer C1 while workin
 	6. Is it possible to provide us with a sample input data that will be used to set up an inside/outside VM user's commission? Please provide examples of default, bonus, retention and special commissions.\\
 	7. What are the required fields of all the dealer setup fields?\\
 	8. The Business Address is mentioned twice under the 5.6.1.5 - do we need to capture two business addresses?
-	}\\
+	\\
 \end{quote}
 
 Please note that this email has a CC: to project@Taggy. So, Taggy will be able to read the contents of this email. As shown in the email matcher, Taggy will try to auto-tag the email with the existing user stories based on context and text relevance. While doing so, the local and global similarities are computed as shown in Table~\ref{tab:similarity}:

@@ -13,18 +13,21 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Mylyn Eclipse Plugin - Setting source code context of a bug. Source: \cite {mylyn}}}{28}{figure.2.4}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Dashboard in ScrumPad, a Commercial Agile Project Management Tool. Source: \cite {scrum_pad}}}{29}{figure.2.5}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Taggy Components}}{41}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces CBR System Input and Output}}{44}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Taggy Screenshot - Showing User Story and Related Emails}}{52}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Taggy Screenshot - Showing Email and Related User Stories}}{53}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Taggy Implementation Details by Component}}{56}{figure.3.5}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Taggy High Level Workflow}}{37}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Email Auto-tagging Workflow}}{38}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Taggy Instant Message Intake Process}}{40}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Taggy Components}}{42}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces CBR System Input and Output}}{45}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Taggy Screenshot - Showing User Story and Related Emails}}{53}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Taggy Screenshot - Showing Email and Related User Stories}}{54}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Taggy Implementation Details by Component}}{57}{figure.3.8}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Taggy Empirical Evaluation Steps}}{63}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A ScrumPad Message Linked to a User Story}}{66}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Impact of Training on Relative Weights}}{68}{figure.4.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Taggy Empirical Evaluation Steps}}{64}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A ScrumPad Message Linked to a User Story}}{67}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Impact of Training on Relative Weights}}{69}{figure.4.3}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Ethics Approval}}{92}{figure.8.1}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Ethics Approval}}{93}{figure.8.1}
 \addvspace {10pt}
