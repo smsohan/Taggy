@@ -69,14 +69,7 @@ Department of Geomatics Engineering \\
 \newpage
 \phantomsection
 \altchapter{Abstract} 
-In distributed agile teams, people often use email and instant message as knowledge sharing mediums to clarify the project requirements or user stories. Knowledge about the project included in these private mediums is easily lost when recipients leave the project. This thesis outlines the opportunities and challenges of retaining this knowledge, followed by an overview of the previous work in this area. Next, it presents a new machine learning based auto-tagging technique and its implementation, Taggy, that does the following:
-\begin{enumerate}
-	\item Automatically captures an email when a project specific email address is added to it's recipients.
-	\item Automatically captures an instant message using a plug-in.
-	\item Finds the potentially relevant user stories for the email and instant message.
-	\item Tags the email and instant message with the relevant user stories.
-\end{enumerate}
-The details of this technique is discussed that includes a high level architecture to low level algorithmic constructs. In a quantitative evaluation, Taggy could correctly auto-tag ~76\% of 4,757 emails from 9 industry based agile teams. Also, in a preliminary user study, the participants have provided encouraging feedback about it's potential use as a lightweight knowledge center. The key limitations of the two evaluations are identified too. Next, this thesis provides insights into the key challenges about dealing with some of the unexpected cases in the data, finding a right balance between auto-tagging accuracy and its coverage, and the trade-offs between optimizing the auto-tagger for a single project vs. all available projects. Based on the design, implementation and evaluation of the auto-tagger, the key shortcomings are identified and grouped into two directions for future work, i) additional feature and ii) improved evaluation.
+In distributed agile teams, people often use email and instant message as knowledge sharing mediums to clarify the project requirements or user stories. Knowledge about the project included in these private mediums is easily lost when recipients leave the project. This thesis presents a new machine learning based technique, Taggy, to retain knowledge from emails and instant messages. Taggy automatically captures project related emails and instant messages and tags with the relevant user stories based on their context and text relevance. This auto-tagged knowledge may be useful for different purposes such as training new team members, re-engineering an application and so on. This thesis presents the auto-tagging technique, Taggy, with its prototype implementation and evaluation results based on 4,757 emails from 9 agile teams and a preliminary user study of 6 participants. The challenges and limitations are also discussed, some of which are enlisted as potential future work on this topic.
 \newpage
 
 \phantomsection
@@ -106,6 +99,7 @@ The core ideas of this thesis appeared in the following publication:
 \end{quote}
 
 
+
 \begin{singlespace}
 \newpage
 \phantomsection
@@ -118,12 +112,22 @@ The core ideas of this thesis appeared in the following publication:
 \newpage
 \phantomsection
 \listoffigures
+\newpage
+\altchapter{Epigraph}
+\begin{quote}
+If I'd had some set idea of a finish line, don't you think I would have crossed it years ago? 	
+\end{quote}
+
+Bill Gates
+
 \pagestyle{plain}
 \clearpage
 \end{singlespace}
 \clearpage          % otherwise tables will be numbered wrong
 
 \pagenumbering{arabic}
+
+
 \include{introduction}
 \include{related_work}
 \include{taggy}
