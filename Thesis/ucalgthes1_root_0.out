@@ -45,12 +45,13 @@
 \BOOKMARK [1][-]{section.5.3}{Findings}{chapter.5}
 \BOOKMARK [1][-]{section.5.4}{Limitations}{chapter.5}
 \BOOKMARK [0][-]{chapter.6}{Discussion}{}
-\BOOKMARK [1][-]{section.6.1}{Dealing with absence of necessary context}{chapter.6}
+\BOOKMARK [1][-]{section.6.1}{Dealing with Absence of Necessary Context}{chapter.6}
 \BOOKMARK [1][-]{section.6.2}{The Impact of Incorrect Tagging}{chapter.6}
 \BOOKMARK [1][-]{section.6.3}{Selecting a Threshold Similarity Score}{chapter.6}
 \BOOKMARK [1][-]{section.6.4}{Handling Attachments and Full-Text Search}{chapter.6}
 \BOOKMARK [1][-]{section.6.5}{Project Specific vs. Project Agnostic Learning}{chapter.6}
-\BOOKMARK [1][-]{section.6.6}{Limitations of Taggy}{chapter.6}
+\BOOKMARK [1][-]{section.6.6}{Handling Email Replies}{chapter.6}
+\BOOKMARK [1][-]{section.6.7}{Limitations of Taggy}{chapter.6}
 \BOOKMARK [0][-]{chapter.7}{Conclusion}{}
 \BOOKMARK [1][-]{section.7.1}{Research Goals Addressed}{chapter.7}
 \BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}

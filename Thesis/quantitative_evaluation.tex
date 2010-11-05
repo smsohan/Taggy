@@ -3,7 +3,7 @@
 \fancyfoot{} 
 \chapter{Quantitative Evaluation}
 \label{ch:evaluation}
-As previously mentioned in the research goals, an evaluation is required to measure the accuracy of Taggy in auto-tagging emails with user stories. In this thesis, the evaluation is based on two different real world data sets, collected from two different sources. In total the data represents 4,745 messages created by 9 agile teams. The evaluation shows that for different projects Taggy can correctly auto-tag between 76\% emails with user stories after sufficient training.
+As previously mentioned in the research goals, an evaluation is required to measure the accuracy of Taggy in auto-tagging emails with user stories. In this thesis, the evaluation is based on two different real world data sets, collected from two different sources. In total the data represents 4,745 messages created by 9 agile teams. The evaluation shows that for different projects Taggy can correctly auto-tag between 76\% to 81\% emails with user stories after sufficient training.
 
 This chapter is organized as follows: Firstly, the evaluation approach is discussed. As a part of it, the adapted definition of accuracy is given. Next, a null hypothesis is stated which is used in deducing the statistical relevance of the evaluation results. Then, the two data sets are described and the evaluation results for each are provided in detail. Finally, the limitations of this evaluation are discussed.
 
@@ -57,7 +57,7 @@ In this case, we have a single degree of freedom, since there are two possible o
 \end{split}	
 \end{equation}                                       
 
-This computed $\chi^{2}$ value is compared against the upper critical chi-square value for probability 0.05 with 1 degree of freedom, that is $\chi^{2}_{0.05}$=3.841. The probability value of 0.05 is conventionally used in significance finding. A value beyond this threshold indicates disagreement between the observation and the null hypothesis. We also present the corresponding p-values against the computed chi-square values. The lower the p-value, the less likely it is that the observation given the null hypothesis is true.
+This computed $\chi^{2}$ value is compared against the upper critical chi-square value for probability 0.05 with 1 degree of freedom, that is $\chi^{2}_{0.05}$=3.841. The probability value of 0.05 is conventionally used in significance finding. A value beyond this threshold indicates disagreement between the observation and the null hypothesis. We also present the corresponding p-values against the computed chi-square values. The lower the p-value, the less likely it is that the observation is true given the null hypothesis holds.
 
 \section{Evaluation Results}
 The evaluation results are discussed in two sections for two different data sets.
@@ -65,7 +65,7 @@ The evaluation results are discussed in two sections for two different data sets
 \subsection{Data set\# 1: ScrumPad}	
 This data set was obtained from an online agile project management tool called ScrumPad.	ScrumPad allows users to manage product backlog, perform iteration planning and track progress. Also, it lets users discuss the project's user stories using message threads. Each message thread can contain an explicit link to a user story. While sending a message using ScrumPad, one can link it with a user story. The messages are stored in ScrumPad database and also sent to people via emails. People can directly reply to the notification emails, which goes to ScrumPad and gets saved as a message either in a new or under an existing thread.
 
-The user stories in ScrumPad contain information about its title, description, attachments, customer, developers and iteration. Taggy used these user stories to train and evaluate its auto-tagging performance.
+The user stories in ScrumPad contain information about its title, description, attachments, customer, developers and iteration. Taggy used these user stories to train and evaluate its auto-tagging accuracy.
 
 \begin{figure*}[h!]
 	\centering
@@ -131,7 +131,7 @@ Using this threshold and the trained relative weights, the evaluation yielded th
   \centering
   \caption{Evaluation Using Scrumpad Data Set}
 	\label{tab:sp_evaluation}
-    \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{1.5cm}|p{1.5cm}|}
+    \begin{tabular}{|p{1.7cm}|p{1.4cm}|p{2cm}|p{2cm}|p{1.7cm}|p{1.7cm}|p{1cm}|p{1.5cm}|}
       \hline
       \textbf{Project Name} & \textbf{Total Emails} & \textbf{Training Emails (20\%) of Total} & \textbf{Evaluation Emails (80\%)  of Total} & \textbf{Correct Auto-Tagging} & \textbf{Accuracy} & $\chi^{2}$ & p-value\\
       \hline
@@ -166,7 +166,7 @@ Both the stories were developed at Iteration\#1 in February 2008. However, two d
 \subsection{Data set\# 2: IBM Jazz}
 Jazz was a large project at IBM where they built a web-based project management and collaboration tool called Rational Team Concert (RTC). RTC used itself for project management. The RTC project had multiple team areas working on different areas of the application. In evaluation data set\# 2, I have used data from 4 key team areas of the project.
 
-For this evaluation, I have used the work items from RTC as user stories. RTC stores the work items with it's title, description, owner, assigned developers, and planned iteration name. Under every work item, there is a message thread, where the team members can discuss about the work item. I have derived emails from the messages in the message threads with an important change: the email subject was formed by adding an ``RE:'' prefix to the work item title since the messaging system didn't allow the users to provide a subject line. However, the other fields of messages such as sender, recipients, time stamp, and the body were mapped to the standard email fields.
+For this evaluation, I have used the work items from RTC as user stories. RTC stores the work items with it's title, description, owner, assigned developers, and planned iteration name. These fields are same as seen with user stories. Under every work item, there is a message thread, where the team members can discuss about the work item. I have derived emails from the messages in the message threads with an important change: the email subject was formed by adding an ``RE:'' prefix to the work item title since the messaging system didn't allow the users to provide a subject line. However, the other fields of messages such as sender, recipients, time stamp, and the body were mapped to the standard email fields.
 
 Taggy was not trained based on data set\# 2, rather the trained relative wights from data set\# 1 were used to auto-tag the emails. It is clear that training based on data set\# 2 would put a very high relative weight to subject similarity since the subjects are identical to the user story titles. Using the training based on data set\# 1 reduces this bias.
 

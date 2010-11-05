@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  4 NOV 2010 12:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  4 NOV 2010 19:52
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -452,10 +452,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[3] [4] <ScrumWall.jpg, id=456, 120.45pt x 69.861pt>
+[3] [4] <ScrumWall.jpg, id=461, 120.45pt x 69.861pt>
 File: ScrumWall.jpg Graphic file (type jpg)
  <use ScrumWall.jpg>
-<ScrumPadWall.png, id=458, 739.76375pt x 557.08125pt>
+<ScrumPadWall.png, id=463, 739.76375pt x 557.08125pt>
 File: ScrumPadWall.png Graphic file (type png)
  <use ScrumPadWall.png>
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
@@ -471,7 +471,7 @@ ntifier (name{figure.1.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.76 \end{quote}
                  <./ScrumPadWall.png (PNG copy)>]
-<Distributed.png, id=474, 800.9925pt x 456.70625pt>
+<Distributed.png, id=479, 800.9925pt x 456.70625pt>
 File: Distributed.png Graphic file (type png)
  <use Distributed.png>
 [7pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
@@ -481,7 +481,7 @@ File: Distributed.png Graphic file (type png)
                                                   \fi \fi 
 l.90 
       <./Distributed.png (PNG copy)>] [8] [9] [10] [11] [12] [13]
-<Jigsaw.jpg, id=534, 1300.86pt x 971.63pt>
+<Jigsaw.jpg, id=539, 1300.86pt x 971.63pt>
 File: Jigsaw.jpg Graphic file (type jpg)
  <use Jigsaw.jpg> [14pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.1.4}) has been already used, duplicate ignored
@@ -512,7 +512,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[17] <Layman.png, id=579, 845.1575pt x 683.55376pt>
+[17] <Layman.png, id=584, 845.1575pt x 683.55376pt>
 File: Layman.png Graphic file (type png)
  <use Layman.png>
 
@@ -530,7 +530,7 @@ Overfull \hbox (1.00917pt too wide) in paragraph at lines 56--57
  un-der-stand a re-quire-ment based
  []
 
-[21] <Wiki.png, id=607, 878.28125pt x 508.90125pt>
+[21] <Wiki.png, id=612, 878.28125pt x 508.90125pt>
 File: Wiki.png Graphic file (type png)
  <use Wiki.png> [22pdfTeX warning (ext4): destination with the same identifier 
 (name{figure.2.2}) has been already used, duplicate ignored
@@ -539,7 +539,7 @@ File: Wiki.png Graphic file (type png)
                                                   \fi \fi 
 l.69 
       <./Wiki.png (PNG copy)>] [23] [24] [25]
-<Mylyn-comment.png, id=643, 616.3025pt x 790.955pt>
+<Mylyn-comment.png, id=648, 616.3025pt x 790.955pt>
 File: Mylyn-comment.png Graphic file (type png)
  <use Mylyn-comment.png>
 [26] [27pdfTeX warning (ext4): destination with the same identifier (name{figur
@@ -549,7 +549,7 @@ e.2.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.96 
       <./Mylyn-comment.png>]
-<Mylyn-context.png, id=661, 588.1975pt x 493.845pt>
+<Mylyn-context.png, id=666, 588.1975pt x 493.845pt>
 File: Mylyn-context.png Graphic file (type png)
  <use Mylyn-context.png>
 [28
@@ -561,7 +561,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.106 
        <./Mylyn-context.png>]
-<Scrumpad.png, id=670, 974.64125pt x 681.54625pt>
+<Scrumpad.png, id=675, 974.64125pt x 681.54625pt>
 File: Scrumpad.png Graphic file (type png)
  <use Scrumpad.png> [29pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.2.5}) has been already used, duplicate ignored
@@ -594,10 +594,10 @@ Chapter 3.
 
 
 
-] [34] [35] [36] <learn_evaluate.png, id=754, 376.40625pt x 220.825pt>
+] [34] [35] [36] <learn_evaluate.png, id=759, 376.40625pt x 220.825pt>
 File: learn_evaluate.png Graphic file (type png)
 
-<use learn_evaluate.png> <workflow.png, id=758, 610.28pt x 433.62pt>
+<use learn_evaluate.png> <workflow.png, id=763, 610.28pt x 433.62pt>
 File: workflow.png Graphic file (type png)
 
 <use workflow.png>
@@ -618,7 +618,7 @@ nored
                                                   \fi \fi 
 l.69 
       <./workflow.png (PNG copy)>] [39]
-<im_intake.png, id=782, 425.59pt x 363.3575pt>
+<im_intake.png, id=789, 425.59pt x 363.3575pt>
 File: im_intake.png Graphic file (type png)
  <use im_intake.png> [40pdfTeX warning (ext4): destination with the same identi
 fier (name{figure.3.3}) has been already used, duplicate ignored
@@ -627,7 +627,7 @@ fier (name{figure.3.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.95 
       <./im_intake.png (PNG copy)>]
-<architecture.png, id=793, 541.02126pt x 329.23pt>
+<architecture.png, id=800, 541.02126pt x 329.23pt>
 File: architecture.png Graphic file (type png)
  <use architecture.png>
 [41] [42pdfTeX warning (ext4): destination with the same identifier (name{figur
@@ -637,7 +637,7 @@ e.3.4}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.123 		\end{itemize}
                       <./architecture.png (PNG copy)>] [43]
-<CBR.png, id=814, 469.755pt x 206.7725pt>
+<CBR.png, id=821, 469.755pt x 206.7725pt>
 File: CBR.png Graphic file (type png)
  <use CBR.png>
 
@@ -677,10 +677,10 @@ ame identifier (name{table.3.1}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.183 
       ] [47] [48] [49] [50] [51]
-<taggy_user_story.png, id=881, 850.17625pt x 699.61375pt>
+<taggy_user_story.png, id=887, 850.17625pt x 699.61375pt>
 File: taggy_user_story.png Graphic file (type png)
 
-<use taggy_user_story.png> <taggy_email.png, id=882, 839.135pt x 616.3025pt>
+<use taggy_user_story.png> <taggy_email.png, id=888, 839.135pt x 616.3025pt>
 File: taggy_email.png Graphic file (type png)
 
 <use taggy_email.png> [52] [53pdfTeX warning (ext4): destination with the same 
@@ -726,7 +726,7 @@ Overfull \hbox (54.66273pt too wide) in paragraph at lines 347--347
 _scores(global_scores)[] 
  []
 
-[55] <Implementation.png, id=908, 529.98pt x 323.2075pt>
+[55] <Implementation.png, id=914, 529.98pt x 323.2075pt>
 File: Implementation.png Graphic file (type png)
 
 <use Implementation.png> [56] [57pdfTeX warning (ext4): destination with the sa
@@ -790,8 +790,8 @@ Underfull \hbox (badness 6412) in paragraph at lines 406--406
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.416 \begin{quote}
-                   ]
+l.413 
+      ]
 Underfull \hbox (badness 10000) in paragraph at lines 417--433
 
  []
@@ -851,13 +851,13 @@ Overfull \hbox (23.97147pt too wide) in paragraph at lines 440--451
  [][] 
  []
 
-[61pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
-) has been already used, duplicate ignored
+) [61pdfTeX warning (ext4): destination with the same identifier (name{table.3.
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.460 
-      ]) [62]
+l.129 \include{taggy}
+                     ] [62]
 \openout2 = `quantitative_evaluation.aux'.
 
  (./quantitative_evaluation.tex
@@ -866,7 +866,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 4.
-<Evaluation.png, id=962, 582.175pt x 376.40625pt>
+<Evaluation.png, id=968, 582.175pt x 376.40625pt>
 File: Evaluation.png Graphic file (type png)
  <use Evaluation.png>
 
@@ -888,7 +888,7 @@ Overfull \hbox (2.34528pt too wide) in paragraph at lines 66--67
 age-ment tool called ScrumPad.
  []
 
-[66] <scrumpad_message.png, id=992, 479.7925pt x 278.03876pt>
+[66] <scrumpad_message.png, id=998, 479.7925pt x 278.03876pt>
 File: scrumpad_message.png Graphic file (type png)
 
 <use scrumpad_message.png> [67pdfTeX warning (ext4): destination with the same 
@@ -978,7 +978,7 @@ Underfull \hbox (badness 1845) in paragraph at lines 99--99
 []\OT1/cmr/m/n/12 A project col-lab-o-ra-
  []
 
-<training.png, id=999, 709.65125pt x 395.4775pt>
+<training.png, id=1005, 709.65125pt x 395.4775pt>
 File: training.png Graphic file (type png)
  <use training.png> [68pdfTeX warning (ext4): destination with the same identif
 ier (name{table.4.1}) has been already used, duplicate ignored
@@ -1044,13 +1044,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--136
  []
 
 
+Overfull \hbox (6.71376pt too wide) in paragraph at lines 136--136
+[]\OT1/cmr/bx/n/12 Accuracy| 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []\OT1/cmr/m/n/12 Method
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+\OT1/cmr/m/n/12 Mar-ket-
+ []
+
+
 Overfull \hbox (1.7093pt too wide) in paragraph at lines 138--139
 []\OT1/cmr/m/n/12 0.000000| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[]\OT1/cmr/m/n/12 BI for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+\OT1/cmr/m/n/12 Car
  []
 
 
@@ -1079,6 +1099,16 @@ Overfull \hbox (1.7093pt too wide) in paragraph at lines 144--145
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]\OT1/cmr/m/n/12 Mind
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+\OT1/cmr/m/n/12 And
+ []
+
+
 Overfull \hbox (1.7093pt too wide) in paragraph at lines 146--147
 []\OT1/cmr/m/n/12 0.004678| 
  []
@@ -1089,7 +1119,7 @@ Overfull \hbox (1.7093pt too wide) in paragraph at lines 148--149
  []
 
 
-Overfull \hbox (71.10374pt too wide) in paragraph at lines 134--151
+Overfull \hbox (14.19778pt too wide) in paragraph at lines 134--151
  [][] 
  []
 
@@ -1098,9 +1128,8 @@ Overfull \hbox (71.10374pt too wide) in paragraph at lines 134--151
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.155 T
-       he evaluation shows that the accuracy varies between 74\% to 79\% for...
-] [71]
+l.154 
+      ] [71]
 Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []\OT1/cmr/bx/n/12 Team Area
  []
@@ -1120,24 +1149,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []\OT1/cmr/bx/n/12 Itera-
  []
 
-[72pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}
-) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.196 
-      ]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 205--205
 []\OT1/cmr/bx/n/12 Evaluation
  []
 
-[73pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}
+[73pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.222 \section
-              {Limitations}]) [74]
+l.221 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.221 
+      ]) [74]
 \openout2 = `qualitative_evaluation.aux'.
 
  (./qualitative_evaluation.tex
@@ -1146,11 +1178,6 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-[]\OT1/cmr/m/n/12 Years of
- []
-
 [75
 
 
@@ -1160,8 +1187,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.46 
-     ] [77] [78] [79] [80]) [81]
+l.47 
+     ] [77] [78] [79] [80] [81]) [82]
 \openout2 = `discussion.aux'.
 
  (./discussion.tex
@@ -1170,11 +1197,11 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 6.
-[82
+[83
 
 
 
-] [83] [84] [85]) [86]
+] [84] [85] [86] [87]) [88]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
@@ -1183,11 +1210,11 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 7.
-[87
+[89
 
 
 
-] [88] [89] [90]) [91]
+] [90] [91] [92] [93]) [94]
 \openout2 = `appendix1.aux'.
 
  (./appendix1.tex
@@ -1196,13 +1223,13 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 8.
-<ethics.pdf, id=1141, 614.295pt x 790.955pt>
+<ethics.pdf, id=1160, 614.295pt x 790.955pt>
 File: ethics.pdf Graphic file (type pdf)
- <use ethics.pdf>) [92
+ <use ethics.pdf>) [95
 
 
 
-] [93pdfTeX warning (ext4): destination with the same identifier (name{figure.8
+] [96pdfTeX warning (ext4): destination with the same identifier (name{figure.8
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1216,7 +1243,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 j \OT1/cmr/m/n/12 ScrumPad.
  []
 
-[94
+[97
 
 
 ]
@@ -1230,7 +1257,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--99
 ersionone&v-
  []
 
-[95]
+[98]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -1239,11 +1266,11 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no Œ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ‡ in font cmr12!
- [96]
+ [99]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [97]
+ [100]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmr12!
@@ -1251,7 +1278,7 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [98]
+ [101]
 Underfull \hbox (badness 10000) in paragraph at lines 276--278
 []\OT1/cmr/m/n/12 IBM soft-ware - ra-tio-nal team con-cert.  http://www-
  []
@@ -1274,7 +1301,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--304
 se-camp.
  []
 
-[99]
+[102]
 Underfull \hbox (badness 10000) in paragraph at lines 315--317
 []\OT1/cmr/m/n/12 Secure source code host-ing and col-lab-o-ra-tive de-vel-op-m
 ent - GitHub.
@@ -1292,19 +1319,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--352
 i-tec-ture.
  []
 
-[100]
+[103]
 Missing character: There is no Ï in font cmr12!
 Missing character: There is no ‡ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no © in font cmr12!
-) [101] (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux) (./t
+) [104] (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux) (./t
 aggy.aux) (./quantitative_evaluation.aux) (./qualitative_evaluation.aux)
 (./discussion.aux) (./conclusion.aux) (./appendix1.aux)) ) 
 Here is how much of TeX's memory you used:
- 6059 strings out of 493848
- 85734 string characters out of 3149207
- 169338 words of memory out of 3000000
- 8799 multiletter control sequences out of 15000+200000
+ 6065 strings out of 493848
+ 85789 string characters out of 3149207
+ 170338 words of memory out of 3000000
+ 8800 multiletter control sequences out of 15000+200000
  8777 words of font info for 32 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,15n,43p,1904b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1319,9 +1346,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2009/texmf
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2009/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ucalgthes1_root_0.pdf (110 pages, 1850146 bytes).
+Output written on ucalgthes1_root_0.pdf (113 pages, 1854539 bytes).
 PDF statistics:
- 1299 PDF objects out of 1440 (max. 8388607)
- 365 named destinations out of 1000 (max. 500000)
- 586 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1319 PDF objects out of 1440 (max. 8388607)
+ 370 named destinations out of 1000 (max. 500000)
+ 594 words of extra memory for PDF output out of 10000 (max. 10000000)
 

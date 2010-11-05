@@ -8,12 +8,12 @@ In this chapter I draw a conclusion about the thesis. This provides information 
 I have investigated the existing literature and tool support for communication and collaboration among stakeholders in distributed agile projects. I have found knowledge sharing takes place in one of the two distinct levels, i) knowledge sharing about high level artifacts such as user stories, bugs etc. and ii) knowledge sharing about low level artifacts such as source code, design, build etc. The concentration of this thesis was on the high level artifacts where both customers and developers are involved. Looking into this category, I found the following key points:
 \begin{itemize}
 	\item Distributed agile teams commonly use text based knowledge sharing.
-	\item Email is the first preference for the customers.
+	\item Email is the first preference of the customers.
 	\item Whenever possible, instant message is the dominant synchronous communication tool.	
 	\item The knowledge in emails and instant messages are rarely centralized for future reference.
 \end{itemize}
 
-Based on these findings, I identified that if it is possible to capture the fragmented knowledge across the emails and instant messages without much human effort, it might work as a knowledge center for future reference. To solve this problem, I have researched existing tool support and combined some of the existing techniques and designed a machine learning based solution to automatically tag the emails and instant messages with the user stories. The technique in short employs the following:
+Based on these findings, I identified that if it is possible to capture the fragmented knowledge across the emails and instant messages without much human effort, it might work as a knowledge center for future reference. To solve this problem, I have researched existing tool support and combined some of the existing techniques and designed a new machine learning based solution to automatically tag the emails and instant messages with the user stories. The technique in short employs the following:
 \begin{itemize}
 	\item Learns the parameters of a similarity function based on training sample.
 	\item Automatically grabs project related emails and instant messages.
@@ -30,12 +30,13 @@ To find the technical feasibility of this technique, I have also implemented a p
 
 Taggy was trained and evaluated using real life software project data. The data were collected from two different sources. In total the evaluation data consists of 4,745 emails from 9 real life agile project teams.  This helped me to identify the accuracy and statistical significance of the auto-tagging performance. Using this data, Taggy has shown an average accuracy of 76\% and a chi-square test shows this result is statistically significant.
 
-In addition to the quantitative evaluation, I have also conducted a preliminary user study of Taggy. A total of 8 participants from the industry and academia evaluated the tool after trying its features themselves. They provided encouraging feedbacks and suggestions about Taggy. Some of their suggestions can lead to future work on this topic.
+In addition to the quantitative evaluation, I have also conducted a preliminary user study of Taggy. A total of 6 participants from the industry and academia evaluated the tool after trying its features themselves. They provided encouraging feedbacks and suggestions about Taggy. The ability to centralize the knowledge from different sources was identified as the most potential value addition of Taggy. They identified new team members as the key consumers of the auto-tagged information from emails and instant messages. Some of their suggestions are listed as potential future work on this topic.
 
 This thesis also unveiled some of the technical challenges and design trade-offs associated with auto-tagging. In a nutshell, the auto-tagging process needs to deal with the standard challenges of information retrieval and the limitations of machine learning. I have discussed a few approaches that can be leveraged to support rich attachments, decide a threshold similarity score and using auto-tagging for projects without historical data. I have also provided the list of limitations, some of which can form a future research on this topic.
 
 Essentially, the concept of email auto-tagging with user stories can be extended to other domains with similar characteristics. In this thesis I have discussed about the architectural and some of the key algorithmic structure of Taggy. This information can be used to reproduce the same solution or adapt the solution to a problem in a different domain based on the same core concepts.
 
+Overall, a distributed agile team can utilize the auto-tagging technique of Taggy to retain informal but important knowledge from the emails and instant messages in the organic form with little human effort. This organic knowledge center can support the long term success of a team as it needs to undergo changes in team composition to maintain and extend it's product.
 
 \section{Future Work}
 While working on Taggy and conducting the evaluations, I have explored several opportunities that might be addressed in a future research. The two core directions that I have identified are, i) extensions with new features and ii) improvements through evaluation and fine tuning. A few potential future work on the two directions are discussed next.
@@ -59,7 +60,7 @@ A greater level of evaluation is needed to discover the concerns and potential i
 \begin{itemize}
 	\item \textbf{Real life use.} The tool needs to be used in real life projects for a period of time. While using the tool on a day to day basis, it is possible to find out the usability of the approach as well as social impact of the tool. Once a team uses it for a while, it is possible to collect data about why, who, when and how they use the archived emails and instant messages. Based on the findings, the approach can be adapted to better suit the usage pattern.
 	
-	\item \textbf{Quantitative evaluation:} With a wider variety of data sources, the auto-tagging process can be adjusted to support different communication patterns that may not be observed with the existing data sets. Also, my current work did not evaluate the accuracy of instant message auto-tagging. Also, a future work may focus on improving the accuracy of the auto-tagging process using a diverse data.	
+	\item \textbf{Quantitative evaluation:} With a wider variety of data sources, the auto-tagging process can be adjusted to support different communication patterns that may not be observed with the existing data sets. Also, my current work did not evaluate the accuracy of instant message auto-tagging. A future work may focus on improving the accuracy of the auto-tagging process using data from more diverse sources.	
 \end{itemize}	
 
 To conclude, this thesis presents a technique with an implementation of a lightweight organic knowledge center for distributed agile teams. This can be used as a foundation for future work in this research area.

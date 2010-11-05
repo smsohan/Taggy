@@ -45,20 +45,21 @@
 \contentsline {section}{\numberline {5.3}Findings}{77}{section.5.3}
 \contentsline {subsubsection}{Is It Useful to Auto-tag Emails?}{77}{section*.11}
 \contentsline {subsubsection}{Is It Useful to Auto-tag Instant Messages?}{79}{section*.12}
-\contentsline {subsubsection}{What are the Potential Benefits of Using Taggy?}{79}{section*.13}
+\contentsline {subsubsection}{What are the Potential Benefits of Using Taggy?}{80}{section*.13}
 \contentsline {subsubsection}{What are the Concerns about Taggy?}{80}{section*.14}
-\contentsline {section}{\numberline {5.4}Limitations}{80}{section.5.4}
-\contentsline {chapter}{\numberline {6}Discussion}{82}{chapter.6}
-\contentsline {section}{\numberline {6.1}Dealing with absence of necessary context}{82}{section.6.1}
-\contentsline {section}{\numberline {6.2}The Impact of Incorrect Tagging}{83}{section.6.2}
-\contentsline {section}{\numberline {6.3}Selecting a Threshold Similarity Score}{84}{section.6.3}
-\contentsline {section}{\numberline {6.4}Handling Attachments and Full-Text Search}{84}{section.6.4}
-\contentsline {section}{\numberline {6.5}Project Specific vs. Project Agnostic Learning}{85}{section.6.5}
-\contentsline {section}{\numberline {6.6}Limitations of Taggy}{85}{section.6.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{87}{chapter.7}
-\contentsline {section}{\numberline {7.1}Research Goals Addressed}{87}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{89}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Extensions with New Features}{89}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Improvements through Evaluation}{91}{subsection.7.2.2}
-\contentsline {chapter}{\numberline {8}Ethics Approval}{92}{chapter.8}
-\contentsline {chapter}{Bibliography}{94}{figure.8.1}
+\contentsline {section}{\numberline {5.4}Limitations}{81}{section.5.4}
+\contentsline {chapter}{\numberline {6}Discussion}{83}{chapter.6}
+\contentsline {section}{\numberline {6.1}Dealing with Absence of Necessary Context}{83}{section.6.1}
+\contentsline {section}{\numberline {6.2}The Impact of Incorrect Tagging}{84}{section.6.2}
+\contentsline {section}{\numberline {6.3}Selecting a Threshold Similarity Score}{85}{section.6.3}
+\contentsline {section}{\numberline {6.4}Handling Attachments and Full-Text Search}{85}{section.6.4}
+\contentsline {section}{\numberline {6.5}Project Specific vs. Project Agnostic Learning}{86}{section.6.5}
+\contentsline {section}{\numberline {6.6}Handling Email Replies}{86}{section.6.6}
+\contentsline {section}{\numberline {6.7}Limitations of Taggy}{87}{section.6.7}
+\contentsline {chapter}{\numberline {7}Conclusion}{89}{chapter.7}
+\contentsline {section}{\numberline {7.1}Research Goals Addressed}{89}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{92}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Extensions with New Features}{92}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Improvements through Evaluation}{93}{subsection.7.2.2}
+\contentsline {chapter}{\numberline {8}Ethics Approval}{95}{chapter.8}
+\contentsline {chapter}{Bibliography}{97}{figure.8.1}

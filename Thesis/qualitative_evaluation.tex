@@ -2,7 +2,7 @@
 \fancyhead[RO,LE]{\thepage}
 \fancyfoot{} 
 \chapter{Preliminary Qualitative Evaluation}
-Although the quantitative evaluation serves the purpose of identifying the accuracy of Taggy in auto-tagging, I have conducted a preliminary user study of the tool to get qualitative feedback about it from people involved in software development projects. The feedback comprises of responses from 8 participants. To familiarize them with Taggy, I have demonstrated the key features and explained the underlying technology first. Then, I have invited them to use the Tool to try out the features on their own. Next, I conducted open-ended interviews to elicit feedback around the following four research questions:
+Although the quantitative evaluation serves the purpose of identifying the accuracy of Taggy in auto-tagging, I have conducted a preliminary user study of the tool to get qualitative feedback about it from people involved in software development projects. The feedback comprises of responses from 6 participants. To familiarize them with Taggy, I have demonstrated the key features and explained the underlying technology first. Then, I have invited them to use the Tool to try out the features on their own. Next, I conducted open-ended interviews to elicit feedback around the following four research questions:
 
 \begin{enumerate}
 	\item Is it useful to auto-tag emails?
@@ -14,13 +14,13 @@ Although the quantitative evaluation serves the purpose of identifying the accur
 The remainder of this chapter provides information about the study participants, data collection, analysis, findings and limitations of the user study.
 
 \section{Participants}
-Table~\ref{tab:participants} summarizes the basic information about the study participants. The participants (P1-P8) are from 3 different teams(T1-T3). T1 is a team of 5 working from three different locations. P1 is the product owner for the team who decides the project's user stories, participates in the project planning and regular feedback process. 
+Table~\ref{tab:participants} summarizes the basic information about the study participants. The participants (P1-P6) are from 3 different teams(T1-T3). T1 is a team of 5 working from three different locations. P1 is the product owner for the team who decides the project's user stories, participates in the project planning and regular feedback process. 
 
 \begin{table}
 	\label{tab:participants}
   \centering
   \caption{Taggy User Study Participants}
-    \begin{tabular}{|p{2cm}|p{2cm}|p{4cm}|p{2cm}|}
+    \begin{tabular}{|p{2cm}|p{2cm}|p{4cm}|p{4cm}|}
     \hline
 		Team & ID & Role & Years of Exp.\\
 		\hline
@@ -29,6 +29,7 @@ Table~\ref{tab:participants} summarizes the basic information about the study pa
 		T2	&  P3 & Developer & 9 \\
 		T2	&  P4 & Support Specialist & 10 \\
 		T2	&  P5 & Developer & 15\\		
+		T3	&  P6 & Developer & Undergraduate intern\\		
 		\hline
 		\end{tabular}
 \end{table}                                              
@@ -37,7 +38,7 @@ T2 is a Calgary based team of 5 developers. The team develops and provides maint
 
 T3 is a team of 3 Computer Science undergraduate interns and a university professor working from three different universities across Canada. The team T3 develops reusable components to be used by others.
 
-All the teams mentioned here follow iterative incremental process with small iterations (2-3 weeks). Also, they follow a collaborative approach, where the team members and the customers collaborate to define and refine the user stories. Some participants (P1, P2, P3, P5) mostly rely on emails to communicate with remote members while others commonly use instant messages (P6, P7, P8). Participant P4 mostly relies on issue tracking tools.
+All the teams mentioned here follow iterative incremental process with small iterations (2-3 weeks). Also, they follow a collaborative approach, where the team members and the customers collaborate to define and refine the user stories. Some participants (P1, P2, P3, P5) mostly rely on emails to communicate with remote members while others commonly use instant messages (P4, P6). Participant P4 also relies on an issue tracking tool.
 
 Since the teams are distributed or working for remote clients following some of the agile practices, they are already familiar with the concepts of user stories and iterations. Also, they frequently use text based communication tools. Taggy is essentially a lightweight knowledge management tool for such teams.
 
@@ -49,22 +50,28 @@ Next I gave them a half an hour demonstration of Taggy and discussed about its u
 \section{Findings}
 
 \subsubsection{Is It Useful to Auto-tag Emails?}
-The participants were able to send emails to Taggy using the CC feature and found it to be simple and straight forward. They provided encouraging comments about the auto-tagging feature. For example, P2 commented, \emph{``It will be really useful if its accurate in tagging.''} Another participant P1, mentioned that Taggy adds value to the emailing process by automatically relating with the user stories as he mentioned, 
+The participants were able to send emails to Taggy using the CC feature and found it to be simple and straight forward. They provided encouraging comments about the auto-tagging feature. For example, P6 commented, 
+\begin{quote}
+	``It will be really useful, since it brings information into a single place from different sources''
+\end{quote}
+
+Another participant P1, mentioned that Taggy adds value to the emailing process by automatically relating with the user stories as he mentioned, 
 \begin{quote}
 ``...It does help to have centralized location where you can communicate and share knowledge easily as done through Taggy. Our suppliers are based on Asia, so its important to relay the information to them seamlessly. Taggy eliminates the clutter from emails as it automatically grabs the emails from different stakeholders and tags with the user stories.''	
 \end{quote}
 
-All the participants stated that remembering the project email is a lot easier than remembering the user story ids or other tokens for both technical and non-technical members. However, participants P4 and P5 brought the fact that at times people the clients may forget to put the project email in the recipients list. For example, participant P5 mentioned the following:
+All the participants stated that remembering the project email is a lot easier than remembering the user story ids or other tokens for both technical and non-technical members. However, participants P4 and P5 brought the fact that at times the clients may forget to put the project email in the recipients list. For example, participant P5 mentioned the following:
 \begin{quote}
  ``For me it would be really cool if it has a great automatization. However I can see some troubles with clients remembering the email to put CC or me doing it later when I reply. It may be a thing to think about.''
 \end{quote}
+
 As an alternate route to feed the project related emails to Taggy, P3 suggested the following:
 \begin{quote}
 	``As a work-around for copying to project email, I can set up email automatic forwards based on rules such as when they are from customers it should auto-forward to Taggy.'' 
 \end{quote}
 Such a solution may work for advanced level email users who are aware of rules, filters and automatic forwards. However, instead of listening to a single email address for a project, this setup needs to be done at the email account for each of project members. As another alternate, participant P4 suggested the following:
 \begin{quote}
-	``You can setup a middle man kind of email address so that clients always sends the email to the address and then Taggy picks it up and forwards to the project members.''
+	``You can setup a middle man kind of email address so that clients always send the email to the address and then Taggy picks it up and forwards to the project members.''
 \end{quote}
 To summarize, the participants could successfully send emails to Taggy and try out the auto-tagging feature. Their feedback about using different input mechanisms can be part of a future extension of Taggy.
 
@@ -75,16 +82,24 @@ The participants P1, P4 and P5 also tried out the instant message auto-tagging f
 	``its (instant message auto-tagging) what makes it really powerful... for example, sometimes we exchange a quick link or a short note - its a pain to capture that later. You have to save it or send an email, sometimes I forget to do that. Sometimes you close the computer and its gone. It (instant message auto-tagging) will be very useful. ''
 \end{quote}
 
+Participant P6 mentioned that the plug-in makes it easy and unobtrusive to retain the instant messages. Since he uses two instant messaging service for project collaboration, his instant messages are further fragmented into two places. He mentioned the following as an example where Taggy would be useful for his team:
+\begin{quote}
+``I implemented zooming and panning before. So, when my teammate needed help about a similar task, I looked up the code from the project and sent him in Skype. It would be good to have this stored with the task, so that one can easily use this information.''
+\end{quote}
+
 However, participants expressed the need for instant messenger plug-ins beyond just Skype as some of them mentioned other popular clients such as MSN, Yahoo, Google etc. Since the auto-tagging is done irrespective of the instant message client type, the same process can be applied to messages from any source that include similar data.
 
 \subsubsection{What are the Potential Benefits of Using Taggy?}
-This part of the study attempted to look for participant responses about who and why someone would use Taggy. New team members were identified as the most common target consumer of this knowledge. Some of the participants mentioned that it could actually help the developer during the development of a user story, since she doesn't need to look into different places to see the discussions about a user story. Also, participant P4 mentioned that it would help in providing support for customer enquiries.
+This part of the study attempted to look for participant responses about who and why someone would use Taggy. New team members were identified as the most common target consumer of this knowledge. Participant P4 mentioned that it could actually help the developer during the development of a user story, since she doesn't need to look into different places to see the discussions about a user story. Participant P6 mentioned that while implementing or testing a user story, at times he refers back to the user story description to check if everything is in the right direction. As a part of description, he also looks into the relevant instant messages. Here is one of his comments about Taggy:
+\begin{quote}
+	``Instead of looking into several places, Taggy helps me to see all in a single page. And its a shared page as well.''
+\end{quote}
 
-The participants wanted to use Taggy mainly to keep their knowledge in a central place without putting much efforts. For example, P1 mentioned the following:
+Participant P4 mentioned that it would help in providing support for customer enquiries about a feature, especially with information that was discussed during its development. The participants wanted to use Taggy mainly to keep their knowledge in a central place without putting much efforts. For example, P1 mentioned the following:
 \begin{quote}
 	``It will help the new team members. They are able to see the history of user stories... so it will help them up to spec with current development quicker.''
 \end{quote}
-Participant P3 mentioned that it will reduce some documentation efforts since the customer feedbacks from the emails will be automatically captured in a shared location.
+Participant P3 mentioned that it will reduce his documentation efforts since the customer feedbacks from the emails will be automatically captured in a shared location.
 
 \subsubsection{What are the Concerns about Taggy?}
 I also enquired the participants to share their concerns about Taggy. The most common concern was about presenting the archival information. Since, a distributed team may produce huge amount of content in terms of emails and instant messages, the participants were concerned about information overload. This concern can be addressed by finding an appropriate user interface that is suitable for searching and browsing archived data. This can be a future work on Taggy.
@@ -96,7 +111,7 @@ Participants also mentioned that sometimes people may forget to put the project 
 \section{Limitations}
 This study has several limitations. Firstly, the participants only used Taggy for half an hour. While their feedback based on past experience is valuable, its not clear how the feedback would translate if they used Taggy in a real project for a longer period. Since a knowledge base is essentially targeted to help long term project success, the short evaluation may not reveal some of the important aspects that would matter in the long run.
 
-Secondly, the user study had only 8 participants. Only one of the participants had a role of customer while the rest were technical users. Moreover, the participants were all from small teams of 5-10 members. So, the findings cannot be generalized.
+Secondly, the user study had only 6 participants. Only one of the participants had a role of customer while the rest were technical users. Moreover, the participants were all from small teams of 4-10 members. So, the findings cannot be generalized.
 
 Thirdly, as any other qualitative interviews, the participants and their responses may carry a bias. A future work may address these limitations by conducting a more detailed qualitative study.
 
