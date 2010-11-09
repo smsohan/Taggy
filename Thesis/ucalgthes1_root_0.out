@@ -23,15 +23,15 @@
 \BOOKMARK [1][-]{section.3.1}{Assumptions}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{The Agile Project Context}{chapter.3}
 \BOOKMARK [1][-]{section.3.3}{High Level Workflow}{chapter.3}
-\BOOKMARK [1][-]{section.3.4}{Architecture}{chapter.3}
-\BOOKMARK [1][-]{section.3.5}{Similarity Computation}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.5.1}{Local-Global Principle}{section.3.5}
-\BOOKMARK [2][-]{subsection.3.5.2}{Similarity Function}{section.3.5}
-\BOOKMARK [2][-]{subsection.3.5.3}{Learning Relative Weights}{section.3.5}
-\BOOKMARK [2][-]{subsection.3.5.4}{Email Matching}{section.3.5}
-\BOOKMARK [2][-]{subsection.3.5.5}{Instant Message Matching}{section.3.5}
-\BOOKMARK [1][-]{section.3.6}{Implementation Details}{chapter.3}
-\BOOKMARK [1][-]{section.3.7}{An Illustrative Example}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Similarity Computation}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.4.1}{Local-Global Principle}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.2}{Similarity Function}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.3}{Learning Relative Weights}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.4}{Email Matching}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.5}{Instant Message Matching}{section.3.4}
+\BOOKMARK [1][-]{section.3.5}{Architecture}{chapter.3}
+\BOOKMARK [1][-]{section.3.6}{An Illustrative Example}{chapter.3}
+\BOOKMARK [1][-]{section.3.7}{Implementation Details}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Quantitative Evaluation}{}
 \BOOKMARK [1][-]{section.4.1}{Evaluation Approach}{chapter.4}
 \BOOKMARK [2][-]{subsection.4.1.1}{Accuracy}{section.4.1}

@@ -25,7 +25,9 @@ namespace :taggy do
     offset = ENV['o'] || ENV['offset'] || 0
     offset = offset.to_i
     begin
-      Message.evaluate_tagging projects, offset
+      start_time = Time.now
+      Message.evaluate_tagging projects, offset       
+      puts "Time taken #{Time.now - start_time}"
     rescue Exception => error
       Rails.logger.error "Exception in evaluating"
       Rails.logger.error error.backtrace.join(" ")

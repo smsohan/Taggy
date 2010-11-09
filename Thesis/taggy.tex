@@ -34,25 +34,13 @@ Taggy uses two kinds of context information that are available for agile user st
 \begin{enumerate}
 	\item \textbf{Temporal Context.} User stories in agile projects are grouped by small iterations so that a bunch of new user stories are potentially shippable at the end of each iteration. These iterations are confined within specific start and end dates. This time-box works as the temporal context for a user story. For example, if a user story is developed during Iteration\#2, June 1 to June 14, then Taggy assumes people are more likely to write emails about the user story within this period than in the far past or future.
 	
-	\item \textbf{People context.} The people context for a user story is formed by its assigned developers and customers. A user story may have one or more customers who are mainly responsible for providing the details proactively and as questions arise during implementation. On the other hand, a user story is broken down into tasks and assigned to developers, testers and other technical team members. Taggy uses all the people relevant to a user story as its people context. For example, if an email is exchanged among the people in a user story, then Taggy puts a higher similarity rank than when the people context is different. The identification of the people context is done based on email addresses.
+	\item \textbf{People context.} The people context for a user story is formed by its assigned developers and customers. A user story may have one or more customers who are mainly responsible for providing the details proactively and as questions arise during implementation. On the other hand, a user story is broken down into tasks and assigned to developers, testers and other technical team members. Taggy uses all the people relevant to a user story as its people context. For example, if an email is exchanged among the people in a user story, then Taggy puts a higher similarity rank than when the people context is different. The identification of the people context is done based on email addresses. The people context for an individual can include multiple email addresses.	
 \end{enumerate}
 
 Since Taggy combines context similarity with text similarity, the above contexts provide more information for auto-tagging. However, when some or all of the context information are missing for a user story, Taggy still applies whatever information is available to auto-tag emails with user stories.
 
 \section{High Level Workflow}
-Now that the assumptions and definitions of important terms are discussed, Figure~\ref{fig:learn_evaluate} shows the two high level steps involved in the process of auto-tagging an email with user stories. 
-
-\begin{figure*}[!h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{learn_evaluate.png}
-	\caption{Taggy High Level Workflow}
-	\label{fig:learn_evaluate}
-\end{figure*}
-
-
-As with most other machine learning techniques, Taggy needs to learn its parameters concerning relative weights of similarity measure before making decisions. The details of finding the initial relative weights and learning is discussed later in Section~\ref{sec:learning}. Once the weights are learned, the system needs to be evaluated to see its accuracy. Based on the findings of evaluation, the learning is reiterated to find a set of relative weights that produces optimum auto-tagging accuracy. This process is discussed in greater detail at Chapter~\ref{ch:evaluation}.
-
-After learning and evaluation, Taggy can be used to auto-tag emails with user stories. This auto-tagging process is designed to be used in a live system as illustrated in Figure~\ref{fig:workflow}. The following list explains each step of the workflow: 
+Taggy is designed to be used in a live system as illustrated in Figure~\ref{fig:workflow}. The following list explains each step of the workflow: 
 \begin{figure*}[!h]
 	\centering
 	\includegraphics[width=\textwidth]{workflow.png}
@@ -67,7 +55,7 @@ After learning and evaluation, Taggy can be used to auto-tag emails with user st
 
 	\item \textbf{Save email.} After grabbing, Taggy saves the email into its database, keeping a link to its project. After this step, even if auto-tagging fails, the email is still stored under the project. This step makes an email available for search and browsing without the need for looking into other users' inboxes.
 	
-	\item \textbf{Filter.} To auto-tag the email just grabbed, Taggy first reduces its search space by discarding the user stories of a project that were done in the far past or scheduled to be developed in the far future. This filtering process essentially finds the current iteration of the project, if any. Then, it considers the user stories from the current iteration and its neighboring iterations as potential candidates for auto-tagging the emails.
+	\item \textbf{Filter.} To auto-tag the email just grabbed, Taggy first reduces its search space by discarding the user stories of a project that were done in the far past or scheduled to be developed in the far future. This is because comparing against all user stories is too slow if a project has a lot of user stories from far past or future. This filtering process essentially finds the current iteration of the project, if any. Then, it considers the user stories from the current iteration and its neighboring iterations in a month as potential candidates for auto-tagging the emails. In the evaluation data sets, I have found 95\% of the emails were sent during this time period. However, this heuristic will fail if an email is actually sent about a user story from far past or future iteration.
 
 	\item \textbf{Compute local similarity.} In the reduced search space, Taggy computes local similarities for people and temporal contexts as well as separate text similarities for subject and body. The details of these local similarity computations are discussed in Section~\ref{sec:equations}.
 	
@@ -75,7 +63,7 @@ After learning and evaluation, Taggy can be used to auto-tag emails with user st
 	
 	\item \textbf{Sort.} The user stories are then sorted descendingly according to their global similarity value from previous step. This produces a list of user stories with the potentially most relevant user story at the top.
 	
-	\item \textbf{Pick.} Next, Taggy picks the user stories having global similarity scores above a predefined threshold. Having a threshold ensures Taggy only picks the ones that show sufficient relevance based on its learning. However, this also means that for some emails no user story may be picked. Instead of picking up all the user stories above threshold, Taggy can be configured to pick up only the top n stories, where n is a number greater than or equal to one. This allows Taggy to limit the auto-tagging to a limited number of user stories per email.
+	\item \textbf{Pick.} Next, Taggy picks the user stories having global similarity scores above a predefined threshold. Having a threshold ensures Taggy only picks the ones that show sufficient relevance based on its learning. However, this also means that for some emails no user story may be picked. Instead of picking up all the user stories above threshold, Taggy can be configured to pick up only the top n stories, where n is a number greater than or equal to one. This allows Taggy to limit the auto-tagging to a limited number of user stories per email. Selecting a large value of n may produce false positives where a small value may produce false negatives. The same trade-off exists with the threshold selection as well. The value of n can be determined based on the historical data so that n equals the average number of user stories that are discussed per email. Similarly the threshold score can be set by looking at the historical data.
 	
 	\item \textbf{Auto-tag.}	Finally, Taggy auto-tags the email with the picked user stories from the last step. This step adds database level links between the email and the user stories to be auto-tagged.
 \end{enumerate}
@@ -102,45 +90,19 @@ Since instant messages don't capture any subject, Taggy cannot produce a subject
 
 On a live system, as like any other machine learning solution, Taggy cannot discard the possibility of a wrong auto-tagging decision. When someone spots such a faulty auto-tagging in Taggy, she/he can manually correct it.
 
-\section{Architecture}
-Taggy is composed of a number of different components to support the workflow as outlined in the previous section. The key components of Taggy is depicted at Figure~\ref{fig:architecture}. Next, the details about each component from the figure is discussed following a bottom-up approach.
+However, similar to most machine learning techniques, Taggy needs to learn some parameters before it is ready for use. Figure~\ref{fig:learn_evaluate} shows the two high level steps involved in the process of learning the relative weights of similarity measures. 
 
-\begin{figure*}[bt]
+\begin{figure*}[!h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{architecture.png}
-    \caption{Taggy Components}
-	\label{fig:architecture}
+	\includegraphics[width=0.5\textwidth]{learn_evaluate.png}
+	\caption{Taggy High Level Workflow}
+	\label{fig:learn_evaluate}
 \end{figure*}
 
-\begin{enumerate}
-	\item \textbf{Relational Database.} This relational database component persists the agile project related information. To address the concern of auto-tagging, this database keeps the following information:
-		\begin{itemize}
-			\item People. People information includes a person's name, email address and instant messenger id, if any. Also, a project vs. people mapping is stored.
-			\item Iteration. Iterations, defined by start and end dates, are also saved.
-			\item User story. Each user story may have a title and description. Also, if the story is planned, then information about its iteration and assigned people are stored in the database.
-			\item Email. The database also stores the subject and content of the emails with a link to sender and recipients if they are found in the people information. If the email is tagged with a user story, then this information is kept in the database as well.
-			\item Instant Message. Similar to emails, the database stores the instant messages and their tagging information.
-		\end{itemize}
-
-	 \item \textbf{Attached Files.} Attached Files is a simple file system storage where all attachments are kept. An attachment may be part of a user story definition or can be extracted from an email.
-	
-	 \item \textbf{Full Text Search Engine.} This component produces full text index from contents found in user stories, emails and their associated attachments. This is a third party component that can handle synonyms and language specific stems. The attached files are only indexed for full text search if it would be meaningful - for example, image files are not indexed where PDF file contents are.
-	
-	\item \textbf{Taggy Matchers.} This is the core component of Taggy that produces the auto-tagging, i.e. the similarity related computations are done inside this component. There are two matchers inside Taggy: email matcher and instant message matcher. These two matchers share some common computation logic. However, instant messages don't have subjects as found in emails and as a result, the two matchers use different relative weights and minimum threshold similarity scores to auto-tag. The matchers depend on the full text search engine and the relational database to lookup required data.
-	
-	\item \textbf{Taggy Learner.} As discussed before, Taggy requires training to learn different parameters. This component takes care of the learning process. During learning the Learner uses the Matcher to auto-tag an email and depending on the outcome, it may learn the parameters of interest. Once the learning is complete, the learner sets the relative weights to be used in the Matcher. So, the core part of auto-tagger is a mix of its Learner and Matcher components.
-	
-	\item \textbf{Taggy Email Grabber.} The Email Grabber component works as a background process that periodically checks for incoming emails in any of the project emails. If it finds one, it reads the email, saves a copy in the relational database as well as downloads the attachments into Attached Files. Next, the text contents are all indexed through the Full Text Search Engine. With this data persisted, it invokes the Matcher component to auto-tag the email against the relevant user stories. This handles the email intake process to Taggy.
-	
-	\item \textbf{Taggy Web Service.} Taggy exposes a web service so that an instant messenger plugin can push instant messages to Taggy.
-	
-	\item \textbf{Taggy Instant Messenger Plug-in.} This component is installed as a plug in to an instant messenger. Once activated, this component sends instant messages to the Web Service Component.
-	
-	\item \textbf{Taggy Web Application.} The web application provides interfaces for manipulating everything in Taggy. For example, one can browse a user story and see all related emails and instant messages or vice versa. Also, one can search through all the contents, including the attachments. In a nutshell, this is a light-weight agile project management tool with the additional feature that it auto-tags emails and instant messages.
-\end{enumerate}
+The details of finding a set of initial relative weights and learning is discussed later in Section~\ref{sec:learning}. Once the weights are learned, the system needs to be evaluated to see its accuracy. Based on the findings of evaluation, the learning is reiterated to find a set of relative weights that produces optimum auto-tagging accuracy. This process is discussed in greater detail in Chapter~\ref{ch:evaluation}.
 
 \section{Similarity Computation}
-As I have discussed, the Learner and Matchers are the core components of Taggy. A similarity computation technique forms the heart of these components. In case of Taggy, this is a machine learning technique called Case Based Reasoning (CBR). CBR is used to find out relevant user stories for an email or instant message. 
+As it is shown in the workflow, a similarity computation function forms the heart of Taggy. This is performed using a machine learning technique called Case Based Reasoning (CBR). A CBR system is implemented to find out relevant user stories for an email or instant message. 
 
 \begin{figure*}[!h]
 	\centering
@@ -149,7 +111,7 @@ As I have discussed, the Learner and Matchers are the core components of Taggy. 
 	\label{fig:CBR}
 \end{figure*}
 
-Figure~\ref{fig:CBR}  shows a high level view of the CBR system. A CBR system uses a library of existing cases to match against a new case. For example, Taggy has a library of existing user stories which are treated as existing cases in the CBR system. Each case is a user story, as described above, is defined by several attributes, such as, its title, description, assigned developers, customers, iteration start date and end date. Also, the data types of the attributes are different in that they include numeric date time values, symbols for emails and free text values. This library of cases is not exactly similar to a new case, an email, since the attributes are different. However, it has been discussed that it is possible to match some of the email attributes against the user story attributes. This action is performed inside the CBR system of Taggy to compute the similarity.
+Figure~\ref{fig:CBR}  shows a high level view of the CBR system. A CBR system uses a library of existing cases to match against a new case. For example, Taggy has a library of existing user stories which are treated as existing cases in the CBR system. Each case is a user story, as described above, is defined by several attributes, such as, its title, description, assigned developers, customers, iteration start date and end date. Also, the data types of the attributes are different in that they include numeric date time values, symbols for emails and free text values. This library of cases is not exactly similar to a new case, an email, since the attributes are different. However, it has been discussed that it is possible to match some of the email and instant message attributes against the user story attributes. This action is performed inside the CBR system of Taggy to compute the similarity.
 
 
 \subsection{Local-Global Principle}
@@ -158,24 +120,26 @@ The actual computation inside the CBR system is done following the local-global 
 
 \begin{table}[at]
   \centering
-  \caption{Mapping Between Email and User Story Attributes}
-    \begin{tabular}{|p{2.5cm}|p{4cm}|p{5cm}|p{2cm}|}
+
+  \caption{Mapping Between Email, Instant Message and User Story Attributes}
+	\label{tab:mapping}
+    \begin{tabular}{|p{2.5cm}|p{3cm}|p{3cm}|p{4cm}|p{2cm}|}
       \hline
-      \textbf{Local Similarity} & \textbf{Email} & \textbf{User Story} & \textbf{Type} \\
+      \textbf{Local Similarity} & \textbf{Email} &  \textbf{Instant Message} & \textbf{User Story} & \textbf{Type} \\
       \hline
-      People & Sender, Recipients & Developer or Customer & Symbol Array\\      
+      People & Sender, Recipients & Participants & Developer or Customer & Symbol Array\\      
       \hline
-      Temporal & Email Date & Iteration start and end date & Numeric Date \\
+      Temporal & Email Date & Instant Message Date & Iteration start and end date & Numeric Date \\
       \hline
-      Subject & Email subject & Title, Description and Attachments & Free text\\
+      Subject & Email subject & N A & Title, Description and Attachments & Free text\\
       \hline
-      Body & Email Body, attachments & Title, Description and Attachments & Free text\\
+      Body & Email Body, attachments &  Instant Message Text  & Title, Description and Attachments &  Free text\\
       \hline
     \end{tabular}
-	\label{tab:mapping}
+
 \end{table}
 
-Table~\ref{tab:mapping} shows the adapted mapping of email attributes to user story attributes. According to this mapping, the people in email are matched against the people in user stories, so no distinction is made between the sender or recipient of an email. Similarly developers and customers of a user story are not distinguished for similarity computation. The temporal similarity again is a result of comparing the email date against a range defined by the start and end date of the iteration. And as it was stated in the assumptions, subject similarity is distinguished from the body similarity to look for important clues in the email subjects. However, in both cases the comparison is done against all the text found in a user story by looking into its title, description and attachments. This is done because the subject or body of the mail can contain similar text to any part of the user story.
+Table~\ref{tab:mapping} shows the adapted mapping of email and instant message attributes to user story attributes. According to this mapping, the people in email are matched against the people in user stories, so no distinction is made between the sender or recipient of an email. Similarly developers and customers of a user story are not distinguished for similarity computation. The temporal similarity again is a result of comparing the email date against a range defined by the start and end date of the iteration. And as it was stated in the assumptions, subject similarity is distinguished from the body similarity to look for important clues in the email subjects. However, in both cases the comparison is done against all the text found in a user story by looking into its title, description and attachments. This is done because the subject or body of the mail can contain similar text to any part of the user story. The same mapping applies for instant messages with two differences, i) no subject similarity is used since instant messages do not contain subject and ii) attachments from instant messages are not used.
 
 For instant messages, this table remains same for all but the Subject similarity row, since a subject is absent in such cases. So, instant message matching requires one less local similarity measure.
 
@@ -195,7 +159,7 @@ S_{Temporal} =
 \end{cases}
 \end{equation}
 
-S\textsubscript{Temporal} in Equation~\ref{eq:temporal} denotes the Temporal local similarity between an email and a user story. This equation can be interpreted as follows: if the email is sent while the user story is in development, during its iteration, then they show highest temporal similarity. However, it is also likely that an email is sent in the near past or near future of an iteration, this nearness is designated by the buffer. This buffer is set to one iteration length. So, if an email is sent in the immediate past or future iteration of a user story, the temporal similarity is supposed to be 0. Finally, a negative score for the rest ensures emails from far past and far future are treated as highly distant in terms of temporal context. This interpretation is in alignment with the provided assumptions.
+S\textsubscript{Temporal} in Equation~\ref{eq:temporal} denotes the Temporal local similarity between an email and a user story. This equation can be interpreted as follows: if the email is sent while the user story is in development, during its iteration, then they show highest temporal similarity. However, it is also likely that an email is sent in the near past or near future of an iteration, this nearness is designated by the buffer. This buffer is set to one month. So, if an email is sent in the immediate past or future iteration of a user story, the temporal similarity is supposed to be 0. Finally, a negative score for the rest ensures emails from far past and far future are treated as highly distant in terms of temporal context. This interpretation is in alignment with the provided assumptions.
 
 \begin{equation}
 \label{eq:people}
@@ -219,10 +183,10 @@ S_{Subject} = [0, 1]\mbox{, Free text similarity score (See below)}\\
 S_{Body} = [0, 1]\mbox{, Free text similarity score (See below)}\\
 \end{equation}
 
-S\textsubscript{Subject} and S\textsubscript{Body} represents the free text similarity score for the two attributes. The values can be anything between 0 and 1 as shown in Equation~\ref{eq:subject} and Equation~\ref{eq:body}. Computing the textual similarity between two free format texts is in itself a research topic and beyond the scope of this thesis. However, Taggy used an industry standard open-source full text search engine to produce this score. The search engine uses a Vector Space Model \cite{a_vector_space} to compute the similarity between two free text documents. This model first defines the index of a free text document in terms of a vector that captures the frequency and relative weight of each term in the document. Next, an inner product of two such vectors is used to produce their similarity. Also, to compare the similarity of a document against a library of documents, the similarity results are normalized for the length of the documents. This approach is highly scalable since the similarity computation of two different documents is turned into simple vector computation. Also, the generation of the vectors can benefit from using synonyms, stop words and other language specific stems. Very high-traffic applications have used this approach to facilitate full text search. For example, Twitter, a popular micro-blogging site that serves 12000 searches/second, at the time of writing of this thesis is using this search engine \cite{twitter_lucene}.
+S\textsubscript{Subject} and S\textsubscript{Body} represents the free text similarity score for the two attributes. The values are found form the full text search engine and can be anything between 0 and 1 as shown in Equation~\ref{eq:subject} and Equation~\ref{eq:body}. Computing the textual similarity between two free format texts is in itself a research topic and beyond the scope of this thesis. However, Taggy used an industry standard open-source full text search engine to produce this score. The search engine uses a Vector Space Model \cite{a_vector_space} to compute the similarity between two free text documents. This model first defines the index of a free text document in terms of a vector that captures the frequency and relative weight of each term in the document. Next, an inner product of two such vectors is used to produce their similarity. Also, to compare the similarity of a document against a library of documents, the similarity results are normalized for the length of the documents. This approach is highly scalable since the similarity computation of two different documents is turned into simple vector computation. Also, the generation of the vectors can benefit from using synonyms, stop words and other language specific stems. Very high-traffic applications have used this approach to facilitate full text search. For example, Twitter, a popular micro-blogging site that serves 12000 searches/second, at the time of writing of this thesis is using this search engine \cite{twitter_lucene}. However, the text of an email is very unlikely to be exactly same as a user story. So, it is not generally expected that Lucene will return a value of 1 in such case. In fact, during the evaluation I have found that email texts that are highly similar to user story texts had Lucene similarity score of 0.4-0.5. Based on this finding, S\textsubscript{Subject} and S\textsubscript{Body} are assigned a value of 1 if Lucene score is great than or equal to 0.4. Otherwise, the values are pro-rated accordingly. For example, a Lucene score of 0.2 for a subject is actually converted to S\textsubscript{Subject} = 0.5 as a result of this pro-rating.
 
 %http://engineering.twitter.com/2010/10/twitters-new-search-architecture.html                                                       
-The choice of the above equations are based on the experience from looking into the data. However, since the software is trained to learn the relative weights of these equations, the impact of these equations are likely to be weight adjusted so that the global similarity computation minimizes the possibility of a wrong decision.
+The choice of the above equations are based on the experience from looking into the data. However, the software is trained to learn the relative weights of these local similarities. The learning process adjusts the relative weights so that the global similarity computation minimizes the number of wrong decisions.
 
 Next, the global similarity function combines the local similarities from the above equations using the following formula:
 
@@ -258,7 +222,7 @@ As Equation~\ref{eq:global} shows, the global similarity is a weighed sum of the
 \label{sec:learning}
 Taggy uses a Reinforcement Learning approach to learn the relative weights of the different components to compute a measure of global similarity \cite{reinforcement_learning}. The learning algorithm is designed to adapt the relative weights of the local similarity measures based on the feedback from its decision being correct or incorrect.
 
-Since the local similarity measures participate in the process of global similarity computation, in case of a correct decision, the matching local similarity measures get rewarded by getting more weight while the contradicting ones are punished by lowering their relative weight. For example, if a decision is correct and the people similarity score is positive, then the relative weight of people similarity score, as seen in Equation~\ref{eq:w_people}, is increased. On the other hand, if the decision is correct but the people similarity score is negative, then it is punished by lowering the weight. So, depending on the decision of an individual component and the final outcome, the relative weights are adjusted accordingly. This process continues unless all training data are exhausted or the adaptation converges.
+Since the local similarity measures participate in the process of global similarity computation, their relative weights are adjusted based on their contribution to a correct or incorrect decision. For example, if a decision is correct and the people similarity score is positive, then the relative weight of people similarity score, as seen in Equation~\ref{eq:w_people}, is increased by 1. On the other hand, if the decision is correct but the people similarity score is negative, then it is punished by lowering the weight by 1. So, depending on the decision of an individual component and the final outcome, the relative weights are adjusted accordingly. This process continues unless all training data are exhausted or the adaptation converges.
 
 However, it is important to initialize the relative weights of the local similarity measures based on a meaningful foundation so that the entry point is not absolutely random. This is done by running the training data for each local similarity while keeping the others in isolation - for example, trying to auto-tag emails with user stories solely based on their people similarity and doing the same for other local similarity components. Once this is done, the number of correct decisions made by each component provides a rough estimate of its relative importance over another component. These numbers of correct decisions are normalized to produce the initial relative weights of the four components, namely, people, temporal, subject and body similarity measures.
 
@@ -274,10 +238,13 @@ body_weight     = initial_body_weight
 for all_training_emails do |email|
    result = find_most_similar_user_stories(email)
    is_correct = result.guessed_stories == email.actual_stories
+	
+   is_date_similar    = result.date_similarity >= 0
+   is_people_similar  = result.people_similarity >= 0
+   is_subject_similar = result.subject_similarity >= 0.5
+   is_body_similar    = result.body_similarity >= 0.5
 
 	 #Adjust temporal similarity weight
-   is_date_similar = result.date_weight > 0
-
    if (is_correct and is_date_similar) or 
       (!is_correct and !is_date_similar) then
     date_weight = reward(date_weight)
@@ -286,14 +253,13 @@ for all_training_emails do |email|
    end
 
    #do the same for people, subject and body similarity
-		. . .
-		
+		. . .		
    end
 end
 \end{verbatim}
 This algorithm shows the reward-punishment in action for the temporal similarity weight. This essentially rewards the local similarity weight of a component that contributes in making a correct decision while punishes the one that influences a wrong decision. This reward-punishment continues unless all training emails are seen. Also, it is possible to stop if this converges to a point when adding new emails do not alter the relative weights. However, as with most machine learning techniques, the usefulness of this learning is related to the quality and quantity of the training data. As shown before, Taggy's Learner component implements this algorithm. Once the learning is done, relative weights are tuned to auto-tag emails with user stories. This same algorithm can be used to learn relative weights for instant messages, where the subject is missing.
 
-The choice of this reward-punishment scheme makes it transparent, as one can easily follow the changes in the relative weights based on the logic. Other machine learning approaches such as different variations of back propagation algorithm could also be utilized instead of this one. However, this approach was chosen in Taggy since it is a transparent learning approach where one can monitor the changes in relative weights at each step of the learning.
+The choice of this reward-punishment scheme makes it transparent, as one can easily follow the changes in the relative weights based on the logic. Other machine learning approaches such as different variations of back propagation algorithm could also be utilized instead of this one.
 
 \subsection{Email Matching}
 Once the relative weights are learned, Taggy can match emails against user stories based on the trained system. This process essentially starts with grabbing email and saving it. A developer or customer sends out emails about the project and copies to Taggy using CC: feature. While saving, a lookup is performed to see if the email addresses present in the sender, recipients and CC: match against any of the existing users' record in Taggy's relational database for the project. If found, the users are linked with the emails. Next, the email matcher of the Taggy Matchers component is asked to look for relevant user stories in the database.
@@ -348,39 +314,51 @@ end
 
 The different similarity computations in the email matcher are carried out using the Equation~\ref{eq:temporal}, Equation~\ref{eq:people}, Equation~\ref{eq:subject}, Equation~\ref{eq:body} and Equation~\ref{eq:global}. As shown in the code fragment, one can configure Taggy email matcher to auto-tag with the top n number of top matches. Having n greater than 1 helps to identify cases when an email is potentially relevant about two or more user stories. However, in some teams this situation may be different where most of the time the communication is just about a single user story. So, this configuration will help them to tune Taggy according to their communication patterns. Although not implemented, Taggy could also learn this parameter, n, based on the training data. If the the training data shows that most emails only discuss a single user story, it may only choose to show the most relevant story or adjust this number based on the trend.
 
-This matching algorithm is run in the same background process as that of the Email Grabber. Because of the filtering step, Taggy has a reduced search space to deal with. Although this improves speed, it may produce a wrong decision if a distributed agile team chooses to discuss about user stories from the distant past in the emails. In such cases, the definition of ``distant'' needs to be adjusted accordingly. In the implementation of Taggy, anything beyond immediate past and future iteration is treated as ``distant'' based on the observation from training data.
+This matching algorithm is run in the same background process as that of the Email Grabber. Because of the filtering step, Taggy has a reduced search space to deal with. For example, when filtering is used, in a project with 695 user stories, it took an average of 1.16 seconds per email for auto-tagging. However, the to do the same without the filtering it took an average of 2.12 seconds on the same data. Although this improves speed, it may produce a wrong decision if a distributed agile team chooses to discuss about user stories from the distant past in the emails. In such cases, the definition of ``distant'' needs to be adjusted accordingly. In the implementation of Taggy, anything beyond immediate past and future month of an iteration is treated as ``distant'' based on the observation from training data.
 
 \subsection{Instant Message Matching}
 The instant message matcher is implemented using the same approach, since we can find similar people and temporal context from instant messages as well. As discussed earlier, the intake process is different for instant messages, which uses a Taggy web service to push chat messages from a Taggy Instant Messenger Plug-in. The actual similarity computation in case of instant messages omits the subject similarity and applies a different relative weight scheme. The threshold is also adjusted accordingly.
 
-\section{Implementation Details}
-Figure~\ref{fig:implementation} shows the implementation frameworks for the different architectural components.
-
+\section{Architecture}
+Taggy is composed of a number of different components to support the workflow as outlined in the previous section. The key components of Taggy is depicted at Figure~\ref{fig:architecture}. Next, the details about each component from the figure is discussed following a bottom-up approach.
 
 \begin{figure*}[!h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Implementation.png}
-    \caption{Taggy Implementation Details by Component}
-	\label{fig:implementation}
+	\includegraphics[width=0.8\textwidth]{architecture.png}
+    \caption{Taggy Components}
+	\label{fig:architecture}
 \end{figure*}
 
+\begin{enumerate}
+	\item \textbf{Relational Database.} This relational database component persists the agile project related information. To address the concern of auto-tagging, this database keeps the following information:
+		\begin{itemize}
+			\item People. People information includes a person's name, email address and instant messenger id, if any. Also, a project vs. people mapping is stored.
+			\item Iteration. Iterations, defined by start and end dates, are also saved.
+			\item User story. Each user story may have a title and description. Also, if the story is planned, then information about its iteration and assigned people are stored in the database.
+			\item Email. The database also stores the subject and content of the emails with a link to sender and recipients if they are found in the people information. If the email is tagged with a user story, then this information is kept in the database as well. In case the the database does not include some or all of the emails found in sender and recipients of an email, the information is still stored but no mapping against existing users are made for the missing email addresses. So, missing email addresses do not contribute to the people similarity computation.
+			\item Instant Message. Similar to emails, the database stores the instant messages and their tagging information.
+		\end{itemize}
+
+	 \item \textbf{Attached Files.} Attached Files is a simple file system storage where all attachments are kept. An attachment may be part of a user story definition or can be extracted from an email.
+	
+	 \item \textbf{Full Text Search Engine.} This component produces full text index from contents found in user stories, emails and their associated attachments. This is a third party component called Lucene that can handle synonyms and language specific stems \cite{lucene}. The attached files are only indexed for full text search if it would be meaningful - for example, image files are not indexed where PDF file contents are.
+	
+	\item \textbf{Taggy Matchers.} This is the core component of Taggy that produces the auto-tagging, i.e. the similarity related computations are done inside this component. There are two matchers inside Taggy: email matcher and instant message matcher. These two matchers share some common computation logic. However, instant messages don't have subjects as found in emails and as a result, the two matchers use different relative weights and minimum threshold similarity scores to auto-tag. The matchers depend on the full text search engine and the relational database to lookup required data.
+	
+	\item \textbf{Taggy Learner.} As discussed before, Taggy requires training to learn different parameters. This component takes care of the learning process. During learning the Learner uses the Matcher to auto-tag an email and depending on the outcome, it may learn the parameters of interest. Once the learning is complete, the learner sets the relative weights to be used in the Matcher. So, the core part of auto-tagger is a mix of its Learner and Matcher components.
+	
+	\item \textbf{Taggy Email Grabber.} The Email Grabber component works as a background process that periodically checks for incoming emails in any of the project emails. If it finds one, it reads the email, saves a copy in the relational database as well as downloads the attachments into Attached Files. Next, the text contents are all indexed through the Full Text Search Engine. With this data persisted, it invokes the Matcher component to auto-tag the email against the relevant user stories. This handles the email intake process to Taggy.
+	
+	\item \textbf{Taggy Web Service.} Taggy exposes a web service so that an instant messenger plugin can push instant messages to Taggy.
+	
+	\item \textbf{Taggy Instant Messenger Plug-in.} This component is installed as a plug in to an instant messenger. Once activated, this component sends instant messages to the Web Service Component.
+	
+	\item \textbf{Taggy Web Application.} The web application provides interfaces for manipulating everything in Taggy. For example, one can browse a user story and see all related emails and instant messages or vice versa. Also, one can search through all the contents, including the attachments. In a nutshell, this is a light-weight agile project management tool with the additional feature that it auto-tags emails and instant messages.
+\end{enumerate}
 
 
-As with any software solution, the implementation of Taggy was based on available programming languages and platforms. The core Taggy components, the Learner and Matcher, are developed using the Ruby programming language \cite{ruby}. The web application is also developed using the open-source Ruby on Rails web framework \cite{ruby_on_rails}. The choice of this framework was based on my prior experience as well as its support for producing quick data-backed web application development.
 
-The full text search is served by Apache Lucene \cite{lucene}. This open-source search engine is widely used across the web to facilitate full-text search. In a previous implementation of Taggy, I used Microsoft SQL Server Full-Text Search Engine \cite{auto_tagging, sql_server}. But Lucene was chosen because of its ability to index rich text files such as Word Documents, and PDF files. Also, Lucene can be configured to support synonyms, language stems and comes with out-of-the-box support for full-text search using several languages. However, the architecture of Taggy allows the replacement of this engine by another one without impacting the rest of the system.
 
-To communicate with Lucene, a web service wrapper called Solr is used \cite{solr}. Solr's RESTful web API provides easy access to Solr indexing and querying from other languages, such as Ruby. Solr and Lucene can index the contents from rich documents such as PDF files, Word documents and Spreadsheets. This feature was used to index both user story and email attachments alongside their primary contents.
-
-Since most project management tools support full-text search anyway, this indexing is not likely an additional burden applied by Taggy. However, understandably the index size of Taggy may grow if a team frequently uses emails and instant messages, which is otherwise not captured by most of the project management tools.
-
-For capturing instant messages, a Skype plugin is developed using the Skype4Py library \cite{skype4py}. The plugin can be turned on/off by the click of a button. When activated, it copies the chat messages with meta information and sends this data to the web service. Skype was picked because its use as a popular instant messenger service in software knowledge sharing \cite{how_did_we}. Also, it offers a suite of features that are used by distributed agile teams such as group chat, group video conferencing, and screen sharing. A similar plugin can be developed for other instant message services if supported by the platform.
-
-The background process for the email grabber can be run using Cron jobs on Unix based platforms or scheduled tasks on Windows based platforms \cite{cron, scheduled_tasks}. These scheduling tools can be configured to look for new incoming emails in preferred intervals starting from once every second to any realistic period.
-
-Taggy used a MySQL relational database server to store the data. This can be replaced by any relational database supported by ActiveRecord, which includes MySQL, Oracle, Microsoft SQL Server, SQLite, Derby etc \cite{active_record}. Also, it is possible to use any data storage without using ActiveRecord at all as long as Taggy gets data with a similar schema.
-
-As of hardware platform, Taggy does not impose any special requirements compared to other agile project management tools.
 
 \section{An Illustrative Example}	
 Now that the details about Taggy's internals are provided, the following illustrative example will demonstrate Taggy in action.
@@ -455,3 +433,30 @@ Here, similarity scores are computed based on the similarity equations. For exam
 From the above table we see that Story \#1 is the most similar story to the given email with a similarity score of 0.76. This is greater than the threshold of 0.58 (details discussed in Chapter~\ref{ch:evaluation}) and thus the system auto-tags the email with Story \#1. However, the other stories are not considered as related as those failed to reach the threshold similarity score.
 
 In this example the email is auto-tagged with user story\#1. However, if the threshold is set to a lower value or there was another user story with similar profile to user story\#1, Taggy could recommend more than one auto-tagging. On the other hand, it could simply ignore auto-tagging with any user story if another email was too irrelevant for the given backlog.
+
+\section{Implementation Details}
+Figure~\ref{fig:implementation} shows the implementation frameworks for the different architectural components.
+
+\begin{figure*}[!h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Implementation.png}
+    \caption{Taggy Implementation Details by Component}
+	\label{fig:implementation}
+\end{figure*}
+
+
+As with any software solution, the implementation of Taggy was based on available programming languages and platforms. The core Taggy components, the Learner and Matcher, are developed using the Ruby programming language \cite{ruby}. The web application is also developed using the open-source Ruby on Rails web framework \cite{ruby_on_rails}. The choice of this framework was based on my prior experience as well as its support for producing quick data-backed web application development.
+
+The full text search is served by Apache Lucene \cite{lucene}. This open-source search engine is widely used across the web to facilitate full-text search. In a previous implementation of Taggy, I used Microsoft SQL Server Full-Text Search Engine \cite{auto_tagging, sql_server}. But Lucene was chosen because of its ability to index rich text files such as Word Documents, and PDF files. Also, Lucene can be configured to support synonyms, language stems and comes with out-of-the-box support for full-text search using several languages. However, the architecture of Taggy allows the replacement of this engine by another one without impacting the rest of the system.
+
+To communicate with Lucene, a web service wrapper called Solr is used \cite{solr}. Solr's RESTful web API provides easy access to Solr indexing and querying from other languages, such as Ruby. Solr and Lucene can index the contents from rich documents such as PDF files, Word documents and Spreadsheets. This feature was used to index both user story and email attachments alongside their primary contents.
+
+Since most project management tools support full-text search anyway, this indexing is not likely an additional burden applied by Taggy. However, understandably the index size of Taggy may grow if a team frequently uses emails and instant messages, which is otherwise not captured by most of the project management tools.
+
+For capturing instant messages, a Skype plugin is developed using the Skype4Py library \cite{skype4py}. The plugin can be turned on/off by the click of a button. When activated, it copies the chat messages with meta information and sends this data to the web service. Skype was picked because its use as a popular instant messenger service in software knowledge sharing \cite{how_did_we}. Also, it offers a suite of features that are used by distributed agile teams such as group chat, group video conferencing, and screen sharing. A similar plugin can be developed for other instant message services if supported by the platform.
+
+The background process for the email grabber can be run using Cron jobs on Unix based platforms or scheduled tasks on Windows based platforms \cite{cron, scheduled_tasks}. These scheduling tools can be configured to look for new incoming emails in preferred intervals starting from once every second to any realistic period.
+
+Taggy used a MySQL relational database server to store the data. This can be replaced by any relational database supported by ActiveRecord, which includes MySQL, Oracle, Microsoft SQL Server, SQLite, Derby etc \cite{active_record}. Also, it is possible to use any data storage without using ActiveRecord at all as long as Taggy gets data with a similar schema.
+
+As of hardware platform, Taggy does not impose any special requirements compared to other agile project management tools.

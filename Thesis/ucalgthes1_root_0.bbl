@@ -174,6 +174,13 @@ Rory~V. {O’Connor}, Nathan Baddoo, Kari Smolander, Richard Messnarz, Steinar
   Communications in Computer and Information Science}, pages 189--200. Springer
   Berlin Heidelberg, 2008.
 
+\bibitem{knowledge_sharing}
+T.~Chau, F.~Maurer, and G.~Melnik.
+\newblock Knowledge sharing: agile methods vs. tayloristic methods.
+\newblock In {\em Enabling Technologies: Infrastructure for Collaborative
+  Enterprises, 2003. {WET} {ICE} 2003. Proceedings. Twelfth {IEEE}
+  International Workshops on}, pages 302--307, 2003.
+
 \bibitem{agile_methods}
 T.~Hildenbrand, M.~Geisser, T.~Kude, D.~Bruch, and T.~Acker.
 \newblock Agile methodologies for distributed collaborative development of
@@ -238,6 +245,16 @@ Cynick Young and Hiroki Terashima.
 \newblock How did we adapt agile processes to our distributed development?
 \newblock In {\em {AGILE} Conference}, volume~0, pages 304--309, Los Alamitos,
   {CA,} {USA}, 2008. {IEEE} Computer Society.
+
+\bibitem{suitability_of}
+Grigori Melnik, Kris Read, and Frank Maurer.
+\newblock Suitability of {FIT} user acceptance tests for specifying functional
+  requirements: Developer perspective.
+\newblock In Carmen Zannier, Hakan Erdogmus, and Lowell Lindstrom, editors,
+  {\em Extreme Programming and Agile Methods - {XP/Agile} Universe 2004},
+  volume 3134 of {\em Lecture Notes in Computer Science}, pages 638--663.
+  Springer Berlin / Heidelberg, 2004.
+\newblock 10.1007/978-3-540-27777-4\_7.
 
 \bibitem{a_lightweight}
 Takahira Yamaguchi, Walid Maalej, and {Hans-Jörg} Happel.

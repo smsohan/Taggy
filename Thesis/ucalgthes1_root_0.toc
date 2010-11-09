@@ -14,53 +14,53 @@
 \contentsline {section}{\numberline {1.6}Key Contributions}{15}{section.1.6}
 \contentsline {chapter}{\numberline {2}Related Work}{16}{chapter.2}
 \contentsline {section}{\numberline {2.1}Communication in Distributed Teams}{16}{section.2.1}
-\contentsline {section}{\numberline {2.2}Capturing Knowledge from Emails}{18}{section.2.2}
+\contentsline {section}{\numberline {2.2}Capturing Knowledge from Emails}{19}{section.2.2}
 \contentsline {section}{\numberline {2.3}Wiki-Based Knowledge Sharing}{22}{section.2.3}
 \contentsline {section}{\numberline {2.4}Context-Based Knowledge Management}{25}{section.2.4}
-\contentsline {section}{\numberline {2.5}Review of Existing Tool Support for Knowledge Sharing}{29}{section.2.5}
-\contentsline {section}{\numberline {2.6}Summary}{32}{section.2.6}
-\contentsline {chapter}{\numberline {3}Taggy}{33}{chapter.3}
-\contentsline {section}{\numberline {3.1}Assumptions}{33}{section.3.1}
-\contentsline {section}{\numberline {3.2}The Agile Project Context}{36}{section.3.2}
-\contentsline {section}{\numberline {3.3}High Level Workflow}{37}{section.3.3}
-\contentsline {section}{\numberline {3.4}Architecture}{41}{section.3.4}
-\contentsline {section}{\numberline {3.5}Similarity Computation}{44}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Local-Global Principle}{45}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Similarity Function}{47}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Learning Relative Weights}{50}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Email Matching}{52}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Instant Message Matching}{56}{subsection.3.5.5}
-\contentsline {section}{\numberline {3.6}Implementation Details}{57}{section.3.6}
-\contentsline {section}{\numberline {3.7}An Illustrative Example}{59}{section.3.7}
-\contentsline {chapter}{\numberline {4}Quantitative Evaluation}{63}{chapter.4}
-\contentsline {section}{\numberline {4.1}Evaluation Approach}{63}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Accuracy}{65}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Statistical Relevance}{65}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Evaluation Results}{66}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Data set\# 1: ScrumPad}{66}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Data set\# 2: IBM Jazz}{72}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Limitations}{74}{section.4.3}
-\contentsline {chapter}{\numberline {5}Preliminary Qualitative Evaluation}{75}{chapter.5}
-\contentsline {section}{\numberline {5.1}Participants}{75}{section.5.1}
-\contentsline {section}{\numberline {5.2}Data Collection \& Analysis}{76}{section.5.2}
-\contentsline {section}{\numberline {5.3}Findings}{77}{section.5.3}
-\contentsline {subsubsection}{Is It Useful to Auto-tag Emails?}{77}{section*.11}
-\contentsline {subsubsection}{Is It Useful to Auto-tag Instant Messages?}{79}{section*.12}
-\contentsline {subsubsection}{What are the Potential Benefits of Using Taggy?}{80}{section*.13}
-\contentsline {subsubsection}{What are the Concerns about Taggy?}{80}{section*.14}
-\contentsline {section}{\numberline {5.4}Limitations}{81}{section.5.4}
-\contentsline {chapter}{\numberline {6}Discussion}{83}{chapter.6}
-\contentsline {section}{\numberline {6.1}Dealing with Absence of Necessary Context}{83}{section.6.1}
-\contentsline {section}{\numberline {6.2}The Impact of Incorrect Tagging}{84}{section.6.2}
-\contentsline {section}{\numberline {6.3}Selecting a Threshold Similarity Score}{85}{section.6.3}
-\contentsline {section}{\numberline {6.4}Handling Attachments and Full-Text Search}{85}{section.6.4}
-\contentsline {section}{\numberline {6.5}Project Specific vs. Project Agnostic Learning}{86}{section.6.5}
-\contentsline {section}{\numberline {6.6}Handling Email Replies}{86}{section.6.6}
-\contentsline {section}{\numberline {6.7}Limitations of Taggy}{87}{section.6.7}
-\contentsline {chapter}{\numberline {7}Conclusion}{89}{chapter.7}
-\contentsline {section}{\numberline {7.1}Research Goals Addressed}{89}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{92}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Extensions with New Features}{92}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Improvements through Evaluation}{93}{subsection.7.2.2}
-\contentsline {chapter}{\numberline {8}Ethics Approval}{95}{chapter.8}
-\contentsline {chapter}{Bibliography}{97}{figure.8.1}
+\contentsline {section}{\numberline {2.5}Review of Existing Tool Support for Knowledge Sharing}{30}{section.2.5}
+\contentsline {section}{\numberline {2.6}Summary}{33}{section.2.6}
+\contentsline {chapter}{\numberline {3}Taggy}{34}{chapter.3}
+\contentsline {section}{\numberline {3.1}Assumptions}{34}{section.3.1}
+\contentsline {section}{\numberline {3.2}The Agile Project Context}{37}{section.3.2}
+\contentsline {section}{\numberline {3.3}High Level Workflow}{38}{section.3.3}
+\contentsline {section}{\numberline {3.4}Similarity Computation}{43}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Local-Global Principle}{44}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Similarity Function}{45}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Learning Relative Weights}{48}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Email Matching}{51}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Instant Message Matching}{55}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Architecture}{56}{section.3.5}
+\contentsline {section}{\numberline {3.6}An Illustrative Example}{59}{section.3.6}
+\contentsline {section}{\numberline {3.7}Implementation Details}{62}{section.3.7}
+\contentsline {chapter}{\numberline {4}Quantitative Evaluation}{65}{chapter.4}
+\contentsline {section}{\numberline {4.1}Evaluation Approach}{65}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Accuracy}{67}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Statistical Relevance}{67}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Evaluation Results}{68}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data set\# 1: ScrumPad}{68}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data set\# 2: IBM Jazz}{74}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Limitations}{76}{section.4.3}
+\contentsline {chapter}{\numberline {5}Preliminary Qualitative Evaluation}{77}{chapter.5}
+\contentsline {section}{\numberline {5.1}Participants}{77}{section.5.1}
+\contentsline {section}{\numberline {5.2}Data Collection \& Analysis}{78}{section.5.2}
+\contentsline {section}{\numberline {5.3}Findings}{79}{section.5.3}
+\contentsline {subsubsection}{Is It Useful to Auto-tag Emails?}{79}{section*.11}
+\contentsline {subsubsection}{Is It Useful to Auto-tag Instant Messages?}{81}{section*.12}
+\contentsline {subsubsection}{What are the Potential Benefits of Using Taggy?}{82}{section*.13}
+\contentsline {subsubsection}{What are the Concerns about Taggy?}{82}{section*.14}
+\contentsline {section}{\numberline {5.4}Limitations}{83}{section.5.4}
+\contentsline {chapter}{\numberline {6}Discussion}{85}{chapter.6}
+\contentsline {section}{\numberline {6.1}Dealing with Absence of Necessary Context}{85}{section.6.1}
+\contentsline {section}{\numberline {6.2}The Impact of Incorrect Tagging}{86}{section.6.2}
+\contentsline {section}{\numberline {6.3}Selecting a Threshold Similarity Score}{87}{section.6.3}
+\contentsline {section}{\numberline {6.4}Handling Attachments and Full-Text Search}{87}{section.6.4}
+\contentsline {section}{\numberline {6.5}Project Specific vs. Project Agnostic Learning}{88}{section.6.5}
+\contentsline {section}{\numberline {6.6}Handling Email Replies}{88}{section.6.6}
+\contentsline {section}{\numberline {6.7}Limitations of Taggy}{89}{section.6.7}
+\contentsline {chapter}{\numberline {7}Conclusion}{91}{chapter.7}
+\contentsline {section}{\numberline {7.1}Research Goals Addressed}{91}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{94}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Extensions with New Features}{94}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Improvements through Evaluation}{95}{subsection.7.2.2}
+\contentsline {chapter}{\numberline {8}Ethics Approval}{97}{chapter.8}
+\contentsline {chapter}{Bibliography}{99}{figure.8.1}
