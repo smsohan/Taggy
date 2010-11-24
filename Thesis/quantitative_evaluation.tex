@@ -168,7 +168,7 @@ Jazz is a large project at IBM where they built a web-based project management a
 
 For this evaluation, I have used the work items from RTC as user stories. RTC stores the work items with it's title, description, owner, assigned developers, and planned iteration name. These fields are same as seen with user stories. Under every work item, there is a message thread, where the team members can discuss about the work item. I have derived emails from the messages in the message threads with an important change: the email subject was formed by adding an ``RE:'' prefix to the work item title since the messaging system didn't allow the users to provide a subject line. However, the other fields of messages such as sender, recipients, time stamp, and the body were mapped to the standard email fields.
 
-Taggy was not trained based on data set\# 2, rather the trained relative wights from data set\# 1 were used to auto-tag the emails. If data set \#2 is used for training, it puts 86\% relative weight to subject similarity alone. This is because the subjects are identical to the user story titles.  Using the training based on data set\# 1 reduces this bias.
+Taggy was not trained based on data set\# 2, rather the trained relative wights from data set\# 1 were used to auto-tag the emails. If data set \#2 is used for training, it puts 80\% relative weight to subject similarity alone. This is because the subjects are identical to the user story titles.  Using the training based on data set\# 1 reduces this bias.
 
 
 \begin{table}[h!]
@@ -200,19 +200,19 @@ Based on the training from data set\# 1, Taggy produced the evaluation results f
   \centering
   \caption{Evaluation Using IBM Jazz Data Set}
 	\label{tab:jazz_evaluation}
-    \begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|p{2cm}|p{2cm}|p{3cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}}
       \hline
-      \textbf{Team Area Name} & \textbf{Evaluation Emails} & \textbf{Correct Auto-Tagging} & \textbf{Accuracy}\\
+      \textbf{Team Area Name} & \textbf{Evaluation Emails} & \textbf{Correct Auto-Tagging} & \textbf{Accuracy}	& \textbf{$\chi^2$} & \textbf{p-value}\\
       \hline
-      Work Item 				& 1643 	 	&	1273 & \textbf{77\%}\\
+      Work Item 				& 1643 	 	&	1273 & \textbf{77\%} & 496	& 0.00000\\
       \hline
-      CC Connector 			& 1330 			&	1011	& \textbf{76\%}\\
+      CC Connector 			& 1330 			&	1011	& \textbf{76\%} & 360	& 0.00000\\
       \hline
-      Agile Planning 		& 840 		 	& 683		& \textbf{81\%}\\
+      Agile Planning 		& 840 		 	& 683		& \textbf{81\%} & 329	& 0.00000\\
    		\hline
-      Build 						& 292 			&	235		& \textbf{80\%}\\
+      Build 						& 292 			&	235		& \textbf{80\%} & 108	& 0.00000\\
       \hline
-      \textbf{Total} 		& 4105 				& 3203 	& \textbf{78\%}\\
+      \textbf{Total} 		& 4105 				& 3203 	& \textbf{78\%} & 1289	& 0.00000\\
       \hline
     \end{tabular}
 \end{table}

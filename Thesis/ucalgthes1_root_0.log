@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  22 NOV 2010 17:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  24 NOV 2010 11:34
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -1170,8 +1170,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [74]
 Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]\OT1/cmr/bx/n/12 Team
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+\OT1/cmr/bx/n/12 Area
+ []
+
+
+Overfull \hbox (5.95561pt too wide) in paragraph at lines 205--205
 []\OT1/cmr/bx/n/12 Evaluation
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]\OT1/cmr/m/n/12 CC Con-
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [75pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}
 ) has been already used, duplicate ignored
@@ -1179,13 +1197,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--205
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.221 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.4
-.4}) has been already used, duplicate ignored
+      ] [76pdfTeX warning (ext4): destination with the same identifier (name{ta
+ble.4.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.221 
-      ]) [76]
+l.231 
+      ]) [77]
 \openout2 = `qualitative_evaluation.aux'.
 
  (./qualitative_evaluation.tex
@@ -1194,17 +1212,17 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 5.
-[77
+[78
 
 
 
-] [78pdfTeX warning (ext4): destination with the same identifier (name{table.5.
+] [79pdfTeX warning (ext4): destination with the same identifier (name{table.5.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.47 
-     ] [79] [80] [81] [82] [83]) [84]
+     ] [80] [81] [82] [83] [84]) [85]
 \openout2 = `discussion.aux'.
 
  (./discussion.tex
@@ -1213,11 +1231,11 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 6.
-[85
+[86
 
 
 
-] [86] [87] [88] [89]) [90]
+] [87] [88] [89] [90]) [91]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
@@ -1226,11 +1244,11 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 7.
-[91
+[92
 
 
 
-] [92] [93] [94] [95]) [96]
+] [93] [94] [95] [96]) [97]
 \openout2 = `appendix1.aux'.
 
  (./appendix1.tex
@@ -1239,13 +1257,13 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Appendix A.
-<ethics.pdf, id=1178, 614.295pt x 790.955pt>
+<ethics.pdf, id=1182, 614.295pt x 790.955pt>
 File: ethics.pdf Graphic file (type pdf)
- <use ethics.pdf>) [97
+ <use ethics.pdf>) [98
 
 
 
-] [98pdfTeX warning (ext4): destination with the same identifier (name{figure.A
+] [99pdfTeX warning (ext4): destination with the same identifier (name{figure.A
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1259,7 +1277,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 j \OT1/cmr/m/n/12 ScrumPad.
  []
 
-[99
+[100
 
 
 ]
@@ -1273,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--99
 ersionone&v-
  []
 
-[100]
+[101]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -1282,17 +1300,17 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no Œ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ‡ in font cmr12!
- [101]
+ [102]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [102]
+ [103]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [103]
+ [104]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 
@@ -1306,7 +1324,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--299
 t - JIRA.
  []
 
-[104]
+[105]
 Underfull \hbox (badness 3471) in paragraph at lines 305--309
 \OT1/cmr/m/n/12 Bugz - bug & is-sue track-ing, project man-age-ment, help desk 
 soft-ware.
@@ -1330,7 +1348,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 348--350
 
  []
 
-[105]
+[106]
 Underfull \hbox (badness 10000) in paragraph at lines 366--369
 []\OT1/cmr/m/n/12 The twit-ter en-gi-neer-ing blog: Twit-ter's new search ar-ch
 i-tec-ture.
@@ -1340,40 +1358,31 @@ Missing character: There is no Ï in font cmr12!
 Missing character: There is no ‡ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no © in font cmr12!
-[106]) [107] (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux)
+[107]) [108] (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux)
 (./taggy.aux) (./quantitative_evaluation.aux) (./qualitative_evaluation.aux)
-(./discussion.aux) (./conclusion.aux) (./appendix1.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(./discussion.aux) (./conclusion.aux) (./appendix1.aux)) ) 
 Here is how much of TeX's memory you used:
- 6072 strings out of 493848
- 85901 string characters out of 3149207
- 171434 words of memory out of 3000000
+ 6071 strings out of 493848
+ 85891 string characters out of 3149207
+ 170435 words of memory out of 3000000
  8803 multiletter control sequences out of 15000+200000
  8777 words of font info for 32 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,15n,43p,2231b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.8.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
-replaced by a fixed one
-
-</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
-al/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
-xlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ucalgthes1_root_0.pdf (117 pages, 1863102 bytes).
+</usr/local/texlive/2
+009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/20
+09/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/200
+9/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2009
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2009/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2009/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2009/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2009/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2009/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on ucalgthes1_root_0.pdf (118 pages, 1863983 bytes).
 PDF statistics:
- 1345 PDF objects out of 1440 (max. 8388607)
- 374 named destinations out of 1000 (max. 500000)
+ 1347 PDF objects out of 1440 (max. 8388607)
+ 373 named destinations out of 1000 (max. 500000)
  602 words of extra memory for PDF output out of 10000 (max. 10000000)
 
