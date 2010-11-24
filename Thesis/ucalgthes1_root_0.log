@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  8 NOV 2010 19:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  22 NOV 2010 17:38
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -909,7 +909,7 @@ identifier (name{figure.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.80 
+l.78 
       <./scrumpad_message.png (PNG copy)>]
 Overfull \hbox (23.41728pt too wide) in paragraph at lines 81--82
 []\OT1/cmr/m/n/12 The fifth project, Min-dAnd-Mar-ket, was dis-tributed among o
@@ -991,22 +991,22 @@ Underfull \hbox (badness 1845) in paragraph at lines 99--99
 []\OT1/cmr/m/n/12 A project col-lab-o-ra-
  []
 
-<training.png, id=1023, 709.65125pt x 395.4775pt>
+[70pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.108 G
+       iven this data, the aforementioned evaluation approach was followed t...
+] <training.png, id=1027, 709.65125pt x 395.4775pt>
 File: training.png Graphic file (type png)
- <use training.png> [70pdfTeX warning (ext4): destination with the same identif
-ier (name{table.4.1}) has been already used, duplicate ignored
+ <use training.png> [71pdfTeX warning (ext4): destination with the same identif
+ier (name{figure.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.118 
-      ] [71pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.4.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.124 	\item T
-              he email has context similarity (maximum 0.29 + 0.20 ~= 0.49) ...
- <./training.png (PNG copy)>]
+l.120 
+       <./training.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []\OT1/cmr/bx/n/12 Project
  []
@@ -1136,13 +1136,16 @@ Overfull \hbox (14.19778pt too wide) in paragraph at lines 134--151
  [][] 
  []
 
-[72pdfTeX warning (ext4): destination with the same identifier (name{table.4.2}
-) has been already used, duplicate ignored
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[72] [73pdfTeX warning (ext4): destination with the same identifier (name{table
+.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.154 
-      ] [73]
+l.165 
+      ]
 Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []\OT1/cmr/bx/n/12 Team Area
  []
@@ -1235,19 +1238,19 @@ Chapter 7.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
-Chapter 8.
-<ethics.pdf, id=1177, 614.295pt x 790.955pt>
+Appendix A.
+<ethics.pdf, id=1178, 614.295pt x 790.955pt>
 File: ethics.pdf Graphic file (type pdf)
  <use ethics.pdf>) [97
 
 
 
-] [98pdfTeX warning (ext4): destination with the same identifier (name{figure.8
+] [98pdfTeX warning (ext4): destination with the same identifier (name{figure.A
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.139 \include{appendix1}
+l.140 \include{appendix1}
                           <./ethics.pdf>] (./ucalgthes1_root_0.bbl
 Bibliography
 
@@ -1339,29 +1342,38 @@ Missing character: There is no Â in font cmr12!
 Missing character: There is no © in font cmr12!
 [106]) [107] (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux)
 (./taggy.aux) (./quantitative_evaluation.aux) (./qualitative_evaluation.aux)
-(./discussion.aux) (./conclusion.aux) (./appendix1.aux)) ) 
+(./discussion.aux) (./conclusion.aux) (./appendix1.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6070 strings out of 493848
- 85881 string characters out of 3149207
- 171431 words of memory out of 3000000
+ 6072 strings out of 493848
+ 85901 string characters out of 3149207
+ 171434 words of memory out of 3000000
  8803 multiletter control sequences out of 15000+200000
  8777 words of font info for 32 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,15n,43p,2231b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2
-009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/20
-09/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/200
-9/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2009
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2009/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2009/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2009/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2009/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2009/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ucalgthes1_root_0.pdf (117 pages, 1861696 bytes).
+pdfTeX warning (dest): name{figure.8.1} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
+replaced by a fixed one
+
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
+xlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on ucalgthes1_root_0.pdf (117 pages, 1863102 bytes).
 PDF statistics:
- 1341 PDF objects out of 1440 (max. 8388607)
- 372 named destinations out of 1000 (max. 500000)
+ 1345 PDF objects out of 1440 (max. 8388607)
+ 374 named destinations out of 1000 (max. 500000)
  602 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {3.6}An Illustrative Example}{59}{section.3.6}
 \contentsline {section}{\numberline {3.7}Implementation Details}{62}{section.3.7}
 \contentsline {chapter}{\numberline {4}Quantitative Evaluation}{65}{chapter.4}
-\contentsline {section}{\numberline {4.1}Evaluation Approach}{65}{section.4.1}
+\contentsline {section}{\numberline {4.1}Evaluation Methodology}{65}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Accuracy}{67}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Statistical Relevance}{67}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Evaluation Results}{68}{section.4.2}
@@ -62,5 +62,5 @@
 \contentsline {section}{\numberline {7.2}Future Work}{94}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Extensions with New Features}{94}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Improvements through Evaluation}{95}{subsection.7.2.2}
-\contentsline {chapter}{\numberline {8}Ethics Approval}{97}{chapter.8}
-\contentsline {chapter}{Bibliography}{99}{figure.8.1}
+\contentsline {chapter}{\numberline {A}Ethics Approval}{97}{appendix.A}
+\contentsline {chapter}{Bibliography}{99}{figure.A.1}

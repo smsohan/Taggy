@@ -7,7 +7,7 @@ As previously mentioned in the research goals, an evaluation is required to meas
 
 This chapter is organized as follows: Firstly, the evaluation approach is discussed. As a part of it, the adapted definition of accuracy is given. Next, a null hypothesis is stated which is used in deducing the statistical relevance of the evaluation results. Then, the two data sets are described and the evaluation results for each are provided in detail. Finally, the limitations of this evaluation are discussed.
 
-\section{Evaluation Approach}
+\section{Evaluation Methodology}
 The evaluation steps, as depicted in Figure~\ref{fig:evaluation}, are described below.
 
 \begin{figure*}[h!]
@@ -19,16 +19,16 @@ The evaluation steps, as depicted in Figure~\ref{fig:evaluation}, are described 
 
 
 \begin{enumerate}
-	\item \textbf{Random Select.} Randomly select 10\% emails from all available emails for training. Training emails are randomly selected to improve the possibility of encountering different patterns in the data.
+	\item \textbf{Random Select.} Randomly select 10\% emails from all available emails for training. Training emails are randomly selected to cover the different patterns in the data and eliminate selection bias.
 	\item \textbf{Initialize Relative Weights.} Initialize the relative weights for temporal, people, subject and body similarities using the training data from step\# 1.
 	\item \textbf{Learn.} Use the reward-punishment approach for each training email from step\# 1, adjust the relative weights.
 	\item \textbf{Evaluate.} Using the adjusted relative weights from step\#3, auto-tag the remaining emails that were not included in the training data in step\# 1. This ensures the training data and evaluation data contain completely disjoint sets of emails. Compute the accuracy of the auto-tagging.
-	\item \textbf{Iterate.} Repeat steps 1 to 4, with 20\%, 30\%, 40\% and 50\% data for training. This step attempts to find an optimum partition of  training data set where the relative weights converge to a point so that adding more training data adds little value to the auto-tagging accuracy.
+	\item \textbf{Iterate.} Repeat steps 1 to 4, with 20\%, 30\%, 40\% and 50\% data for training. This step attempts to find an optimum partition of  training data set where the relative weights converge to a point so that adding more training data adds little value to the auto-tagging accuracy. However, this step is not required for the evaluation only. In practice, Taggy auto-tag emails for any project based on its learning from historical data in existing projects.
 	
 \end{enumerate}
 
 \subsection{Accuracy}
-The accuracy of auto-tagging is a ratio between the number of correct tags and the total number of emails presented for evaluation. Since this excludes the training data set, the accuracy only represents the accuracy over the evaluation data set. So, the accuracy is computed using Equation~\ref{eq:accuracy}.
+An auto-tagging is correct if i) it tags with the right user story or ii) does not tag when no relevant user story exists. In other words, it is incorrect if i) it tags with an irrelevant user story or ii) does not tag even though a relevant user story exists. The accuracy of auto-tagging is a ratio between the number of correct tags and the total number of emails presented for evaluation. Since this excludes the training data set, the accuracy only represents the accuracy over the evaluation data set. So, the accuracy is computed using Equation~\ref{eq:accuracy}.
 	
 \begin{equation}
 \label{eq:accuracy}
@@ -44,9 +44,9 @@ The statistical relevance is found by starting with a null hypothesis and then o
 	The auto-tagging accuracy of Taggy is no better than a random decision making.
 \end{quote}
 
-The outcome of an auto-tagging process is either a correct or a wrong tagging of an email against the user stories in a project. Similarly, a random system will produce one of the two outcomes. The target of this statistical relevance determination is to see if the accuracy found from Taggy's evaluation is likely to be achievable by a random system.
+The outcome of an auto-tagging process is either a correct or a wrong tagging of an email against the user stories in a project. Similarly, a random system will produce one of the two outcomes. The target of this statistical relevance determination is to see if the accuracy found from Taggy's evaluation is better than that of a random system.
 
-In this case, we have a single degree of freedom, since there are two possible outcomes, correct and incorrect. And the expected value of correct and incorrect decisions is same for a random system. Based on this information, the chi-square computation is done using Equation~\ref{eq:chi}:
+In this case, we have a single degree of freedom, since there are two possible outcomes, correct and incorrect. A random system may produce either a correct or incorrect tag for each email. So, the expected value of correct and incorrect tagging for a random system is same, which is half of the total emails. Based on this information, the chi-square computation is done using Equation~\ref{eq:chi}:
 
 \begin{equation}
 \label{eq:chi}
@@ -57,7 +57,7 @@ In this case, we have a single degree of freedom, since there are two possible o
 \end{split}	
 \end{equation}                                       
 
-This computed $\chi^{2}$ value is compared against the upper critical chi-square value for probability 0.05 with 1 degree of freedom, that is $\chi^{2}_{0.05}$=3.841. The probability value of 0.05 is conventionally used in significance finding. A value beyond this threshold indicates disagreement between the observation and the null hypothesis. We also present the corresponding p-values against the computed chi-square values. The lower the p-value, the less likely it is that the observation is true given the null hypothesis holds.
+This computed $\chi^{2}$ value is compared against the upper critical chi-square value for probability 0.05 with 1 degree of freedom, that is $\chi^{2}_{0.05}$=3.841. The probability value of 0.05 is conventionally used in significance finding. A value above this threshold indicates disagreement between the observation and the null hypothesis. We also present the corresponding p-values against the computed chi-square values. The lower the p-value, the less likely it is that the observation is true given the null hypothesis holds. For example, a p-value of 0.05 implies the following: there is a 5\% chance of the observed result are by pure chance (i.e. one in 20 studies produce statistically significant results by chance and 19 out of 20 studies are showing that the null hypothesis is incorrect because there is a real causal relationship)
 
 \section{Evaluation Results}
 The evaluation results are discussed in two sections for two different data sets.
@@ -65,7 +65,7 @@ The evaluation results are discussed in two sections for two different data sets
 \subsection{Data set\# 1: ScrumPad}	
 This data set was obtained from an online agile project management tool called ScrumPad.	ScrumPad allows users to manage product backlog, perform iteration planning and track progress. Also, it lets users discuss the project's user stories using message threads. Each message thread can contain an explicit link to a user story. While sending a message using ScrumPad, one can link it with a user story. The messages are stored in ScrumPad database and also sent to people via emails. People can directly reply to the notification emails, which goes to ScrumPad and gets saved as a message either in a new or under an existing thread.
 
-The user stories in ScrumPad contain information about its title, description, attachments, customer, developers and iteration. Taggy used these user stories to train and evaluate its auto-tagging accuracy.
+The user stories in ScrumPad contain information about its title, description, attachments, customer, developers and iteration. We used these user stories to train and evaluate Taggy's auto-tagging accuracy.
 
 \begin{figure*}[h!]
 	\centering
@@ -105,7 +105,7 @@ The fifth project, MindAndMarket, was distributed among one developer from Bangl
 
 Table~\ref{tab:scrumpad_data_set} shows the composition of this data set. In total, this data set contained 640 emails and 369 user stories from 5 distributed agile projects. It is worth mentioning that 640 messages were exchanged using ScrumPad. However, the actual number of project related emails may not be limited to this volume.
 
-Given this data, the aforementioned evaluation approach was followed to train and auto-tag the emails. The iterative approach resulted in an optimum  training data partition size of 20\%. This size was selected because, a random partition containing 20\% of all emails for training produced better auto-tagging accuracy than a smaller sized partition (e.g. 10\%) and was as good as a larger sized partition (e.g. 30\%). 
+Given this data, the aforementioned evaluation approach was followed to train and auto-tag the emails. The iterative approach resulted in an optimum  training data partition size of 20\% from each project. This size was selected because, from each project, a random partition containing 20\% of the emails for training produced better auto-tagging accuracy than a smaller sized partition (e.g. 10\%) and was as good as a larger sized partition (e.g. 30\%). 
 
 \begin{figure*}[htb]
 	\centering
@@ -114,18 +114,18 @@ Given this data, the aforementioned evaluation approach was followed to train an
 	\label{fig:training}
 \end{figure*}
 
-Chart~\ref{fig:training} shows the impact of training on the relative weights of different similarity measures. The chart shows that the initial relative weights for the similarity measures of the text components (subject and body) are reduced while the context components (temporal and people) are increased as a result of the training.
+Chart~\ref{fig:training} shows the impact of training on the relative weights of different similarity measures. The chart shows that the initial relative weights for the similarity measures of the text components (subject and body) are reduced while the context components (temporal and people) are increased as a result of the training. The initial relative weights were found using the method as discussed in Section~\ref{sec:learning}.
 
 Instead of training Taggy on a per project basis, I used 20\% data from all the projects. As a result, Taggy could benefit from a large number of training emails. However, it is possible to use a per project learning as well. I have discussed the trade-off regarding learning for specific project vs. a collection of projects at Chapter~\ref{ch:discussion}.
 
-The maximum similarity score for a local similarity measure can be 1.0 as shown in the similarity equations at Section~\ref{sec:equations}. Using the trained relative weight values and a threshold global similarity score of 0.58, an email will be auto-tagged with a user story if one of the following is true:
+The maximum similarity score for a local similarity measure can be 1.0 as shown in the similarity equations at Section~\ref{sec:equations}. For an example, using the trained relative weight values and a threshold global similarity score of 0.58, an email will be auto-tagged with a user story if one of the following is true:
 \begin{enumerate}
 	\item The email has strong text similarity (maximum 0.34 + 0.17 ~= 0.51) and some context similarity with the user story.
 	\item The email has context similarity (maximum 0.29 + 0.20 ~= 0.49) and some text similarity with the user story.
 \end{enumerate}
-So, setting such a threshold score forces auto-tagging decisions to be based on both context and text relevance. This threshold was found from observing the data. In the training data, the global similarity function produced a score of 0.58 or higher for 90\% of the actual email and user story relations. This cut-off point helped to eliminate some false positives and false negatives. The trade-off between selecting this threshold and auto-tagging is discussed later in Chapter~\ref{ch:discussion}.  
+The global similarity function produces the combined similarity value, which is compared against the threshold score. Setting such a threshold score forces auto-tagging decisions to be based on both context and text relevance. This threshold was found from observing the data. In the training data, the global similarity function produced a score of 0.58 or higher for 90\% of the actual email and user story relations. This cut-off point helped to eliminate some false positives and false negatives. The trade-off between selecting this threshold and auto-tagging is discussed later in Chapter~\ref{ch:discussion}.  
 
-Using this threshold and the trained relative weights, the evaluation yielded the results as shown in Table~\ref{tab:sp_evaluation}.
+Using this threshold and the trained relative weights, the evaluation yielded the results as shown in Table~\ref{tab:sp_evaluation}. The training and evaluation is run three times 
 
 \begin{table}[h!]
   \centering
@@ -161,14 +161,14 @@ The evaluation shows that the accuracy varies between 74\% to 79\% for different
 	\end{enumerate}
 \end{quote}
 
-Both the stories were developed at Iteration\#1 in February 2008. However, two different developers were assigned to implement the stories. In such cases, the text of an email is highly likely to show similar relevance with the text of both the user stories. However, when looked into the people context, the additional information can distinguish the actual relevance of the email with the user stories. As shown in this example, adding context information can help to find the relevant user stories for an email as well as eliminate some of the incorrect auto-tagging that would result if only text relevance was used. It should be noted that the presence of the free text component leads to a fuzzy match and a 100\% accuracy may not be achieved as a result of this.
+Both the stories were developed at Iteration\#1 in February 2008. However, two different developers were assigned to implement the stories. In such cases, the text of an email is highly likely to show similar relevance with the text of both the user stories. However, when looking into the people context, the additional information can distinguish the actual relevance of the email with the user stories. As shown in this example, adding context information can help to find the relevant user stories for an email as well as eliminate some of the incorrect auto-tagging that would result if only text relevance was used.
 
 \subsection{Data set\# 2: IBM Jazz}
-Jazz was a large project at IBM where they built a web-based project management and collaboration tool called Rational Team Concert (RTC). RTC used itself for project management. The RTC project had multiple team areas working on different areas of the application. In evaluation data set\# 2, I have used data from 4 key team areas of the project.
+Jazz is a large project at IBM where they built a web-based project management and collaboration tool called Rational Team Concert (RTC). RTC used itself for project management. The RTC project had multiple teams working on different areas of the application. In evaluation data set\# 2, I have used data from 4 key team areas of the project.
 
 For this evaluation, I have used the work items from RTC as user stories. RTC stores the work items with it's title, description, owner, assigned developers, and planned iteration name. These fields are same as seen with user stories. Under every work item, there is a message thread, where the team members can discuss about the work item. I have derived emails from the messages in the message threads with an important change: the email subject was formed by adding an ``RE:'' prefix to the work item title since the messaging system didn't allow the users to provide a subject line. However, the other fields of messages such as sender, recipients, time stamp, and the body were mapped to the standard email fields.
 
-Taggy was not trained based on data set\# 2, rather the trained relative wights from data set\# 1 were used to auto-tag the emails. It is clear that training based on data set\# 2 would put a very high relative weight to subject similarity since the subjects are identical to the user story titles. Using the training based on data set\# 1 reduces this bias.
+Taggy was not trained based on data set\# 2, rather the trained relative wights from data set\# 1 were used to auto-tag the emails. If data set \#2 is used for training, it puts 86\% relative weight to subject similarity alone. This is because the subjects are identical to the user story titles.  Using the training based on data set\# 1 reduces this bias.
 
 
 \begin{table}[h!]
