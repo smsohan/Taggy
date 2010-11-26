@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  26 NOV 2010 10:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  26 NOV 2010 15:23
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -475,17 +475,17 @@ er (name{figure.1.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.77 
       <./ScrumPadWall.png (PNG copy)>]
-<Distributed.png, id=502, 800.9925pt x 456.70625pt>
+<Distributed.png, id=497, 800.9925pt x 456.70625pt>
 File: Distributed.png Graphic file (type png)
  <use Distributed.png>
-[7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.
-1.3}) has been already used, duplicate ignored
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.98 
-      <./Distributed.png (PNG copy)>] [9] [10] [11] [12] [13]
-<Jigsaw.jpg, id=554, 1300.86pt x 971.63pt>
+l.88 
+      <./Distributed.png (PNG copy)>] [8] [9] [10] [11] [12] [13]
+<Jigsaw.jpg, id=555, 1300.86pt x 971.63pt>
 File: Jigsaw.jpg Graphic file (type jpg)
  <use Jigsaw.jpg> [14pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.1.4}) has been already used, duplicate ignored
@@ -493,7 +493,7 @@ r (name{figure.1.4}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.176 
-       <./Jigsaw.jpg>]) [15]
+       <./Jigsaw.jpg>]) [15] [16]
 \openout2 = `related_work.aux'.
 
  (./related_work.tex
@@ -502,7 +502,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 2.
-[16
+[17
 
 
 
@@ -516,55 +516,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[17] <Layman.png, id=600, 845.1575pt x 683.55376pt>
+[18] <Layman.png, id=611, 845.1575pt x 683.55376pt>
 File: Layman.png Graphic file (type png)
  <use Layman.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18] [19pdfTeX warning (ext4): destination with the same identifier (name{figur
+[19] [20pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.49 
-      <./Layman.png (PNG copy)>] [20]
+      <./Layman.png (PNG copy)>] [21]
 Overfull \hbox (1.00917pt too wide) in paragraph at lines 58--59
 []\OT1/cmr/m/n/12 Software re-quire-ments trace-abil-ity helps de-vel-op-ers to
  un-der-stand a re-quire-ment based
  []
 
-[21] <Wiki.png, id=629, 878.28125pt x 508.90125pt>
+[22] <Wiki.png, id=640, 878.28125pt x 508.90125pt>
 File: Wiki.png Graphic file (type png)
- <use Wiki.png> [22] [23pdfTeX warning (ext4): destination with the same identi
+ <use Wiki.png> [23] [24pdfTeX warning (ext4): destination with the same identi
 fier (name{figure.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.75 
-      <./Wiki.png (PNG copy)>] [24] [25] [26]
-<Mylyn-comment.png, id=672, 616.3025pt x 790.955pt>
+      <./Wiki.png (PNG copy)>] [25] [26] [27]
+<Mylyn-comment.png, id=684, 616.3025pt x 790.955pt>
 File: Mylyn-comment.png Graphic file (type png)
  <use Mylyn-comment.png>
-<Mylyn-context.png, id=679, 588.1975pt x 493.845pt>
+<Mylyn-context.png, id=691, 588.1975pt x 493.845pt>
 File: Mylyn-context.png Graphic file (type png)
  <use Mylyn-context.png>
-[27] [28pdfTeX warning (ext4): destination with the same identifier (name{figur
+[28] [29pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.111 
-       <./Mylyn-comment.png>] [29pdfTeX warning (ext4): destination with the sa
+       <./Mylyn-comment.png>] [30pdfTeX warning (ext4): destination with the sa
 me identifier (name{figure.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.111 
        <./Mylyn-context.png>]
-<Scrumpad.png, id=698, 974.64125pt x 681.54625pt>
+<Scrumpad.png, id=709, 974.64125pt x 681.54625pt>
 File: Scrumpad.png Graphic file (type png)
- <use Scrumpad.png> [30
+ <use Scrumpad.png> [31
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) 
 has been already used, duplicate ignored
@@ -572,13 +572,13 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.121 
-       <./Scrumpad.png (PNG copy)>] [31]
+       <./Scrumpad.png (PNG copy)>] [32]
 Overfull \hbox (1.92305pt too wide) in paragraph at lines 132--133
 []\OT1/cmr/m/n/12 The afore-men-tioned tools help dis-tributed ag-ile teams to 
 col-lab-o-rate and share project-
  []
 
-[32]) [33]
+[33]) [34]
 \openout2 = `taggy.aux'.
 
  (./taggy.tex
@@ -587,44 +587,44 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 3.
-[34
+[35
 
 
 
-] [35] [36] <workflow.png, id=776, 610.28pt x 433.62pt>
+] [36] [37] <workflow.png, id=787, 610.28pt x 433.62pt>
 File: workflow.png Graphic file (type png)
  <use workflow.png>
-[37] [38pdfTeX warning (ext4): destination with the same identifier (name{figur
+[38] [39pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.55 
-      <./workflow.png (PNG copy)>] [39]
-<im_intake.png, id=802, 425.59pt x 363.3575pt>
+      <./workflow.png (PNG copy)>] [40]
+<im_intake.png, id=813, 425.59pt x 363.3575pt>
 File: im_intake.png Graphic file (type png)
  <use im_intake.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40] [41pdfTeX warning (ext4): destination with the same identifier (name{figur
+[41] [42pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.87 \end{enumerate}
                      <./im_intake.png (PNG copy)>]
-<learn_evaluate.png, id=821, 376.40625pt x 220.825pt>
+<learn_evaluate.png, id=832, 376.40625pt x 220.825pt>
 File: learn_evaluate.png Graphic file (type png)
  <use learn_evaluate.png>
-[42pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
+[43pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.106 
        <./learn_evaluate.png (PNG copy)>]
-<CBR.png, id=828, 469.755pt x 206.7725pt>
+<CBR.png, id=839, 469.755pt x 206.7725pt>
 File: CBR.png Graphic file (type png)
  <use CBR.png>
 Overfull \hbox (17.25772pt too wide) in paragraph at lines 119--120
@@ -632,7 +632,7 @@ Overfull \hbox (17.25772pt too wide) in paragraph at lines 119--120
 low-ing the local-global principle[[]]
  []
 
-[43pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
+[44pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -673,26 +673,26 @@ Overfull \hbox (20.87741pt too wide) in paragraph at lines 126--139
  [][] 
  []
 
-[44pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}
+[45pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.143 
-      ] [45] [46] [47] [48] [49] [50]
-<taggy_user_story.png, id=891, 850.17625pt x 699.61375pt>
+      ] [46] [47] [48] [49] [50] [51]
+<taggy_user_story.png, id=903, 850.17625pt x 699.61375pt>
 File: taggy_user_story.png Graphic file (type png)
 
-<use taggy_user_story.png> <taggy_email.png, id=892, 839.135pt x 616.3025pt>
+<use taggy_user_story.png> <taggy_email.png, id=904, 839.135pt x 616.3025pt>
 File: taggy_email.png Graphic file (type png)
 
-<use taggy_email.png> [51] [52pdfTeX warning (ext4): destination with the same 
+<use taggy_email.png> [52] [53pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.3.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.288 \begin
-            {verbatim} <./taggy_user_story.png (PNG copy)>] [53pdfTeX warning (
+            {verbatim} <./taggy_user_story.png (PNG copy)>] [54pdfTeX warning (
 ext4): destination with the same identifier (name{figure.3.6}) has been already
  used, duplicate ignored
 
@@ -729,17 +729,17 @@ Overfull \hbox (54.66273pt too wide) in paragraph at lines 313--313
 _scores(global_scores)[] 
  []
 
-[54] [55] <architecture.png, id=922, 541.02126pt x 329.23pt>
+[55] [56] <architecture.png, id=933, 541.02126pt x 329.23pt>
 File: architecture.png Graphic file (type png)
 
-<use architecture.png> [56pdfTeX warning (ext4): destination with the same iden
+<use architecture.png> [57pdfTeX warning (ext4): destination with the same iden
 tifier (name{figure.3.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.338 			\item E
                 mail. The database also stores the subject and content of th...
- <./architecture.png (PNG copy)>] [57] [58]
+ <./architecture.png (PNG copy)>] [58] [59]
 Overfull \hbox (3.39432pt too wide) in paragraph at lines 373--373
 []\OT1/cmr/bx/n/12 Iteration| 
  []
@@ -789,7 +789,7 @@ Underfull \hbox (badness 6412) in paragraph at lines 384--384
 []\OT1/cmr/m/n/12 Not As-
  []
 
-[59pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}
+[60pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -800,7 +800,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 395--411
 
  []
 
-[60]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 420--420
 []\OT1/cmr/bx/n/12 Story
  []
@@ -855,22 +855,22 @@ Overfull \hbox (23.97147pt too wide) in paragraph at lines 418--429
  [][] 
  []
 
-[61pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
+[62pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.436 
-      ] <Implementation.png, id=963, 529.98pt x 323.2075pt>
+      ] <Implementation.png, id=974, 529.98pt x 323.2075pt>
 File: Implementation.png Graphic file (type png)
 
-<use Implementation.png> [62pdfTeX warning (ext4): destination with the same id
+<use Implementation.png> [63pdfTeX warning (ext4): destination with the same id
 entifier (name{figure.3.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.451 
-       <./Implementation.png (PNG copy)>] [63]) [64]
+       <./Implementation.png (PNG copy)>] [64]) [65]
 \openout2 = `quantitative_evaluation.aux'.
 
 
@@ -880,32 +880,32 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 4.
-<Evaluation.png, id=997, 582.175pt x 376.40625pt>
+<Evaluation.png, id=1008, 582.175pt x 376.40625pt>
 File: Evaluation.png Graphic file (type png)
  <use Evaluation.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65
+[66
 
 
 
-] [66pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+] [67pdfTeX warning (ext4): destination with the same identifier (name{figure.4
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.32 
-      <./Evaluation.png (PNG copy)>] [67]
+      <./Evaluation.png (PNG copy)>] [68]
 Overfull \hbox (2.34528pt too wide) in paragraph at lines 66--67
 \OT1/cmr/m/n/12 This data set was ob-tained from an on-line ag-ile project man-
 age-ment tool called ScrumPad.
  []
 
-[68] <scrumpad_message.png, id=1026, 479.7925pt x 278.03876pt>
+[69] <scrumpad_message.png, id=1038, 479.7925pt x 278.03876pt>
 File: scrumpad_message.png Graphic file (type png)
 
-<use scrumpad_message.png> [69pdfTeX warning (ext4): destination with the same 
+<use scrumpad_message.png> [70pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -992,16 +992,16 @@ Underfull \hbox (badness 1845) in paragraph at lines 99--99
 []\OT1/cmr/m/n/12 A project col-lab-o-ra-
  []
 
-[70pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}
+[71pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.108 G
        iven this data, the aforementioned evaluation approach was followed t...
-] <training.png, id=1038, 709.65125pt x 395.4775pt>
+] <training.png, id=1049, 709.65125pt x 395.4775pt>
 File: training.png Graphic file (type png)
- <use training.png> [71pdfTeX warning (ext4): destination with the same identif
+ <use training.png> [72pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1140,7 +1140,7 @@ Overfull \hbox (14.19778pt too wide) in paragraph at lines 134--151
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[72] [73pdfTeX warning (ext4): destination with the same identifier (name{table
+[73] [74pdfTeX warning (ext4): destination with the same identifier (name{table
 .4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1169,7 +1169,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--180
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[74]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 205--205
 []\OT1/cmr/bx/n/12 Team
  []
@@ -1192,19 +1192,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--209
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[75pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}
+[76pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.221 
-      ] [76pdfTeX warning (ext4): destination with the same identifier (name{ta
+      ] [77pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.4.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.231 
-      ]) [77]
+      ]) [78]
 \openout2 = `qualitative_evaluation.aux'.
 
  (./qualitative_evaluation.tex
@@ -1213,17 +1213,17 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 5.
-[78
+[79
 
 
 
-] [79pdfTeX warning (ext4): destination with the same identifier (name{table.5.
+] [80pdfTeX warning (ext4): destination with the same identifier (name{table.5.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.47 
-     ] [80] [81] [82] [83] [84]) [85]
+l.48 
+     ] [81] [82] [83] [84] [85]) [86]
 \openout2 = `discussion.aux'.
 
  (./discussion.tex
@@ -1232,11 +1232,11 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 6.
-[86
+[87
 
 
 
-] [87] [88] [89] [90]) [91]
+] [88] [89] [90] [91]) [92]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
@@ -1245,67 +1245,11 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 7.
-[92
+[93
 
 
 
-] [93] [94] [95] [96]) [97]
-\openout2 = `appendixa.aux'.
-
- (./appendixa.tex
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 2.
-
-Appendix A.
-<ethics.pdf, id=1193, 614.295pt x 790.955pt>
-File: ethics.pdf Graphic file (type pdf)
- <use ethics.pdf>) [98
-
-
-
-] [99pdfTeX warning (ext4): destination with the same identifier (name{figure.A
-.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.140 \include{appendixa}
-                          <./ethics.pdf>]
-\openout2 = `appendixb.aux'.
-
- (./appendixb.tex
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 2.
-
-Appendix B.
-[100
-
-
-
-] <richter.png, id=1209, 682.55pt x 633.36626pt>
-File: richter.png Graphic file (type png)
- <use richter.png>
-<frank.png, id=1210, 659.46375pt x 611.28375pt>
-File: frank.png Graphic file (type png)
- <use frank.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [101pdfTeX warning (ext4): destination with the same identifier (name{figure.
-B.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.141 \include{appendixb}
-                          <./richter.png (PNG copy)>] [102pdfTeX warning (ext4)
-: destination with the same identifier (name{figure.B.2}) has been already used
-, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.141 \include{appendixb}
-                          <./frank.png (PNG copy)>] (./ucalgthes1_root_0.bbl
+] [94] [95] [96] [97]) [98] (./ucalgthes1_root_0.bbl
 Bibliography
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
@@ -1313,7 +1257,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 j \OT1/cmr/m/n/12 ScrumPad.
  []
 
-[103
+[99
 
 
 ]
@@ -1365,7 +1309,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[104]
+[100]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -1374,17 +1318,17 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no Œ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ‡ in font cmr12!
- [105]
+ [101]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [106]
+ [102]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [107]
+ [103]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 
@@ -1393,7 +1337,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--310
 t - JIRA.
  []
 
-[108]
+[104]
 Underfull \hbox (badness 10000) in paragraph at lines 316--320
 []\OT1/cmr/m/n/12 Fog Creek Soft-ware and Happy Cog Stu-dios http://www. hap-py
 cog.com.
@@ -1411,7 +1355,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--332
 se-camp.
  []
 
-[109]
+[105]
 Underfull \hbox (badness 10000) in paragraph at lines 377--380
 []\OT1/cmr/m/n/12 The twit-ter en-gi-neer-ing blog: Twit-ter's new search ar-ch
 i-tec-ture.
@@ -1421,14 +1365,70 @@ Missing character: There is no Ï in font cmr12!
 Missing character: There is no ‡ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no © in font cmr12!
-[110]) [111] (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux)
-(./taggy.aux) (./quantitative_evaluation.aux) (./qualitative_evaluation.aux)
+[106]) [107]
+\openout2 = `appendixa.aux'.
+
+ (./appendixa.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 2.
+
+Appendix A.
+<ethics.pdf, id=1243, 614.295pt x 790.955pt>
+File: ethics.pdf Graphic file (type pdf)
+ <use ethics.pdf>) [108
+
+
+] [109pdfTeX warning (ext4): destination with the same identifier (name{figure.
+A.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.143 \include{appendixa}
+                          <./ethics.pdf>]
+\openout2 = `appendixb.aux'.
+
+ (./appendixb.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 2.
+
+Appendix B.
+[110
+
+
+
+] <richter.png, id=1258, 682.55pt x 633.36626pt>
+File: richter.png Graphic file (type png)
+ <use richter.png>
+<frank.png, id=1259, 659.46375pt x 611.28375pt>
+File: frank.png Graphic file (type png)
+ <use frank.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [111pdfTeX warning (ext4): destination with the same identifier (name{figure.
+B.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 \include{appendixb}
+                          <./richter.png (PNG copy)>] [112pdfTeX warning (ext4)
+: destination with the same identifier (name{figure.B.2}) has been already used
+, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 \include{appendixb}
+                          <./frank.png (PNG copy)>] (./ucalgthes1_root_0.aux
+(./introduction.aux) (./related_work.aux) (./taggy.aux)
+(./quantitative_evaluation.aux) (./qualitative_evaluation.aux)
 (./discussion.aux) (./conclusion.aux) (./appendixa.aux) (./appendixb.aux)) ) 
 Here is how much of TeX's memory you used:
- 6100 strings out of 493848
- 86247 string characters out of 3149207
- 170915 words of memory out of 3000000
- 8816 multiletter control sequences out of 15000+200000
+ 6102 strings out of 493848
+ 86285 string characters out of 3149207
+ 171012 words of memory out of 3000000
+ 8817 multiletter control sequences out of 15000+200000
  8777 words of font info for 32 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,15n,43p,2231b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1443,9 +1443,9 @@ texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
 live/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ucalgthes1_root_0.pdf (121 pages, 2338770 bytes).
+Output written on ucalgthes1_root_0.pdf (122 pages, 2340935 bytes).
 PDF statistics:
- 1374 PDF objects out of 1440 (max. 8388607)
- 380 named destinations out of 1000 (max. 500000)
+ 1385 PDF objects out of 1440 (max. 8388607)
+ 381 named destinations out of 1000 (max. 500000)
  620 words of extra memory for PDF output out of 10000 (max. 10000000)
 
