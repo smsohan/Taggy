@@ -7,8 +7,8 @@
 \contentsline {chapter}{Epigraph}{ix}{chapter*.10}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}User Stories - An Overview}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Distributed Agile Projects}{6}{section.1.2}
-\contentsline {section}{\numberline {1.3}Research Motivation}{8}{section.1.3}
+\contentsline {section}{\numberline {1.2}Distributed Agile Projects}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Research Motivation}{7}{section.1.3}
 \contentsline {section}{\numberline {1.4}Research Problem}{11}{section.1.4}
 \contentsline {section}{\numberline {1.5}Research Goals}{14}{section.1.5}
 \contentsline {section}{\numberline {1.6}Key Contributions}{15}{section.1.6}
@@ -63,4 +63,5 @@
 \contentsline {subsection}{\numberline {7.2.1}Extensions with New Features}{95}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Improvements through Evaluation}{96}{subsection.7.2.2}
 \contentsline {chapter}{\numberline {A}Ethics Approval}{98}{appendix.A}
-\contentsline {chapter}{Bibliography}{100}{figure.A.1}
+\contentsline {chapter}{\numberline {B}Co-author Permission}{100}{appendix.B}
+\contentsline {chapter}{Bibliography}{103}{figure.B.2}

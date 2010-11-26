@@ -7,47 +7,48 @@ A level-1 auxiliary file: quantitative_evaluation.aux
 A level-1 auxiliary file: qualitative_evaluation.aux
 A level-1 auxiliary file: discussion.aux
 A level-1 auxiliary file: conclusion.aux
-A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendixa.aux
+A level-1 auxiliary file: appendixb.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-You've used 76 entries,
+You've used 77 entries,
             1791 wiz_defined-function locations,
-            811 strings with 14734 characters,
-and the built_in function-call counts, 16820 in all, are:
-= -- 1601
-> -- 493
-< -- 38
-+ -- 204
-- -- 128
-* -- 834
-:= -- 2171
-add.period$ -- 217
-call.type$ -- 76
-change.case$ -- 67
+            818 strings with 15078 characters,
+and the built_in function-call counts, 17356 in all, are:
+= -- 1643
+> -- 533
+< -- 40
++ -- 217
+- -- 140
+* -- 881
+:= -- 2254
+add.period$ -- 222
+call.type$ -- 77
+change.case$ -- 68
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 882
-empty$ -- 1913
-format.name$ -- 128
-if$ -- 4141
+cite$ -- 77
+duplicate$ -- 905
+empty$ -- 1953
+format.name$ -- 140
+if$ -- 4264
 int.to.chr$ -- 0
-int.to.str$ -- 76
-missing$ -- 53
-newline$ -- 353
-num.names$ -- 46
-pop$ -- 394
+int.to.str$ -- 77
+missing$ -- 54
+newline$ -- 359
+num.names$ -- 49
+pop$ -- 398
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 621
+skip$ -- 635
 stack$ -- 0
-substring$ -- 970
-swap$ -- 330
-text.length$ -- 38
+substring$ -- 998
+swap$ -- 342
+text.length$ -- 40
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 136
-width$ -- 78
-write$ -- 755
+while$ -- 140
+width$ -- 79
+write$ -- 770

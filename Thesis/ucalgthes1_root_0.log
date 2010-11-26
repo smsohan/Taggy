@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  24 NOV 2010 11:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  26 NOV 2010 10:49
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -275,7 +275,7 @@ Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
 )
 (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux) (./taggy.aux
 ) (./quantitative_evaluation.aux) (./qualitative_evaluation.aux)
-(./discussion.aux) (./conclusion.aux) (./appendix1.aux))
+(./discussion.aux) (./conclusion.aux) (./appendixa.aux) (./appendixb.aux))
 \openout1 = `ucalgthes1_root_0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -439,8 +439,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 
-      [1
+l.8 \begin{quote}
+                  [1
 
 
 
@@ -451,14 +451,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[3] [4] <ScrumWall.jpg, id=465, 120.45pt x 69.861pt>
+[3] [4] <ScrumWall.jpg, id=476, 120.45pt x 69.861pt>
 File: ScrumWall.jpg Graphic file (type jpg)
  <use ScrumWall.jpg>
-<ScrumPadWall.png, id=467, 739.76375pt x 557.08125pt>
+<ScrumPadWall.png, id=478, 739.76375pt x 557.08125pt>
 File: ScrumPadWall.png Graphic file (type png)
  <use ScrumPadWall.png>
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
@@ -466,32 +466,33 @@ File: ScrumPadWall.png Graphic file (type png)
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.69 
-      <./ScrumWall.jpg>] [6pdfTeX warning (ext4): destination with the same ide
-ntifier (name{figure.1.2}) has been already used, duplicate ignored
+l.72 	\item D
+             istributed agile development - customers are distributed and on...
+ <./ScrumWall.jpg>] [6pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.1.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.76 \end{quote}
-                 <./ScrumPadWall.png (PNG copy)>]
-<Distributed.png, id=483, 800.9925pt x 456.70625pt>
+l.77 
+      <./ScrumPadWall.png (PNG copy)>]
+<Distributed.png, id=502, 800.9925pt x 456.70625pt>
 File: Distributed.png Graphic file (type png)
  <use Distributed.png>
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
-) has been already used, duplicate ignored
+[7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.90 
-      <./Distributed.png (PNG copy)>] [8] [9] [10] [11] [12] [13]
-<Jigsaw.jpg, id=543, 1300.86pt x 971.63pt>
+l.98 
+      <./Distributed.png (PNG copy)>] [9] [10] [11] [12] [13]
+<Jigsaw.jpg, id=554, 1300.86pt x 971.63pt>
 File: Jigsaw.jpg Graphic file (type jpg)
  <use Jigsaw.jpg> [14pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.1.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.179 
+l.176 
        <./Jigsaw.jpg>]) [15]
 \openout2 = `related_work.aux'.
 
@@ -515,7 +516,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[17] <Layman.png, id=589, 845.1575pt x 683.55376pt>
+[17] <Layman.png, id=600, 845.1575pt x 683.55376pt>
 File: Layman.png Graphic file (type png)
  <use Layman.png>
 
@@ -533,7 +534,7 @@ Overfull \hbox (1.00917pt too wide) in paragraph at lines 58--59
  un-der-stand a re-quire-ment based
  []
 
-[21] <Wiki.png, id=618, 878.28125pt x 508.90125pt>
+[21] <Wiki.png, id=629, 878.28125pt x 508.90125pt>
 File: Wiki.png Graphic file (type png)
  <use Wiki.png> [22] [23pdfTeX warning (ext4): destination with the same identi
 fier (name{figure.2.2}) has been already used, duplicate ignored
@@ -542,10 +543,10 @@ fier (name{figure.2.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.75 
       <./Wiki.png (PNG copy)>] [24] [25] [26]
-<Mylyn-comment.png, id=661, 616.3025pt x 790.955pt>
+<Mylyn-comment.png, id=672, 616.3025pt x 790.955pt>
 File: Mylyn-comment.png Graphic file (type png)
  <use Mylyn-comment.png>
-<Mylyn-context.png, id=668, 588.1975pt x 493.845pt>
+<Mylyn-context.png, id=679, 588.1975pt x 493.845pt>
 File: Mylyn-context.png Graphic file (type png)
  <use Mylyn-context.png>
 [27] [28pdfTeX warning (ext4): destination with the same identifier (name{figur
@@ -561,7 +562,7 @@ me identifier (name{figure.2.4}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.111 
        <./Mylyn-context.png>]
-<Scrumpad.png, id=687, 974.64125pt x 681.54625pt>
+<Scrumpad.png, id=698, 974.64125pt x 681.54625pt>
 File: Scrumpad.png Graphic file (type png)
  <use Scrumpad.png> [30
 
@@ -590,7 +591,7 @@ Chapter 3.
 
 
 
-] [35] [36] <workflow.png, id=765, 610.28pt x 433.62pt>
+] [35] [36] <workflow.png, id=776, 610.28pt x 433.62pt>
 File: workflow.png Graphic file (type png)
  <use workflow.png>
 [37] [38pdfTeX warning (ext4): destination with the same identifier (name{figur
@@ -600,7 +601,7 @@ e.3.1}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.55 
       <./workflow.png (PNG copy)>] [39]
-<im_intake.png, id=791, 425.59pt x 363.3575pt>
+<im_intake.png, id=802, 425.59pt x 363.3575pt>
 File: im_intake.png Graphic file (type png)
  <use im_intake.png>
 
@@ -613,7 +614,7 @@ e.3.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.87 \end{enumerate}
                      <./im_intake.png (PNG copy)>]
-<learn_evaluate.png, id=810, 376.40625pt x 220.825pt>
+<learn_evaluate.png, id=821, 376.40625pt x 220.825pt>
 File: learn_evaluate.png Graphic file (type png)
  <use learn_evaluate.png>
 [42pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
@@ -623,7 +624,7 @@ File: learn_evaluate.png Graphic file (type png)
                                                   \fi \fi 
 l.106 
        <./learn_evaluate.png (PNG copy)>]
-<CBR.png, id=817, 469.755pt x 206.7725pt>
+<CBR.png, id=828, 469.755pt x 206.7725pt>
 File: CBR.png Graphic file (type png)
  <use CBR.png>
 Overfull \hbox (17.25772pt too wide) in paragraph at lines 119--120
@@ -679,10 +680,10 @@ Overfull \hbox (20.87741pt too wide) in paragraph at lines 126--139
                                                   \fi \fi 
 l.143 
       ] [45] [46] [47] [48] [49] [50]
-<taggy_user_story.png, id=880, 850.17625pt x 699.61375pt>
+<taggy_user_story.png, id=891, 850.17625pt x 699.61375pt>
 File: taggy_user_story.png Graphic file (type png)
 
-<use taggy_user_story.png> <taggy_email.png, id=881, 839.135pt x 616.3025pt>
+<use taggy_user_story.png> <taggy_email.png, id=892, 839.135pt x 616.3025pt>
 File: taggy_email.png Graphic file (type png)
 
 <use taggy_email.png> [51] [52pdfTeX warning (ext4): destination with the same 
@@ -728,7 +729,7 @@ Overfull \hbox (54.66273pt too wide) in paragraph at lines 313--313
 _scores(global_scores)[] 
  []
 
-[54] [55] <architecture.png, id=911, 541.02126pt x 329.23pt>
+[54] [55] <architecture.png, id=922, 541.02126pt x 329.23pt>
 File: architecture.png Graphic file (type png)
 
 <use architecture.png> [56pdfTeX warning (ext4): destination with the same iden
@@ -860,7 +861,7 @@ Overfull \hbox (23.97147pt too wide) in paragraph at lines 418--429
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.436 
-      ] <Implementation.png, id=952, 529.98pt x 323.2075pt>
+      ] <Implementation.png, id=963, 529.98pt x 323.2075pt>
 File: Implementation.png Graphic file (type png)
 
 <use Implementation.png> [62pdfTeX warning (ext4): destination with the same id
@@ -879,7 +880,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 4.
-<Evaluation.png, id=986, 582.175pt x 376.40625pt>
+<Evaluation.png, id=997, 582.175pt x 376.40625pt>
 File: Evaluation.png Graphic file (type png)
  <use Evaluation.png>
 
@@ -901,7 +902,7 @@ Overfull \hbox (2.34528pt too wide) in paragraph at lines 66--67
 age-ment tool called ScrumPad.
  []
 
-[68] <scrumpad_message.png, id=1015, 479.7925pt x 278.03876pt>
+[68] <scrumpad_message.png, id=1026, 479.7925pt x 278.03876pt>
 File: scrumpad_message.png Graphic file (type png)
 
 <use scrumpad_message.png> [69pdfTeX warning (ext4): destination with the same 
@@ -998,7 +999,7 @@ Underfull \hbox (badness 1845) in paragraph at lines 99--99
                                                   \fi \fi 
 l.108 G
        iven this data, the aforementioned evaluation approach was followed t...
-] <training.png, id=1027, 709.65125pt x 395.4775pt>
+] <training.png, id=1038, 709.65125pt x 395.4775pt>
 File: training.png Graphic file (type png)
  <use training.png> [71pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.4.3}) has been already used, duplicate ignored
@@ -1249,15 +1250,15 @@ Chapter 7.
 
 
 ] [93] [94] [95] [96]) [97]
-\openout2 = `appendix1.aux'.
+\openout2 = `appendixa.aux'.
 
- (./appendix1.tex
+ (./appendixa.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Appendix A.
-<ethics.pdf, id=1182, 614.295pt x 790.955pt>
+<ethics.pdf, id=1193, 614.295pt x 790.955pt>
 File: ethics.pdf Graphic file (type pdf)
  <use ethics.pdf>) [98
 
@@ -1268,8 +1269,43 @@ File: ethics.pdf Graphic file (type pdf)
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.140 \include{appendix1}
-                          <./ethics.pdf>] (./ucalgthes1_root_0.bbl
+l.140 \include{appendixa}
+                          <./ethics.pdf>]
+\openout2 = `appendixb.aux'.
+
+ (./appendixb.tex
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 2.
+
+Appendix B.
+[100
+
+
+
+] <richter.png, id=1209, 682.55pt x 633.36626pt>
+File: richter.png Graphic file (type png)
+ <use richter.png>
+<frank.png, id=1210, 659.46375pt x 611.28375pt>
+File: frank.png Graphic file (type png)
+ <use frank.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [101pdfTeX warning (ext4): destination with the same identifier (name{figure.
+B.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.141 \include{appendixb}
+                          <./richter.png (PNG copy)>] [102pdfTeX warning (ext4)
+: destination with the same identifier (name{figure.B.2}) has been already used
+, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.141 \include{appendixb}
+                          <./frank.png (PNG copy)>] (./ucalgthes1_root_0.bbl
 Bibliography
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
@@ -1277,21 +1313,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 j \OT1/cmr/m/n/12 ScrumPad.
  []
 
-[100
+[103
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 95--99
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 []\OT1/cmr/m/n/12 Agile project man-age-ment tool - Ver-sionOne.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--99
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 \OT1/cmr/m/n/12 http://pm.versionone.com/Trial[]AgileProjects.html?c-aws=p&gr-v
 ersionone&v-
  []
 
-[101]
+./ucalgthes1_root_0.bbl:99: Missing $ inserted.
+<inserted text> 
+                $
+l.99 \newblock 10.1007/978-3-642-01853-4_
+                                         59.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ucalgthes1_root_0.bbl:100: Missing $ inserted.
+<inserted text> 
+                $
+l.100 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ucalgthes1_root_0.bbl:100: Missing } inserted.
+<inserted text> 
+                }
+l.100 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ucalgthes1_root_0.bbl:100: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.100 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[104]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -1300,56 +1374,45 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no Œ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ‡ in font cmr12!
- [102]
+ [105]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [103]
+ [106]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [104]
+ [107]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
-[]\OT1/cmr/m/n/12 IBM soft-ware - ra-tio-nal team con-cert.  http://www-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--299
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
 []\OT1/cmr/m/n/12 Bug, is-sue and project track-ing for soft-ware de-vel-op-men
 t - JIRA.
  []
 
-[105]
-Underfull \hbox (badness 3471) in paragraph at lines 305--309
-\OT1/cmr/m/n/12 Bugz - bug & is-sue track-ing, project man-age-ment, help desk 
-soft-ware.
+[108]
+Underfull \hbox (badness 10000) in paragraph at lines 316--320
+[]\OT1/cmr/m/n/12 Fog Creek Soft-ware and Happy Cog Stu-dios http://www. hap-py
+cog.com.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--321
+Underfull \hbox (badness 4429) in paragraph at lines 316--320
+\OT1/cmr/m/n/12 Fog-Bugz - bug & is-sue track-ing, project man-age-ment, help d
+esk soft-ware.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--332
 []\OT1/cmr/m/n/12 Project man-age-ment soft-ware, on-line col-lab-o-ra-tion: Ba
 se-camp.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--334
-[]\OT1/cmr/m/n/12 Secure source code host-ing and col-lab-o-ra-tive de-vel-op-m
-ent - GitHub.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--350
-[]\OT1/cmr/m/n/12 Team foun-da-tion server 2010.  http://msdn.microsoft.com/en-
-
- []
-
-[106]
-Underfull \hbox (badness 10000) in paragraph at lines 366--369
+[109]
+Underfull \hbox (badness 10000) in paragraph at lines 377--380
 []\OT1/cmr/m/n/12 The twit-ter en-gi-neer-ing blog: Twit-ter's new search ar-ch
 i-tec-ture.
  []
@@ -1358,31 +1421,31 @@ Missing character: There is no Ï in font cmr12!
 Missing character: There is no ‡ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no © in font cmr12!
-[107]) [108] (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux)
+[110]) [111] (./ucalgthes1_root_0.aux (./introduction.aux) (./related_work.aux)
 (./taggy.aux) (./quantitative_evaluation.aux) (./qualitative_evaluation.aux)
-(./discussion.aux) (./conclusion.aux) (./appendix1.aux)) ) 
+(./discussion.aux) (./conclusion.aux) (./appendixa.aux) (./appendixb.aux)) ) 
 Here is how much of TeX's memory you used:
- 6071 strings out of 493848
- 85891 string characters out of 3149207
- 170435 words of memory out of 3000000
- 8803 multiletter control sequences out of 15000+200000
+ 6100 strings out of 493848
+ 86247 string characters out of 3149207
+ 170915 words of memory out of 3000000
+ 8816 multiletter control sequences out of 15000+200000
  8777 words of font info for 32 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,15n,43p,2231b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2
-009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/20
-09/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/200
-9/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2009
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2009/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2009/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2009/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2009/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2009/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ucalgthes1_root_0.pdf (118 pages, 1863983 bytes).
+</u
+sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
+local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
+texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
+ve/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on ucalgthes1_root_0.pdf (121 pages, 2338770 bytes).
 PDF statistics:
- 1347 PDF objects out of 1440 (max. 8388607)
- 373 named destinations out of 1000 (max. 500000)
- 602 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1374 PDF objects out of 1440 (max. 8388607)
+ 380 named destinations out of 1000 (max. 500000)
+ 620 words of extra memory for PDF output out of 10000 (max. 10000000)
 

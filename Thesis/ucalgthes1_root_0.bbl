@@ -25,19 +25,19 @@ Eclipse mylyn open source project.
 An agile / scrum project management tool {\textbar} {ScrumPad}.
 \newblock http://www.scrumpad.com/.
 
-\bibitem{am}
-Manifesto for agile software development.
-\newblock http://agilemanifesto.org/.
+\bibitem{scrum}
+Ken Schwaber.
+\newblock {\em Agile software development with Scrum}.
+\newblock Prentice Hall, Upper Saddle River {NJ}, 2002.
 
 \bibitem{xp}
 Kent Beck.
 \newblock {\em Extreme programming {eXplained} : embrace change}.
 \newblock {Addison-Wesley}, Reading {MA}, 2000.
 
-\bibitem{scrum}
-Ken Schwaber.
-\newblock {\em Agile software development with Scrum}.
-\newblock Prentice Hall, Upper Saddle River {NJ}, 2002.
+\bibitem{am}
+Manifesto for agile software development.
+\newblock http://agilemanifesto.org/.
 
 \bibitem{xp_up}
 Scott Ambler.
@@ -73,6 +73,31 @@ Hubert Baumeister, Michele Marchesi, Mike Holcombe, Keith Braithwaite, and Tim
   Engineering}, volume 3556 of {\em Lecture Notes in Computer Science}, pages
   180--188. Springer Berlin / Heidelberg, 2005.
 
+\bibitem{version_one}
+Agile project management tool - {VersionOne}.
+\newblock
+  {http://pm.versionone.com/Trial\_AgileProjects.html?c-aws=p\&gr-versionone\&%
+v-004\&gclid=CIbC9bjhy6QCFQwDbAodgnTfEQ}.
+
+\bibitem{xplanner}
+{XPlanner} home.
+\newblock http://www.xplanner.org/.
+
+\bibitem{trac}
+The trac project.
+\newblock http://trac.edgewall.org/.
+
+\bibitem{adpt}
+Xin Wang, Yaser Ghanam, Shelly Park, and Frank Maurer.
+\newblock Using digital tabletops to support distributed agile planning
+  meetings.
+\newblock In Will Aalst, John Mylopoulos, Norman~M. Sadeh, Michael~J. Shaw,
+  Clemens Szyperski, Pekka Abrahamsson, Michele Marchesi, and Frank Maurer,
+  editors, {\em Agile Processes in Software Engineering and Extreme
+  Programming}, volume~31 of {\em Lecture Notes in Business Information
+  Processing}, pages 261--262. Springer Berlin Heidelberg, 2009.
+\newblock 10.1007/978-3-642-01853-4_59.
+
 \bibitem{practical_considerations}
 Jane~M. Robarts.
 \newblock Practical considerations for distributed agile projects.
@@ -90,20 +115,6 @@ Brian~Scott Drummond and John Francis~{"JF"} Unson.
 \newblock Yahoo! distributed agile: Notes from the world over.
 \newblock In {\em {AGILE} Conference}, volume~0, pages 315--321, Los Alamitos,
   {CA,} {USA}, 2008. {IEEE} Computer Society.
-
-\bibitem{version_one}
-Agile project management tool - {VersionOne}.
-\newblock
-  {http://pm.versionone.com/Trial\_AgileProjects.html?c-aws=p\&gr-versionone\&%
-v-004\&gclid=CIbC9bjhy6QCFQwDbAodgnTfEQ}.
-
-\bibitem{xplanner}
-{XPlanner} home.
-\newblock http://www.xplanner.org/.
-
-\bibitem{trac}
-The trac project.
-\newblock http://trac.edgewall.org/.
 
 \bibitem{collaboration_in}
 Andrea~De Lucia, Filomena Ferrucci, and Filippo Lanubile.
@@ -372,6 +383,10 @@ Richard Sutton.
 \newblock {\em Reinforcement learning : an introduction}.
 \newblock {MIT} Press, Cambridge Mass., 1998.
 
+\bibitem{lucene}
+Apache lucene - overview.
+\newblock http://lucene.apache.org/java/docs/index.html.
+
 \bibitem{ruby}
 Ruby programming language.
 \newblock http://www.ruby-lang.org/en/.
@@ -379,10 +394,6 @@ Ruby programming language.
 \bibitem{ruby_on_rails}
 Ruby on rails.
 \newblock http://rubyonrails.org/.
-
-\bibitem{lucene}
-Apache lucene - overview.
-\newblock http://lucene.apache.org/java/docs/index.html.
 
 \bibitem{sql_server}
 Microsoft sql server.
