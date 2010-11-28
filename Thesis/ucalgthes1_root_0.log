@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  26 NOV 2010 15:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  28 NOV 2010 12:09
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -466,8 +466,8 @@ File: ScrumPadWall.png Graphic file (type png)
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.72 	\item D
-             istributed agile development - customers are distributed and on...
+l.71 	\item A
+             gile dispersed development - developers are spread over differe...
  <./ScrumWall.jpg>] [6pdfTeX warning (ext4): destination with the same identifi
 er (name{figure.1.2}) has been already used, duplicate ignored
 
@@ -680,112 +680,116 @@ Overfull \hbox (20.87741pt too wide) in paragraph at lines 126--139
                                                   \fi \fi 
 l.143 
       ] [46] [47] [48] [49] [50] [51]
-<taggy_user_story.png, id=903, 850.17625pt x 699.61375pt>
+<architecture.png, id=906, 541.02126pt x 329.23pt>
+File: architecture.png Graphic file (type png)
+ <use architecture.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[52] [53pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.3.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.285 
+       <./architecture.png (PNG copy)>] [54]
+<taggy_user_story.png, id=926, 850.17625pt x 699.61375pt>
 File: taggy_user_story.png Graphic file (type png)
 
-<use taggy_user_story.png> <taggy_email.png, id=904, 839.135pt x 616.3025pt>
+<use taggy_user_story.png> [55]
+<taggy_email.png, id=934, 839.135pt x 616.3025pt>
 File: taggy_email.png Graphic file (type png)
-
-<use taggy_email.png> [52] [53pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.3.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.288 \begin
-            {verbatim} <./taggy_user_story.png (PNG copy)>] [54pdfTeX warning (
-ext4): destination with the same identifier (name{figure.3.6}) has been already
- used, duplicate ignored
+ <use taggy_email.png>
+[56pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.288 \begin
+l.323 
+       <./taggy_user_story.png (PNG copy)>] [57pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.3.7}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.325 \begin
             {verbatim} <./taggy_email.png (PNG copy)>]
-Overfull \hbox (11.43771pt too wide) in paragraph at lines 313--313
+Overfull \hbox (11.43771pt too wide) in paragraph at lines 350--350
 []    \OT1/cmtt/m/n/12 temporal_scores = find_temporal_scores(nearby_user_stori
 es, email.date)[] 
  []
 
 
-Overfull \hbox (17.61272pt too wide) in paragraph at lines 313--313
+Overfull \hbox (17.61272pt too wide) in paragraph at lines 350--350
 []    \OT1/cmtt/m/n/12 people_scores  = find_temporal_scores(nearby_user_storie
 s, email.people)[] 
  []
 
 
-Overfull \hbox (23.78772pt too wide) in paragraph at lines 313--313
+Overfull \hbox (23.78772pt too wide) in paragraph at lines 350--350
 []    \OT1/cmtt/m/n/12 subject_scores  = find_subject_scores(nearby_user_storie
 s, email.subject)[] 
  []
 
 
-Overfull \hbox (17.61272pt too wide) in paragraph at lines 313--313
+Overfull \hbox (17.61272pt too wide) in paragraph at lines 350--350
 []    \OT1/cmtt/m/n/12 global_scores = compute_global_scores(relative_weights, 
 temporal_scores,[] 
  []
 
 
-Overfull \hbox (54.66273pt too wide) in paragraph at lines 313--313
+Overfull \hbox (54.66273pt too wide) in paragraph at lines 350--350
 []    \OT1/cmtt/m/n/12 global_scores_above_threshold =  discard_under_threshold
 _scores(global_scores)[] 
  []
 
-[55] [56] <architecture.png, id=933, 541.02126pt x 329.23pt>
-File: architecture.png Graphic file (type png)
-
-<use architecture.png> [57pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.3.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.338 			\item E
-                mail. The database also stores the subject and content of th...
- <./architecture.png (PNG copy)>] [58] [59]
-Overfull \hbox (3.39432pt too wide) in paragraph at lines 373--373
+[58] [59]
+Overfull \hbox (3.39432pt too wide) in paragraph at lines 375--375
 []\OT1/cmr/bx/n/12 Iteration| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--373
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
 []\OT1/cmr/bx/n/12 Cust-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--373
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
 []\OT1/cmr/bx/n/12 Deve-
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 375--375
+Underfull \hbox (badness 1546) in paragraph at lines 377--377
 []\OT1/cmr/m/n/12 #1, Dec
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--375
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
 \OT1/cmr/m/n/12 14-25,
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 378--378
+Underfull \hbox (badness 1546) in paragraph at lines 380--380
 []\OT1/cmr/m/n/12 #1, Dec
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--378
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
 \OT1/cmr/m/n/12 14-25,
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 382--382
+Underfull \hbox (badness 1546) in paragraph at lines 384--384
 []\OT1/cmr/m/n/12 #2, Dec
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 384--384
 \OT1/cmr/m/n/12 Jan 08,
  []
 
 
-Underfull \hbox (badness 6412) in paragraph at lines 384--384
+Underfull \hbox (badness 6412) in paragraph at lines 386--386
 []\OT1/cmr/m/n/12 Not As-
  []
 
@@ -794,83 +798,84 @@ Underfull \hbox (badness 6412) in paragraph at lines 384--384
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.391 
-      ]
-Underfull \hbox (badness 10000) in paragraph at lines 395--411
+l.394 N
+       ow, developer D1 needs to get a clarification from the customer C1 wh...
+]
+Underfull \hbox (badness 10000) in paragraph at lines 397--413
 
  []
 
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 []\OT1/cmr/bx/n/12 Story
  []
 
 
-Overfull \hbox (2.11946pt too wide) in paragraph at lines 420--420
+Overfull \hbox (2.11946pt too wide) in paragraph at lines 422--422
 []\OT1/cmr/bx/n/12 Tempo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 \OT1/cmr/bx/n/12 ral
  []
 
 
-Overfull \hbox (10.65536pt too wide) in paragraph at lines 420--420
+Overfull \hbox (10.65536pt too wide) in paragraph at lines 422--422
 []\OT1/cmr/bx/n/12 Tempo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 \OT1/cmr/bx/n/12 ral.
  []
 
 
-Overfull \hbox (5.02344pt too wide) in paragraph at lines 420--420
+Overfull \hbox (5.02344pt too wide) in paragraph at lines 422--422
 []\OT1/cmr/bx/n/12 People
  []
 
 
-Overfull \hbox (5.02344pt too wide) in paragraph at lines 420--420
+Overfull \hbox (5.02344pt too wide) in paragraph at lines 422--422
 []\OT1/cmr/bx/n/12 People
  []
 
 
-Overfull \hbox (4.95103pt too wide) in paragraph at lines 420--420
+Overfull \hbox (4.95103pt too wide) in paragraph at lines 422--422
 []\OT1/cmr/bx/n/12 Subject
  []
 
 
-Overfull \hbox (4.95103pt too wide) in paragraph at lines 420--420
+Overfull \hbox (4.95103pt too wide) in paragraph at lines 422--422
 []\OT1/cmr/bx/n/12 Subject
  []
 
 
-Overfull \hbox (4.78038pt too wide) in paragraph at lines 420--421
+Overfull \hbox (4.78038pt too wide) in paragraph at lines 422--423
 []\OT1/cmr/bx/n/12 Global
  []
 
 
-Overfull \hbox (23.97147pt too wide) in paragraph at lines 418--429
+Overfull \hbox (23.97147pt too wide) in paragraph at lines 420--431
  [][] 
  []
 
+<Implementation.png, id=971, 529.98pt x 323.2075pt>
+File: Implementation.png Graphic file (type png)
+ <use Implementation.png>
 [62pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.436 
-      ] <Implementation.png, id=974, 529.98pt x 323.2075pt>
-File: Implementation.png Graphic file (type png)
-
-<use Implementation.png> [63pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.3.8}) has been already used, duplicate ignored
+l.447 \end{figure*}
+                   ] [63pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.3.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.451 
-       <./Implementation.png (PNG copy)>] [64]) [65]
+l.453 
+       <./Implementation.png (PNG copy)>]) [64] [65]
 \openout2 = `quantitative_evaluation.aux'.
 
 
@@ -880,7 +885,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Chapter 4.
-<Evaluation.png, id=1008, 582.175pt x 376.40625pt>
+<Evaluation.png, id=1009, 582.175pt x 376.40625pt>
 File: Evaluation.png Graphic file (type png)
  <use Evaluation.png>
 
@@ -902,7 +907,7 @@ Overfull \hbox (2.34528pt too wide) in paragraph at lines 66--67
 age-ment tool called ScrumPad.
  []
 
-[69] <scrumpad_message.png, id=1038, 479.7925pt x 278.03876pt>
+[69] <scrumpad_message.png, id=1039, 479.7925pt x 278.03876pt>
 File: scrumpad_message.png Graphic file (type png)
 
 <use scrumpad_message.png> [70pdfTeX warning (ext4): destination with the same 
@@ -999,7 +1004,7 @@ Underfull \hbox (badness 1845) in paragraph at lines 99--99
                                                   \fi \fi 
 l.108 G
        iven this data, the aforementioned evaluation approach was followed t...
-] <training.png, id=1049, 709.65125pt x 395.4775pt>
+] <training.png, id=1050, 709.65125pt x 395.4775pt>
 File: training.png Graphic file (type png)
  <use training.png> [72pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.4.3}) has been already used, duplicate ignored
@@ -1165,9 +1170,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--180
 Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []\OT1/cmr/bx/n/12 Itera-
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [75]
 Underfull \hbox (badness 10000) in paragraph at lines 205--205
@@ -1374,7 +1376,7 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 2.
 
 Appendix A.
-<ethics.pdf, id=1243, 614.295pt x 790.955pt>
+<ethics.pdf, id=1244, 614.295pt x 790.955pt>
 File: ethics.pdf Graphic file (type pdf)
  <use ethics.pdf>) [108
 
@@ -1398,10 +1400,10 @@ Appendix B.
 
 
 
-] <richter.png, id=1258, 682.55pt x 633.36626pt>
+] <richter.png, id=1259, 682.55pt x 633.36626pt>
 File: richter.png Graphic file (type png)
  <use richter.png>
-<frank.png, id=1259, 659.46375pt x 611.28375pt>
+<frank.png, id=1260, 659.46375pt x 611.28375pt>
 File: frank.png Graphic file (type png)
  <use frank.png>
 
@@ -1427,11 +1429,11 @@ l.144 \include{appendixb}
 Here is how much of TeX's memory you used:
  6102 strings out of 493848
  86285 string characters out of 3149207
- 171012 words of memory out of 3000000
+ 172015 words of memory out of 3000000
  8817 multiletter control sequences out of 15000+200000
  8777 words of font info for 32 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,15n,43p,2231b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,15n,43p,2258b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
 </u
 sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
@@ -1443,9 +1445,9 @@ texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
 live/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ucalgthes1_root_0.pdf (122 pages, 2340935 bytes).
+Output written on ucalgthes1_root_0.pdf (122 pages, 2341055 bytes).
 PDF statistics:
- 1385 PDF objects out of 1440 (max. 8388607)
+ 1386 PDF objects out of 1440 (max. 8388607)
  381 named destinations out of 1000 (max. 500000)
  620 words of extra memory for PDF output out of 10000 (max. 10000000)
 

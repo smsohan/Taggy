@@ -27,9 +27,9 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{Local-Global Principle}{section.3.4}
 \BOOKMARK [2][-]{subsection.3.4.2}{Similarity Function}{section.3.4}
 \BOOKMARK [2][-]{subsection.3.4.3}{Learning Relative Weights}{section.3.4}
-\BOOKMARK [2][-]{subsection.3.4.4}{Email Matching}{section.3.4}
-\BOOKMARK [2][-]{subsection.3.4.5}{Instant Message Matching}{section.3.4}
 \BOOKMARK [1][-]{section.3.5}{Architecture}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.5.1}{Email Matching}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.2}{Instant Message Matching}{section.3.5}
 \BOOKMARK [1][-]{section.3.6}{An Illustrative Example}{chapter.3}
 \BOOKMARK [1][-]{section.3.7}{Implementation Details}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Quantitative Evaluation}{}

@@ -27,9 +27,9 @@
 \contentsline {subsection}{\numberline {3.4.1}Local-Global Principle}{45}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Similarity Function}{46}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Learning Relative Weights}{49}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Email Matching}{52}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Instant Message Matching}{56}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Architecture}{57}{section.3.5}
+\contentsline {section}{\numberline {3.5}Architecture}{52}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Email Matching}{55}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Instant Message Matching}{59}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}An Illustrative Example}{60}{section.3.6}
 \contentsline {section}{\numberline {3.7}Implementation Details}{63}{section.3.7}
 \contentsline {chapter}{\numberline {4}Quantitative Evaluation}{66}{chapter.4}

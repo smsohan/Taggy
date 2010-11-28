@@ -3,7 +3,7 @@
 \fancyfoot{} 
 \chapter{Quantitative Evaluation}
 \label{ch:evaluation}
-As previously mentioned in the research goals, an evaluation is required to measure the accuracy of Taggy in auto-tagging emails with user stories. In this thesis, the evaluation is based on two different real world data sets, collected from two different sources. In total the data represents 4,745 messages created by 9 agile teams. The evaluation shows that for different projects Taggy can correctly auto-tag between 76\% to 81\% emails with user stories after sufficient training.
+As previously mentioned in the research goals, an evaluation is required to measure the accuracy of Taggy in auto-tagging emails with user stories. In this thesis, the evaluation is based on two different real world data sets, collected from two different sources. In total, the data represents 4,745 messages created by 9 agile teams. The evaluation shows that for different projects Taggy can correctly auto-tag between 76\% to 81\% emails with user stories after sufficient training.
 
 This chapter is organized as follows: Firstly, the evaluation approach is discussed. As a part of it, the adapted definition of accuracy is given. Next, a null hypothesis is stated which is used in deducing the statistical relevance of the evaluation results. Then, the two data sets are described and the evaluation results for each are provided in detail. Finally, the limitations of this evaluation are discussed.
 
@@ -123,7 +123,7 @@ The maximum similarity score for a local similarity measure can be 1.0 as shown 
 	\item The email has strong text similarity (maximum 0.34 + 0.17 ~= 0.51) and some context similarity with the user story.
 	\item The email has context similarity (maximum 0.29 + 0.20 ~= 0.49) and some text similarity with the user story.
 \end{enumerate}
-The global similarity function produces the combined similarity value, which is compared against the threshold score. Setting such a threshold score forces auto-tagging decisions to be based on both context and text relevance. This threshold was found from observing the data. In the training data, the global similarity function produced a score of 0.58 or higher for 90\% of the actual email and user story relations. This cut-off point helped to eliminate some false positives and false negatives. The trade-off between selecting this threshold and auto-tagging is discussed later in Chapter~\ref{ch:discussion}.  
+The global similarity function produces the combined similarity value, which is compared against the threshold score. Setting such a threshold score forces auto-tagging decisions to be based on both context and text relevance. This threshold was found from observing the data. In the training data, the global similarity function produced a score of 0.58 or higher for 90\% of the actual email and user story relations. This cut-off point helped to eliminate some false positives. The trade-off between selecting this threshold and auto-tagging is discussed later in Chapter~\ref{ch:discussion}.  
 
 Using this threshold and the trained relative weights, the evaluation yielded the results as shown in Table~\ref{tab:sp_evaluation}. The training and evaluation is run three times 
 
@@ -150,7 +150,7 @@ Using this threshold and the trained relative weights, the evaluation yielded th
     \end{tabular}
 \end{table}
 
-As shown in Table~\ref{tab:sp_evaluation}, out of a total of 511 evaluation emails, Taggy could produce correct auto-tagging of 390 emails. This result is found after using 129 emails for training. The training data was selected randomly from the five projects. The table also shows that the $\chi^{2}$ values are greater than single degree of freedom $\chi^{2}_{0.05} = 3.841$, which refutes the null hypothesis as stated before.
+As shown in Table~\ref{tab:sp_evaluation}, out of a total of 511 evaluation emails, Taggy could produce correct auto-tagging of 390 emails. This result is found after using 129 emails for training. The training data was selected randomly from the five projects. The table also shows that the $\chi^{2}$ values are greater than single degree of freedom $\chi^{2}_{0.05} = 3.841$, which shows the null hypothesis does not hold given this observation at a statistical significance level of 0.05.
 
 The evaluation shows that the accuracy varies between 74\% to 79\% for different projects with a mean of 76\%. However, if only the text similarity measure is used to auto-tag, then Taggy produces 47\% accuracy based on the same training and evaluation data set. So, in this evaluation, the addition of context similarity using CBR improves the auto-tagging accuracy by 29\%. Some of the user stories in the projects often shared a common vocabulary. For example, the following two user stories are taken from the ManyWheels project:
 

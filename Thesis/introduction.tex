@@ -22,7 +22,7 @@ Since email is a persistent tool in the sense that they remain in the inbox unle
 
 The relationship between a user story and email or instant message is often not explicit. To establish the implicit relation, Taggy uses  Case Based Reasoning (CBR). For auto-tagging, a CBR system is designed to look at the text, people, and temporal similarity between emails and user stories. The evaluation results show that a well trained software such as Taggy can auto-tag emails with user stories. Also, we found that combining contextual information with text similarity helps to find the related user stories with higher accuracy than using just text match alone.
 
-To develop an understanding of the terms used in this thesis, I discuss the necessary background material about user stories and distributed agile projects; then, the research motivation is discussed; finally, I present the research goals and related challenges.
+To develop an understanding of the terms used in this thesis, next I discuss the necessary background material about user stories and distributed agile projects; then, the research motivation is discussed; finally, I present the research goals and related challenges.
 
 %Start the body text
 \section{User Stories - An Overview}
@@ -52,7 +52,7 @@ One or more team members are assigned to deliver a user story, which may involve
 	\label{fig:scrum_wall}
 \end{figure*}
 
-However, distributed agile teams often use a virtual team walls in place of a physical wall so that it is usable across several geographical locations. Figure~\ref{fig:target_process_wall} shows such a virtual wall taken from ScrumPad.
+However, distributed agile teams often use virtual team walls in place of physical walls so that it is usable across several geographical locations. Figure~\ref{fig:target_process_wall} shows such a virtual wall taken from ScrumPad.
 
 \begin{figure*}[bt]
 	\centering
@@ -141,7 +141,7 @@ Please note that the email from the customer included a conversion table for ``r
 
 Given this example, if some of the team members only look at the user story, they will find partial information about it. So, the whole conversion of ``region code''  may be confusing to them. However, when they can see the emails along with the user story, they may have a better understanding about this user story.
 
-This information may be required since a distributed agile team have to cope up with changes in team composition as new people will join and some people may leave. So, if it is possible to combine the fragmented knowledge from different places such as emails, instant messages and project management tools, one can find the important details of the user stories. Such details may not be obvious when only the user story is available. Similarly, the knowledge can help in testing of the features since it is expected to contain customer feedbacks and clarifications on user stories.
+This information may be required since a distributed agile team has to cope up with changes in team composition as new people will join and some people may leave. So, if it is possible to combine the fragmented knowledge from different places such as emails, instant messages and project management tools, one can find the important details of the user stories. Such details may not be obvious when only the user story is available. Similarly, the knowledge can help in testing of the features since it is expected to contain customer feedback and clarification on user stories.
 
 The motivation for this thesis stems from the pursuit of developing an agile knowledge base by combining the fragmented knowledge from emails, instant messages and project management tools with the least possible human efforts.
 
@@ -179,7 +179,7 @@ This research also aimed to investigate the difficulties involved in solving the
 \section{Key Contributions}
 Results from this research have been published and presented at XP 2010 \cite{auto_tagging}. 
 
-The key contribution of this research is that it demonstrates a novel approach to building a knowledge-base for distributed agile teams from emails, instant messages and user stories. This approach has a similar motivation to that found in some previous work, such as clustering email archives\cite{using_hybrid}, tagging forum messages with source code change set\cite{hipikat, hipikat_2} and using wikis to share knowledge. However, this research shows a machine learning approach to conglomerate fragmented knowledge from emails, instant messages and project management tools which minimizes human efforts.
+The key contribution of this research is that it demonstrates a novel approach to building a knowledge-base for distributed agile teams from emails, instant messages and user stories. This approach has a similar motivation to that found in some previous work, such as clustering email archives\cite{using_hybrid}, tagging forum messages with source code change set\cite{hipikat, hipikat_2} and using wikis to share knowledge. However, this research shows a machine learning approach to conglomerate fragmented knowledge from emails, instant messages and project management tools which attempts to reduce human efforts.
                                   
 Another key contribution is that it shows that text and context similarity can be used to find relevance between two different types of entities such as emails and user stories, where the degree of text similarity may be inadequate. I have used Case Based Reasoning (CBR) for auto-tagging. Similar to this auto-tagging solution, other CBR systems concerning different entities may also utilize this technique.
 
